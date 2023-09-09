@@ -1,0 +1,1322 @@
+<configs>
+<set xpath="/xui">	
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05" ignore_missing_class="false">
+	
+		<window_group name="crafting" controller="XUiC_CraftingWindowGroup" open_backpack_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+		</window_group>
+		
+		<window_group name="character" controller="XUiC_CharacterSheetWindowGroup" open_backpack_on_open="true">
+			<window name="CharacterFrameWindow"/>
+			<window name="buffInfoPanel"/>
+			<window name="ActiveBuffsWindow" />
+		</window_group>		
+		
+		<window_group name="workstation_campfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cementMixer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		
+		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsWorkBench" />  <!-- JZMOD -->   
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<!-- <window name="windowCombine" /> -->
+		</window_group>				
+
+		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsChemistryStation"/><!-- JZMOD --> 
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup" close_compass_on_open="true">
+			<window name="windowLooting"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="dewcollector" left_panel_valign_top="false" controller="XUiC_DewCollectorWindowGroup" close_compass_on_open="true">
+			<window name="windowDewCollector"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="creative" controller="XUiC_Creative2WindowGroup" open_backpack_on_open="true">
+			<window name="windowCreative2" />
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Needed to disable input in new system -$#-->
+		<window_group name="backpack" actionSet="false">	
+			<window name="itemInfoPanel"/>
+			<window name="emptyInfoPanel" />
+			<window name="windowBackpack"/>
+		</window_group>
+		
+		<window_group name="death">
+			<window name="windowDeathBar" anchor="CenterBottom" />
+		</window_group>
+		
+		<window_group name="dragAndDrop" actionSet="false">
+			<window name="dragAndDropItemStack" />
+		</window_group>
+		
+		<window_group name="compass" actionSet="false">
+			<window name="windowCompass" />
+			<window name="windowEntering" anchor="CenterTop" />
+			<window name="windowTargetBar" anchor="CenterTop" />
+			<window name="onScreenIcons" />
+		</window_group>
+		
+		<window_group name="toolTip" actionSet="false">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+			<window name="toolTipPopups" />
+		</window_group>
+		
+		<window_group name="interactionPrompt" actionSet="false">
+			<window name="interactionPrompt" />
+		</window_group>
+		
+		<window_group name="focusedBlockHealth" actionSet="false">
+			<window name="focusedBlockHealth" />
+		</window_group>
+		
+		<window_group name="tipWindow">
+			<window name="windowTip" />
+		</window_group>
+		
+		<window_group name="questOffer">
+			<window name="windowQuestOffer" />
+		</window_group>
+		
+		<window_group name="questTurnIn" controller="XUiC_QuestTurnInWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowQuestTurnInDescription" />
+			<window name="windowQuestTurnInRewards" />
+		</window_group>
+		
+		<window_group name="timer">
+			<window name="windowTimer"/>
+		</window_group>
+		
+		<window_group name="throwpower" actionSet="false">
+			<window name="windowThrow"/>
+		</window_group>
+		
+		<window_group name="toolbelt" actionSet="false">
+			<window name="windowToolbelt" anchor="CenterBottom" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDRightStatBars" anchor="RightBottom" />
+			<window name="windowLocation" anchor="RightTop" />
+			<window name="windowQuestTracker" anchor="RightTop" />
+			<window name="windowRecipeTracker" anchor="RightTop" />
+			<window name="windowGroupBars" anchor="LeftTop" />
+		</window_group>
+		
+		<window_group name="twitch" actionSet="false">
+			<window name="windowTwitch" anchor="RightCenter" />
+		</window_group>
+		
+		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowVehicle"/>
+			<window name="windowNonPagingHeader" />
+			<!-- <window name="windowVehicleStats" /> -->
+			<!-- <window name="windowVehicleStorage" /> -->
+		</window_group>
+		
+		<window_group name="vehicleStorage" controller="XUiC_VehicleStorageWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowNonPagingHeader" />
+			<window name="windowVehicleStorage" />
+		</window_group>
+		
+		<window_group name="windowpaging" actionSet="false" close_compass_on_open="true">
+			<window name="windowPagingHeader" anchor="CenterTop"/>
+		</window_group>
+
+    <window_group name="junkDrone" controller="XUiC_DroneWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+      <window name="windowNonPagingHeader" />
+      <window name="windowAssembleDrone" />
+    </window_group>
+
+		<window_group name="map">
+			<window name="mapTrackingPopup" />			<!-- keep this on top -->			
+			<window name="mapAreaSetWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaChooseWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaEnterWaypointName" />	<!-- keep this on top -->
+			<window name="mapArea" />
+			<window name="mapTracking" />
+			<window name="mapInvites" />
+		</window_group>
+		
+		<window_group name="players">
+			<window name="players" />
+		</window_group>
+		
+		<window_group name="assemble" controller="XUiC_AssembleWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowAssemble" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="radial" actionSet="keyboard" controller="Radial">
+			<window name="windowRadial"/>
+		</window_group>
+		
+		<window_group name="skills" controller="XUiC_SkillWindowGroup">
+			<window name="windowSkillList"/>
+			<window name="windowSkillAttributeInfo" />
+			<window name="windowSkillSkillInfo" />
+			<window name="windowSkillPerkInfo" />
+			<window name="windowSkillBookInfo" />
+			<window name="windowSkillCraftingInfo" />
+		</window_group>
+		
+		<window_group name="quests" controller="XUiC_QuestWindowGroup">
+			<window name="windowQuestList" />
+			<window name="windowQuestSharedList" />
+			<window name="windowQuestDescription" />
+			<window name="windowQuestObjectives" />
+			<window name="windowQuestRewards" />
+		</window_group>
+		
+		<window_group name="journal" controller="XUiC_JournalWindowGroup">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+		
+		<window_group name="twitchInfo" controller="XUiC_TwitchInfoWindowGroup" close_compass_on_open="true">
+			<window name="windowTwitchInfoList" />
+			<window name="windowTwitchInfoDescription" />
+			<window name="windowTwitchInfoHowTo" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
+		<window_group name="trader" controller="XUiC_TraderWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowTrader"/>
+			<window name="windowNonPagingHeader" />
+			<window name="serviceInfoPanel"/>
+		</window_group>
+		
+		<window_group name="dialog" controller="XUiC_DialogWindowGroup" close_compass_on_open="true">
+			<window name="windowRespondentName" />
+			<window name="windowStatement" />
+			<window name="windowResponses" />
+		</window_group>
+		
+		<window_group name="sign">
+			<window name="windowSignEdit" />
+		</window_group>
+		
+		<window_group name="keypadEdit">		
+			<window name="windowKeypadEdit" />
+		</window_group>
+
+		<window_group name="powersource" controller="XUiC_PowerSourceWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlots" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powertrigger" controller="XUiC_PowerTriggerWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowPowerTriggerOptions" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerrangedtrap" controller="XUiC_PowerRangedTrapWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowPowerRangedTrapOptions" />
+			<window name="windowPowerTrapSlots" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+			
+		</window_group>
+		
+		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller" close_compass_on_open="true">
+			<window name="windowPowerCameraControl" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerspotlight" controller="XUiC_PoweredSpotlightWindowGroup" close_compass_on_open="true">
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="materials" close_compass_on_open="true">
+			<window name="windowMaterials" />
+			<window name="windowMaterialInfo" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="shapes" close_compass_on_open="true">
+			<window name="windowShapeBlocks" />
+			<window name="windowShapeInfo" />
+			<window name="windowShapeMaterial" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="spawnMenu">
+			<window name="spawnMenu" />
+		</window_group>
+		
+		<window_group name="gameEventMenu">
+			<window name="gameEventMenu" />
+		</window_group>
+		
+		<window_group name="poiTeleportMenu">
+			<window name="poiTeleportMenu" />
+		</window_group>
+		
+		<window_group name="ingameMenu">
+			<window name="ingameMenu" />
+		</window_group>
+		
+		<window_group name="exportPrefab">
+			<window name="exportPrefab" />
+		</window_group>
+		
+		<window_group name="woPropsSleeperVolume">
+			<window name="woPropsSleeperVolume" />
+		</window_group>
+		
+		<window_group name="woPropsPOIMarkers">
+			<window name="woPropsPOIMarkers" />
+		</window_group>
+		
+		<window_group name="woPropsSleeperBlock">
+			<window name="woPropsSleeperBlock" />
+		</window_group>
+		
+		<window_group name="saveDirtyPrefab">
+			<window name="saveDirtyPrefab" />
+		</window_group>
+		
+		<window_group name="prefabPropertiesEditor">
+			<window name="prefabPropertiesEditor" />
+		</window_group>
+		
+		<window_group name="prefabMarkers">
+			<window name="prefabMarkers" />
+		</window_group>
+		
+		<window_group name="startPointEditor">
+			<window name="startPointEditor" />
+		</window_group>
+		
+		<window_group name="editorPanelSelector">
+			<window name="editorPanelSelector" />
+			<window name="editorInfo" />
+		</window_group>
+		
+		<window_group name="ingameDebugMenu">
+			<window name="ingameDebugMenu" />
+		</window_group>
+		
+		<window_group name="levelTools">
+			<window name="levelTools" />
+		</window_group>
+		
+		<window_group name="levelTools2">
+			<window name="levelTools2" />
+		</window_group>
+		
+		<window_group name="levelTools3">
+			<window name="levelTools3" />
+		</window_group>
+		
+		<window_group name="worldTools">
+			<window name="worldTools" />
+		</window_group>
+		
+		<window_group name="prefabList">
+			<window name="prefabList" />
+		</window_group>
+		
+		<window_group name="prefabeditorhelp">
+			<window name="prefabeditorhelp" />
+		</window_group>
+		
+		<window_group name="serverjoinrulesdialog">
+			<window name="serverjoinrulesdialog" />
+		</window_group>
+
+		<window_group name="lightProperties">
+			<window name="lightProperties" />
+		</window_group>
+
+    <window_group name="doorProperties">
+      <window name="doorProperties" />
+    </window_group>
+	
+		<window_group name="triggerProperties">
+			<window name="triggerProperties" />
+		</window_group>
+
+		<window_group name="reportPlayer">
+			<window name="reportPlayer" />
+		</window_group>
+
+		<window_group name="chatoutput" actionSet="false">
+			<window name="chatoutput" />
+		</window_group>
+		
+		<window_group name="chat">		
+			<window name="chat" />
+		</window_group>
+		
+		<window_group name="messageBox" controller="XUiC_MessageBoxWindowGroup">
+			<window name="messageBox" />
+		</window_group>
+
+<!-- Uncomment this window group and the according window in windows.xml and adapt the latter to your needs, it will show up whenever the user has the ingame menu (ESC) open -->
+<!--
+		<window_group name="serverinfowindow">
+			<window name="serverinfowindow" />
+		</window_group>
+-->
+<!-- ************************************************* JZMOD ADDED *************************************** -->
+	<window_group name="workstation_jz_CharacterChoiceComputer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_SteelForge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowBlastInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_KitchenWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+           	<window name="windowFuel" />
+			<window name="windowKitchenInput" />
+			<window name="jz_KitchenOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_DryingRack" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_wallTorchLightPlayer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowFuel" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_burningBarrelPlayer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_ResearchDesk" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_MortarAndPestle" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_StoneMill" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_MethaneProducer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_FermentationBarrel" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_jz_QISatRadioStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_jz_QIHospitalLabStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+         <window_group name="workstation_jz_QIMilitarySecurityStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		<!-- Improvised Workbench -->
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationImprovisedWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Pipe Gun Workbench -->
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationPipeGunWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Light Armor Workbench -->
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationLightArmorWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Heavy Armor Workbench -->
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHeavyArmorWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Tool Workbench -->
+		<window_group name="workstation_jz_WorkstationToolWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationToolWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Electronic Workbench -->
+		<window_group name="workstation_jz_WorkstationElectronicWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv11" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationElectronicWorkbenchLv12" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Handgun Workbench -->
+		<window_group name="workstation_jz_WorkstationHandgunWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv11" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationHandgunWorkbenchLv12" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Shotgun Workbench -->
+		<window_group name="workstation_jz_WorkstationShotgunWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationShotgunWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Machine Gun Workbench -->
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationMachineGunWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Rifle Workbench -->
+		<window_group name="workstation_jz_WorkstationRifleWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv2" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv3" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv4" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv5" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv6" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv7" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv8" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv9" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv10" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv11" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WorkstationRifleWorkbenchLv12" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="jz_WindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- Campfires -->
+		<window_group name="workstation_jz_BurningBarrelCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_GasGrillCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_CharcoalGrillCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_WallOvenCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_OldStoveCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_ModernStoveCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_ToilteCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_ComercialToiletCampfire" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="CampfireWindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_jz_HydroponicRack" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</ruleset>
+</set>
+</configs>  

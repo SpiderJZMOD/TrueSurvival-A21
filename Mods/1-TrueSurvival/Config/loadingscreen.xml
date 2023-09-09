@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<set xpath="/doc">
+
+	<backgrounds>
+		<tex file="GUI/loading_screen_1" />
+		<tex file="GUI/loading_screen_2" />
+		<tex file="GUI/loading_screen_3" />
+		<tex file="GUI/loading_screen_4" />
+	</backgrounds>
+
+	<tips>
+		<tip key="loadingTipMainHUD" />
+		<tip key="loadingTipStoneAxe" />
+		<tip key="loadingTipHarvestingResources" />
+		<tip key="loadingTipDistraction" />
+		<tip key="loadingTipStealth" />
+		<tip key="loadingTipEncumbrance" />
+		<tip key="loadingTipArmor" />
+		<tip key="loadingTipBandages" />
+		<tip key="loadingTipJournalEntries" />
+		<tip key="loadingTipQuestSharing" />
+		<tip key="loadingTipWhatIsItGoodFor" />
+		<tip key="loadingTipWorkstations" />
+		<tip key="loadingTipUnlockingRecipes" />
+		<tip key="loadingTipCraftingBetterQL" />
+		<tip key="loadingTipMagazines" />
+		<tip key="loadingTipPerkLootBoost" />
+		<tip key="loadingTipBaseUpgrading" />
+		<tip key="loadingTipRadials" />
+		<tip key="loadingTipHarvestingCorpses" />
+		<tip key="loadingTipGlue" />
+		<tip key="loadingTipProperTools" />
+		<tip key="loadingTipItemStats" />
+		<tip key="loadingTipExtCharStats" />
+		<tip key="loadingTipBladedWeapons" />
+		<tip key="loadingTipPickaxes" />
+		<tip key="loadingTipAxes" />
+		<tip key="loadingTipSteelKnuckles" />
+		<tip key="loadingTipWrenches" />
+		<tip key="loadingTipSledgehammers" />
+		<tip key="loadingTipUsingIronTools" />
+		<tip key="loadingTipScrapping" />
+		<tip key="loadingTipBuffs" />
+		<tip key="loadingTipKnownSchematics" />
+		<tip key="loadingTipTwitchIntegration" />
+		
+		
+		
+		<tip key="jz_loadingTipDistraction" />
+		<tip key="jz_loadingTipStealth" />
+		<tip key="jz_loadingTipArmor" />
+		<tip key="jz_loadingTipJournalEntries" />
+		<tip key="jz_loadingTipQuestSharing" />
+		<tip key="jz_loadingTipWhatIsItGoodFor" /> 
+		<tip key="jz_loadingTipRadials" />
+		<tip key="jz_loadingTipItemStats" />    
+        <tip key="jz_loadingTipBaseUpgrading" />
+		<tip key="jz_loadingTipBladedWeapons" />
+		<tip key="jz_loadingTipCraftingBetterQL" /> 
+		<tip key="jz_loadingTipEncumbrance" />
+        <tip key="jz_loadingTipExtCharStats" />
+		<tip key="jz_loadingTipHarvestingResources" />
+		<tip key="jz_loadingTipProperTools" /> 
+		<tip key="jz_loadingTipStoneAxe" />
+        <tip key="jz_loadingTipUsingIronTools" />
+		<tip key="jz_loadingTipWrenches" />
+		<tip key="jz_loadingTipScrewdivers" /> 
+		<tip key="jz_loadingTipTSDeath" />
+        <tip key="jz_loadingTipTSNutrition" />
+		<tip key="jz_loadingTipTSRecovery" />
+		<tip key="jz_loadingTipTSFarming" /> 
+		<tip key="jz_loadingTipTSZVirus" />
+        <tip key="jz_loadingTipTSWater" />
+        <tip key="jz_loadingTipAxes" />
+		<tip key="jz_loadingTipBandages" />
+		<tip key="jz_loadingTipBuffs" /> 
+		<tip key="jz_loadingTipGlue" />
+        <tip key="jz_loadingTipHarvestingCorpses" />
+		<tip key="jz_loadingTipMainHUD" />
+		<tip key="jz_loadingTipPickaxes" /> 
+		<tip key="jz_loadingTipScrapping" />
+        <tip key="jz_loadingTipSledgehammers" />
+		<tip key="jz_loadingTipSteelKnuckles" />
+		<tip key="jz_loadingTipUnlockingRecipes" /> 
+		<tip key="jz_loadingTipWorkstations" />
+        <tip key="jz_loadingTipTSCrowbar" />
+        <tip key="jz_loadingTipTSSpoiling" />
+        <tip key="jz_loadingTipTSCooking" />
+		<tip key="jz_loadingTipTSCampfire" />
+		<tip key="jz_loadingTipTSFirstAidKit" />
+		<tip key="jz_loadingTipTSCookingWorkstations" />
+		<tip key="jz_loadingTipTSMealDegradation" />
+		<tip key="jz_loadingTipTSHandTruck" />
+	</tips>
+ </set>
+</configs> 

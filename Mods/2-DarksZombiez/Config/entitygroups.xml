@@ -1,0 +1,227 @@
+<configs>
+
+<!-- *** BIOME_GROUPS -->
+	<!-- *** BIOME_ALL_ZOMBIES_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+        zombieFreshMale1
+        zombieFreshMale2-->	
+	</csv>
+
+	<!-- *** BIOME_ZOMBIES_NIGHT_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+        zombieFreshMale1
+        zombieFreshMale2	-->	
+		zombieParasiteFeral, .25
+		zombieFatParasiteFeral, .25
+		zombieExperimentZFeral, .25
+		zombieArmy1Feral, .25
+		<!--zombieFreshFemale1Feral, .25
+		zombieFreshFemale2Feral, .25
+		zombieFreshFemale3Feral, .25
+		zombieFreshFemale4Feral, .25
+		zombieFreshFemale5Feral, .25
+        zombieFreshMale1Feral, .25
+		zombieFreshMale2Feral, .25	-->	
+	</csv>
+
+	<!-- *** BIOME_ZOMBIES_FOREST_DOWNTOWN_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+        zombieFreshMale1
+        zombieFreshMale2-->		
+		zombieParasiteFeral, .1
+		zombieFatParasiteFeral, .1
+		zombieExperimentZFeral, .1
+		zombieArmy1Feral, .1
+		<!--zombieFreshFemale1Feral, .1
+		zombieFreshFemale2Feral, .1
+		zombieFreshFemale3Feral, .1
+		zombieFreshFemale4Feral, .1
+		zombieFreshFemale5Feral, .1
+        zombieFreshMale1Feral, .1
+		zombieFreshMale2Feral, .1	-->		
+	</csv>
+
+	<!-- *** BIOME_ZOMBIES_FOREST_DOWNTOWN_NIGHT_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2	-->	
+		zombieParasiteFeral, .3
+		zombieFatParasiteFeral, .3
+		zombieExperimentZFeral, .3
+		zombieArmy1Feral, .3
+		<!--zombieFreshFemale1Feral, .3
+		zombieFreshFemale2Feral, .3
+		zombieFreshFemale3Feral, .3
+		zombieFreshFemale4Feral, .3
+		zombieFreshFemale5Feral, .3
+                zombieFreshMale1Feral, .3
+		zombieFreshMale2Feral, .3	-->	
+	</csv>
+
+<!-- *** BIOME_ZOMBIES_DOWNTOWN_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2		-->
+		zombieParasiteFeral, .5
+		zombieFatParasiteFeral, .5
+		zombieExperimentZFeral, .5
+		zombieArmy1Feral, .5
+		<!--zombieFreshFemale1Feral, .5
+		zombieFreshFemale2Feral, .5
+		zombieFreshFemale3Feral, .5
+		zombieFreshFemale4Feral, .5
+		zombieFreshFemale5Feral, .5
+                zombieFreshMale1Feral, .5
+		zombieFreshMale2Feral, .5		-->
+	</csv>
+
+<!-- *** BIOME_ZOMBIES_WASTELAND_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2-->		
+		zombieParasiteFeral, .5
+		zombieFatParasiteFeral, .5
+		zombieExperimentZFeral, .5
+		zombieArmy1Feral, .5
+		<!--zombieFreshFemale1Feral, .5
+		zombieFreshFemale2Feral, .5
+		zombieFreshFemale3Feral, .5
+		zombieFreshFemale4Feral, .5
+		zombieFreshFemale5Feral, .5
+                zombieFreshMale1Feral, .5
+		zombieFreshMale2Feral, .5	-->	
+	</csv>
+	
+<!-- *** BIOME_ZOMBIES_WASTELAND_NIGHT_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2	-->	
+		zombieParasiteFeral, 2
+		zombieFatParasiteFeral, 2
+		zombieExperimentZFeral, 2
+		zombieArmy1Feral, 2
+		<!--zombieFreshFemale1Feral, 2
+		zombieFreshFemale2Feral, 2
+		zombieFreshFemale3Feral, 2
+		zombieFreshFemale4Feral, 2
+		zombieFreshFemale5Feral, 2
+                zombieFreshMale1Feral, 2
+		zombieFreshMale2Feral, 2-->		
+	</csv>
+
+<!-- *** BIOME_ZOMBIES_WASTELAND_DOWNTOWN_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2	-->	
+		zombieParasiteFeral, .5
+		zombieFatParasiteFeral, .5
+		zombieExperimentZFeral, .5
+		zombieArmy1Feral, .5
+		<!--zombieFreshFemale1Feral, .5
+		zombieFreshFemale2Feral, .5
+		zombieFreshFemale3Feral, .5
+		zombieFreshFemale4Feral, .5
+		zombieFreshFemale5Feral, .5	
+                zombieFreshMale1Feral, .5
+		zombieFreshMale2Feral, .5	-->
+	</csv>
+
+<!-- *** BIOME_ZOMBIES_BURNT_FOREST_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']/text()" delim="\n" op="add" >
+		zombieParasite
+		zombieFatParasite
+		zombieExperimentZ
+		zombieArmy1
+		<!--zombieFreshFemale1
+		zombieFreshFemale2
+		zombieFreshFemale3
+		zombieFreshFemale4
+		zombieFreshFemale5
+                zombieFreshMale1
+                zombieFreshMale2-->		
+		zombieParasiteFeral, .1
+		zombieFatParasiteFeral, .1
+		zombieExperimentZFeral, .1
+		zombieArmy1Feral, .1
+		<!--zombieFreshFemale1Feral, .1
+		zombieFreshFemale2Feral, .1
+		zombieFreshFemale3Feral, .1
+		zombieFreshFemale4Feral, .1
+		zombieFreshFemale5Feral, .1	
+                zombieFreshMale1Feral, .1
+		zombieFreshMale2Feral, .1	-->
+	</csv>
+
+</configs>

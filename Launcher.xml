@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+   <ServerGroup Name="True Survival" Logo="" Description="True Survival A21.1">
+        <Server Name="True Survival A21.1" Logo="">
+            <Description>True Survival 21.1
+			Test build #1.16
+			-----------------------------------
+            Required SP/Coop Game Settings
+            -RWG Maps only
+            -World Size = 8192x8192 (or bigger)
+            -Difficulty = Adventurer 
+            -24Hr Cycle = 60-90min
+            -Day light length = 18
+            -Zombie Day Speed = Walk
+            -Zombie Night Speed = Jog
+            -Zombie Feral Speed = Run
+            -Zombie Bloodmoon Speed = Sprint
+            -XP Multiplier = 100%
+            -Loot Abundance = 100%
+			-Block Damages - 100%
+            -Loot Respawn Timer = Disabled
+			-Drop all on death
+            -Bloodmoon Count = 64 (or as much as your PC can take)
+            </Description>
+            <DownloadMode>Clone</DownloadMode>
+            <Address>14.1.30.218</Address>                    
+            <Port>28716</Port>    
+            <ReleaseNotes>https://discord.com/channels/975478016249561119/975480875317862420</ReleaseNotes>
+            <Downloads>
+                <Download>https://github.com/SpiderJZMOD/TrueSurvivalA20</Download>
+            </Downloads>
+        </Server>
+    </ServerGroup>
+</Servers>

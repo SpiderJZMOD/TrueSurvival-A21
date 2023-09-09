@@ -1,0 +1,517 @@
+<!--Created using the 7 Days To Dialog Application-->
+
+<configs>
+
+  <append xpath="/dialogs">
+
+    <!-- Generic Dialog with Quest options (if quests are available -->
+    <dialog id="GenericNPC" startstatementid="start">
+	
+      <statement id="start" text="dialog_trader_statement_start">
+        <response_entry id="Hire" />
+        <response_entry id="Command Menu" />
+        <response_entry id="Weapon Menu" />
+        <response_entry id="Pickup" />
+		<response_entry id="ShowMe" />
+		<response_entry id="Loot"/>
+		<response_entry id="Dismiss" />
+		<response_entry id="Dump2Log" />
+        <response_entry id="done" />
+      </statement>
+
+      <!-- If the NPC is not hired ( not the value="not" ), then display this option, allowing a hire dialog box o be opened. --> 
+      <response id="Hire" text="I am interested in hiring you." >
+        <requirement type="HiredSDX, SCore" requirementtype="Hide" value="not"/>
+        <action type="OpenDialogSDX, SCore" id="Hire" />
+      </response>
+
+      <!-- If the entity is hired, you can order the NPCs to do the following: -->
+      <response id="FollowMe" text="Follow me" >
+        <requirement type="Leader, SCore" requirementtype="Hide"/>
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderFollow" />
+      </response>
+
+	  <response id="Dump2Log" text="Dump Values to Log" >
+        <requirement type="Leader, SCore" requirementtype="Hide"/>
+        <action type="DisplayInfo, SCore"  />
+      </response> 
+	  
+      <response id="ShowMe" text="Show Me your inventory" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="ExecuteCommandSDX, SCore" id="OpenInventory" />
+      </response>
+
+	  <response id="StayHere" text="Stay where you are standing" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderStay" />
+      </response>
+	  
+	  <response id="Wander" text="Patrol around here" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderWander" />
+      </response>
+
+	<response id="Patrol" text="Patrol your coded route" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderPatrol" />
+      </response> 
+
+	  <response id="GuardHere" text="Stay where I am standing" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <requirement type="HasTask, SCore" requirementtype="Hide" value="Stay" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" />
+      </response>
+
+    <response id="GuardReturnHere" text="Guard and return to where I am standing" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <requirement type="HasTask, SCore" requirementtype="Hide" value="Guard" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuard" />
+      </response>
+
+	<response id="SetCode" text="Here is your Patrol Code" >
+        <requirement type="HiredSDX, SCore" requirementtype="Hide" />
+        <action type="OpenWindowSDX, SCore" id="SetCode" />
+      </response> 
+ 
+	  <response id="Loot" text="Loot around here" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <requirement type="HasTask, SCore" requirementtype="Hide" value="LootBasic" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderLoot" />
+      </response>  
+
+	  <response id="Dismiss" text="Dismiss" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="ExecuteCommandSDX, SCore" id="Dismiss" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderDismiss" />
+      </response>
+	  
+	<response id="Pickup" text="Pick Me up!" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="PickUpNPC, SCore" />
+	</response>
+	
+	<response id="Weapon Menu" text="Weapon Menu" nextstatementid="Weapon Classes">
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+    </response>
+	
+	<response id="Command Menu" text="Command Menu" nextstatementid="Command Menu">
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+    </response>
+	
+	<statement id="Command Menu" text="Command Menu">  
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="Wander"/>
+		<response_entry id="FollowMe"/>
+		<response_entry id="GuardHere"/>
+		<response_entry id="GuardReturnHere"/>
+		<response_entry id="StayHere"/>
+		<response_entry id="SetCode"/>
+		<response_entry id="Patrol"/>
+		<response_entry id="done" />
+	</statement>
+	 
+	<statement id="Weapon Classes" text="Weapon Classes" nextstatementid="WeaponClasses">   
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="Melee" text="Melee Menu" nextstatementid="Melee Menu"  />
+		<response_entry id="Pistols" text="Pistol Menu" nextstatementid="Pistol Menu"  />
+		<response_entry id="Rifles"  text="Rifle Menu" nextstatementid="Rifle Menu" />
+		<response_entry id="ShotGuns" text="Shotgun Menu" nextstatementid="Shotgun Menu"   />
+		<response_entry id="Others"  text="Other Menu" nextstatementid="Other Menu"  />
+		<response_entry id="done" />
+	</statement> 
+	
+	<response id="Melee" text="Melee Menu" nextstatementid="Melee Menu" ref_text="Melee Menu" />
+	<response id="Pistols" text="Pistol Menu" nextstatementid="Pistol Menu" ref_text="Pistol Menu" />
+	<response id="Rifles" text="Rifle Menu" nextstatementid="Rifle Menu" ref_text="Rifle Menu" />
+	<response id="ShotGuns" text="ShotGun Menu" nextstatementid="ShotGun Menu" ref_text="ShotGun Menu" />
+	<response id="Others" text="Other Menu" nextstatementid="Other Menu" ref_text="Other Menu" />
+	
+	<statement id="Melee Menu" text="Melee Weapons">  
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="BareHands"/>
+		<response_entry id="Club"/>
+		<response_entry id="Knife"/>
+		<response_entry id="Bat"/>
+		<response_entry id="Spear"/>
+		<response_entry id="Machete"/>
+		<response_entry id="Axe"/>
+		<response_entry id="Weapon Menu" />
+	</statement>
+	
+	<statement id="Pistol Menu" text="Pistols">  
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="SMG"/>
+		<response_entry id="PipePistol"/>
+		<response_entry id="Pistol"/>
+		<response_entry id="DPistol"/>
+		<response_entry id="Weapon Menu" />
+	</statement>	
+	
+	<statement id="Rifle Menu" text="Rifles"> 
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="PipeRifle"/>
+		<response_entry id="PipeMG"/>		
+		<response_entry id="M60"/>
+		<response_entry id="AK47"/>
+		<response_entry id="TRifle"/>
+		<response_entry id="HRifle"/>
+		<response_entry id="SRifle"/>
+		<response_entry id="Weapon Menu" />
+	</statement>
+	 
+	<statement id="ShotGun Menu" text="Shotguns">  
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="PipeShotgun"/>
+		<response_entry id="PShotgun"/>
+		<response_entry id="AShotgun"/>
+		<response_entry id="Weapon Menu" />
+	</statement>	 
+	 
+	<statement id="Other Menu" text="Other Weapons">   
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<response_entry id="LBow"/>
+		<response_entry id="XBow"/>
+		<response_entry id="RLauncher"/>
+		<response_entry id="Weapon Menu" />
+	</statement>
+	
+	<response id="BareHands" text="Use BareHands" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCEmptyHand"  />
+	</response>
+	
+	<response id="Club" text="Use Club" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeWpnClubT0WoodenClub" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCClubWood"  />
+	</response> 
+	
+	<response id="Knife" text="Use Knife" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeWpnBladeT1HuntingKnife" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCKnife"  />
+	</response>
+	
+	<response id="Bat" text="Use Bat" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeWpnClubT1BaseballBat" requirementtype="Hide" /> <!--$starterWeapon  HasCVarSDX -->
+        <action type="SwapWeapon, SCore" id="meleeNPCBatWood"  />
+	</response> 
+	<response id="Spear" text="Use Spear" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeWpnSpearT1IronSpear" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCSpear"  />
+	</response>
+	
+	<response id="Machete" text="Use Machete" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeWpnBladeT3Machete" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCMachete"  />
+	</response> 
+	
+	<response id="Axe" text="Use Axe" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="meleeToolAxeT1IronFireaxe" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="meleeNPCAxe"  />
+	</response>
+	
+	<response id="SMG" text="Use SMG" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+        <requirement type="NPCHasItemSDX, SCore" id="gunHandgunT3SMG5" requirementtype="Hide" />
+		<action type="SwapWeapon, SCore" id="gunNPCSMG5"  />
+	</response> 
+
+	<response id="PipePistol" text="Use PipePistol" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunHandgunT0PipePistol" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPipePistol" />
+	</response>
+	  
+	<response id="PipeShotgun" text="Use PipeShotgun" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunShotgunT0PipeShotgun" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPipeShotgun"  />
+	</response> 
+
+	<response id="PipeRifle" text="Use PipeRifle" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunRifleT0PipeRifle" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPipeRifle" />
+	</response>
+	  
+	<response id="PipeMG" text="Use PipeMachinegun" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunMGT0PipeMachineGun" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPipeMG"  />
+	</response>
+		
+	<response id="M60" text="Use M60" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunMGT3M60" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCM60" />
+	</response>
+	  
+	<response id="Pistol" text="Use Pistol" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunHandgunT1Pistol" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPistol"  />
+	</response>
+
+	<response id="DPistol" text="Use DesertEagle" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunHandgunT3DesertVulture" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCDPistol" />
+	</response>
+	  
+	<response id="AK47" text="Use AK47" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunMGT1AK47" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCAk47"  />
+	</response>
+	
+	<response id="TRifle" text="Use AssaultRifle" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunMGT2TacticalAR" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCTRifle" />
+	</response>
+	  
+	<response id="HRifle" text="Use HuntingR" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunRifleT1HuntingRifle" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCHRifle"  />
+	</response>
+
+	<response id="SRifle" text="Use SniperRifle" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunRifleT3SniperRifle" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCSRifle" />
+	</response>
+	  
+	<response id="LBow" text="Use Longbow" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunBowT1WoodenBow" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCLBow"  />
+	</response>
+
+	<response id="XBow" text="Use Crossbow" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunBowT1IronCrossbow" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCXBow" />
+	</response>
+	  
+	<response id="PShotgun" text="Use Shotgun" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunShotgunT2PumpShotgun" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCPShotgun"  />
+	</response>
+
+	<response id="AShotgun" text="Use AutoShotgun" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunShotgunT3AutoShotgun" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCAShotgun" />
+	</response>
+	  
+	<response id="RLauncher" text="Use RLauncher" >
+		<requirement type="Leader, SCore" requirementtype="Hide" />
+		<requirement type="NPCHasItemSDX, SCore" id="gunExplosivesT3RocketLauncher" requirementtype="Hide" />
+        <action type="SwapWeapon, SCore" id="gunNPCRocketLauncher"  />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	</dialog>
+	
+  </append>
+
+  <append xpath="/dialogs">
+ 
+   <dialog id="GenericNPCAnimal" startstatementid="start">
+      <statement id="start" text="dialog_trader_statement_start">
+        <response_entry id="TellMe" />
+        <response_entry id="FollowMe" />
+        <response_entry id="ShowMe" />
+        <response_entry id="StayHere" />
+        <response_entry id="GuardHere" />
+        <response_entry id="Wander" />
+        <response_entry id="SetPatrol" />
+        <response_entry id="Patrol" />
+		<response_entry id="Loot" />
+        <response_entry id="Hire" />
+        <response_entry id="Dismiss" />
+        <response_entry id="done" />
+      </statement>
+
+      <!-- Quest Lines Entries -->
+      <statement id="currentjobs" text="Do any of these tasks sound like something you can do?">
+        <requirement type="HasQuestSDX, SCore" requirementtype="Hide" />
+        <quest_entry id="npcquest" type="add" listindex="0" />
+        <response_entry id="nevermind" />
+      </statement>
+
+      <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+        <requirement type="HasQuestSDX, SCore" requirementtype="Hide" />
+        <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+      </response>
+      
+      <response id="jobshave" text="dialog_trader_response_jobshave" nextstatementid="currentjobs" >
+        <requirement type="HasQuestSDX, SCore" requirementtype="Hide" />
+        <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+        <action type="AddJournalEntry" id="questTip" />
+      </response>
+      <!-- End Quest Lines Entries -->
+
+      <!-- If the NPC is not hired ( not the value="not" ), then display this option, allowing a hire dialog box o be opened. --> 
+      <response id="Hire" text="Hey little one, You look lost.  Want to come with me?  I have snacks!" >
+        <requirement type="HiredSDX, SCore" requirementtype="Hide" value="not"/>
+        <action type="OpenDialogSDX, SCore" id="Hire" />
+      </response>
+
+      <!-- If the entity is hired, you can order the NPCs to do the following: -->
+     <response id="FollowMe" text="Follow Me" >
+        <requirement type="Leader, SCore" requirementtype="Hide"/>
+        <action type="ExecuteCommandSDX, SCore" id="FollowMe" />
+      </response> 
+
+<!--      <response id="TellMe" text="Tell me about yourself" >
+        <requirement type="Leader, SCore" requirementtype="Hide"/>
+        <action type="ExecuteCommandSDX, SCore" id="TellMe" />
+      </response> -->
+	  
+      <response id="ShowMe" text="Whats in your pack?" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="ExecuteCommandSDX, SCore" id="OpenInventory" />
+      </response>
+
+	  <response id="StayHere" text="Stay right there" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderStay" />
+      </response>
+	  
+	  <response id="Wander" text="Go play around here" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderWander" />
+      </response>
+	  
+	<!--  <response id="Patrol" text="Patrol your route" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderPatrol" />
+      </response> -->
+	  
+	  <response id="Loot" text="Loot around here" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <!--<action type="AddBuffSDX, SCore" value="Self" id="buffGatherResources" /> -->
+		<action type="AddBuffSDX, SCore" value="Self" id="buffOrderLoot" />
+      </response>	 
+	
+	  <response id="GuardHere" text="Stay over here" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <requirement type="HasTask, SCore" requirementtype="Hide" value="Stay" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" /> 
+      </response>
+  
+	  <response id="Dismiss" text="Abandon" >
+        <requirement type="Leader, SCore" requirementtype="Hide" />
+        <action type="ExecuteCommandSDX, SCore" id="Dismiss" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderDismiss" />
+      </response>
+    
+      <response id="done" text="dialog_trader_response_nevermind" />
+
+    </dialog>	
+	
+	<dialog id="GenericNPCNurse" startstatementid="startNurse">
+		<statement id="startNurse" text="dialog_nurse_response_startNurse" ref_text="Hello, traveler. What can I assist you with in these perilous times?">
+			<response_entry id="startsubmenu" ref_text="startsubmenu" />
+			<response_entry id="TellMeAboutYourself" ref_text="Tell me about yourself." />
+			<response_entry id="FindBandages" ref_text="I could use some bandages. Any spare?" />
+			<response_entry id="FindWater" ref_text="I'm thirsty. Do you have any water?" />
+			<response_entry id="AskForQuest" ref_text="Do you need help with something?" />
+			<response_entry id="Bye" ref_text="GoodBye." />
+		</statement>
+		<statement id="NurseBackstory" text="dialog_nurse_response_NurseBackstory" ref_text="Before the world went under, I was a nurse at the Phoenix Children's Hospital. I've been wandering Arizona ever since, helping where I can. I'm a member of the WhiteRiver faction. We believe in mutual aid and survival.">
+			<response_entry id="FindBandages" ref_text="I could use some bandages. Any spare?" />
+			<response_entry id="FindWater" ref_text="I'm thirsty. Do you have any water?" />
+			<response_entry id="AskForQuest" ref_text="Do you need help with something?" />
+			<response_entry id="Bye" ref_text="GoodBye." />
+		</statement>
+		<statement id="BandagesLocation" text="dialog_nurse_response_BandagesLocation" ref_text="I can spare a few bandages. Here you go, but use them wisely.">
+			<response_entry id="FindWater" ref_text="I'm thirsty. Do you have any water?" />
+			<response_entry id="AskForQuest" ref_text="Do you need help with something?" />
+			<response_entry id="Bye" ref_text="GoodBye." />
+		</statement>
+		<statement id="WaterLocation" text="dialog_nurse_response_WaterLocation" ref_text="I have some clean water. Here, take this bottle. Stay hydrated, it's important.">
+			<response_entry id="FindBandages" ref_text="I could use some bandages. Any spare?" />
+			<response_entry id="AskForQuest" ref_text="Do you need help with something?" />
+			<response_entry id="Bye" ref_text="GoodBye." />
+		</statement>
+		<statement id="QuestOffer" text="dialog_nurse_response_QuestOffer" ref_text="I am trying to reach a nearby clinic, but it's overrun by the undead. If you could clear it, I'd be able to gather more medical supplies. Will you help?">
+			<response_entry id="FindBandages" ref_text="I could use some bandages. Any spare?" />
+			<response_entry id="FindWater" ref_text="I'm thirsty. Do you have any water?" />
+			<response_entry id="Bye" ref_text="GoodBye." />
+		</statement>
+		
+		<response id="TellMeAboutYourself" text="dialog_nurse_response_TellMeAboutYourself" nextstatementid="NurseBackstory" ref_text="Tell me about yourself." />
+		<response id="FindBandages" text="dialog_nurse_response_FindBandages" nextstatementid="BandagesLocation" ref_text="I could use some bandages. Any spare?" >
+			<action type="AddItemSDX, SCore" id="itemBandages" />
+		</response>
+		<response id="FindWater" text="dialog_nurse_response_FindWater" nextstatementid="WaterLocation" ref_text="I'm thirsty. Do you have any water?" >
+			<action type="AddItemSDX, SCore" id="drinkJarBoiledWater" />
+		</response>
+		<response id="AskForQuest" text="dialog_nurse_response_AskForQuest" nextstatementid="QuestOffer" ref_text="Do you need help with something?" />
+		<response id="Bye" text="Take Care, Stay Safe!" nextstatementid="done" ref_text="Take Care, Stay Safe!" />
+		<response id="startsubmenu" text="Hire Menu" nextstatementid="startsubmenu" ref_text="You looking for work?" />
+	<!--  Start Hire Submenu  -->
+		<statement id="startsubmenu" text="dialog_trader_statement_start">
+			<response_entry id="Hire" />
+			<response_entry id="FollowMe" />
+			<response_entry id="ShowMe" />
+			<response_entry id="StayHere" />
+			<response_entry id="GuardHere" />
+			<response_entry id="Wander" />
+			<response_entry id="Loot" />
+			<response_entry id="Dismiss" />
+			<response_entry id="done" />
+		</statement>
+		<response id="Hire" text="I am interested in hiring you." nextstatementid="starthiremenu">
+			<requirement type="HiredSDX, SCore" requirementtype="Hide" value="not"/>
+			<action type="OpenDialogSDX, SCore" id="Hire" />
+		</response>
+		<response id="FollowMe" text="Follow me" >
+			<requirement type="Leader, SCore" requirementtype="Hide"/>
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderFollow" />
+		</response>
+		<response id="ShowMe" text="Show Me your inventory" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<action type="ExecuteCommandSDX, SCore" id="OpenInventory" />
+		</response>
+		<response id="StayHere" text="Stay where you are standing" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderStay" />
+		</response>
+		<response id="GuardHere" text="Stay where I am standing" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<requirement type="HasTask, SCore" requirementtype="Hide" value="Stay" />
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" />
+		</response>
+		<response id="Wander" text="Patrol around here" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderWander" />
+		</response>
+		<response id="Loot" text="Loot around here" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<requirement type="HasTask, SCore" requirementtype="Hide" value="LootBasic" />
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderLoot" />
+		</response>  
+		<response id="Dismiss" text="Dismiss" >
+			<requirement type="Leader, SCore" requirementtype="Hide" />
+			<action type="ExecuteCommandSDX, SCore" id="Dismiss" />
+			<action type="AddBuffSDX, SCore" value="Self" id="buffOrderDismiss" />
+		</response>
+		<response id="done" text="dialog_trader_response_nevermind" />
+	<!--  End Hire Submenu  -->
+
+	</dialog>	
+	
+  </append>
+  
+</configs>
