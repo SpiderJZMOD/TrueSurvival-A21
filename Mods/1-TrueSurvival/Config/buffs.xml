@@ -29179,7 +29179,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection03GetBetter"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffMedicalInfection01GetBetter" name_key="jz_BuffMedicalInfection01GetBetterName" description_key="jz_BuffMedicalInfection01GetBetterDesc" remove_on_death="true" icon="ui_game_symbol_infection_better">
+	<buff name="jz_BuffMedicalInfection01GetBetter" name_key="jz_BuffMedicalInfection01GetBetterName" description_key="jz_BuffMedicalInfection01GetBetterDesc" remove_on_death="true" icon="MedicalInfection">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -29212,7 +29212,7 @@
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.25"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffMedicalInfection02GetBetter" name_key="jz_BuffMedicalInfection02GetBetterName" description_key="jz_BuffMedicalInfection02GetBetterDesc" remove_on_death="true" icon="ui_game_symbol_infection_better" icon_color="255,128,0">
+	<buff name="jz_BuffMedicalInfection02GetBetter" name_key="jz_BuffMedicalInfection02GetBetterName" description_key="jz_BuffMedicalInfection02GetBetterDesc" remove_on_death="true" icon="MedicalInfection" icon_color="255,128,0">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -29249,7 +29249,7 @@
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.35"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffMedicalInfection03GetBetter" name_key="jz_BuffMedicalInfection03GetBetterName" description_key="jz_BuffMedicalInfection03GetBetterDesc" remove_on_death="true" icon="ui_game_symbol_infection_better" icon_color="255,0,0">
+	<buff name="jz_BuffMedicalInfection03GetBetter" name_key="jz_BuffMedicalInfection03GetBetterName" description_key="jz_BuffMedicalInfection03GetBetterDesc" remove_on_death="true" icon="MedicalInfection" icon_color="255,0,0">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -37773,7 +37773,7 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLazyTraitActive" remove_on_death="true" description_key="jz_BuffLazyTraitActiveDesc" icon_blink="true" icon_color="55,489,28" icon="LazyTrait" >
+	<buff name="jz_BuffLazyTraitActive" name_key="Lazy Recovery" remove_on_death="true" description_key="jz_BuffLazyTraitActiveDesc" icon_blink="true" icon_color="55,489,28" icon="LazyTrait" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -37805,7 +37805,7 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffRestlessTraitActive" remove_on_death="true" description_key="jz_BuffRestlessTraitActiveDesc" icon_blink="true" icon_color="55,489,28" icon="RestlessTrait" >
+	<buff name="jz_BuffRestlessTraitActive" name_key="Restless Recovery" remove_on_death="true" description_key="jz_BuffRestlessTraitActiveDesc" icon_blink="true" icon_color="55,489,28" icon="RestlessTrait" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>

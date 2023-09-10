@@ -40404,7 +40404,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicSteelSheetMetal">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="garageDoorIndustrial"/>
+	<property name="CustomIcon" value="banditWallSiding2x2Grey"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
     <property name="Unlocks" value="jz_SteelSheetMetal"/>
 	<property name="TraderStageTemplate" value="jz_Trader600_999"/>
@@ -40540,7 +40540,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicCeilingLight">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ceilingLight01"/>
+	<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
     <property name="Unlocks" value="ceilingLight01_player"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
@@ -41523,7 +41523,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
     <property name="Weight" value="1"/>
-	<property name="CustomIcon" value="cntChest01"/>
+	<property name="CustomIcon" value="cntWoodWritableCrate"/>
 	<property name="Unlocks" value="cntStorageGenericSigned"/>
     <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
@@ -43037,7 +43037,7 @@ perkNightStalkerSilentNight
 <item name="spotlightPlayerSchematic">
 	<property name="Extends" value="schematicNoQualityMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="spotlightNailedDownPOI"/>
+	<property name="CustomIcon" value="spotlightPlayer"/>
 	<property name="Unlocks" value="spotlightPlayer"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
@@ -49127,6 +49127,14 @@ perkNightStalkerSilentNight
 		<property name="QuestGiven" value="jzquest_KitchenRecipePt1"/>
 	</property>
 </item>
+
+<item name="jz_QIFavorForAFavorRedo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_FlashbangPt2Redo"/>
+	</property>
+</item>
 <!-- JZMOD KITCHEN ITEMS -->
 <item name="jz_SpicyTexasPete">
 	<property name="Extends" value="jz_MasterItem" />
@@ -49710,10 +49718,11 @@ perkNightStalkerSilentNight
 <item name="jz_SteelSheetMetal">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_SteelSheetMetalDesc" />
-	<property name="CustomIcon" value="garageDoorIndustrial"/>
+	<property name="CustomIcon" value="banditWallSiding2x2Grey"/>
 	<property name="TraderStageTemplate" value="jz_Trader750_999"/>
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="2" />
+	<property name="UnlockedBy" value="jz_SchematicSteelSheetMetal,jz_SteelBuildingSkill" />
 	<property name="ItemWeight" value=".8" />
 	<effect_group tiered="false">
 		<display_value name="TSItemWeight" value=".15"/>

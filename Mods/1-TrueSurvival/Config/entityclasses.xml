@@ -4538,7 +4538,7 @@
 		<!-- *** STAG -->
 <entity_class name="animalStag" extends="animalTemplateHostile">
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,animal,deer,stag,perkAT02,perkAT05"/><!-- JZMOD -->
+	<property name="Tags" value="entity,animal,deer,stag,perkAT02"/><!-- JZMOD -->
 	<property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -4557,7 +4557,7 @@
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="NavObject" value="animaltracking_stag" />
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="60.0"/>
+	<property name="SoundRandomTime" value="120.0"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerMRandom"/>
@@ -4621,7 +4621,7 @@
 		<!-- *** DOE -->
 <entity_class name="animalDoe" extends="animalTemplateTimid">
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,animal,deer,perkAT02,perkAT05"/><!-- JZMOD -->
+	<property name="Tags" value="entity,animal,deer,perkAT02"/><!-- JZMOD -->
 	<property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -4640,7 +4640,7 @@
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="NavObject" value="animaltracking_doe" />
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="60.0"/>
+	<property name="SoundRandomTime" value="120.0"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerFRandom"/>
@@ -5106,7 +5106,7 @@
 		<!-- *** TWITCH_MURDER_CHICKEN -->
 <entity_class name="animalChickenHostile" extends="animalTemplateHostile">
 	<property name="UserSpawnType" value="Console"/>
-	<property name="Tags" value="entity,animal,chicken,hostile,perkAT01,perkAT02,perkAT03"/>
+	<property name="Tags" value="entity,animal,chicken,hostile"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_chicken"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_chicken"/>
 	<property name="Prefab" value="/Entities/Animals/CHICKEN/chickenPrefab"/>
@@ -5527,7 +5527,7 @@
 		<!-- *** BOAR -->
 <entity_class name="animalBoar" extends="animalTemplateHostile">
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,animal,hostile,boar,perkAT01,perkAT03"/><!-- JZMOD -->
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT01"/><!-- JZMOD -->
 	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
 	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
@@ -7352,7 +7352,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 		
 		<entity_class name="animalTemplateNeutralWalking" extends="animalTemplateHostileWalking">
 			<property name="UserSpawnType" value="None"/>
-			<property name="Tags" value="entity,animal,neutral,template,perkAT02,perkAT03"/>
+			<property name="Tags" value="entity,animal,neutral,template,perkAT02"/>
 			<property name="Faction" value="animals"/>
 			<property name="MaxViewAngle" value="230"/>
 			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
@@ -8837,7 +8837,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="JZAnimalDeerM" extends="animalTemplateHostile">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Mesh" value="#@modfolder:Resources/JZAnimalDeerM.unity3d?DeerMAnimalPrefab"/>
-	<property name="Tags" value="entity,animal,deer,stag,perkAT02,perkAT05"/>
+	<property name="Tags" value="entity,animal,deer,stag,perkAT02"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -8856,7 +8856,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="NavObject" value="animaltracking_stag" />
 	<property name="LookAtAngle" value="0"/>
 	<!-- Sound -->
-	<property name="SoundRandomTime" value="60.0"/>
+	<property name="SoundRandomTime" value="120.0"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerMRandom"/>
@@ -8920,7 +8920,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="JZAnimalDeerF" extends="animalTemplateTimid">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Mesh" value="#@modfolder:Resources/JZAnimalDeerF.unity3d?DeerFAnimalPrefab"/>
-	<property name="Tags" value="entity,animal,deer,perkAT02,perkAT05"/>
+	<property name="Tags" value="entity,animal,deer,perkAT02"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_deer"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
@@ -8940,7 +8940,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="60.0"/>
+	<property name="SoundRandomTime" value="120.0"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerFRandom"/>

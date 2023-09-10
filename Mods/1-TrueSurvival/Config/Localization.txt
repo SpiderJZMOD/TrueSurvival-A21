@@ -21,6 +21,8 @@ jz_BuffCampaignYourBedName,"Sleep on your bed"
 jz_BuffCampaignEscapeBaseName,"Get out the back Door"
 ObjectiveBuffSDX_keyword,"-"
 
+jz_BuffLazyTraitActiveDesc,"Ahh! Feels good to take a break for a min"
+jz_BuffRestlessTraitActiveDesc,"Ahh! Feels good to get moving"
 
 
 jz_BuffRadiationIconADesc,"I have been exposed to radiation and developed Radiation Poisoning. My body will not heal from this by itself, I will need to use [35bd00]Rad Pills[-] to lower my radiation and cure it. I can also take [35bd00]Potassium Iodide Tablets[-] to lessen my absorption of radiation by ½.\n\nEffects :\n-{cvar(.RadFatigueEffectDisplay:00.0)}% Fatigue Drain\n-{cvar(.RadFoodEffectDisplay:00.0)}% Food and Nutrition Absorption\n+{cvar($RadPoisoningFeverEffect:00.0)}° Player Temp"
@@ -29,9 +31,6 @@ jz_BuffRadiationIconCDesc,"My Radiation Poisoning is getting worse. My body will
 jz_BuffRadiationIconDDesc,"My Radiation Poisoning is getting worse. My body will not heal from this by itself, I will need to use [35bd00]Rad Pills[-] to lower my radiation and cure it. I can also take [35bd00]Potassium Iodide Tablets[-] to lessen my absorption of radiation by ½.\n\nEffects :\n-{cvar(.RadFatigueEffectDisplay:00.0)}% Fatigue Drain\n-{cvar(.RadFoodEffectDisplay:00.0)}% Food and Nutrition Absorption\n+{cvar($RadPoisoningFeverEffect:00.0)}° Player Temp"
 jz_BuffRadiationIconEDesc,"My Radiation Poisoning is getting worse. My body will not heal from this by itself, I will need to use [35bd00]Rad Pills[-] to lower my radiation and cure it. I can also take [35bd00]Potassium Iodide Tablets[-] to lessen my absorption of radiation by ½.\n\nEffects :\n-{cvar(.RadFatigueEffectDisplay:00.0)}% Fatigue Drain\n-{cvar(.RadFoodEffectDisplay:00.0)}% Food and Nutrition Absorption\n+{cvar($RadPoisoningFeverEffect:00.0)}° Player Temp"
 jz_BuffRadiationHealingDesc,"The meds are working. My Radiation Poisoning is getting better. I will need to continue taking [35bd00]Rad Pills[-] to lower it enough to cure it completly. I can also take [35bd00]Potassium Iodide Tablets[-] to lessen my absorption of radiation by ½.\n\nEffects :\n-{cvar(.RadFatigueEffectDisplay:00.0)}% Fatigue Drain\n-{cvar(.RadFoodEffectDisplay:00.0)}% Food and Nutrition Absorption\n+{cvar($RadPoisoningFeverEffect:00.0)}° Player Temp"
-
-
-
 jz_BuffRadiationNauseaADesc,"My Radiation Sickness is causing me to become Nauseous. I feel like I could puke. I could use some [35bd00]Goldenrod Tea[-] to temporarily calm my stomach but I will need to lower my Radiation Sickness to cure it\n\nEffects :\nOccasionally Puking, lowering Food and Water by 5 and all Nutrition Stats by .1"
 jz_BuffRadiationNauseaBDesc,"My Radiation Sickness is causing me to become Nauseous. I’ve treated it for now but it will need treatment again soon. It won't heal completely until I lower my Radiation Sickness"
 jz_BuffRadiationDizzyADesc,"My Radiation Sickness is causing me to occasionally get dizzy. I can use a [35bd00]Painkiller[-] to lessen the effect but I will need to lower my Radiation Sickness to cure it\n\nEffects :\nOccasionally Dizziness"
@@ -2650,6 +2649,8 @@ jz_SchematicPipeRifle,"Pipe Rifle Crafting Guide"
 
 
 PROGRESSION_________________________XML,PROGRESSION_________________________XML
+perkGreatHeistTimedChargeDesc,"There's some doors and safes even the greatest Thieves can't pick. For those you just blow them up. They really thought that could stop a thief. Learn how to craft a Timed Charge to blow open the toughest doors and safes."
+
 jz_perkPackMuleRank1LongDesc,"Who has time to organize their stuff perfectly? Carry 9 more lbs without being encumbered."
 jz_perkPackMuleRank2LongDesc,"You know it's in there somewhere. Carry an additional 18 more lbs without being encumbered."
 jz_perkPackMuleRank3LongDesc,"You know exactly where everything is. Carry 30 additional lbs without being encumbered."
@@ -2751,6 +2752,8 @@ jz_HobbiesGardeningDesc,"You always feel better with your hands in the ground. A
 jz_HobbiesGardeningLongDesc,"Effects :\nHarvest an additional produce from all crops\nUnique Recipes- Insecticide\nRecipes- Potato Seed, Corn Seed, Goldenrod Seed, Chrysanthemum Seed, Pumpkin Seed, Carrot Seed"
 jz_HobbieArcheryDesc,"When you were a child playing Cowboys and Indians you always picked the indian. A love or archery and a life time of practice have made you a specialist with bow."
 jz_HobbieArcheryLongDesc,"Effects :\n+50 level, Blunt Skill starting bonus\nIn The Eye Ability (Every 5th damaging hit made with a Bow without taking damage does x3 damage)"
+jz_HobbiesGymnastDesc,"Not even your parents could keep you from jumping off buildings and over fences. You just love the feeling of flying through the air."
+jz_HobbiesGymnastLongDesc,"Effects :\nAble to Jump 2 Blocks High\n ½ Fall Damage"
 jz_TraitStrongDesc,"Your large physique grants you these effects"
 jz_TraitStrongLongDesc,"Effects :\n50 More Max Carry Weight\n10% More Damage Useing Melee\n20% Faster Metabolism"
 jz_TraitWeakDesc,"Your small physique grants you these effects"
@@ -2846,14 +2849,11 @@ jz_LargePredGameHunterSkillDesc,"Hunt, kill and butcher Bears, Dire Wolfs and La
 Quest_________________________XML,Quest_________________________XML
 jzquest_FlashbangPt1,"Finding some help"
 jzquest_FlashbangPt1Desc,"I won't survive long on my own and with no supplies. I should make it a priority to find other survivors. Maybe they can help me or at the very least trade with me for supplies."
-
 jzquest_FlashbangPt2,"A Favor for a favor"
 jzquest_FlashbangPt2Desc,"[E6EA1F]Trader:[-] Hello Stranger. You dont look like you're doing too well and it doesn't look like you have a damn thing worth trading either. Hmmm. You don't even have a Flashbang grenade. How the hell have you survived this long? I'll tell you what, my currier dropped my package he was carrying when he ran into some trouble yesterday. It's not too far. If you would go collect it and return it to me I could show you how to craft them. Them damn things will save your life. Here I'll show you the area on your map."
 jzquest_FlashbangPt2Tip,"The Trader marked this spot on my map. I should look around here for his supplies"
-
 jzquest_FlashbangPt3,"Flashbangs"
 jzquest_FlashbangPt3Desc,"I found the traders supplies. I should get this back to them as soon as I can so I can learn how to craft a Flashbang Grenade."
-
 jzquest_StoveRepairKitPt1,"Oven Repair Kits"
 jzquest_StoveRepairKitPt1Sub,"Learn to repair ovens"
 jzquest_StoveRepairKitPt1Desc,"You learned that a survivor left an oven repair manual in this building. You should go there and see if you can find it.A Oven would allow you to cook much better foods."

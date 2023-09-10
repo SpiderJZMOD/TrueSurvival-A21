@@ -1000,17 +1000,20 @@
 			<property name="phase" value="2" />
 			<property name="nav_object" value="rally" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffFlashBangSpawnEvent" phase="4" /> 
-		<objective type="FetchKeep" id="jz_QIFBTraderSupplies" value="1" phase="4">
+		<action type="GameEvent" >
+            <property name="event" value="TS_FlashBang_Quest_Supplies"/>
+            <property name="phase" value="3"/>
+        </action>
+		<objective type="FetchKeep" id="jz_QIFBTraderSupplies" value="1" phase="3">
 			<modifier type="TrackBlocks">
 				<property name="block_index_name" value="quest_trader_supplies"/>
 				<property name="nav_object" value="fetch_container"/>
 				<property name="track_distance" value="10"/>
 			</modifier>
 		</objective>
-		<action type="SpawnEnemy" id="zombieMoe" value="5" phase="4"/>
+		<action type="SpawnEnemy" id="zombieMoe" value="5" phase="3"/>
 		<objective type="StayWithin">
-			<property name="phase" value="4"/>
+			<property name="phase" value="3"/>
 			<property name="radius" value="30"/>
 		</objective>
 		
@@ -1041,6 +1044,72 @@
 		
 		<reward type="Item" id="jz_Flashbang" value="1" />
 		<reward type="Recipe" id="jz_Flashbang" />
+		<reward type="Exp" value="200"/>
+	</quest>
+	
+	<quest id="jzquest_FlashbangPt2Redo">
+		<property name="name_key" value="jzquest_FlashbangPt2"/>
+		<property name="subtitle_key" value="jzquest_FlashbangPt2"/>
+		<property name="description_key" value="jzquest_FlashbangPt2Desc"/>
+		<property name="icon" value="ImprovisedIcon"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+				
+		<objective type="RandomGoto" phase="1">
+			<property name="distance" value="100-800"/>
+			<property name="completion_distance" value="15"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2" />
+			<property name="nav_object" value="rally" />
+		</objective>
+		<action type="GameEvent" >
+            <property name="event" value="TS_FlashBang_Quest_Supplies"/>
+            <property name="phase" value="3"/>
+        </action>
+		<objective type="FetchKeep" id="jz_QIFBTraderSupplies" value="1" phase="3">
+			<modifier type="TrackBlocks">
+				<property name="block_index_name" value="quest_trader_supplies"/>
+				<property name="nav_object" value="fetch_container"/>
+				<property name="track_distance" value="10"/>
+			</modifier>
+		</objective>
+		<action type="SpawnEnemy" id="zombieMoe" value="5" phase="3"/>
+		<objective type="StayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="30"/>
+		</objective>
+		
+		<reward type="Quest" id="jzquest_FlashbangPt3Redo" />
+		<reward type="Exp" value="200"/>
+	</quest>
+	
+	<quest id="jzquest_FlashbangPt3Redo">
+		<property name="name_key" value="jzquest_FlashbangPt3"/>
+		<property name="subtitle_key" value="jzquest_FlashbangPt3"/>
+		<property name="description_key" value="jzquest_FlashbangPt3Desc"/>
+		<property name="icon" value="ui_game_symbol_map_trader"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+		<action type="GiveBuffSDX, SCore" value="jz_BuffFlashBangTurnInEvent" phase="2" /> 
+		
+		<reward type="Item" id="jz_Flashbang" value="1" />
 		<reward type="Exp" value="200"/>
 	</quest>
 	<!-- ************************************************************ JZMOD CRAFTING QUALITY********************************************************* -->

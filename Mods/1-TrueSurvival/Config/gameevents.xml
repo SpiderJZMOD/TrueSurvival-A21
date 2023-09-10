@@ -9545,7 +9545,6 @@
 		</action>
 	</action_sequence>	
 
-
 	<action_sequence name="TS_Wipe_Quest">
 		<action class="FailQuest">
 			<property name="phase" value="1" />

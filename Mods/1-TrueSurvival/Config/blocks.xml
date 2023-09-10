@@ -85107,11 +85107,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="jz_QBFBTraderSupplies">
-	<property name="Extends" value="cntBackpack01"/>
+	<property name="Extends" value="cntShippingCrateHero"/>
+	<property name="Class" value="Loot"/>
 	<property name="LootList" value="FBTraderSupplies"/>
 	<property name="IndexName" value="quest_trader_supplies"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Model" value="@:Entities/LootContainers/duffle01Prefab.prefab"/>
 	<property name="SortOrder1" value="B113"/>
 	<property name="SortOrder2" value="1702"/>
 	<property name="Tags" value="buriedTreasure"/>
