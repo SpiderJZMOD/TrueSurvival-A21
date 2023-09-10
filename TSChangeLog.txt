@@ -1,3 +1,14 @@
 ********************************************True Survival Change Log*******************************************
 9/9/2023 A21.1 Build #1.16
 -A21.1 True Survival Build
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+9/10/2023 A21.1 Build #1.17
+-Fixed Flashbang quest 
+-Added redo option for Flashbang quest on Research Desk
+-Fixed Medical Infection Healing icon
+-Fixed Hunting Skills counting correct animal hits pre skill
+-Doubled time between deer sound
+-Fixed reported missing icons
+-Fixed Gymnast description
+-Fixed Great Heist Timed Charge description
+-Fixed Lazy and Restless buff descriptions
