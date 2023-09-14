@@ -85107,7 +85107,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="jz_QBFBTraderSupplies">
-	<property name="Extends" value="cntShippingCrateHero"/>
+	<property name="Extends" value="cntShippingCrateHero" param1="DowngradeBlock"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="FBTraderSupplies"/>
 	<property name="IndexName" value="quest_trader_supplies"/>

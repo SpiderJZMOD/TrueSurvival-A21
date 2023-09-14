@@ -2288,7 +2288,7 @@ If there is no hit the default quality is used.
 	<item name="jz_IronCandleSticks" />
 	<item name="jz_IronToys" />
 	<item name="jz_IronClothesIron" />
-	<item name="jz_IronDumdBell" />
+	<item name="jz_IronDumbBell" />
 	<item name="jz_IronTweezers" />
 	<item name="drinkCanEmpty"/>
 	<item name="resourceTrophy3"/>
@@ -4800,7 +4800,6 @@ If there is no hit the default quality is used.
 	<item name="jz_BookLightArmor"/>
 	<item name="jz_BookHeavyArmor"/>
 	<item name="jz_BookWellInsulated"/>
-	<item name="jz_BookFlurryOfBlows"/>
 	<item name="jz_BookLuckyLooter"/>
 	<item name="jz_BookSalvageOperations"/>
 	<item name="jz_BookPackMule"/>
@@ -4945,6 +4944,7 @@ If there is no hit the default quality is used.
     <item name="jz_SchematicNutAndBolt" />
 	<item name="jz_SchematicScrewdriver" />
 	<item name="jz_SchematicIronDoors" />
+	<item name="jz_SchematicRollUpDoor" />
 	<item name="jz_SchematicNails" />
     <item name="jz_SchematicIronShaping" />
 	<item name="jz_SchematicDrawBridge" />
@@ -5328,6 +5328,7 @@ If there is no hit the default quality is used.
     <item name="jz_SchematicWoodenChest"  />
     <item name="jz_Schematic9MM"  />
     <item name="jz_SchematicShotgunShell"  />
+	<item name="jz_SchematicRollUpDoor" />
     <item name="jz_SchematicIronDoors"  />
     <item name="jz_SchematicSteelSafe"  />
     <item name="jz_SchematicCeilingLight"  />
@@ -12645,7 +12646,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- jz_QBFBTraderSupplies -->
-<lootcontainer name="FBTraderSupplies" count="1" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPrimitiveItemsTemplate" destroy_on_close="empty"  >
+<lootcontainer name="FBTraderSupplies" count="1" size="6,2" sound_open="SupplyDrops/open_supply_crate" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPrimitiveItemsTemplate" destroy_on_close="empty"  >
 	<item name="jz_QIFBTraderSupplies"/>
 </lootcontainer>
 </set>

@@ -338,10 +338,10 @@
 		<property name="difficulty" value="veryeasy"/>
 		<property name="shareable" value="false" />
 		
-        <objective type="FetchKeep" id="jz_QIDeadBrokenWalkieTalkie" value="1" phase="1"/>
+        <objective type="FetchKeep" id="jz_QIDeadWalkieTalkie" value="1" phase="1"/>
 		
 		<reward type="Exp" value="250"/>
-        <reward type="Recipe" id="jz_QIDeadBrokenWalkieTalkie" />
+        <reward type="Recipe" id="jz_QIDeadWalkieTalkie" />
 		<reward type="Recipe" id="jz_QIPoweredWalkieTalkie" />
        	<reward type="Quest" id="jzquest_CampaignPt3" />
 	</quest>
@@ -1040,8 +1040,10 @@
 			<property name="nav_object" value="return_to_trader" />
 			<property name="use_closest" value="true" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffFlashBangTurnInEvent" phase="2" /> 
-		
+		<action type="GameEvent" >
+            <property name="event" value="TS_FlashBang_Quest_TurnIn"/>
+            <property name="phase" value="2"/>
+        </action>
 		<reward type="Item" id="jz_Flashbang" value="1" />
 		<reward type="Recipe" id="jz_Flashbang" />
 		<reward type="Exp" value="200"/>
@@ -1107,9 +1109,13 @@
 			<property name="nav_object" value="return_to_trader" />
 			<property name="use_closest" value="true" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffFlashBangTurnInEvent" phase="2" /> 
 		
-		<reward type="Item" id="jz_Flashbang" value="1" />
+		<action type="GameEvent" >
+            <property name="event" value="TS_FlashBang_Quest_TurnIn"/>
+            <property name="phase" value="2"/>
+        </action>
+		
+		<reward type="Recipe" id="jz_Flashbang" />
 		<reward type="Exp" value="200"/>
 	</quest>
 	<!-- ************************************************************ JZMOD CRAFTING QUALITY********************************************************* -->

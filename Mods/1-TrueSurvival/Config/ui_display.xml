@@ -80,7 +80,7 @@
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
-			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
@@ -113,7 +113,7 @@
 			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
-			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDeepCuts,admin"/>
 			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>

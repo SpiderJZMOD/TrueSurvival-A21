@@ -14785,34 +14785,6 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireOneBuffHack" name_key="jz_BuffFireOneBuffHack" hidden="true" >
-		<stack_type value="ignore"/>
-		<duration value=".5"/>
-		<effect_group name="Fire One Buff Hack">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LacerationBuffPicker" operation="set" value="randomint(1,10)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFoot">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightFoot">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftLeg">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightLeg">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftArm">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightArm">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="6"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftHand">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="7"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightHand">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="8"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomach">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="9"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationNeck">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="10"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LacerationBuffPicker" operation="set" value="0"/>
-		</effect_group>
-	</buff>
 	<!-- JZMOD LACERATIONS LEFT FOOT-->
 	<buff name="jz_BuffLacerationLeftFootIconA" name_key="Laceration Left Foot" description_key="jz_BuffLacerationPart1BleedDesc" tooltip_key="Thats going to need Stitches" remove_on_death="true" icon="LeftFootLaceration" icon_blink="true">
 		<stack_type value="ignore"/>
@@ -38585,6 +38557,7 @@
 			<!-- Icon Triggers -->
 			<requirement name="CVarCompare" cvar="$RadPillHealingTime" operation="LTE" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffRadiationIconA">
+					<requirement name="CVarCompare" cvar="$PlayerRadiaton" operation="GTE" value="1"/>
 					<requirement name="CVarCompare" cvar="$PlayerRadiaton" operation="LT" value="20"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffRadiationIconB">
 					<requirement name="CVarCompare" cvar="$PlayerRadiaton" operation="GTE" value="20"/>

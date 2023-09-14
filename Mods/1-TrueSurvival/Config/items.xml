@@ -13371,6 +13371,7 @@ perkNightStalkerSilentNight
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="45"/>
+	<property name="EconomicValue" value="50"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="EquipSlot" value="Eyes"/>
@@ -13388,23 +13389,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<display_value name="TSItemWeight" value=".1"/><!-- JZMOD -->
-<!--
-		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1">
-			<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="88"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VarTest" operation="setvalue" value="randomfloat(12,13)"/>
-		</passive_effect>
-
-		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2">
-			<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="GT" value="88"/>
-			<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="99"/>
-		</passive_effect>
-
-		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="3">
-			<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="GT" value="99"/>
-		</passive_effect>
--->
-		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
 	</effect_group>
 </item>
 
@@ -13415,12 +13399,12 @@ perkNightStalkerSilentNight
 	<property name="CustomIconTint" value="30,30,30"/>
 	<property name="Tags" value="head,clothing,canHaveCosmetic,noMods"/>
 	<property name="ItemWeight" value=".1" /><!-- JZMOD -->
+	<property name="EconomicValue" value="50"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="30,30,30"/>
 	</property>
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
 		<display_value name="TSItemWeight" value=".1"/><!-- JZMOD -->
 	</effect_group>
 </item>
@@ -13430,6 +13414,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mleather"/>
 	<property name="DisplayType" value="clothingAviatorGoggles"/>
 	<property name="ItemWeight" value="1" /><!-- JZMOD -->
+	<property name="EconomicValue" value="500"/>
 	<property class="UMA">
 		<property name="Mesh" value="aviator_goggles"/>
 		<property name="Overlay0" value="aviator_goggles"/>
@@ -13465,6 +13450,7 @@ perkNightStalkerSilentNight
 	<!-- JZMOD -->
 	<property name="DescriptionKey" value="apparelNerdGlassesDesc"/>
 	<property name="ItemWeight" value=".1" />
+	<property name="EconomicValue" value="500"/>
 	<property class="UMA">
 		<property name="Mesh" value="specs"/>
 		<property name="Overlay0" value="specs"/>
@@ -19812,7 +19798,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceLeather"/>
 	<property name="Weight" value="5"/>
-	<property name="RepairAmount" value="150"/>
+	<property name="RepairAmount" value="50"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="22"/>
@@ -28927,7 +28913,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="250"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="ItemWeight" value="10" />
+	<property name="ItemWeight" value="20" />
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
     <property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
@@ -28968,7 +28954,7 @@ perkNightStalkerSilentNight
 
 
 <item name="jz_MeleePlank"> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Group" value="Clubs"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMelee2X4.unity3d?Melee2X4Prefab" />
@@ -29027,7 +29013,7 @@ perkNightStalkerSilentNight
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -29056,7 +29042,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleePlankSpiked">
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMelee2X4Spiked.unity3d?Melee2X4SpikedPrefab" />
     <property name="DescriptionKey" value="jz_MeleePlankSpikedDesc"/>
 	<property name="ItemWeight" value="4.5" />
@@ -29066,7 +29052,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="15.5"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -29095,7 +29081,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeTableLegSpiked"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMeleeTableLegSpiked.unity3d?MeleeTableLegSpikedPrefab" />
     <property name="DescriptionKey" value="jz_MeleeTableLegSpikedDesc"/>
 	<property name="ItemWeight" value="4.5" />
@@ -29105,7 +29091,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="15.5"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -29134,7 +29120,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeTableLeg"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMeleeTableLeg.unity3d?MeleeTableLegPrefab" />
     <property name="DescriptionKey" value="jz_MeleeTableLegDesc"/>
 	<property name="ItemWeight" value="4" />
@@ -29142,7 +29128,7 @@ perkNightStalkerSilentNight
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -29171,7 +29157,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeRebar"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMeleeRebar.unity3d?MeleeRebarPrefab" />
     <property name="DescriptionKey" value="jz_MeleeRebarDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader75_999"/>
@@ -29182,7 +29168,7 @@ perkNightStalkerSilentNight
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -29211,7 +29197,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleePipe"> 
 	<property name="Extends" value="jz_MeleePlank"/>
-	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMeleePipe.unity3d?MeleePipePrefab" />
     <property name="DescriptionKey" value="jz_MeleePipeDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader75_999"/>
@@ -29222,7 +29208,7 @@ perkNightStalkerSilentNight
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="17.4" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
@@ -30589,6 +30575,9 @@ perkNightStalkerSilentNight
 
 <item name="jz_Flashbang">
 	<property name="Extends" value="jz_MasterFood" />
+	<property name="HoldType" value="57"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
 	<property name="DescriptionKey" value="jz_FlashbangDesc" />
 	<property name="ItemWeight" value="2" />
 	<property name="Group" value="Science,Medical" />
@@ -30600,7 +30589,7 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="JZMOD SHRAPNEL WOUND">
 		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="jz_BuffFlashBangEffect"/>
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="jz_BuffFlashBangEffect"/>
-       	
+       	<display_value name="dExRadius" value="7"/>
 		<display_value name="TSItemWeight" value="2"/>
 	</effect_group>
 </item>
@@ -38793,7 +38782,7 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="jz_IronDumdBell">
+<item name="jz_IronDumbBell">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_IronJunkDesc" />
 	<property name="CustomIcon" value="dumbBell" />
@@ -43749,7 +43738,7 @@ perkNightStalkerSilentNight
     <property name="DescriptionKey" value="jz_QIBugOutBagDesc"/>
 	<property name="ItemWeight" value="6" />
 	<property class="Action0">
-		<property name="Create_item" value="medicalFirstAidKit,candle,jz_FoodMRESmall,jz_DrinkCleanOuncesOfWater,jz_QIDeadBrokenWalkieTalkie,meleeWpnBladeT1HuntingKnife"/>
+		<property name="Create_item" value="medicalFirstAidKit,candle,jz_FoodMRESmall,jz_DrinkCleanOuncesOfWater,jz_QIDeadWalkieTalkie,meleeWpnBladeT1HuntingKnife"/>
 		<property name="Create_item_count" value="1,2,1,32,1,1"/>
 	</property>
 </item>
@@ -43845,29 +43834,11 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="jz_QIDeadBrokenWalkieTalkie">
+<item name="jz_QIDeadWalkieTalkie">
 	<property name="Extends" value="jz_MasterItem"/>
 	<property name="Stacknumber" value="1" />
 	<property name="CustomIcon" value="Walkie"/>
-	<property name="DescriptionKey" value="jz_QIDeadBrokenWalkieTalkieDesc"/>
-	<property name="ItemWeight" value=".8" />
-	<effect_group tiered="false" >
-		<display_value name="TSItemWeight" value=".8"/>
-	</effect_group>
-</item>
-
-<item name="jz_QIPoweredBrokenWalkieTalkie">
-	<property name="Extends" value="jz_MasterItem"/>
-	<property name="Stacknumber" value="1" />
-	<property name="CustomIcon" value="Walkie"/>
-	<property name="DescriptionKey" value="jz_QIPoweredBrokenWalkieTalkieDesc"/>
-	<property name="Spoilable" value="true" />
-    <property name="ShowQuality" value="false"/>
-    <property name="SpoiledItem" value="jz_QIDeadBrokenWalkieTalkie" />
-    <property name="TickPerLoss" value="150" />
-    <property name="SpoilageMax" value="1000" />
-    <property name="SpoilagePerTick" value="1" />
-    <property name="QualityTierColor" value="4" />
+	<property name="DescriptionKey" value="jz_QIDeadWalkieTalkieDesc"/>
 	<property name="ItemWeight" value=".8" />
 	<effect_group tiered="false" >
 		<display_value name="TSItemWeight" value=".8"/>
@@ -43882,16 +43853,6 @@ perkNightStalkerSilentNight
 	<property name="ItemWeight" value=".8" />
 	<effect_group tiered="false" >
 		<display_value name="TSItemWeight" value=".8"/>
-	</effect_group>
-</item>
-
-<item name="jz_QIWalkieTalkieParts">
-	<property name="Extends" value="jz_MasterItem"/>
-	<property name="Stacknumber" value="1" />
-	<property name="DescriptionKey" value="jz_QIWalkieTalkiePartsDesc"/>
-	<property name="ItemWeight" value=".1" />
-	<effect_group tiered="false" >
-		<display_value name="TSItemWeight" value=".1"/>
 	</effect_group>
 </item>
 
@@ -44335,22 +44296,6 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifySkillSDX, SCore" tag="perkWellInsulated" operation="add" value="1"/>
-		<display_value name="TSItemWeight" value="1"/>
-	</effect_group>
-</item>
-
-<item name="jz_BookFlurryOfBlows"> 
-	<property name="Extends" value="bookWasteTreasuresHoney"/>
-	<property name="DescriptionKey" value="jz_BookFlurryOfBlowsDesc"/>
-	<property name="Unlocks" value="perkFlurryOfBlows"/>
-	<property name="Group" value="Books,BooksOnly"/>
-	<property name="TraderStageTemplate" value="jz_Trader450_999"/>
-	<property class="Action0">
-		<requirement name="ProgressionLevel" progression_name="perkFlurryOfBlows" operation="LT" value="3"/>
-	</property>  
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifySkillSDX, SCore" tag="perkFlurryOfBlows" operation="add" value="1"/>
 		<display_value name="TSItemWeight" value="1"/>
 	</effect_group>
 </item>
@@ -49140,7 +49085,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="Mspicy"/>
 	<property name="Weight" value="3"/>
-	<property name="DescriptionKey" value="jz_SpicyTexasPeteDesc" />
+	<property name="DescriptionKey" value="jz_SpicyDesc" />
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".5" />
 	<effect_group tiered="false">
@@ -49152,7 +49097,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="Mspicy"/>
 	<property name="Weight" value="3"/>
-	<property name="DescriptionKey" value="jz_SpicySrirachaDesc" />
+	<property name="DescriptionKey" value="jz_SpicyDesc" />
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".5" />
 	<effect_group tiered="false">
@@ -49165,7 +49110,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mspicy"/>
 	<property name="Weight" value="1"/>
 	<property name="UnlockedBy" value="jz_SchematicHotSauce,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_SpicyHotSauceDesc" />
+	<property name="DescriptionKey" value="jz_SpicyDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".5" />
@@ -49179,7 +49124,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mcondiments"/>
 	<property name="Weight" value="3"/>
 	<property name="UnlockedBy" value="jz_SchematicCondiments,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_CondimentKetchupDesc" />
+	<property name="DescriptionKey" value="jz_CondimentDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".8" />
@@ -49192,7 +49137,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="Mcondiments"/>
 	<property name="Weight" value="3"/>
-	<property name="DescriptionKey" value="jz_CondimentMustardDesc" />
+	<property name="DescriptionKey" value="jz_CondimentDesc" />
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".8" />
 	<effect_group tiered="false">
@@ -49205,7 +49150,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mcondiments"/>
 	<property name="Weight" value="2"/>
 	<property name="UnlockedBy" value="jz_SchematicCondiments,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_CondimentMayoDesc" />
+	<property name="DescriptionKey" value="jz_CondimentDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".8" />
@@ -49219,7 +49164,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mcondiments"/>
 	<property name="Weight" value="1"/>
 	<property name="UnlockedBy" value="jz_SchematicCondiments,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_CondimentPicoDeGalloDesc" />
+	<property name="DescriptionKey" value="jz_CondimentDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".5" />
@@ -49232,7 +49177,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="Msauces"/>
 	<property name="Weight" value="3"/>
-	<property name="DescriptionKey" value="jz_SauceBBQDesc" />
+	<property name="DescriptionKey" value="jz_SauceDesc" />
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".8" />
 	<effect_group tiered="false">
@@ -49245,7 +49190,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Msauces"/>
 	<property name="Weight" value="3"/>
 	<property name="UnlockedBy" value="jz_SchematicSauce,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_SauceMarinaraDesc" />
+	<property name="DescriptionKey" value="jz_SauceDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".7" />
@@ -49259,7 +49204,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Msauces"/>
 	<property name="Weight" value="1"/>
 	<property name="UnlockedBy" value="jz_SchematicSauce,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_SauceHollandaiseDesc" />
+	<property name="DescriptionKey" value="jz_SauceDesc" />
 	<property name="Group" value="StoveTop"/>
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value=".4" />
@@ -49273,7 +49218,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Msauces"/>
 	<property name="Weight" value="1"/>
 	<property name="UnlockedBy" value="jz_SchematicSauce,jz_Chef"/>
-	<property name="DescriptionKey" value="jz_SauceFruitGlazeDesc" />
+	<property name="DescriptionKey" value="jz_SauceDesc" />
 	<property name="Group" value="StoveTop"/><property name="DisplayType" value="TSItemDisplay"/>
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -51786,7 +51731,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv1">
 	<property name="Extends" value="apparelCowboyHat" />
 	<property name="CustomIcon" value="jz_ClothingRuinedCowboyHat"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyHat">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -51806,7 +51751,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv2">
 	<property name="Extends" value="apparelCowboyHat" />
 	<property name="CustomIcon" value="jz_ClothingRuinedCowboyHat"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyHat">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -51828,7 +51773,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv3">
 	<property name="Extends" value="apparelCowboyHat" />
 	<property name="CustomIcon" value="apparelCowboyHat"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader1_999"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyHat">
@@ -51851,7 +51796,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv4">
 	<property name="Extends" value="apparelCowboyHat" />
 	<property name="CustomIcon" value="apparelCowboyHat"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyHat">
@@ -51874,7 +51819,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv5">
 	<property name="Extends" value="apparelCowboyHat" />
 	<property name="CustomIcon" value="apparelCowboyHat"/>		
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear,jz_HobbiesSewing"/>
@@ -51898,7 +51843,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyHatLv6">
 	<property name="Extends" value="apparelCowboyHat"/>
 	<property name="CustomIcon" value="apparelCowboyHat"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyHat">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -53796,7 +53741,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv1">
 	<property name="Extends" value="apparelCowboyBoots" />
 	<property name="CustomIcon" value="jz_ClothingRuinedCowboyBoots"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyBoots">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -53816,7 +53761,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv2">
 	<property name="Extends" value="apparelCowboyBoots"/>
 	<property name="CustomIcon" value="jz_ClothingRuinedCowboyBoots"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyBoots">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -53838,7 +53783,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv3">
 	<property name="Extends" value="apparelCowboyBoots" />
 	<property name="CustomIcon" value="apparelCowboyBoots"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyBoots">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -53860,7 +53805,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv4">
 	<property name="Extends" value="apparelCowboyBoots" />
 	<property name="CustomIcon" value="apparelCowboyBoots"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyBoots">
@@ -53883,7 +53828,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv5">
 	<property name="Extends" value="apparelCowboyBoots" />
 	<property name="CustomIcon" value="apparelCowboyBoots"/>		
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property name="UnlockedBy" value="perkNeedleAndThreadFootwear,jz_HobbiesSewing"/>
@@ -53907,7 +53852,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingCowboyBootsLv6">
 	<property name="Extends" value="apparelCowboyBoots"/>
 	<property name="CustomIcon" value="apparelCowboyBoots"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="CowboyBoots">
 		<passive_effect name="ModSlots" operation="base_set" value="0" tier="1,6"/>
@@ -55250,7 +55195,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv1">
 	<property name="Extends" value="apparelCoatLeatherPoncho" />
 	<property name="CustomIcon" value="jz_ClothingRuinedCoatLeatherPoncho"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherPoncho">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsPoncho"/>
@@ -55274,7 +55219,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv2">
 	<property name="Extends" value="apparelCoatLeatherPoncho"/>
 	<property name="CustomIcon" value="jz_ClothingRuinedCoatLeatherPoncho"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherPoncho">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsPoncho"/>
@@ -55300,7 +55245,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv3">
 	<property name="Extends" value="apparelCoatLeatherPoncho" />
 	<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherPoncho">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsPoncho"/>
@@ -55326,7 +55271,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv4">
 	<property name="Extends" value="apparelCoatLeatherPoncho" />
 	<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherPoncho">
@@ -55353,7 +55298,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv5">
 	<property name="Extends" value="apparelCoatLeatherPoncho" />
 	<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>		
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property name="UnlockedBy" value="jz_SchematicCoatLeatherPoncho,jz_HobbiesSewing"/>
@@ -55381,7 +55326,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherPonchoLv6">
 	<property name="Extends" value="apparelCoatLeatherPoncho"/>
 	<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherPoncho">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsPoncho"/>
@@ -55405,7 +55350,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv1">
 	<property name="Extends" value="apparelCoatLeatherDuster" />
 	<property name="CustomIcon" value="jz_ClothingRuinedCoatLeatherDuster"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherDuster">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsDuster"/>
@@ -55429,7 +55374,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv2">
 	<property name="Extends" value="apparelCoatLeatherDuster"/>
 	<property name="CustomIcon" value="jz_ClothingRuinedCoatLeatherDuster"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherDuster">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsDuster"/>
@@ -55455,7 +55400,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv3">
 	<property name="Extends" value="apparelCoatLeatherDuster" />
 	<property name="CustomIcon" value="apparelCoatLeatherDuster"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherDuster">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsDuster"/>
@@ -55481,7 +55426,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv4">
 	<property name="Extends" value="apparelCoatLeatherDuster" />
 	<property name="CustomIcon" value="apparelCoatLeatherDuster"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherDuster">
@@ -55508,7 +55453,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv5">
 	<property name="Extends" value="apparelCoatLeatherDuster" />
 	<property name="CustomIcon" value="apparelCoatLeatherDuster"/>		
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property name="UnlockedBy" value="perkNeedleAndThreadDusters,jz_HobbiesSewing"/>
@@ -55536,7 +55481,7 @@ perkNightStalkerSilentNight
 <item name="jz_ClothingLeatherDusterLv6">
 	<property name="Extends" value="apparelCoatLeatherDuster"/>
 	<property name="CustomIcon" value="apparelCoatLeatherDuster"/>	
-	<property name="RepairTools" value="resourceCloth"/>
+	<property name="RepairTools" value="resourceLeather"/>
 	<property name="ShowQuality" value="true"/>
 	<effect_group name="LeatherDuster">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsDuster"/>
@@ -57668,7 +57613,6 @@ perkNightStalkerSilentNight
 			<passive_effect name="EntityDamage" operation="perc_add" value="4" />
 			<display_value name="dEntityDamageSneak" value="4"/>
 	</effect_group>
-	
 </item>
 
 <item name="jz_MeleeShivMetal">
@@ -57761,7 +57705,6 @@ perkNightStalkerSilentNight
 			<passive_effect name="EntityDamage" operation="perc_add" value="4" />
 			<display_value name="dEntityDamageSneak" value="4"/>
 	</effect_group>
-	
 </item>
 
 <item name="jz_MeleeCleaver">
@@ -57874,7 +57817,7 @@ perkNightStalkerSilentNight
 	<property name="ShowQuality" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
 	<property name="SoundHolster" value="weapon_holster"/>
-	<property name="DescriptionKey" value="jz_meleeWpnBladeT3MacheteDesc"/> 
+	<property name="DescriptionKey" value="jz_MeleeParangMacheteDesc"/> 
 	<property name="ItemWeight" value="2" />
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>

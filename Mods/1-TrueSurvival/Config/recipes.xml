@@ -801,17 +801,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_QIPoweredWalkieTalkie" count="1" craft_time="5" craft_exp_gain="50" tags="learnable">
-	<ingredient name="jz_QIWalkieTalkieParts" count="1" />
-	<ingredient name="jz_QIDeadBrokenWalkieTalkie" count="1" />
+	<ingredient name="jz_QIDeadWalkieTalkie" count="1" />
 	<ingredient name="jz_CBatterie" count="3" />
 </recipe>
 
-<recipe name="jz_QIPoweredBrokenWalkieTalkie" count="1" craft_time="5" craft_exp_gain="50" tags="learnable">
-	<ingredient name="jz_QIDeadBrokenWalkieTalkie" count="1" />
-	<ingredient name="jz_CBatterie" count="3" />
-</recipe>
-
-<recipe name="jz_QIDeadBrokenWalkieTalkie" count="1" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIDeadWalkieTalkie" count="1" craft_time="5" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
