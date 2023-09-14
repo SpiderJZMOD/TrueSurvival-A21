@@ -12,3 +12,12 @@
 -Fixed Gymnast description
 -Fixed Great Heist Timed Charge description
 -Fixed Lazy and Restless buff descriptions
+//////////////////////////////////////////////////////////
+9/13/2023 A21.1 Build #1.18
+-Fixed Favor for a favor quest
+-Changed Radiation Poisoning to not show until 1%
+-Fixed head equipments trader prices
+-Removed unused Flurry of Blows Skill books from trader and loot
+-Changed Flashbangs hand mesh
+-Fixed all reported missing descriptions, icons and names
+-Changed leather clothing to repair with leather
