@@ -56,9 +56,5 @@
 			</Downloads>
 		</Server>
 		
-		<Server name="My mod -experimental" >
-			<Description>This is my experimental version! Play at your own risk!</Description>
-			<!-- Include the other attributes from above in here too! -->
-		</Server>
 	</ServerGroup>
 </Servers>
