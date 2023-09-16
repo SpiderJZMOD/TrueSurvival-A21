@@ -4,7 +4,7 @@
 	<!-- If logo is not specified, the mod launcher's default will be shown. -->
 	<ServerGroup Name="Spider" Logo="" Description="I made cool mods!">
 		<!-- Logo is a direct link to a jpg /png file. Default image dimension is 2064x452 -->
-		<Server Name="True Survival A21.1" Logo="https://">
+		<Server Name="True Survival A21" Logo="https://">
 			<Description>
 			This mod was designed to walk the line between realism and fun engaging gameplay. Where realism became grindy or not fun I tried to aim for engaging gameplay mechanics with a focus on risk and reward and a strong sense of consequences. Death in this mod is permanent with few exceptions. In this mod when death occurs your player data is wiped and you will respawn as a fresh new player.
 			Required SP/Coop Game Settings
