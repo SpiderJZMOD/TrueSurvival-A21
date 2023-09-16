@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-   <ServerGroup Name="True Survival" Logo="" Description="True Survival A21.1">
-        <Server Name="True Survival A21.1" Logo="">
-            <Description>True Survival 21.1
-			-----------------------------------
-            Required SP/Coop Game Settings
+	<!-- Logo is a direct link to a jpg /png file. This logo will be used if an individual mod does not have one. -->
+	<!-- If logo is not specified, the mod launcher's default will be shown. -->
+	<ServerGroup Name="Mod Group" Logo="" Description="I made cool mods!">
+		<!-- Logo is a direct link to a jpg /png file. Default image dimension is 2064x452 -->
+		<Server Name="Mod-Stable" Logo="https://">
+			<Description>
+			This mod was designed to walk the line between realism and fun engaging gameplay. Where realism became grindy or not fun I tried to aim for engaging gameplay mechanics with a focus on risk and reward and a strong sense of consequences. Death in this mod is permanent with few exceptions. In this mod when death occurs your player data is wiped and you will respawn as a fresh new player.
+			Required SP/Coop Game Settings
             -RWG Maps only
             -World Size = 8192x8192 (or bigger)
             -Difficulty = Adventurer 
@@ -20,14 +23,65 @@
             -Loot Respawn Timer = Disabled
 			-Drop all on death
             -Bloodmoon Count = 64 (or as much as your PC can take)
-            </Description>
-            <DownloadMode>Clone</DownloadMode>
-            <Address></Address>                    
-            <Port></Port>    
-            <ReleaseNotes>https://discord.com/channels/975478016249561119/975480875317862420</ReleaseNotes>
-            <Downloads>
-                <Download>https://github.com/SpiderJZMOD/TrueSurvival-A21</Download>
-            </Downloads>
-        </Server>
-    </ServerGroup>
+			</Description>
+			
+			<!-- Who made -->
+			<Author>Spider</Author>
+			
+			<!-- 
+				This forces the mod launcher to make a copy of the game for the mod. 
+				Mod that use BepInEx, and relative paths should use this setting.
+				Remove Deploy or change it to Partial to skip that step
+			-->
+			<Deploy>Full</Deploy>
+			
+			<!-- This is the alpha version you last tested with -->
+			<!-- You can use Latest if you just want the current one -->
+			<Version>alpha21.1</Version>
+			
+			<!-- Have a discord you want people to join? -->
+			<Discord>https://discord.com/channels/975478016249561119/975480875317862420/975486560717930536</Discord>
+			<!-- Got a website -->
+	        <WebSite></WebSite>
+			
+			<!-- Twitter? -->
+            <Twitter></Twitter>
+			
+			<!-- Want to give people an option to donate? -->
+            <Donate>https://www.paypal.com/paypalme/JohnZidar</Donate>		
+
+			<!-- Got some release notes you want people to view? -->
+			<ReleaseNotes>https://discord.com/channels/975478016249561119/975482871819157574/1150442304247701595</ReleaseNotes>
+			
+			<!-- Only the first download is used -->
+			<Downloads>
+				<Download>https://github.com/SpiderJZMOD/TrueSurvival-A21</Download>
+				<!-- Examples 
+				Darkness Falls, using the master branch
+				<Download>https://KhaineUK@dev.azure.com/KhaineUK/DarknessFallsA20/_git/DarknessFallsA20?Branch=master</Download>
+				
+				Apocalypse Now on gitlab
+				<Download>https://gitlab.com/killerbunny264/Apoc-Now-V3-1-Stable</Download>
+				
+				Winter Project on Github
+				<Download>https://github.com/SphereII/WinterProject-A20</Download>
+				
+				Begining with V5 of the mod launcher, it can also support Github / GitLab Releases.
+				The Mod Launcher will download the first link in the Release.
+				Github Release :
+				<Download>https://github.com/SphereII/WinterProject-A20/releases</Download>
+					
+				GitLab Release : ( web reference : https://gitlab.com/sphereii/SphereII-Mods/-/releases )
+				<Download>https://gitlab.com/api/v4/projects/15118685/releases</Download>
+
+			
+				-->
+			</Downloads>
+		</Server>
+		
+		<Server name="My mod -experimental" >
+			<Description>This is my experimental version! Play at your own risk!</Description>
+			<!-- Include the other attributes from above in here too! -->
+		</Server>
+	</ServerGroup>
 </Servers>
