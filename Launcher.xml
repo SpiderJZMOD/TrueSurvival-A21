@@ -2,9 +2,9 @@
 <Servers>
 	<!-- Logo is a direct link to a jpg /png file. This logo will be used if an individual mod does not have one. -->
 	<!-- If logo is not specified, the mod launcher's default will be shown. -->
-	<ServerGroup Name="Mod Group" Logo="" Description="I made cool mods!">
+	<ServerGroup Name="Spider" Logo="" Description="I made cool mods!">
 		<!-- Logo is a direct link to a jpg /png file. Default image dimension is 2064x452 -->
-		<Server Name="Mod-Stable" Logo="https://">
+		<Server Name="True Survival A21.1" Logo="https://">
 			<Description>
 			This mod was designed to walk the line between realism and fun engaging gameplay. Where realism became grindy or not fun I tried to aim for engaging gameplay mechanics with a focus on risk and reward and a strong sense of consequences. Death in this mod is permanent with few exceptions. In this mod when death occurs your player data is wiped and you will respawn as a fresh new player.
 			Required SP/Coop Game Settings
@@ -24,17 +24,14 @@
 			-Drop all on death
             -Bloodmoon Count = 64 (or as much as your PC can take)
 			</Description>
-			
 			<!-- Who made -->
 			<Author>Spider</Author>
-			
 			<!-- 
 				This forces the mod launcher to make a copy of the game for the mod. 
 				Mod that use BepInEx, and relative paths should use this setting.
 				Remove Deploy or change it to Partial to skip that step
 			-->
 			<Deploy>Full</Deploy>
-			
 			<!-- This is the alpha version you last tested with -->
 			<!-- You can use Latest if you just want the current one -->
 			<Version>alpha21.1</Version>
@@ -56,26 +53,6 @@
 			<!-- Only the first download is used -->
 			<Downloads>
 				<Download>https://github.com/SpiderJZMOD/TrueSurvival-A21</Download>
-				<!-- Examples 
-				Darkness Falls, using the master branch
-				<Download>https://KhaineUK@dev.azure.com/KhaineUK/DarknessFallsA20/_git/DarknessFallsA20?Branch=master</Download>
-				
-				Apocalypse Now on gitlab
-				<Download>https://gitlab.com/killerbunny264/Apoc-Now-V3-1-Stable</Download>
-				
-				Winter Project on Github
-				<Download>https://github.com/SphereII/WinterProject-A20</Download>
-				
-				Begining with V5 of the mod launcher, it can also support Github / GitLab Releases.
-				The Mod Launcher will download the first link in the Release.
-				Github Release :
-				<Download>https://github.com/SphereII/WinterProject-A20/releases</Download>
-					
-				GitLab Release : ( web reference : https://gitlab.com/sphereii/SphereII-Mods/-/releases )
-				<Download>https://gitlab.com/api/v4/projects/15118685/releases</Download>
-
-			
-				-->
 			</Downloads>
 		</Server>
 		
