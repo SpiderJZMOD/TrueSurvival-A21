@@ -31,7 +31,7 @@
 				Mod that use BepInEx, and relative paths should use this setting.
 				Remove Deploy or change it to Partial to skip that step
 			-->
-			<Deploy></Deploy>
+			
 			<!-- This is the alpha version you last tested with -->
 			<!-- You can use Latest if you just want the current one -->
 			<Version>alpha21.1</Version>
