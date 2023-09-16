@@ -3,7 +3,6 @@
    <ServerGroup Name="True Survival" Logo="" Description="True Survival A21.1">
         <Server Name="True Survival A21.1" Logo="">
             <Description>True Survival 21.1
-			Test build #1.16
 			-----------------------------------
             Required SP/Coop Game Settings
             -RWG Maps only
@@ -23,11 +22,11 @@
             -Bloodmoon Count = 64 (or as much as your PC can take)
             </Description>
             <DownloadMode>Clone</DownloadMode>
-            <Address>14.1.30.218</Address>                    
-            <Port>28716</Port>    
+            <Address></Address>                    
+            <Port></Port>    
             <ReleaseNotes>https://discord.com/channels/975478016249561119/975480875317862420</ReleaseNotes>
             <Downloads>
-                <Download>https://github.com/SpiderJZMOD/TrueSurvivalA20</Download>
+                <Download>https://github.com/SpiderJZMOD/TrueSurvival-A21</Download>
             </Downloads>
         </Server>
     </ServerGroup>
