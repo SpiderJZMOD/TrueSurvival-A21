@@ -21382,8 +21382,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristWrappedCounter" operation="set" value="@$LeftWristCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristWrappedCounter" operation="divide" value="2"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 			<!-- DisplayDuration -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristWrappedDurationDisplay" operation="set" value="@$LeftWristWrappedCounter"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristWrappedDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
@@ -21405,8 +21404,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="@$SprainedTimer"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="set" value="@$LeftWristCounter"/>
@@ -21611,8 +21609,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristTotalHealingRate" operation="add" value="@#SplintedHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="@$SplintedTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$LeftWristTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$LeftWristTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="activity makes damaged legs worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
@@ -21679,8 +21676,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristTotalHealingRate" operation="add" value="@$CastHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="@$CastTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$LeftWristTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$LeftWristTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="set" value="@$LeftWristCounter"/>
@@ -21769,8 +21765,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristWrappedCounter" operation="set" value="@$RightWristCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristWrappedCounter" operation="divide" value="2"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 			<!-- DisplayDuration -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightWristWrappedDurationDisplay" operation="set" value="@$RightWristWrappedCounter"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightWristWrappedDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
@@ -21792,8 +21787,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="@$SprainedTimer"/>
 		
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightWristDurationDisplay" operation="set" value="@$RightWristCounter"/>
@@ -21998,8 +21992,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristTotalHealingRate" operation="add" value="@#SplintedHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="@$SplintedTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$RightWristTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$RightWristTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="activity makes damaged legs worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
@@ -22066,8 +22059,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristTotalHealingRate" operation="add" value="@$CastHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="@$CastTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$RightWristTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$RightWristTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightWristDurationDisplay" operation="set" value="@$RightWristCounter"/>
@@ -22157,8 +22149,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmWrappedCounter" operation="set" value="@$LeftArmCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmWrappedCounter" operation="divide" value="2"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 			<!-- DisplayDuration -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftArmWrappedDurationDisplay" operation="set" value="@$LeftArmWrappedCounter"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftArmWrappedDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
@@ -22180,8 +22171,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="@$SprainedTimer"/>
 		
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftArmDurationDisplay" operation="set" value="@$LeftArmCounter"/>
@@ -22386,8 +22376,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmTotalHealingRate" operation="add" value="@#SplintedHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="@$SplintedTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$LeftArmTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$LeftArmTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="activity makes damaged legs worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
@@ -22454,8 +22443,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmTotalHealingRate" operation="add" value="@$CastHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="@$CastTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$LeftArmTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$LeftArmTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftArmDurationDisplay" operation="set" value="@$LeftArmCounter"/>
@@ -22545,8 +22533,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmWrappedCounter" operation="set" value="@$RightArmCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmWrappedCounter" operation="divide" value="2"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 			<!-- DisplayDuration -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightArmWrappedDurationDisplay" operation="set" value="@$RightArmWrappedCounter"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightArmWrappedDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
@@ -22568,8 +22555,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="@$SprainedTimer"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightArmDurationDisplay" operation="set" value="@$RightArmCounter"/>
@@ -22774,8 +22760,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmTotalHealingRate" operation="add" value="@#SplintedHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="@$SplintedTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$RightArmTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$RightArmTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="activity makes damaged legs worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
@@ -22842,8 +22827,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmTotalHealingRate" operation="add" value="@$CastHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="@$CastTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$RightArmTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$RightArmTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightArmDurationDisplay" operation="set" value="@$RightArmCounter"/>
@@ -22933,8 +22917,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckWrappedCounter" operation="set" value="@$NeckCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckWrappedCounter" operation="divide" value="2"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckWrappedCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 			<!-- DisplayDuration -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".NeckWrappedDurationDisplay" operation="set" value="@$NeckWrappedCounter"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".NeckWrappedDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
@@ -22956,8 +22939,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="@$SprainedTimer"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$critHitNaturalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 				
 		</effect_group>
 		<effect_group name="DisplayDuration">
@@ -23171,8 +23153,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckTotalHealingRate" operation="add" value="@#SplintedHealingRate"/>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="@$SplintedTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$NeckTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$NeckTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="activity makes damaged legs worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
@@ -23239,8 +23220,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckTotalHealingRate" operation="add" value="@$CastHealingRate"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="@$CastTimerMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$NeckTotalHealingRate">
-				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$NeckTotalHealingRate"/>
 		</effect_group>
 		<effect_group name="DisplayDuration">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".NeckDurationDisplay" operation="set" value="@$NeckCounter"/>
@@ -39688,7 +39668,7 @@
 		</effect_group>		
 	</buff>	
 	
-	<buff name="jz_BuffFlashBangCoolDown" name_key="Flashbang Recovery" description_key="jz_BuffFlashBangCoolDownDesc" showonhud="false" >
+	<buff name="jz_BuffFlashBangCoolDown" name_key="Flashbang Recovery" description_key="jz_BuffFlashBangCoolDownDesc" showonhud="false" icon="FlashBangDelay">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<display_value value="$FlashbangCoolDownTimer"/>

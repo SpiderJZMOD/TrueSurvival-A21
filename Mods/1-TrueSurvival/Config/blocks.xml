@@ -16028,6 +16028,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SortOrder2" value="3300"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_BurningBarrelCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <block name="burningBarrel">
@@ -73181,7 +73188,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Texture" value="346,345,341,345,345,345"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Place" value="TowardsPlacer"/>
 	<property name="Path" value="solid"/>
 	<property name="CustomIcon" value="StoveCampfire"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -73238,6 +73245,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="ParticleName" value="campfire"/>
 	<property name="ParticleOffset" value="0.5,0.8,0.5"/>
+	<property name="Place" value="TowardsPlacer"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="HeatMapStrength" value="5"/>
 	<property name="HeatMapTime" value="5000"/>
@@ -73328,7 +73336,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#Entities/LootContainers?toiletCommercial01Prefab.prefab"/>
+	<property name="Model" value="@:Entities/LootContainers/toiletCommercial01Prefab.prefab"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
 	<property name="Path" value="solid"/>
@@ -73378,7 +73386,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MaxDamage" value="100"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#Entities/LootContainers?toiletCommercial03Prefab.prefab"/>
+	<property name="Model" value="@:Entities/LootContainers/toiletCommercial03Prefab.prefab"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
 	<property name="Path" value="solid"/>
@@ -73423,7 +73431,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="jz_KitchenWorkbench">
-	<property name="Class" value="Forge" />
+	<property name="Class" value="Campfire" />
 	<!--<property name="UnlockedBy" value="jz_SchematicKitchenWorkbench"/>-->
 	<property name="Material" value="Mstone" />
 	<property name="MaxDamage" value="2000"/>
@@ -79796,7 +79804,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ItemTypeIcon" value="explosion"/>
 	<property name="LootList" value="MilitaryCrashes"/>
 	<property name="Material" value="Msteel_vehicle_burns"/>
-	<property name="Tags" value="ToolWrench"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZVehicles.unity3d?TankBrokenPrefab" />
 	<property name="ImposterDontBlock" value="true"/>
@@ -79817,6 +79824,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="ActivationDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
+	<property name="Tags" value="ToolWrench"/>
     <!--JZMOD ANY-->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="ammoGasCan" count="50,500" prob="0.5" tag="allHarvest"/>
@@ -83089,10 +83097,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Class" value="Campfire" />
 	<property name="Material" value="Mplastics"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZSatelite.unity3d?SatelitePrefab" />
+	<property name="Model" value="Entities/Electrical/radioHamPrefab"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="CanPickup" value="false" />
-	<property name="CustomIcon" value="jz_QISateliteRadio"/>
-	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="CustomIcon" value="radioHam"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Stacknumber" value="1" />
@@ -83100,6 +83109,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="0" />
 	<property name="ItemWeight" value="25" />
 	<property name="MaxDamage" value="5000" />
+	<property name="DowngradeBlock" value="jz_QISatRadioStation"/>
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>

@@ -362,10 +362,10 @@
 		</objective>
 		 
 		<reward type="Exp" value="250"/>
-		<!--<reward type="Quest" id="jzquest_CampaignPt4" />-->
+		<reward type="Quest" id="jzquest_CampaignPt4" />
 	</quest>
-<!--
-	<quest id="jzquest_CampaignPt8">
+
+	<quest id="jzquest_CampaignPt4">
 		<property name="name_key" value="jzquest_CampaignPt8" />
 		<property name="subtitle_key" value="jzquest_CampaignPt8Sub" />
 		<property name="description_key" value="jzquest_CampaignPt8Desc" />
@@ -373,29 +373,16 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
 		<property name="shareable" value="false" />
-		
-		
-		<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
-			<property name="completion_distance" value="10" />
-			<property name="phase" value="1" />
-			<property name="PrefabName" value="utility_celltower_01" />
-			<property name="nav_object" value="quest" />
-		</objective>
 				
-		<objective type="RallyPoint">
-			<property name="phase" value="2" />
-			<property name="nav_object" value="rally" />
-		</objective>
-		
-        <objective type="FetchKeep" id="jz_QISateliteRadio" value="1" phase="3"/>
+        <objective type="FetchKeep" id="jz_QISateliteRadio" value="1" phase="1"/>
 		
 		<reward type="Exp" value="250"/>
         <reward type="Recipe" id="jz_QISatRadioStation" />
         <reward type="Recipe" id="jz_QI887Frequency" />
-        <reward type="Quest" id="jzquest_CampaignPt9" />
+        <reward type="Quest" id="jzquest_CampaignPt5" />
 	</quest>
 	
-    <quest id="jzquest_CampaignPt9">
+    <quest id="jzquest_CampaignPt5">
 		<property name="name_key" value="jzquest_CampaignPt9" />
 		<property name="subtitle_key" value="jzquest_CampaignPt9Sub" />
 		<property name="description_key" value="jzquest_CampaignPt9Desc" />
@@ -407,15 +394,15 @@
 		<objective type="FetchKeep" id="jz_QISatRadioStation" value="1" phase="1"/>
         <objective type="BlockPlace" id="jz_QISatRadioStation" value="1" phase="1" />
         <objective type="Craft">
-			<property name="phase" value="1" />
+			<property name="phase" value="2" />
 			<property name="item" value="jz_QI887Frequency" />
 			<property name="count" value="1" />
 		</objective>
 		
 		<reward type="Exp" value="250"/>
-        <reward type="Quest" id="jzquest_CampaignPt10" />
+       <!-- <reward type="Quest" id="jzquest_CampaignPt10" />-->
 	</quest>
-	
+	<!--
     <quest id="jzquest_CampaignPt10">
 		<property name="name_key" value="jzquest_CampaignPt10" />
 		<property name="subtitle_key" value="jzquest_CampaignPt10Sub" />

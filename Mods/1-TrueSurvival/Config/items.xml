@@ -1281,7 +1281,12 @@
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
-		<display_value name="TSItemWeight" value="3"/><!-- JZMOD -->
+		<!-- JZMOD -->
+		<display_value name="TSItemWeight" value="3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="ToolScrewdriver"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="ToolWrench"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolScrewdriver"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolWrench"/>
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -50191,6 +50196,7 @@ perkNightStalkerSilentNight
 
 <item name="Molds">
 	<property name="Extends" value="jz_MasterItem" />
+	<property name="CustomIcon" value="jz_MoldCrowbar" />
 </item>
 
 <item name="tools">

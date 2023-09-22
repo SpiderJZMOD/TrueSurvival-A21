@@ -4362,6 +4362,7 @@
 		<block name="cinderBlocks03" prob="2.94" />
 		<block name="decoCarTireSmallFlat" prob="2.94"/>
 		<block name="jz_TruckElectricBox" prob="2.94"/>
+		<block name="decoCarTireFlat" prob="2.94"/>
 		<block name="jz_TruckTrash" prob="2.94"/>
 		<block name="jz_MetalTrash" prob="2.94"/>
 	</placeholder> 			
