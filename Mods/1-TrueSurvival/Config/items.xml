@@ -50282,6 +50282,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MedicalDefibrillator">
 	<property name="Extends" value="jz_MasterItem" />
+	<property name="Tags" value="Defibrillator" />
 	<property name="DescriptionKey" value="jz_MedicalDefibrillatorDesc" />
 	<property name="ItemWeight" value="3" />
 	<effect_group tiered="false">

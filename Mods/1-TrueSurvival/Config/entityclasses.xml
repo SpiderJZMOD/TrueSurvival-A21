@@ -277,16 +277,17 @@
             <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffStopBite">
                 <requirement name="HitLocation" body_parts="Head"/></triggered_effect>
     </effect_group>
-	<effect_group name="2nd Life Dieing">
+	<!--<effect_group name="2nd Life Dieing">
 			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Defibrillator_Used" >
 				<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="1"/>   </triggered_effect>
-		<!--<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger,jz_BuffConsequences"/>-->
-    </effect_group>  
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger,jz_BuffConsequences"/>
+    </effect_group> --> 
     <effect_group name="Normal Dead is Dead Deing">
 		<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
         <triggered_effect trigger="onSelfDied" action="RemoveLandClaims, TrueSurvival" target="self"/>
         <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>
-		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffResetPlayerOnRespawn"/>           		
+		<triggered_effect trigger="onSelfDied" action="AddBuff" target="self" buff="buffResetPlayerOnRespawn"/>           		
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02"/>           		
     </effect_group>
 	   
     <effect_group name="Head Shots Only and Increased Gore">

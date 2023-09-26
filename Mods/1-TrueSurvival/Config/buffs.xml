@@ -840,12 +840,14 @@
 			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value="0.05"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLimp"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLimpNotice"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffDefibrillatorCheck"/>
 		</effect_group>
 		<effect_group name="Limp Deactivation">
 			<requirement name="StatComparePercCurrentToMax" stat="health" operation="GT" value="0.05"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimp"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimpB"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimpNotice"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffDefibrillatorCheck"/>
 		</effect_group>
 		
         <effect_group name="Echausted Activation">
@@ -13997,11 +13999,15 @@
         </effect_group>  
 	</buff>
 	 <!-- JZMOD  DEAD IS DEAD RESETING-->
-    <buff name="buffResetPlayerOnRespawn" hidden="true">
-		<damage_type value="disease"/>
+    <buff name="buffResetPlayerOnRespawn" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
-		<duration value="6"/>
+		<duration value="5"/>
+		<update_rate value="10"/>
 		<effect_group>
+			<!--<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ResetSpawnPoints, TrueSurvival" target="self"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveLandClaims, TrueSurvival" target="self"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
 				<triggered_effect trigger="onSelfBuffStart" action="ResetProgression" reset_books="true"/>            
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffDeadIsDeadResetTag"  /> 
                	<!--<triggered_effect trigger="onSelfBuffStart" action="ResetPlayerQuests, TrueSurvival" target="self"  />              -->
@@ -14019,6 +14025,11 @@
 				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Wipe_Quest" />	
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffNewbieCoat"  />	
         </effect_group>
+		<!--<effect_group>
+			<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Defibrillator_Used" />
+				 JZMOD     ADD NEAR DEATH WOUND HERE 
+		</effect_group>-->
 	</buff>
     
      <buff name="jz_BuffDeadIsDeadResetTag" hidden="true" remove_on_death="false">
@@ -39713,7 +39724,15 @@
 	</buff>
 	<!-- ******************************************************** JZMOD TESTING ******************************************** -->
 	
-	
+	<buff name="jz_BuffDefibrillatorCheck" name_key="DefibrillatorCheck" hidden="true" remove_on_death="false" >
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="20"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$HasDefibrillator" operation="set" value="1">
+				<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="1"/></triggered_effect>
+		</effect_group>
+	</buff>
 	
 	<buff name="jz_BuffTestStat" name_key="jz_BuffTestStat" description_key="jz_BuffTestStat" icon="jz_BuffTraderStage" >
 		<stack_type value="ignore"/>

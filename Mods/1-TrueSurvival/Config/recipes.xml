@@ -3741,7 +3741,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_FreshTimber" count="1" />
 </recipe>
 
-<recipe name="jz_ToolTableSaw" count="10" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="3" tags="jz_WorkBenchTag,jz_ElectricianTag" >
+<recipe name="jz_ToolTableSaw" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="3" tags="jz_WorkBenchTag,jz_ElectricianTag" >
 	<ingredient name="jz_BrokenTableSaw" count="1" />
 	<ingredient name="resourceMechanicalParts" count="4" />
 	<ingredient name="resourceElectricParts" count="2"/>

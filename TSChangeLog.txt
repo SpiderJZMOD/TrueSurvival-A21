@@ -34,3 +34,6 @@
 -Fixed all workstations tool windows
 -Added another row to Campfire workstation tools
 -Fixed Wall Stove workstation
+////////////////////////////////////////////////////////
+9/25/2023 A21.1 #1.19.5
+-Emergency fix for player data being wiped on relog

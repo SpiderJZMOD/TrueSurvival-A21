@@ -9513,14 +9513,11 @@
         </action_sequence>
 		
 	<action_sequence name="TS_Defibrillator_Used">
-		<property name="allow_user_trigger" value="false" />
-		<property name="action_type" value="Game" />
-				
 		<action class="RemoveItems">
 			<property name="phase" value="1" />
-			<property name="items_location" value="All" />
-			<property name="remove_item_tag" value="Defibrillator" />
-			<property name="target_group" value="party" />
+			<property name="items_location" value="Toolbelt, Backpack, Equipment, Held" />
+			<property name="items_tags" value="Defibrillator" />
+			<property name="count_type" value="Items" />
 		</action>
 	</action_sequence>
 	
@@ -9545,6 +9542,22 @@
 		</action>
 	</action_sequence>	
 
+	<action_sequence name="TS_Wipe_Quest_TestA">
+		<action class="FailQuest">
+			<property name="phase" value="1" />
+			<property name="quest" value="jzquest_tutorialpt1" />
+			<property name="remove_quest" value="true" />
+		</action>
+	</action_sequence>	
+	
+	<action_sequence name="TS_Wipe_Quest_TestB">
+		<action class="FailQuest">
+			<property name="phase" value="1" />
+			<property name="quest" value="jzquest_TutorialPt1" />
+			<property name="remove_quest" value="true" />
+		</action>
+	</action_sequence>	
+	
 	<action_sequence name="TS_Wipe_Quest">
 		<action class="FailQuest">
 			<property name="phase" value="1" />
