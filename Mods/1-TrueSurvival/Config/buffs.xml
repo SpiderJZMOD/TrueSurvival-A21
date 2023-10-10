@@ -12775,7 +12775,7 @@
 				<requirement name="CVarCompare" cvar="$jz_VeggieNutritionStat" operation="GTE" value="16"/>
 				<requirement name="CVarCompare" cvar="$jz_VeggieNutritionStat" operation="LT" value="15"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="-20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWarningStageConstipation"/>		
 		</effect_group>	
 	</buff>
@@ -12792,7 +12792,7 @@
 		</effect_group>
 		<effect_group>	
 			<requirement name="CVarCompare" cvar="$jz_VeggieNutritionStat" operation="LT" value="16"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="-40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="40"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffIllnessConstipation"/>		
 		</effect_group>	
 	</buff>
@@ -13672,7 +13672,7 @@
 	</buff>
 	
 	<!-- JZMOD ZOMBIE STICKY SPIT  -->
-	<buff name="jz_BuffSticky" remove_on_death="true" name_key="Sticky Spit" description_key="jz_BuffStickyDesc" icon="ui_game_symbol_stomach" >
+	<buff name="jz_BuffSticky" remove_on_death="true" name_key="Sticky Spit" description_key="jz_BuffStickyDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
         <duration value="20"/>
 		<effect_group>
@@ -13722,7 +13722,7 @@
        </effect_group>
     </buff>
 	
-	<buff name="jz_BuffStickyFeral" remove_on_death="true" name_key="Sticky Feral Spit" description_key="jz_BuffStickyDesc" icon="ui_game_symbol_StickySpit" >
+	<buff name="jz_BuffStickyFeral" remove_on_death="true" name_key="Sticky Feral Spit" description_key="jz_BuffStickyDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
         <duration value="40"/>
 		<effect_group>
@@ -13771,7 +13771,7 @@
        </effect_group>
     </buff>
 	
-	<buff name="jz_BuffStickyRadiated" remove_on_death="true" name_key="Sticky Radiated Spit" description_key="jz_BuffStickyDesc" icon="ui_game_symbol_StickySpit" >
+	<buff name="jz_BuffStickyRadiated" remove_on_death="true" name_key="Sticky Radiated Spit" description_key="jz_BuffStickyDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
         <duration value="60"/>
 		<effect_group>
@@ -13820,7 +13820,7 @@
        </effect_group>
     </buff>
 	<!-- JZMOD ZOMBIE ACID SPIT  -->
-	<buff name="jz_BuffAcid" remove_on_death="true" name_key="Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="ui_game_symbol_animal_tracker" >
+	<buff name="jz_BuffAcid" remove_on_death="true" name_key="Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
 		<update_rate value="1"/>
 		<duration value="20"/>
@@ -13876,7 +13876,7 @@
 		</effect_group>	
 	</buff>
 	
-	<buff name="jz_BuffAcidFeral" remove_on_death="true" name_key="Feral Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="ui_game_symbol_animal_tracker" >
+	<buff name="jz_BuffAcidFeral" remove_on_death="true" name_key="Feral Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
 		<update_rate value="1"/>
 		<duration value="40"/>
@@ -13932,7 +13932,7 @@
 		</effect_group>	
 	</buff>
 	
-	<buff name="jz_BuffAcidRadiated" remove_on_death="true" name_key="Radiated Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="ui_game_symbol_animal_tracker" >
+	<buff name="jz_BuffAcidRadiated" remove_on_death="true" name_key="Radiated Acid Spit" description_key="jz_BuffAcidSpitDesc" icon="SpitIcon" >
 		<stack_type value="duration"/>
 		<update_rate value="1"/>
 		<duration value="60"/>

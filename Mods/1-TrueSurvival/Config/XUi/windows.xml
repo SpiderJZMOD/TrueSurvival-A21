@@ -4903,26 +4903,29 @@
 		</rect>
 	</window>
 	
-	<window name="jz_KitchenOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" >
-	<!--#$-IGS END.-$#-->
-		<panel style="header.panel" pos="0,-130">
+	<window name="jz_KitchenOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow" >
+		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_fork"/>
 			<label style="header.name" text="OUTPUT" text_key="Counter" />
+			<rect pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+			</rect>
 		</panel>
-
-
-		<rect name="content" depth="0" pos="0,-176" height="150" disablefallthrough="true" on_press="true"><!-- pos="0,-46" -->
+		<rect name="content" depth="0" pos="0,-176" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
 					<item_stack name="0"/>
 				</grid>
 		</rect>
 	</window>
-	
-	<window name="jz_WindowOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" ><!--width="228" height="198" anchor="CenterTop" panel="Right"-->
+		
+	<window name="jz_WindowOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow" >
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
 			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+			<rect pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
+				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+			</rect>
 		</panel>
 		<rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
@@ -4931,7 +4934,7 @@
 				</grid>
 		</rect>
 	</window>
-	
+		
 	<window name="windowToolsCrafting" width="228" height="121" panel="Right" cursor_area="true" >
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
@@ -4987,17 +4990,13 @@
 	</window>
 	
 	<window name="CampfireWindowOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow" >
-	<!--#$-IGS END.-$#-->
 		<panel style="header.panel" pos="0,-78">
 			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
 			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
-			
 			<rect pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
 				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 			</rect>
 		</panel>
-
-
 		<rect name="content" depth="0" pos="0,-124" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 				<grid depth="10" name="inventory" rows="5" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
@@ -5044,17 +5043,13 @@
 	</window>
 
 	<window name="jz_ForgeOutputWindow" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" controller="WorkstationOutputWindow" >
-	<!--#$-IGS END.-$#-->
-		<panel style="header.panel" pos="0, -78" >
+		<panel style="header.panel" pos="0,-78">
 			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
 			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
-			
 			<rect pivot="topleft" pos="0,0" controller="ContainerStandardControls" createuiwidget="true" visible="{buttons_visible}">
 				<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_up"     tooltip="{take_all_tooltip}"          pos="203, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 			</rect>
 		</panel>
-
-
 		<rect name="content" depth="0" pos="0,-124" height="150" disablefallthrough="true" on_press="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
@@ -5062,5 +5057,6 @@
 				</grid>
 		</rect>
 	</window>
+	
 </set>
 </configs>

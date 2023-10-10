@@ -11228,6 +11228,8 @@ add knockdown resist to armor
 	<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
 	<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,padded,canHaveCosmetic,lightArmorDeg,armorLightSkill"/>
 	<property name="EquipSlot" value="Legs"/>
+	<!-- JZMOD -->
+	<property name="Group" value="TCArmor,Pants"/>
 	<effect_group name="cloth armor">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -20646,10 +20648,10 @@ perkNightStalkerSilentNight
 	<property name="CraftingIngredientTime" value=".2"/>
 	<!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/>
-	<property name="ItemWeight" value="0.7" />
+	<property name="ItemWeight" value="0.1" />
 	<property name="DisplayType" value="TSItemDisplay"/>
 	<effect_group tiered="false">
-		<display_value name="TSItemWeight" value=".7"/>
+		<display_value name="TSItemWeight" value=".1"/>
 	</effect_group>
 </item>
 
@@ -27812,7 +27814,7 @@ perkNightStalkerSilentNight
 	<property name="CustomIcon" value="cntSuitcase"/>
     <property name="DescriptionKey" value="jz_ChefLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="jz_ProfessionChefBook,jz_OldKnife"/>
+		<property name="Create_item" value="jz_ProfessionChefBook,jz_MeleeCleaver"/>
 		<property name="Create_item_count" value="1,6"/>
 	</property>
 </item>
@@ -30638,7 +30640,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ScrapHazmatFabric">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="scrapRubberDesc" />
+	<property name="DescriptionKey" value="jz_ScrapHazmatFabricDesc" />
 	<property name="Material" value="MhazmatFiber"/>
 	<property name="Weight" value="1"/>
 	<property name="ItemWeight" value=".05" />
@@ -40398,7 +40400,8 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicSteelSheetMetal">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="banditWallSiding2x2Grey"/>
+	<property name="CustomIcon" value="banditWallSiding2x2White"/>
+	<property name="CustomIconTint" value="868686"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
     <property name="Unlocks" value="jz_SteelSheetMetal"/>
 	<property name="TraderStageTemplate" value="jz_Trader600_999"/>
@@ -47382,7 +47385,7 @@ perkNightStalkerSilentNight
 <item name="jz_HobbiesGymnastBook">
 	<property name="Extends" value="jz_HobbiesHunterBook"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_HobbiesGymnastBookLongDesc"/>
+	<property name="DescriptionKey" value="jz_HobbiesGymnastLongDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="Group" value="Hobbies"/>
 	<property class="Action0">
