@@ -37,3 +37,17 @@
 ////////////////////////////////////////////////////////
 9/25/2023 A21.1 #1.19.5
 -Emergency fix for player data being wiped on relog
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+10/10/2023 A21.1 #1.2
+-Fixed Constipation carry weight being not being restored when healed
+-Added Zombie Spoit icons
+-Added Rat Bite icon
+-Fixed Cloth Pants armor not showing in workstation
+-Lowered Paint weight
+-Changed Chef starting weapon to Cleaver
+-Fixed Gymnast description
+-Fixed reported missing icons
+-Fixed reported localization bugs
+-Fixed bug that allowed contents of workstations output and tools be accessed in other workstations allowing duping
+
+

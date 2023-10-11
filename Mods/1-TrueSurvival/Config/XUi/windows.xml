@@ -249,7 +249,7 @@
 		<gamepad_icon depth="1" name="LB_Icon" size="35,35" pos="-8,-20" pivot="Right" sprite="Button_LB" />
 		<gamepad_icon depth="1" name="RB_Icon" size="35,35" pos="608,-20" pivot="Left" sprite="Button_RB" />
 		<!--*#$-IGS END.-$#-->
-		<texture name="JZMODLogo"  depth="4" pos="-510,-30" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival119.png"/>
+		<texture name="JZMODLogo"  depth="4" pos="-510,-30" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival120.png"/>
 	</window>
 
 	<window name="windowNonPagingHeader" controller="WindowNonPagingHeader" style="nonpaging.window">
