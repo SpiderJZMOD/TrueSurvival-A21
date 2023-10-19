@@ -4568,7 +4568,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupGrillFoodScaled">
-	<item group="groupGrillGoodFood" loot_prob_template="Low"/>
+	<item group="groupGrillGoodFood" loot_prob_template="low"/>
 	<item group="rottenFood" loot_prob_template="med"/>
 </lootgroup>
 
@@ -5813,10 +5813,34 @@ If there is no hit the default quality is used.
 	<item name="bookFiremansAlmanacMolotov"/>
 </lootgroup>
 
+<lootgroup name="WorkingStiffsBenchUpgradeTools">
+	<item group="workingStiffs" />
+	<item name="jz_ToolHandSaw" count="1" />
+	<item name="jz_ToolSquare" count="1" />
+	<item name="jz_BrokenToolHandDrill" count="1" />
+	<item name="jz_ToolMallet" count="1" />
+	<item name="jz_ToolWoodChisel" count="1" />
+	<item name="jz_BrokenToolClamps" count="1" />
+	<item name="jz_BrokenToolDrawBlade" count="1" />
+	<item name="jz_BrokenToolMasonaryHandsaw" count="1" />
+	<item name="jz_BrokenToolMeasuringTape" count="1" />
+	<item name="jz_ToolFileSet" count="1" />
+	<item name="jz_BrokenToolCircularSaw" count="1" />
+	<item name="jz_ToolPlaner" count="1" />
+	<item name="jz_BrokenToolSander" count="1" />
+	<item name="jz_BrokenToolDrill" count="1" />
+	<item name="jz_BrokenToolLathe" count="1" />
+	<item name="jz_BrokenToolMetalBreak" count="1" />
+	<item name="jz_ToolMetalSnips" count="1" />
+	<item name="jz_BrokenToolVise" count="1" />
+	<item name="jz_BrokenToolRivetGun" count="1" />
+</lootgroup>
+
 <lootgroup name="groupWorkingStiffs01">
 	<item group="workingStiffs" loot_prob_template="med"/>
 	<item group="toolParts" loot_prob_template="med"/>
 	<item group="groupToolsTiered" loot_prob_template="medLow"/>
+	<item group="WorkingStiffsBenchUpgradeTools" loot_prob_template="low"/>
 </lootgroup>
 
 <lootgroup name="groupWorkingStiffs02">
@@ -7530,7 +7554,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupTSBackpack" count="all">
 	<item group="groupTSBackpack01" count="1"/>
 	<item group="groupTSBackpack02" loot_prob_template="low" force_prob="true"/>
-	<item group="groupTSBackpack03" loot_prob_template="verylow" force_prob="true"/>
+	<item group="groupTSBackpack03" loot_prob_template="veryLow" force_prob="true"/>
 </lootgroup>
 
 <!-- *** Microwave_Loot JZMOD-->
@@ -7541,10 +7565,10 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupMicrowave02">
-	<item group="groupAmmoSmall" loot_prob_template="Low"/>
+	<item group="groupAmmoSmall" loot_prob_template="low"/>
 	<item group="rottenFood" loot_prob_template="high"/>
 	<item group="groupDrinksUncommon" loot_prob_template="med"/>
-	<item group="coldFood" loot_prob_template="verylow"/>
+	<item group="coldFood" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupMicrowave" count="all">
@@ -7941,7 +7965,7 @@ If there is no hit the default quality is used.
 	<item group="groupToolsClawHammer" loot_prob_template="low"/>
 	<item group="groupToolsScrewdriver" loot_prob_template="low"/>
 	<item group="groupToolsScrewdriver" loot_prob_template="low"/>
-	<item group="groupWeaponsT1_HuntingKnife" loot_prob_template="Low"/>
+	<item group="groupWeaponsT1_HuntingKnife" loot_prob_template="low"/>
 	<item name="meleeToolPaintTool" loot_prob_template="veryLow"/>
 	<item group="booksAllScaled" loot_prob_template="veryLow"/>
 </lootgroup>
@@ -8410,7 +8434,7 @@ If there is no hit the default quality is used.
 	<item name="drugSteroids" count="1,3" />
     <item name="jz_MedicalStimulant" count="1,3" />
 	<item group="chemistrySchematics" loot_prob_template="veryLow"/>
-	<item group="chemistryTools" loot_prob_template="Low"/>
+	<item group="chemistryTools" loot_prob_template="low"/>
 	<item name="chemistryStationSchematic" loot_prob_template="low"/>
 </lootgroup>
 	
@@ -8582,6 +8606,17 @@ If there is no hit the default quality is used.
 	<item group="groupElectricalDevices" loot_prob_template="veryLow"/>
 </lootgroup>
 
+<lootgroup name="MoPowerBenchUpgradeTools">
+	<item group="schematicsElectrical" />
+	<item name="jz_ToolWireStripers" />
+	<item name="jz_ToolMagnifyingGlass" />
+	<item name="jz_BrokenToolCurcuitBoardHolder" />
+	<item name="jz_ToolCircuitBoardRepairKit" />
+	<item name="jz_BrokenToolSolderingIron" />
+	<item name="jz_ToolVoltTester" />
+	<item name="jz_BrokenTool3DPrinter" />
+</lootgroup>
+
 <lootgroup name="groupMoPower01">
 	<item name="resourceElectricParts" count="1,5" loot_prob_template="med"/>
 	<item name="resourceMechanicalParts" count="1,5" loot_prob_template="med"/>
@@ -8591,6 +8626,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupMoPower02">
 	<item group="groupTechJunkieBooks" loot_prob_template="med"/>
 	<item group="schematicsElectrical" loot_prob_template="med"/>
+	<item group="MoPowerBenchUpgradeTools" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupMoPower03">
@@ -8650,7 +8686,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupFireTruck" count="all">
 	<item group="groupFireTruck01" count="1,2"/>
 	<item group="groupFireTruck02" loot_prob_template="med" force_prob="true"/>
-	<item group="groupFireTruck03" loot_prob_template="Low" force_prob="true"/>
+	<item group="groupFireTruck03" loot_prob_template="low" force_prob="true"/>
 	<item group="WorkingVehiclePlaceable" loot_prob_template="veryLow" force_prob="true"/>	
 </lootgroup>
 
@@ -8835,12 +8871,29 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupCrackabookShelves" count="all">
 	<item group="groupCrackabookShelves01" count="1"/>
-	<item group="groupCrackabookShelves02" loot_prob_template="Low" force_prob="true"/>
+	<item group="groupCrackabookShelves02" loot_prob_template="low" force_prob="true"/>
 </lootgroup>
 
-<!-- *** Crackabook_Crate JZMOD-->
-<lootgroup name="groupCrackabookCrate01" count="all">
+<lootgroup name="CrackabookBenchUpgradeTools" count="1">
 	<item group="booksAllScaled"/>
+	<item name="jz_QIMasteringNutrition" />
+	<item name="jz_ToolToolMakingForBeginers" />
+	<item name="jz_ToolAdvancedToolCrafting" />
+	<item name="jz_ToolAdvancedCircuitry" />
+	<item name="jz_ToolAdvancedRobotics" />
+	<item name="jz_ToolBasicTailoringNAlterations" />
+	<item name="jz_ToolAdvancedLeatherWorking" />
+	<item name="jz_ToolAdvancedArmorSmithing" />
+	<item name="jz_ToolBasicHandgunImprovments" />
+	<item name="jz_ToolAdvancedHandgunAssembling" />
+	<item name="jz_ToolBasicRifleImprovments" />
+	<item name="jz_ToolAdvancedRifleAssembling" />
+</lootgroup>	
+	
+<!-- *** Crackabook_Crate JZMOD-->
+<lootgroup name="groupCrackabookCrate01" count="1">
+	<item group="booksAllScaled"/>
+	<item group="CrackabookBenchUpgradeTools" loot_prob_template="veryLow" />
 </lootgroup>
 
 <lootgroup name="groupCrackabookCrate02">
@@ -8887,10 +8940,23 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Pass_N_Gas -->
+<lootgroup name="PassNGasBenchUpgradeTools">
+	<item group="groupToolsTiered" />
+	<item name="jz_ToolPipeSaw" />
+	<item name="jz_ToolPipeVise" />
+	<item name="jz_ToolAngleGrinder" />
+	<item name="jz_ToolPropaneTorch" />
+	<item name="jz_ToolPliers" />
+	<item name="jz_ToolMetalDrill" />
+	<item name="jz_BrokenToolOxyacetyleneTorch" />
+	<item name="jz_BrokenToolAngleGrinder" />
+</lootgroup>
+
 <lootgroup name="groupPassNGas01">
  	<item name="resourceRepairKit" count="2,5" loot_prob_template="medLow"/>
 	<item group="groupToolsTiered" loot_prob_template="med"/>
 	<item group="schematicsToolsCommon" loot_prob_template="med"/>
+	<item group="PassNGasBenchUpgradeTools" loot_prob_template="verLow"/>
 </lootgroup>
 
 <lootgroup name="groupPassNGas02">
@@ -8921,7 +8987,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupToilet02">																	
-	<item name="jz_SeedCorn" count="1,3" loot_prob_template="Low"/>
+	<item name="jz_SeedCorn" count="1,3" loot_prob_template="low"/>
 	<item name="thrownAmmoPipeBomb" count="1" loot_prob_template="veryLow"/>
 	<item name="jz_FoodDeadRat" loot_prob_template="med"/>
 </lootgroup>
@@ -8970,6 +9036,16 @@ If there is no hit the default quality is used.
 	<item group="groupRifleScaled" loot_prob_template="ProbT2"/>
 </lootgroup>
 
+<lootgroup name="SavageCountryBenchUpgradeTools">
+	<item group="groupArmorModsScaled" />
+	<item name="jz_ToolLeatherNeedle" />
+	<item name="jz_BrokenToolSmallLoom" />
+	<item name="jz_ToolFabricShears" />
+	<item name="jz_BrokenToolLeatherPunch" />
+	<item name="jz_BrokenToolSewingMachine" />
+	<item name="jz_BrokenToolTailorMannequin" />
+</lootgroup>
+
 <lootgroup name="groupSavageCountryCrate01">
 	<item group="groupArmorScaled" loot_prob_template="low"/>
 	<item group="groupArmorModsScaled" loot_prob_template="medLow"/>
@@ -8977,6 +9053,7 @@ If there is no hit the default quality is used.
 	<item group="groupApparelShoesAll" loot_prob_template="low"/>
 	<item group="groupApparelFaceCover" loot_prob_template="veryLow"/>
 	<item group="groupArcheryScaled" loot_prob_template="medLow"/>
+	<item group="SavageCountryBenchUpgradeTools" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupSavageCountryCrate02">
@@ -9081,8 +9158,45 @@ If there is no hit the default quality is used.
 	<item name="bookUrbanCombatSneaking"/>
 </lootgroup>
 
+<lootgroup name="ShotgunMessiahBenchUpgradeTools">
+	<item group="groupWeaponsMedLow"/>
+	<item name="jz_ToolHandgunTorxSet" />
+	<item name="jz_ToolHandgunTiN" />
+	<item name="jz_BrokenToolHandgunSightTool" />
+	<item name="jz_ToolAdvancedHandgunCoilSprings" />
+	<item name="jz_ToolHandgunBushingWrench" />
+	<item name="jz_BrokenToolHandgunStipplingKit" />
+	<item name="jz_BrokenToolHandgunBarrelBorer" />
+	<item name="jz_BrokenToolHandgunGuideRods" />
+	<item name="jz_ToolShotgunTorxSet" />
+	<item name="jz_ToolShotgunTiN" />
+	<item name="jz_BrokenToolShotgunSightTool" />
+	<item name="jz_ToolAdvancedShutgunCoilSprings" />
+	<item name="jz_ToolShotgunBushingWrench" />
+	<item name="jz_BrokenToolShotgunBarrelBorer" />
+	<item name="jz_BrokenToolShotgunStipplingKit" />
+	<item name="jz_BrokenToolShotgunGuideRods" />
+	<item name="jz_ToolMachineGunTorxSet" />
+	<item name="jz_ToolMachineGunTiN" />
+	<item name="jz_BrokenToolMachineGunSightTool" />
+	<item name="jz_ToolAdvancedMachineGunCoilSprings" />
+	<item name="jz_ToolMachineGunBushingWrench" />
+	<item name="jz_BrokenToolMachineGunBarrelBorer" />
+	<item name="jz_BrokenToolMachineGunStipplingKit" />
+	<item name="jz_BrokenToolMachineGunGuideRods" />
+	<item name="jz_ToolRifleTorxSet" />
+	<item name="jz_ToolRifleTiN" />
+	<item name="jz_BrokenToolRifleSightTool" />
+	<item name="jz_ToolAdvancedRifleCoilSprings" />
+	<item name="jz_ToolRifleBushingWrench" />
+	<item name="jz_BrokenToolRifleStipplingKit" />
+	<item name="jz_BrokenToolRifleBarrelBorer" />
+	<item name="jz_BrokenToolRifleGuideRods" />
+</lootgroup>
+
 <lootgroup name="groupShotgunMessiahCrate01">
 	<item group="groupWeaponsMedLow"/>
+	<item group="ShotgunMessiahBenchUpgradeTools" loot_prob_template="low"/>
 </lootgroup>
 
 <lootgroup name="groupShotgunMessiahCrate02">
@@ -9568,13 +9682,13 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupCloset" count="all">
 	<item group="groupCloset01" count="1"/>
-	<item group="groupCloset02" loot_prob_template="verylow" force_prob="true"/>
+	<item group="groupCloset02" loot_prob_template="veryLow" force_prob="true"/>
 </lootgroup>
 
 <!-- *** Cooler_Loot JZMOD-->
 <lootgroup name="groupCooler02">
 	<item group="dryfood" loot_prob_template="high"/>
-	<item group="coldFood" loot_prob_template="verylow"/>
+	<item group="coldFood" loot_prob_template="veryLow"/>
 	<item group="groupDrinksCommon" loot_prob_template="high"/>
 	<item group="groupDrinksUncommon" loot_prob_template="low"/>
 	<item group="groupDrinksRare" loot_prob_template="veryLow"/>
@@ -9591,16 +9705,22 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Oven_Loot JZMOD-->
+<lootgroup name="groupOvenQuest" >
+	<item group="junkOven" count="1,3"/>
+	<item name="jz_QIStoveParts" />
+</lootgroup>
+
 <lootgroup name="groupOven01">
 	<item group="groupCookingTools" loot_prob_template="veryLow"/>
 	<item name="resourceCoal" count="10,20" loot_prob_template="med"/>
 	<item group="junkOven" count="1,3" loot_prob_template="medLow"/>
 	<item name="jz_FoodCharredMeatStale" count="1,2" loot_prob_template="low"/>
+	<item group="groupOvenQuest" loot_prob_template="low"/>
 </lootgroup>
 
 <lootgroup name="groupOven02">
 	<item group="dryfood" loot_prob_template="low"/>
-	<item group="OvenFood" loot_prob_template="verylow"/>
+	<item group="OvenFood" loot_prob_template="veryLow"/>
 	<item group="farmCrops" loot_prob_template="high"/>
 </lootgroup>
 
@@ -11225,112 +11345,112 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- wallSafe / deskSafe -->
-<lootcontainer name="smallSafes" size="8,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="3" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="smallSafes" size="8,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="3" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupSmallSafeLoot"/>
 </lootcontainer>
 
 <!-- gun safe -->
-<lootcontainer name="gunSafe" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="10" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="gunSafe" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="10" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupGunSafeSecure"/>
 </lootcontainer>
 
 <!-- sinks -->
-<lootcontainer name="sinks" count="1,2" size="6,2" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="sinks" count="1,2" size="6,2" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupSinks"/>
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
-<lootcontainer name="cntBackpack" count="1" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPrimitiveItemsTemplate" >
+<lootcontainer name="cntBackpack" count="1" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPrimitiveItemsTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupBackpacks"/>
 </lootcontainer>
 
 <!-- garbage, cntTrashPile -->
-<lootcontainer name="junk" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="junk" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupJunk"/>
 </lootcontainer>
 
 <!-- stove/oven, cooking pots and pans rotten food -->
-<lootcontainer name="oven" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="oven" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupOven"/>
 </lootcontainer>
 
 <!-- stove/oven Player -->
-<lootcontainer name="ovenNOPOP" count="0" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="ovenNOPOP" count="0" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item name="cobweb"/>
 </lootcontainer>
 
 <!-- POI storage box that looks like the player-built one -->
-<lootcontainer name="poiStorageBox" count="1,2" size="6,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="poiStorageBox" count="1,2" size="6,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupPOIStorageBox"/>
 </lootcontainer>
 
 <!-- laundry basket (Helper) -->
-<lootcontainer name="laundryBasket" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="laundryBasket" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupLaundry"/>
 </lootcontainer>
 
 <!-- Mailbox-->
-<lootcontainer name="mailbox" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="1" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="mailbox" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" open_time="1" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupMailbox"/>
 </lootcontainer>
 
 <!-- Post Office / Apartment Mailbox-->
-<lootcontainer name="PObox" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="PObox" count="1" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupMailbox"/>
 </lootcontainer>
 
 <!-- misc storage, cardboard boxes-->
-<lootcontainer name="cardboardBox" count="1,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="cardboardBox" count="1,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCardboardBox"/>
 </lootcontainer>
 
 <!-- metal garbage can-->
-<lootcontainer name="garbage" count="1,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="garbage" count="1,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGarbage"/>
 </lootcontainer>
 
 <!-- metal pig trough -->
-<lootcontainer name="pigTrough" count="1,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="pigTrough" count="1,2" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupPigTrough"/>
 </lootcontainer>
 
 <!-- Rolling Trash Bin-->
-<lootcontainer name="rollingTrashBin" count="1,2" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="rollingTrashBin" count="1,2" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGarbage"/>
 </lootcontainer>
 
 <!-- canned or dry food cupboard door open sound-->
-<lootcontainer name="cupboard" count="1" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="cupboard" count="1" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCupboard"/>
 </lootcontainer>
 
 <!-- washing machine, clothes in good condition -->
-<lootcontainer name="laundry" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template">
+<lootcontainer name="laundry" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item group="groupLaundry"/>
 </lootcontainer>
 
 <!-- washing machine Player -->
-<lootcontainer name="laundryNOPOP" count="0" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="5" loot_quality_template="qualPlus1Template">
+<lootcontainer name="laundryNOPOP" count="0" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="5" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item name="cobweb"/>
 </lootcontainer>
 
 <!-- cars-->
-<lootcontainer name="cars" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="10" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="cars" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="10" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCars"/>
 </lootcontainer>
 
 <!-- Containers that should not destroy on close when looted -->
-<lootcontainer name="junkNOPOP" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="junkNOPOP" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupJunk"/>
 </lootcontainer>
 
 <!-- Trash on shelves -->
-<lootcontainer name="trashShelves" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="trashShelves" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate"  buff="jz_BuffLootingXPTick" >
 	<item group="groupJunk"/>
 </lootcontainer>
 
 <!-- microwave oven loot -->
-<lootcontainer name="microwave" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="microwave" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMicrowave"/>
 </lootcontainer>
 
@@ -11340,17 +11460,17 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- garage stuff, tools, etc -->
-<lootcontainer name="garage" count="1,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="garage" count="1,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGarage"/>
 </lootcontainer>
 
 <!-- Wooden Desks -->
-<lootcontainer name="woodenDesk" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="woodenDesk" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupDesks"/>
 </lootcontainer>
 
 <!-- Metal Desks -->
-<lootcontainer name="metalDesk" count="1" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="metalDesk" count="1" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupDesks"/>
 </lootcontainer>
 
@@ -11365,57 +11485,57 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- birds nest-->
-<lootcontainer name="birdNest" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="birdNest" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupBirdNest"/>
 </lootcontainer>
 
 <!-- Coffins -->
-<lootcontainer name="coffins" count="1" size="6,2" sound_open="UseActions/coffin_wood_open" sound_close="UseActions/coffin_wood_close" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="coffins" count="1" size="6,2" sound_open="UseActions/coffin_wood_open" sound_close="UseActions/coffin_wood_close" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupCoffins"/>
 </lootcontainer>
 
 <!-- Caskets -->
-<lootcontainer name="caskets" count="1" size="6,2" sound_open="UseActions/casket_metal_open" sound_close="UseActions/casket_metal_close" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="caskets" count="1" size="6,2" sound_open="UseActions/casket_metal_open" sound_close="UseActions/casket_metal_close" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupCoffins"/>
 </lootcontainer>
 
 <!-- *** Wooden_Chest -->
-<lootcontainer name="woodenChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="woodenChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupWoodenChest"/>
 </lootcontainer>
 
 <!-- *** Rotten_Chest -->
-<lootcontainer name="rottenChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="rottenChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupRottenChest"/>
 </lootcontainer>
 
 <!-- *** Old_West_Chest -->
-<lootcontainer name="oldWestChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="oldWestChest" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupOldWestChest"/>
 </lootcontainer>
 
 <!-- *** Footlocker -->
-<lootcontainer name="footlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="footlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupFootlocker"/>
 </lootcontainer>
 
 <!-- *** Military_Footlocker -->
-<lootcontainer name="militaryFootlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="militaryFootlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="10" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMilitaryFootlocker"/>
 </lootcontainer>
 
 <!-- *** Super_Corn_Footlocker -->
-<lootcontainer name="superCornFootlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="superCornFootlocker" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMilitaryFootlocker"/>
 </lootcontainer>
 
 <!-- *** Military_Shelves -->
-<lootcontainer name="militaryShelves" size="6,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="militaryShelves" size="6,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMilitaryFootlocker"/>
 </lootcontainer>
 
 <!-- *** Military_Goods -->
-<lootcontainer name="militaryGoods" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="10" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="militaryGoods" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="10" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMilitaryFootlocker"/>
 </lootcontainer>
 
@@ -11430,7 +11550,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- Supply Crate General, the normal airdrop -->
-<lootcontainer name="airDrop" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="airDrop" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="airdropMedicine" prob="5.26" />
 	<item group="airdropfood" prob="5.26" />
 	<item group="airdropGuns" prob="5.26" />
@@ -11453,57 +11573,57 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- suitcase / luggage -->
-<lootcontainer name="luggage" count="1" size="6,2" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" open_time="5" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="luggage" count="1" size="6,2" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupLuggage"/>
 </lootcontainer>
 
 <!-- Bath tub filled with... don't ask. -->
-<lootcontainer name="bathtub" count="1,2" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="bathtub" count="1,2" size="6,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupBathtub"/>
 </lootcontainer>
 
 <!-- Shamway Manager's Safe -->
-<lootcontainer name="shamwaySafe" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="3" loot_quality_template="qualPlus1Template" >
+<lootcontainer name="shamwaySafe" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="3" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick" >
 	<item group="groupShamwaySafe"/>
 </lootcontainer>
 
 <!-- military munitions ammo box -->
-<lootcontainer name="munitions" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="munitions" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupAmmoMunitions" />
 </lootcontainer>
 
 <!-- Military Munitions Ammo Box For T1 Infestation Reward -->
-<lootcontainer name="infestedT1" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="infestedT1" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupInfestedT1" />
 </lootcontainer>
 
 <!-- Military Munitions Ammo Box For T2 Infestation Reward -->
-<lootcontainer name="infestedT2" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="infestedT2" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupInfestedT2" />
 </lootcontainer>
 
 <!-- Military Munitions Ammo Box For T3 Infestation Reward -->
-<lootcontainer name="infestedT3" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="infestedT3" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupInfestedT3" />
 </lootcontainer>
 
 <!-- Military Munitions Ammo Box For T4 Infestation Reward -->
-<lootcontainer name="infestedT4" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="infestedT4" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupInfestedT4" />
 </lootcontainer>
 
 <!-- Military Munitions Ammo Box For T5 Infestation Reward -->
-<lootcontainer name="infestedT5" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="infestedT5" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupInfestedT5" />
 </lootcontainer>
 
 <!-- NO LONGER USED cntLootChestHero, small, Reinforced Chest T1 NO LONGER USED-->
-<lootcontainer name="heroChest" count="3,5" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="5" loot_quality_template="qualPlus1Template">
+<lootcontainer name="heroChest" count="3,5" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="5" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item group="groupReinforcedChestT1"/>
 </lootcontainer>
 
 <!-- cntNightstandClosed -->
-<lootcontainer name="nightstand" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="nightstand" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupNightstand"/>
 </lootcontainer>
 
@@ -11513,7 +11633,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- *** Lockers -->
-<lootcontainer name="lockers" count="1" size="6,2" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="lockers" count="1" size="6,2" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupLocker"/>
 </lootcontainer>
 
@@ -11523,22 +11643,22 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- file cabinet -->
-<lootcontainer name="fileCabinet" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="fileCabinet" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupFileCabinet"/>
 </lootcontainer>
 
 <!-- cooler loot -->
-<lootcontainer name="cooler" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="cooler" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupCooler"/>
 </lootcontainer>
 
 <!-- trash compactor, trash deluxe! -->
-<lootcontainer name="trashCompactor" count="1,2" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template">
+<lootcontainer name="trashCompactor" count="1,2" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item group="groupJunk"/>
 </lootcontainer>
 
 <!-- dishwasher -->
-<lootcontainer name="dishwasher" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template" >
+<lootcontainer name="dishwasher" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick" >
 	<item group="groupDishwasherJunk"/>
 </lootcontainer>
 
@@ -11548,7 +11668,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- frozen or refrigerated food, spoiled food (Helper) -->
-<lootcontainer name="refrigerator" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="refrigerator" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualBaseTemplate"  buff="jz_BuffLootingXPTick">
 	<item group="groupRefrigerator"/>
 </lootcontainer>
 
@@ -11558,42 +11678,42 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- purse -->
-<lootcontainer name="purse" count="1,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="purse" count="1,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupPurse"/>
 </lootcontainer>
 
 <!-- bookcase -->
-<lootcontainer name="bookcase" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="bookcase" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="3" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBookcase"/>
 </lootcontainer>
 
 <!-- shotgun Messiah -->
-<lootcontainer name="shotgunMessiahCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="shotgunMessiahCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupShotgunMessiahCrate"/>
 </lootcontainer>
 
 <!-- pop n pills -->
-<lootcontainer name="popnpillsCrate" count="1" size="6,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="popnpillsCrate" count="1" size="6,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupPopNPillsCrate"/>
 </lootcontainer>
 
 <!-- beer cooler -->
-<lootcontainer name="beerCooler" count="1,2" size="6,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="beerCooler" count="1,2" size="6,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupBeerCooler"/>
 </lootcontainer>
 
 <!-- working stiffs -->
-<lootcontainer name="workingStiffsCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="workingStiffsCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupWorkingStiffsCrate"/>
 </lootcontainer>
 
 <!-- shopping cart-->
-<lootcontainer name="shoppingCart" count="1" size="6,2" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shoppingCart" count="1" size="6,2" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" open_time="2" loot_quality_template="qualBaseTemplate"  buff="jz_BuffLootingXPTick">
 	<item group="groupShoppingCart"/>
 </lootcontainer>
 
 <!-- cash register-->
-<lootcontainer name="cashRegister" count="1,5" size="6,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="cashRegister" count="1,5" size="6,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item name="oldCash" count="5,60" loot_prob_template="low"/>
 	<item name="casinoCoin" count="1,60"/>
 	<item name="jz_InkPen" loot_prob_template="med" />
@@ -11602,22 +11722,22 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- cntCharcoalGrillClosed -->
-<lootcontainer name="charcoalGrill" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="charcoalGrill" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupGrills"/>
 </lootcontainer>
 
 <!-- shopping basket -->
-<lootcontainer name="shoppingBasket" count="1" size="6,2" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shoppingBasket" count="1" size="6,2" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupShoppingCart"/>
 </lootcontainer>
 
 <!-- Shamway Cardboard Loot-->
-<lootcontainer name="shamwayCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="shamwayCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupShamwayCrate"/>
 </lootcontainer>
 
 <!-- NOT_USED -->
-<lootcontainer name="bookShelves" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="bookShelves" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCrackabookShelves"/>
 </lootcontainer>
 
@@ -11626,44 +11746,44 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- gas pump loot -->
-<lootcontainer name="gasPump" count="1,1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="gasPump" count="1,1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item name="ammoGasCan" count="10,500"/>
 </lootcontainer>
 
 <!-- Toilet, all tiered items are QL 1 -->
-<lootcontainer name="toilet" count="1" size="6,1" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" open_time="3" loot_quality_template="qualQ1Template">
+<lootcontainer name="toilet" count="1" size="6,1" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" open_time="3" loot_quality_template="qualQ1Template" buff="jz_BuffLootingXPTick">
 	<item group="groupToilet"/>
 </lootcontainer>
 
 <!-- dumpster -->
-<lootcontainer name="dumpster" count="1,2" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="dumpster" count="1,2" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupJunk"/>
 	<item group="groupDumpsterFood" prob="0.05"/>
 </lootcontainer>
 
 <!-- cntMorticianDrawerFull -->
-<lootcontainer name="morticianDrawer" count="1,2" size="6,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="morticianDrawer" count="1,2" size="6,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupMorticianDrawer"/>
 </lootcontainer>
 
 <!-- EntityLootContainerRegular, rare random drop off regular zombies -->
-<lootcontainer name="zPackReg" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="zPackReg" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- EntityLootContainerStrong, rare random drop off strong zombies -->
-<lootcontainer name="zPackStrong" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="zPackStrong" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- cntFetchQuestSatchel  -->
-<lootcontainer name="questSatchel" count="0" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="questSatchel" count="0" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- EntityLootContainerBoss, rare random drop off bosses -->
-<lootcontainer name="zPackBoss" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="zPackBoss" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- cntGasGrillClosed -->
-<lootcontainer name="gasGrill" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" open_time="5" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="gasGrill" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" open_time="5" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGrills"/>
 </lootcontainer>
 
@@ -11688,40 +11808,40 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- army truck-->
-<lootcontainer name="armyTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="armyTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupArmyTruck"/>
 </lootcontainer>
 
 <!-- farm truck-->
-<lootcontainer name="farmTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="10" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="farmTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="10" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupFarmTruck"/>
 </lootcontainer>
 
 <!-- Police_Car-->
-<lootcontainer name="policeCars" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="policeCars" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupPoliceCar"/>
 </lootcontainer>
 
 <!-- Lockpick_Police_Car-->
-<lootcontainer name="policeCarsBonus" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="policeCarsBonus" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupPoliceCarBonus"/>
 </lootcontainer>
 
 <!-- metal clothes rack, pants -->
-<lootcontainer name="pants" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="pants" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="junkClothing" count="1,2" prob="40"/>
 	<item group="groupApparelPants" prob="60"/>
 </lootcontainer>
 
 <!-- metal clothes rack, shirts -->
-<lootcontainer name="shirts" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shirts" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="junkClothing" count="1,2" prob="40"/>
 	<item group="groupApparelShirtLong" prob="30"/>
 	<item group="groupApparelTankTopTShirt" prob="30"/>
 </lootcontainer>
 
 <!-- military metal clothes rack, pants -->
-<lootcontainer name="militaryPants" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="militaryPants" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="junkClothing" count="1,2" prob="40"/>
 	<item group="ArmyPants" prob="15"/>
 	<item name="resourceMilitaryFiber" count="1,2" prob="5"/>
@@ -11731,7 +11851,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- military metal clothes rack, shirts -->
-<lootcontainer name="militaryShirts" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="militaryShirts" count="1" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="junkClothing" count="2,5" prob="40"/>
 	<item group="ArmyShirt" prob="10"/>
 	<item group="TankTop" prob="5"/>
@@ -11743,401 +11863,401 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- store shelves, food -->
-<lootcontainer name="shamwayShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shamwayShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupShamwayShelves"/>
 </lootcontainer>
 
 <!-- clothing store crate -->
-<lootcontainer name="savageCountryCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="savageCountryCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupSavageCountryCrate"/>
 </lootcontainer>
 
 <!-- construction supplies shipping crate -->
-<lootcontainer name="constructionCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="constructionCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupConstructionCrate"/>
 </lootcontainer>
 
 <!-- bookstore shipping crate -->
-<lootcontainer name="crackabookCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5"  sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="crackabookCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5"  sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupCrackabookCrate"/>
 </lootcontainer>
 
 <!-- car parts shipping crate -->
-<lootcontainer name="passngasCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="passngasCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" open_time="5" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupPassNGas"/>
 </lootcontainer>
 
 <!-- cntCollapsedDewCollector -->
-<lootcontainer name="collapsedDewCollector" count="1" size="7,4" sound_open="open_workbench" open_time="5" sound_close="close_workbench" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="collapsedDewCollector" count="1" size="7,4" sound_open="open_workbench" open_time="5" sound_close="close_workbench" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupDewCollector"/>
 </lootcontainer>
 
 <!-- cntForgeWorkstationBroken -->
-<lootcontainer name="collapsedForge" count="1" size="7,4" sound_open="forge_open" sound_close="forge_close" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedForge" count="1" size="7,4" sound_open="forge_open" sound_close="forge_close" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupForge"/>
 </lootcontainer>
 
 <!-- cntCollapsedWorkbench -->
-<lootcontainer name="collapsedWorkbench" count="1" size="7,4" sound_open="open_workbench" sound_close="close_workbench" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedWorkbench" count="1" size="7,4" sound_open="open_workbench" sound_close="close_workbench" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupWorkbenchLoot"/>
 </lootcontainer>
 
 <!-- cntCollapsedCementMixer -->
-<lootcontainer name="collapsedCementMixer" count="1" size="7,4" sound_open="cement_mixer_open" sound_close="cement_mixer_close" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedCementMixer" count="1" size="7,4" sound_open="cement_mixer_open" sound_close="cement_mixer_close" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCementMixerLoot"/>
 </lootcontainer>
 
 <!-- cntCollapsedChemistryStation -->
-<lootcontainer name="collapsedChemistryStation" count="1" size="7,4" sound_open="chem_station_open" sound_close="chem_station_close" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedChemistryStation" count="1" size="7,4" sound_open="chem_station_open" sound_close="chem_station_close" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupChemistryStationLoot"/>	
 </lootcontainer>
 
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
-<lootcontainer name="hiddenStash" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualPlus1Template">
+<lootcontainer name="hiddenStash" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item group="groupHiddenStash"/>
 </lootcontainer>
 
 <!-- cntCollapsedBatterybank -->
-<lootcontainer name="collapsedBatteryBank" count="1" size="6,1" sound_open="open_vending" open_time="5" lsound_close="close_vending" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedBatteryBank" count="1" size="6,1" sound_open="open_vending" open_time="5" lsound_close="close_vending" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupBattBank"/>
 </lootcontainer>
 
 <!-- cntCollapsedGeneratorbank -->
-<lootcontainer name="collapsedGeneratorBank" count="1" size="6,1" sound_open="open_vending" open_time="5" lsound_close="close_vending" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="collapsedGeneratorBank" count="1" size="6,1" sound_open="open_vending" open_time="5" lsound_close="close_vending" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGenBank"/>
 </lootcontainer>
 
 <!-- cntWaterCoolerFull -->
-<lootcontainer name="waterCooler" count="1" size="6,2" sound_open="UseActions/open_cooler" open_time="2" lsound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="waterCooler" count="1" size="6,2" sound_open="UseActions/open_cooler" open_time="2" lsound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item name="drinkJarPureMineralWater" count="1,2" prob="30"/>
 	<item name="jz_DrinkCleanOuncesOfWater" count="8,48" prob="30"/>
 	<item name="jz_DrinkDirtyOuncesOfWater" count="8,48" prob="40"/>
 </lootcontainer>
 
 <!-- cntWeaponsBagSmall -->
-<lootcontainer name="weaponsBagSmall" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="weaponsBagSmall" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupSmallWeaponBag"/>
 </lootcontainer>
 
 <!-- cntWeaponsBagLarge -->
-<lootcontainer name="weaponsBagLarge" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="weaponsBagLarge" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupLargeWeaponBag"/>
 </lootcontainer>
 
 <!-- cntBuriedFoodStashChest, Trader Quest Buried Supplies T1 -->
-<lootcontainer name="buriedSuppliesT1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="buriedSuppliesT1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="3" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBuriedSuppliesT1"/>
 </lootcontainer>
 
 <!-- cntBuriedWeaponChest, Trader Quest Buried Supplies T2 -->
-<lootcontainer name="buriedSuppliesT2" count="2,3" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="buriedSuppliesT2" count="2,3" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBuriedWeaponChest"/>
 </lootcontainer>
 
 <!-- cntBuriedLootStashChest, treasure_taylor etc -->
-<lootcontainer name="buriedTreasure" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualPlus1Template" destroy_on_close="true">
+<lootcontainer name="buriedTreasure" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="5" loot_quality_template="qualPlus1Template" destroy_on_close="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBuriedTreasure"/>
 </lootcontainer>
 
 <!-- Loot block with basic equipment for testing prefabs -->
-<lootcontainer name="prefabEditorBox" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time=".2" loot_quality_template="qualPlus1Template">
+<lootcontainer name="prefabEditorBox" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time=".2" loot_quality_template="qualPlus1Template" buff="jz_BuffLootingXPTick">
 	<item group="prefabQuestLoot"/>
 </lootcontainer>
 
 <!-- Weapon loot test  qualBaseTemplate, testTemplate -->
-<lootcontainer name="weaponTestLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time=".2" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="weaponTestLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time=".2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="weaponTestLoot"/>
 </lootcontainer>
 
 <!-- Tool loot test -->
-<lootcontainer name="toolTestLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="toolTestLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="toolTestLoot"/>
 </lootcontainer>
 
 <!-- Item loot test group used to test buffs/perks that increase loot quantities-->
-<lootcontainer name="testItemsLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="testItemsLoot" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupTESTITEMS"/>
 </lootcontainer>
 
 <!-- cntPillCase -->
-<lootcontainer name="popnpillsShelves" size="6,2" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="popnpillsShelves" size="6,2" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupPopnpillsShelves"/>
 </lootcontainer>
 
 <!-- cntPillCaseClosed -->
-<lootcontainer name="medicalPillCase" count="1,2" size="6,2" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="medicalPillCase" count="1,2" size="6,2" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupMedicalPileLarge"/>
 </lootcontainer>
 
 <!-- cntAmmoPileSmall -->
-<lootcontainer name="ammoPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="ammoPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<!-- <item group="groupAmmoPileSmall"/> -->
 	<item group="groupAmmoPileSmall"/>
 </lootcontainer>
 
 <!-- cntAmmoPileMedium -->
-<lootcontainer name="ammoPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="ammoPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupAmmoPileMed"/>
 </lootcontainer>
 
 <!-- cntAmmoPileLarge -->
-<lootcontainer name="ammoPileLarge" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="ammoPileLarge" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupAmmoPileLarge"/>
 </lootcontainer>
 
 <!-- cntFoodPileSmall -->
-<lootcontainer name="foodPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="foodPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupFoodPileSmall"/>
 </lootcontainer>
 
 <!-- cntFoodPileMedium -->
-<lootcontainer name="foodPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="foodPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupFoodPileMed"/>
 </lootcontainer>
 
 <!-- cntFoodPileLarge -->
-<lootcontainer name="foodPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="foodPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupFoodPileLarge"/>
 </lootcontainer>
 
 <!-- medicalPileSmall -->
-<lootcontainer name="medicalPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="medicalPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupMedicalPileSmall"/>
 </lootcontainer>
 
 <!-- medicalPileMedium -->
-<lootcontainer name="medicalPileMedium" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="medicalPileMedium" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupMedicalPileMed"/>
 </lootcontainer>
 
 <!-- medicalPileLarge -->
-<lootcontainer name="medicalPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="medicalPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupMedicalPileLarge"/>
 </lootcontainer>
 
 <!-- cntLiquorPileSmall -->
-<lootcontainer name="liquorPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="liquorPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupLiquorPileSmall"/>
 </lootcontainer>
 
 <!-- cntLiquorPileMedium -->
-<lootcontainer name="liquorPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="liquorPileMed" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupLiquorPileMed"/>
 </lootcontainer>
 
 <!-- cntLiquorPileLarge -->
-<lootcontainer name="liquorPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="liquorPileLarge" size="6,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupLiquorPileLarge"/>
 </lootcontainer>
 
 <!-- cntUtilityCartFull-->
-<lootcontainer name="utilityCart" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="utilityCart" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick" >
 	<item group="groupUtilityCart"/>
 </lootcontainer>
 
 <!-- cntCoffeeMaker, cntCoffeeMakerCommercial -->
-<lootcontainer name="coffeeMaker" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="coffeeMaker" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCoffeeMaker"/>
 </lootcontainer>
 
 <!-- cntSodaFountain -->
-<lootcontainer name="sodaFountain" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="sodaFountain" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupSodaFountain"/>
 </lootcontainer>
 
 <!-- fuel cntBarrelGasOld -->
-<lootcontainer name="gasBarrel" count="1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="gasBarrel" count="1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item name="ammoGasCan" count="10,50"/>
 </lootcontainer>
 
 <!-- closet hanger, cntModularClosetClosed -->
-<lootcontainer name="closet" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="closet" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCloset"/>
 </lootcontainer>
 
 <!-- cntRollingToolBoxClosed -->
-<lootcontainer name="rollingToolBox" count="1" size="6,2" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="rollingToolBox" count="1" size="6,2" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupRollingToolbox"/>
 </lootcontainer>
 
 <!-- cntToolBoxClosed -->
-<lootcontainer name="toolBox" count="1" size="6,2" sound_open="UseActions/open_toolbox" sound_close="UseActions/close_toolbox" open_time="5" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="toolBox" count="1" size="6,2" sound_open="UseActions/open_toolbox" sound_close="UseActions/close_toolbox" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupToolbox"/>
 </lootcontainer>
 
 <!-- store shelves, hardware -->
-<lootcontainer name="workingStiffsShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="workingStiffsShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupWorkingStiffs01"/>
 </lootcontainer>
 
 <!-- cntStoreProduce -->
-<lootcontainer name="shamwayProduce" count="1" size="6,2" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="shamwayProduce" count="1" size="6,2" sound_open="UseActions/open_shopping_basket" sound_close="UseActions/close_shopping_basket" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupShamwayProduce"/>
 </lootcontainer>
 
 <!-- cntFreezerGroceriesMiddleFullClosed -->
-<lootcontainer name="shamwayFreezer" count="1,2" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shamwayFreezer" count="1,2" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupShamwayFreezer"/>
 </lootcontainer>
 
 <!-- cntFreezerBeveragesMiddleFullClosed -->
-<lootcontainer name="shamwayDrinks" count="1,2" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shamwayDrinks" count="1,2" size="6,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupShamwayCooler"/>
 </lootcontainer>
 
 <!-- cntClothesShelfJeans01 NOT USED-->
-<lootcontainer name="jeans" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="jeans" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupApparelClothes" prob="60"/>
 	<item group="junkClothing" count="1,2" prob="40"/>
 </lootcontainer>
 
 <!-- medicine cabinets -->
-<lootcontainer name="medicineCabinet" count="1" size="6,2" sound_open="UseActions/open_medicine_cabinet" open_time="3" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="medicineCabinet" count="1" size="6,2" sound_open="UseActions/open_medicine_cabinet" open_time="3" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupMedicineCabinet"/>
 </lootcontainer>
 
 <!-- cntDisplayCaseAmmoLeftBroken, copy of cntAmmoPileMedium -->
-<lootcontainer name="ammoDisplay" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="ammoDisplay" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupAmmoRackDisplay"/>
 </lootcontainer>
 
 <!-- cntStoreShelf_Shoes -->
-<lootcontainer name="shoesShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="shoesShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupApparelShoesAll" prob="60"/>
 	<item group="junkClothing" count="1,2" prob="40"/>
 </lootcontainer>
 
 <!-- cntShoesPileSneakers etc. -->
-<lootcontainer name="shoes" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="shoes" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupApparelShoesAll" prob="60"/>
 	<item group="junkClothing" count="1,2" prob="40"/>
 </lootcontainer>
 
 <!-- cntBookPile01 etc. -->
-<lootcontainer name="bookPile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+<lootcontainer name="bookPile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBookPile"/>
 </lootcontainer>
 
 <!-- cntBookPile05 - 15 etc. -->
-<lootcontainer name="singleBooks" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true">
+<lootcontainer name="singleBooks" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="true" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupBookPile"/>
 </lootcontainer>
 
 <!-- cntBookShelfSingleBottomFull01 etc. -->
-<lootcontainer name="crackabookShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="clothdestroy" open_time="2" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="crackabookShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="clothdestroy" open_time="2" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupCrackabookShelves"/>
 </lootcontainer>
 
 <!-- cntGunRackWallArmor -->
-<lootcontainer name="armorRack" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="armorRack" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupArmorScaled"/>
 </lootcontainer>
 
 <!-- cntGunRackWallGuns01 -->
-<lootcontainer name="gunRack" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="gunRack" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupGunRack"/>
 </lootcontainer>
 
 <!-- JunkDrone -->
-<lootcontainer name="roboticDrone" count="0" size="8,2" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="roboticDrone" count="0" size="8,2" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- cntStoreShelfElectronicsSingle etc. -->
-<lootcontainer name="mopowerShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" >
+<lootcontainer name="mopowerShelves" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="5" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupMoPowerShelves"/>
 </lootcontainer>
 
 <!-- clothes shelf, shirts -->
-<lootcontainer name="shirtsShelves" count="1" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="shirtsShelves" count="1" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="junkClothing" count="1,3" prob="40"/>
 	<item group="groupApparelShirtLong" prob="30"/>
 	<item group="groupApparelTankTopTShirt" prob="30"/>
 </lootcontainer>
 
 <!-- metal clothes rack, pants -->
-<lootcontainer name="pantsShelves" count="1" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate"  >
+<lootcontainer name="pantsShelves" count="1" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="junkClothing" count="1,3" prob="30"/>
 	<item group="groupApparelPants" prob="60"/>
 	<item group="SuitPants" prob="10" />
 </lootcontainer>
 
 <!-- wineBarrel -->
-<lootcontainer name="wineBarrel" count="1" size="8,9" sound_open="UseActions/open_cooler" sound_close="UseActions/close_chest" open_time="3" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="wineBarrel" count="1" size="8,9" sound_open="UseActions/open_cooler" sound_close="UseActions/close_chest" open_time="3" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item name="jz_DrinkDirtyOuncesOfWater" count="6,128" prob="75"/>
 	<item group="empty" prob="25" />
 </lootcontainer>
 
 <!-- Service Trucks -->
-<lootcontainer name="workingStiffsTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="workingStiffsTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupWorkingStiffsCrate"/>
 </lootcontainer>
 
 <!-- Ambulance -->
-<lootcontainer name="ambulance" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="ambulance" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupAmbulance"/>
 </lootcontainer>
 
 <!-- Fire_Truck -->
-<lootcontainer name="fireTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="fireTruck" count="1" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 	<item group="groupFireTruck"/>
 </lootcontainer>
 
 <!-- Robotic Turret and Robotic Sledge-->
-<lootcontainer name="roboticTurret" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer name="roboticTurret" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate" buff="jz_BuffLootingXPTick">
 </lootcontainer>
 
 <!-- ATM -->
-<lootcontainer name="atmLoot" count="1" size="6,1" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="atmLoot" count="1" size="6,1" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item name="oldCash" count="300,1200"/>
 </lootcontainer>
 
 <!-- MoPower Crate -->
-<lootcontainer name="mopowerCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5"  loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+<lootcontainer name="mopowerCrate" count="1" size="6,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="5"  loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupMoPower"/>
 </lootcontainer>
 
 <!-- cntLootChestHeroInsecureT1, T1_Wood_Crate -->
-<lootcontainer name="reinforcedChestT1" count="1" size="8,9" sound_open="UseActions/chest_tier1_open" sound_close="UseActions/chest_tier1_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="reinforcedChestT1" count="1" size="8,9" sound_open="UseActions/chest_tier1_open" sound_close="UseActions/chest_tier1_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupReinforcedChestT1"/>
 </lootcontainer>
 
 <!-- cntLootChestHeroInsecureT2, T2_Leather_Trunk -->
-<lootcontainer name="reinforcedChestT2" count="1" size="8,9" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="reinforcedChestT2" count="1" size="8,9" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupReinforcedChestT2"/>
 </lootcontainer>
 
 <!-- cntLootChestHero, T3_Iron_Chest -->
-<lootcontainer name="reinforcedChestT3" count="1" size="8,9" sound_open="UseActions/chest_tier3_open" sound_close="UseActions/chest_tier3_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="reinforcedChestT3" count="1" size="8,9" sound_open="UseActions/chest_tier3_open" sound_close="UseActions/chest_tier3_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupReinforcedChestT3"/>
 </lootcontainer>
 
 <!-- cntHardenedChestSecure, T4_Hardened_Chest  -->
-<lootcontainer name="hardenedChestT4" count="1" size="8,9" sound_open="UseActions/chest_tier4_open" sound_close="UseActions/chest_tier4_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="hardenedChestT4" count="1" size="8,9" sound_open="UseActions/chest_tier4_open" sound_close="UseActions/chest_tier4_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupHardenedChestT4"/>
 </lootcontainer>
 
 <!-- cntHardenedChestSecureT5, T5_Hardened_Chest  -->
-<lootcontainer name="hardenedChestT5" count="1" size="8,9" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<lootcontainer name="hardenedChestT5" count="1" size="8,9" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="groupHardenedChestT5"/>
 </lootcontainer>
 
 <!-- chemPileSmall -->
-<lootcontainer name="chemPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="chemPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupChemPileSmall"/>
 </lootcontainer>
 
 <!-- chemPileMedium -->
-<lootcontainer name="chemPileMed" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="chemPileMed" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupChemPileMed"/>
 </lootcontainer>
 
 <!-- chemPileLarge -->
-<lootcontainer name="chemPileLarge" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+<lootcontainer name="chemPileLarge" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupChemPileLarge"/>
 </lootcontainer>
 
 <!-- Quest Reward Bundle -->
-<lootcontainer name="questRewardSkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+<lootcontainer name="questRewardSkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true" buff="jz_BuffLootingXPTick">
 	<item group="booksAllScaled"/>
 </lootcontainer>
 
@@ -12400,27 +12520,27 @@ If there is no hit the default quality is used.
 <!-- ********************************************************************* TRUE SURVIVAL ADDED*************************************************-->
 
 <!-- fuel cntBarrelAcidSingle00 -->
-<lootcontainer name="cntBarrelAcidSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1">
+<lootcontainer name="cntBarrelAcidSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item name="resourceAcid" count="1,100"/>
 </lootcontainer>
 
 <!-- fuel cntBarrelGenericSingle00 Items-->
-<lootcontainer name="cntBarrelGenericSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1">
+<lootcontainer name="cntBarrelGenericSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item name="ammoGasCan" count="20,500"/>
 </lootcontainer>
 
 <!-- fuel cntBarrelOilSingle00 -->
-<lootcontainer name="cntBarrelOilSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1">
+<lootcontainer name="cntBarrelOilSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item name="resourceOil" count="1,100"/>
 </lootcontainer>
 
 <!-- fuel cntBarrelWhiteSingle00 -->
-<lootcontainer name="cntBarrelWhiteSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1">
+<lootcontainer name="cntBarrelWhiteSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item name="jz_DrinkDirtyOuncesOfWater" count="10,300"/>
 </lootcontainer>
 
 <!-- fuel cntBarrelPlasticSingle00 -->
-<lootcontainer name="cntBarrelPlasticSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1">
+<lootcontainer name="cntBarrelPlasticSingle00" count="0,1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" open_time="2" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item name="jz_DrinkCleanOuncesOfWater" count="10,300"/>
 </lootcontainer>
 
@@ -12595,7 +12715,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- Helicopters-->
-<lootcontainer name="Helicopters" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
+<lootcontainer name="Helicopters" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
     <item group="vehiclePartsTiered" prob="5" />
 	<item group="groupWeaponsRangedScaled" count="1,2" prob="20" />
 	<item group="groupAmmoAdvanced" count="1,2" prob="20" />
@@ -12609,7 +12729,7 @@ If there is no hit the default quality is used.
 </lootcontainer> 
 
 <!-- Military Crashes  STOPED HERE-->
-<lootcontainer name="MilitaryCrashes" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
+<lootcontainer name="MilitaryCrashes" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item group="vehiclePartsTiered" prob="40" />
 	<item group="groupAmmoAdvanced" count="1,2" prob="15" />
 	<item group="groupArmorScaled" count="1,2" prob="20" />
@@ -12618,7 +12738,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- Construction Vehicles-->
-<lootcontainer name="ConstructionVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="QLTemplateT1">
+<lootcontainer name="ConstructionVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="15" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item group="vehiclePartsTiered" prob="54" />
 	<item group="groupRareToolsTiered" prob="10" />
 	<item group="workingStiffs" prob="10" />
@@ -12629,7 +12749,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- Garbage Vehicles-->
-<lootcontainer name="GarbageVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
+<lootcontainer name="GarbageVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1" buff="jz_BuffLootingXPTick">
 	<item group="vehiclePartsTiered" prob="49" />
     <item group="WorkingVehiclePlaceable" prob="1" />
 	<item group="rottenFood" prob="50" />
@@ -12641,7 +12761,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- cntClothesPileFloor01 -->
-<lootcontainer name="ClothesPile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty"  >
+<lootcontainer name="ClothesPile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="2" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" buff="jz_BuffLootingXPTick">
 	<item group="groupLaundry"/>
 </lootcontainer>
 

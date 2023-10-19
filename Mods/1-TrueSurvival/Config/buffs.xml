@@ -13446,13 +13446,15 @@
 	<buff name="jz_BuffSnakeLimp" hidden="true" >
 		<stack_type value="ignore"/>
 		<duration value="300"/>
-		<effect_group>		
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSnakeLimpPt1"/>	
-			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
-			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SnakeLimpActive" operation="set" value="1"/>
+        	<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSnakeLimpPt1"/>			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="$SnakeLimpActive" operation="set" value="0"/><triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
 			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$SnakeLimpActive" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
@@ -13464,7 +13466,8 @@
 		<stack_type value="ignore"/>
 		<duration value="0.5"/>
 		<effect_group>		
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeLimpPt2"/>	
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeLimpPt2">
+				<requirement name="CVarCompare" cvar="$SnakeLimpActive" operation="Equals" value="1"/></triggered_effect>
 		</effect_group>
 	</buff>
 	
@@ -13473,11 +13476,11 @@
 		<duration value="0.5"/>
 		<effect_group>		
 			<passive_effect name="Mobility" operation="base_subtract" value="0.8"/>
-		</effect_group>
-		<effect_group>		
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeLimpPt1"/>	
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeLimpPt1">	
+				<requirement name="CVarCompare" cvar="$SnakeLimpActive" operation="Equals" value="1"/></triggered_effect>
 		</effect_group>
 	</buff>
+	
 	<buff name="jz_BuffScorpionBite" name_key="Scorpion Sting" tooltip_key="Ow! That Hurts!" description_key="jz_BuffScorpionBiteDesc" icon="ui_game_symbol_ScorpionBuff" >
 		<stack_type value="ignore"/>
 		<update_rate value="1"/>
@@ -39720,6 +39723,716 @@
 			<requirement name="CVarCompare" cvar="$TotalMinPlayed" operation="GTE" value="1800"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="CreateItemSDX, SCore" item="jz_Player20DaysReward" count="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffTotalTimePlayed"/>
+		</effect_group>
+	</buff>
+	
+	<!-- JZMOD WORKSTATION UPGRADE-TOOL LOOT CHANCE RESET -->
+	
+	<buff name="jz_BuffImprovisedThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandSawLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SquareLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandDrillLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MalletLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$WoodChiselLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ClampsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$DrawBladeLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffImprovisedTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MasonaryHandsawLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPipeGunThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PipeSawLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPipeGunFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PipeViseLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPipeGunFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AngleGrinderLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPipeGunSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PropaneTorchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolTwoRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MeasuringTapeLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$FileSetLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ToolMakingForBeginersLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$CircularSawLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedToolCraftingLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PlanerLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SanderLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$DrillLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffToolTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LatheLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$WireStripersLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MagnifyingGlassLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$CurcuitBoardHolderLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedCircuitryLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$CircuitBoardRepairKitLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SolderingIronLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedRoboticsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetalBreakLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicElevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$VoltTesterLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffElectronicTwelveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$3DPrinterLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeatherNeedleLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BasicTailoringNAlterationsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SmallLoomLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$FabricShearsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedLeatherWorkingLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeatherPunchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SewingMachineLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffLightArmorTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TailorMannequinLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PliersLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+		
+	<buff name="jz_BuffHeavyArmorFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetalSnipsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ViseLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedArmorSmithingLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetalDrillLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RivetGunLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$OxyacetyleneTorchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHeavyArmorTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AngleGrinderLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunTorxSetLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunTiNLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunSightToolLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedHandgunCoilSpringsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunBushingWrenchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunStipplingKitLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	<buff name="jz_BuffHandgunNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BasicHandgunImprovmentsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunBarrelBorerLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunElevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedHandgunAssemblingLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffHandgunTwelveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HandgunGuideRodsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunTorxSetLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunTiNLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunSightToolLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedShutgunCoilSpringsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunBushingWrenchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunBarrelBorerLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunStipplingKitLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffShotgunTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShotgunGuideRodsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunTorxSetLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunTiNLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunSightToolLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedMachineGunCoilSpringsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunBushingWrenchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunBarrelBorerLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunStipplingKitLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffMachineGunTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MachineGunGuideRodsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleThreeRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleTorxSetLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleFourRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleTiNLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleFiveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleSightToolLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	<buff name="jz_BuffRifleSixRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedRifleCoilSpringsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	<buff name="jz_BuffRifleSevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleBushingWrenchLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleEightRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleStipplingKitLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleNineRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BasicRifleImprovmentsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleTenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleBarrelBorerLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleElevenRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AdvancedRifleAssemblingLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffRifleTwelveRemove" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RifleGuideRodsLootPerc" operation="set" value="0"/>
+		</effect_group>
+	</buff>
+	
+	<!-- STOVE QUEST -->
+	<buff name="jz_BuffStoveRepairKitRemove" name_key="Ignore Me" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$StovePartsLootPerc" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" target="self"  />
+		</effect_group>
+	</buff>
+	
+	<!-- KITCHEN QUEST -->
+	<buff name="jz_BuffKitchenRecipeRemove" name_key="Ignore Me" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$KitchenBookLootPerc" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" target="self"  />
+		</effect_group>
+	</buff>
+	
+	<!-- 	FLASHBANG QUEST -->
+	<buff name="jz_BuffFlashbangQuestHack" name_key="Ignore Me" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" target="self"  />
+		</effect_group>
+	</buff>
+	<!-- JZMOD LOOTING XP SERVER HACK -->
+	<buff name="jz_BuffLootingXPTick" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="20"/>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_LootingSkill" operation="LT" value="100"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_LootingXP" operation="add" value=".5"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_LootingSkill" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="$jz_LootingXP" operation="GTE" value="@$jz_LootingSkillNextLvTotal"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_LootingSkillLvAdd" operation="multiply" value="@$jz_SkillLvMult"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_LootingSkillNextLvTotal" operation="add" value="@$jz_LootingSkillLvAdd"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_LootingSkill" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound"  sound="levelupplayer" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="You have leveled up your Looting Skill!"/>
 		</effect_group>
 	</buff>
 	<!-- ******************************************************** JZMOD TESTING ******************************************** -->

@@ -17,6 +17,103 @@
 			</requirements>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="20">	
                     <requirement name="NotHasBuff" buff="jz_BuffNotNew"/></triggered_effect>
+				<!-- Improvised -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandSawLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SquareLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandDrillLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MalletLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$WoodChiselLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ClampsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DrawBladeLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MasonaryHandsawLootPerc" operation="set" value="0"/>
+				<!-- Pipe Gun -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PipeSawLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PipeViseLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AngleGrinderLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PropaneTorchLootPerc" operation="set" value="0"/>
+				<!-- Tool -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MeasuringTapeLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$FileSetLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ToolMakingForBeginersLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CircularSawLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedToolCraftingLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PlanerLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SanderLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DrillLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LatheLootPerc" operation="set" value="0"/>
+				<!-- Electronic -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$WireStripersLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MagnifyingGlassLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CurcuitBoardHolderLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedCircuitryLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CircuitBoardRepairKitLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SolderingIronLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedRoboticsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetalBreakLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$VoltTesterLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$3DPrinterLootPerc" operation="set" value="0"/>
+				<!-- Light Armor -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LeatherNeedleLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BasicTailoringNAlterationsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CurcuitBoardHolderLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SmallLoomLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedLeatherWorkingLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LeatherPunchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SewingMachineLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$TailorMannequinLootPerc" operation="set" value="0"/>
+				<!-- Heavy Armor -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PliersLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetalSnipsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ViseLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedArmorSmithingLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetalDrillLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RivetGunLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$OxyacetyleneTorchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AngleGrinderLootPerc" operation="set" value="0"/>
+				<!-- Handgun -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunTorxSetLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunTiNLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunSightToolLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedHandgunCoilSpringsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunBushingWrenchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunStipplingKitLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BasicHandgunImprovmentsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunBarrelBorerLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedHandgunAssemblingLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HandgunGuideRodsLootPerc" operation="set" value="0"/>
+				<!-- Shotgun -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunTorxSetLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunTiNLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunSightToolLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedShutgunCoilSpringsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunBushingWrenchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunBarrelBorerLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunStipplingKitLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$ShotgunGuideRodsLootPerc" operation="set" value="0"/>
+				<!-- Machineg Gun -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunTorxSetLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunTiNLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunSightToolLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedMachineGunCoilSpringsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunBushingWrenchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunBarrelBorerLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunStipplingKitLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MachineGunGuideRodsLootPerc" operation="set" value="0"/>
+				<!-- Rifle -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleTorxSetLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleTiNLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleSightToolLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedRifleCoilSpringsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleBushingWrenchLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleStipplingKitLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BasicRifleImprovmentsLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleBarrelBorerLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$AdvancedRifleAssemblingLootPerc" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$RifleGuideRodsLootPerc" operation="set" value="0"/>
+				<!-- Stove Quest -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$StovePartsLootPerc" operation="set" value="0"/>
+				<!-- Kitchen Quest -->
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$KitchenBookLootPerc" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PlayerRadiaton" operation="set" value="0.00"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$NutritionGainAmount" operation="set" value="0.01"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CurrentMaxEncumbrance" operation="set" value="100"/>
@@ -463,19 +560,6 @@
 		<effect_group>
             <passive_effect name="LootStage" operation="perc_add" level="0,100" value="0,.15"/>
 			<passive_effect name="ScavengingTime" operation="perc_subtract" level="0,100" value="0,.4"/>
-		</effect_group>
-		<effect_group>
-			<requirement name="ProgressionLevel" progression_name="jz_LootingSkill" operation="LT" value="100"/>
-				<triggered_effect trigger="onSelfLootContainer" action="ModifyCVar" cvar="$jz_LootingXP" operation="add" value=".5"/>
-		</effect_group>
-		<effect_group>
-			<requirement name="ProgressionLevel" progression_name="jz_LootingSkill" operation="LT" value="100"/>
-			<requirement name="CVarCompare" cvar="$jz_LootingXP" operation="GTE" value="@$jz_LootingSkillNextLvTotal"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_LootingSkillLvAdd" operation="multiply" value="@$jz_SkillLvMult"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_LootingSkillNextLvTotal" operation="add" value="@$jz_LootingSkillLvAdd"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_LootingSkill" operation="add" value="1"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="PlaySound"  sound="levelupplayer" play_in_head="true"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ShowToolbeltMessage" message="You have leveled up your Looting Skill!"/>
 		</effect_group>
 	</perk>
 	<!--ArcherySkill-->

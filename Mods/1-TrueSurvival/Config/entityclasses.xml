@@ -297,6 +297,105 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="-100" tags="upperbody"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-100" tags="lowerbody"/>
 	</effect_group>	
+	<effect_group name="Workstation Upgrade Item Loot">
+		<!-- Improvised -->
+		<passive_effect name="LootProb" operation="base_set" value="@$HandSawLootPerc" tags="jz_ToolHandSaw"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$SquareLootPerc" tags="jz_ToolSquare"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandDrillLootPerc" tags="jz_BrokenToolHandDrill"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MalletLootPerc" tags="jz_ToolMallet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$WoodChiselLootPerc" tags="jz_ToolWoodChisel"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ClampsLootPerc" tags="jz_BrokenToolClamps"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$DrawBladeLootPerc" tags="jz_BrokenToolDrawBlade"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MasonaryHandsawLootPerc" tags="jz_BrokenToolMasonaryHandsaw"/>
+		<!-- Pipe Gun -->
+		<passive_effect name="LootProb" operation="base_set" value="@$PipeSawLootPerc" tags="jz_ToolPipeSaw"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$PipeViseLootPerc" tags="jz_ToolPipeVise"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AngleGrinderLootPerc" tags="jz_ToolAngleGrinder"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$PropaneTorchLootPerc" tags="jz_ToolPropaneTorch"/>
+		<!-- Advanced Tools -->
+		<passive_effect name="LootProb" operation="base_set" value="@$MeasuringTapeLootPerc" tags="jz_BrokenToolMeasuringTape"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$FileSetLootPerc" tags="jz_ToolFileSet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ToolMakingForBeginersLootPerc" tags="jz_ToolToolMakingForBeginers"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$CircularSawLootPerc" tags="jz_BrokenToolCircularSaw"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedToolCraftingLootPerc" tags="jz_ToolAdvancedToolCrafting"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$PlanerLootPerc" tags="jz_ToolPlaner"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$SanderLootPerc" tags="jz_BrokenToolSander"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$DrillLootPerc" tags="jz_BrokenToolDrill"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$LatheLootPerc" tags="jz_BrokenToolLathe"/>
+		<!-- Electronic -->
+		<passive_effect name="LootProb" operation="base_set" value="@$WireStripersLootPerc" tags="jz_ToolWireStripers"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MagnifyingGlassLootPerc" tags="jz_ToolMagnifyingGlass"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$CurcuitBoardHolderLootPerc" tags="jz_BrokenToolCurcuitBoardHolder"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedCircuitryLootPerc" tags="jz_ToolAdvancedCircuitry"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$CircuitBoardRepairKitLootPerc" tags="jz_ToolCircuitBoardRepairKit"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$SolderingIronLootPerc" tags="jz_BrokenToolSolderingIron"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedRoboticsLootPerc" tags="jz_ToolAdvancedRobotics"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MetalBreakLootPerc" tags="jz_BrokenToolMetalBreak"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$VoltTesterLootPerc" tags="jz_ToolVoltTester"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$3DPrinterLootPerc" tags="jz_BrokenTool3DPrinter"/>
+		<!-- Light Armor -->
+		<passive_effect name="LootProb" operation="base_set" value="@$LeatherNeedleLootPerc" tags="jz_ToolLeatherNeedle"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$BasicTailoringNAlterationsLootPerc" tags="jz_ToolBasicTailoringNAlterations"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$SmallLoomLootPerc" tags="jz_BrokenToolSmallLoom"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$FabricShearsLootPerc" tags="jz_ToolFabricShears"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedLeatherWorkingLootPerc" tags="jz_ToolAdvancedLeatherWorking"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$LeatherPunchLootPerc" tags="jz_BrokenToolLeatherPunch"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$SewingMachineLootPerc" tags="jz_BrokenToolSewingMachine"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$TailorMannequinLootPerc" tags="jz_BrokenToolTailorMannequin"/>
+		<!-- Heavy Armor -->
+		<passive_effect name="LootProb" operation="base_set" value="@$PliersLootPerc" tags="jz_ToolPliers"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MetalSnipsLootPerc" tags="jz_ToolMetalSnips"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ViseLootPerc" tags="jz_BrokenToolVise"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedArmorSmithingLootPerc" tags="jz_ToolAdvancedArmorSmithing"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MetalDrillLootPerc" tags="jz_ToolMetalDrill"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RivetGunLootPerc" tags="jz_BrokenToolRivetGun"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$OxyacetyleneTorchLootPerc" tags="jz_BrokenToolOxyacetyleneTorch"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AngleGrinderLootPerc" tags="jz_BrokenToolAngleGrinder"/>
+		<!-- Handgun -->
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunTorxSetLootPerc" tags="jz_ToolHandgunTorxSet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunTiNLootPerc" tags="jz_ToolHandgunTiN"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunSightToolLootPerc" tags="jz_BrokenToolHandgunSightTool"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedHandgunCoilSpringsLootPerc" tags="jz_ToolAdvancedHandgunCoilSprings"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunBushingWrenchLootPerc" tags="jz_ToolHandgunBushingWrench"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunStipplingKitLootPerc" tags="jz_BrokenToolHandgunStipplingKit"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$BasicHandgunImprovmentsLootPerc" tags="jz_ToolBasicHandgunImprovments"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunBarrelBorerLootPerc" tags="jz_BrokenToolHandgunBarrelBorer"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedHandgunAssemblingLootPerc" tags="jz_ToolAdvancedHandgunAssembling"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$HandgunGuideRodsLootPerc" tags="jz_BrokenToolHandgunGuideRods"/>
+		<!-- Shotgun -->
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunTorxSetLootPerc" tags="jz_ToolShotgunTorxSet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunTiNLootPerc" tags="jz_ToolShotgunTiN"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunSightToolLootPerc" tags="jz_BrokenToolShotgunSightTool"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedShutgunCoilSpringsLootPerc" tags="jz_ToolAdvancedShutgunCoilSprings"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunBushingWrenchLootPerc" tags="jz_ToolShotgunBushingWrench"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunBarrelBorerLootPerc" tags="jz_BrokenToolShotgunBarrelBorer"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunStipplingKitLootPerc" tags="jz_BrokenToolShotgunStipplingKit"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunGuideRodsLootPerc" tags="jz_BrokenToolShotgunGuideRods"/>
+		<!-- Machine Gun -->
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunTorxSetLootPerc" tags="jz_ToolMachineGunTorxSet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunTiNLootPerc" tags="jz_ToolMachineGunTin"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunSightToolLootPerc" tags="jz_BrokenToolMachineGunSightTool"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedMachineGunCoilSpringsLootPerc" tags="jz_ToolAdvancedMachineGunCoilSprings"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunBushingWrenchLootPerc" tags="jz_ToolMachineGunBushingWrench"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunBarrelBorerLootPerc" tags="jz_BrokenToolMachineGunBarrelBorer"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunStipplingKitLootPerc" tags="jz_BrokenToolMachineGunStipplingKit"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunGuideRodsLootPerc" tags="jz_BrokenToolMachineGunGuideRods"/>
+		<!-- Rifle -->
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleTorxSetLootPerc" tags="jz_ToolRifleTorxSet"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleTiNLootPerc" tags="jz_ToolRifleTiN"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleSightToolLootPerc" tags="jz_BrokenToolRifleSightTool"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedRifleCoilSpringsLootPerc" tags="jz_ToolAdvancedRifleCoilSprings"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleBushingWrenchLootPerc" tags="jz_ToolRifleBushingWrench"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleStipplingKitLootPerc" tags="jz_BrokenToolRifleStipplingKit"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$BasicRifleImprovmentsLootPerc" tags="jz_ToolBasicRifleImprovments"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleBarrelBorerLootPerc" tags="jz_BrokenToolRifleBarrelBorer"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedRifleAssemblingLootPerc" tags="jz_ToolAdvancedRifleAssembling"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$RifleGuideRodsLootPerc" tags="jz_BrokenToolRifleGuideRods"/>
+		<!-- Stove Quest -->
+		<passive_effect name="LootProb" operation="base_set" value="@$StovePartsLootPerc" tags="jz_QIStoveParts"/>
+		<!-- Kitchen Quest -->
+		<passive_effect name="LootProb" operation="base_set" value="@$KitchenBookLootPerc" tags="jz_QIMasteringNutrition"/>
+	</effect_group>	
 </entity_class>
 
 		<!-- *** PLAYER_FEMALE-->

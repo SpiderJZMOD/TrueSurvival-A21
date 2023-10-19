@@ -38834,7 +38834,6 @@ perkNightStalkerSilentNight
 <item name="resourceAirFilter">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_IronJunkDesc" />
-	<property name="CustomIcon" value="dumbBell" />
 	<property name="Material" value="Miron" />
 	<property name="Weight" value="15" />
 	<property name="EconomicValue" value="15"/>
@@ -38847,7 +38846,6 @@ perkNightStalkerSilentNight
 <item name="resourceCandyTin">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_IronJunkDesc" />
-	<property name="CustomIcon" value="dumbBell" />
 	<property name="Material" value="Miron" />
 	<property name="Weight" value="5" />
 	<property name="EconomicValue" value="5"/>
@@ -43735,9 +43733,31 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
 	<property name="CustomIcon" value="cntDuffle01"/>
 	<property name="DescriptionKey" value="jz_QIFBTraderSuppliesDesc"/>
-	<property name="Candrop" value="false"/>
-	<property name="IsQuestItem" value="true" />
 	<property name="Tags" value="jz_QIFBTraderSupplies"/>
+</item>
+
+<item name="jz_QIStoveParts">
+	<property name="Extends" value="jz_MasterItem"/>
+	<property name="Stacknumber" value="1" />
+	<property name="CustomIcon" value="cntDuffle01"/>
+	<property name="DescriptionKey" value="jz_QIStovePartsDesc"/>
+	<property name="Tags" value="jz_QIStoveParts"/>
+</item>
+
+<item name="jz_QIStoveParts">
+	<property name="Extends" value="jz_MasterItem"/>
+	<property name="Stacknumber" value="1" />
+	<property name="CustomIcon" value="cntDuffle01"/>
+	<property name="DescriptionKey" value="jz_QIStovePartsDesc"/>
+	<property name="Tags" value="jz_QIStoveParts"/>
+</item>
+
+<item name="jz_QIMasteringNutrition">
+	<property name="Extends" value="jz_MasterItem"/>
+	<property name="Stacknumber" value="1" />
+	<property name="CustomIcon" value="cntDuffle01"/>
+	<property name="DescriptionKey" value="jz_QIMasteringNutritionDesc"/>
+	<property name="Tags" value="jz_QIMasteringNutrition"/>
 </item>
 
 <item name="jz_QIBugOutBag">
@@ -44527,6 +44547,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolHandSaw">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolHandSaw" />
 	<property name="DescriptionKey" value="jz_ImprovisedToolDesc" />
 	<property name="ItemWeight" value="1.5" />
 	<property class="Action0">
@@ -44553,6 +44574,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolSquare">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolSquare" />
 	<property name="DescriptionKey" value="jz_ImprovisedToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -44605,6 +44627,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMallet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMallet" />
 	<property name="DescriptionKey" value="jz_ImprovisedToolDesc" />
 	<property name="ItemWeight" value="2" />
 	<property class="Action0">
@@ -44631,6 +44654,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolWoodChisel">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolWoodChisel" />
 	<property name="DescriptionKey" value="jz_ImprovisedToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -44761,6 +44785,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolPipeSaw">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolPipeSaw" />
 	<property name="DescriptionKey" value="jz_ToolPipeSawDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -44787,6 +44812,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolPipeVise">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolPipeVise" />
 	<property name="DescriptionKey" value="jz_ToolPipeViseDesc" />
 	<property name="ItemWeight" value="8" />
 	<property class="Action0">
@@ -44813,6 +44839,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAngleGrinder">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAngleGrinder" />
 	<property name="DescriptionKey" value="jz_ToolAngleGrinderDesc" />
 	<property name="ItemWeight" value="3.5" />
 	<property class="Action0">
@@ -44839,6 +44866,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolPropaneTorch">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolPropaneTorch" />
 	<property name="DescriptionKey" value="jz_ToolPropaneTorchDesc" />
 	<property name="ItemWeight" value="3" />
 	<property class="Action0">
@@ -44891,6 +44919,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolLeatherNeedle">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolLeatherNeedle" />
 	<property name="DescriptionKey" value="jz_LightArmorDesc" />
 	<property name="ItemWeight" value=".5" />
 	<property class="Action0">
@@ -44917,6 +44946,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolBasicTailoringNAlterations">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolBasicTailoringNAlterations" />
 	<property name="DescriptionKey" value="jz_LightArmorDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -44969,6 +44999,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolFabricShears">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolFabricShears" />
 	<property name="DescriptionKey" value="jz_LightArmorDesc" />
 	<property name="ItemWeight" value="1.5" />
 	<property class="Action0">
@@ -44995,6 +45026,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedLeatherWorking">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedLeatherWorking" />
 	<property name="DescriptionKey" value="jz_LightArmorDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -45361,6 +45393,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolFileSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolFileSet" />
 	<property name="DescriptionKey" value="jz_AdvancedDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -45387,6 +45420,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolToolMakingForBeginers">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolToolMakingForBeginers" />
 	<property name="DescriptionKey" value="jz_AdvancedDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -45439,6 +45473,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedToolCrafting">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedToolCrafting" />
 	<property name="DescriptionKey" value="jz_AdvancedDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -45465,6 +45500,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolPlaner">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolPlaner" />
 	<property name="DescriptionKey" value="jz_AdvancedDesc" />
 	<property name="ItemWeight" value="15" />
 	<property class="Action0">
@@ -45596,6 +45632,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolHandgunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolHandgunTorxSet" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value=".8" />
@@ -45623,6 +45660,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolHandgunTiN">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolHandgunTiN" />
 	<property name="CustomIcon" value="ToolTiNPaint" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value="3" />
@@ -45677,6 +45715,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedHandgunCoilSprings">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedHandgunCoilSprings" />
 	<property name="CustomIcon" value="ToolCoilSpringKit" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value=".05" />
@@ -45704,6 +45743,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolHandgunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolHandgunBushingWrench" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value=".5" />
@@ -45758,6 +45798,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolBasicHandgunImprovments">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolBasicHandgunImprovments" />
 	<property name="CustomIcon" value="jz_BasicGunBook" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value="1" />
@@ -45812,6 +45853,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedHandgunAssembling">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedHandgunAssembling" />
 	<property name="DescriptionKey" value="jz_HandgunToolsDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -45891,6 +45933,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolShotgunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolShotgunTorxSet" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_ShotgunToolsDesc" />
 	<property name="ItemWeight" value=".8" />
@@ -45918,6 +45961,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolShotgunTiN">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolShotgunTiN" />
 	<property name="CustomIcon" value="ToolTiNPaint" />
 	<property name="DescriptionKey" value="jz_ShotgunToolsDesc" />
 	<property name="ItemWeight" value="3" />
@@ -45972,6 +46016,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedShutgunCoilSprings">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedShutgunCoilSprings" />
 	<property name="CustomIcon" value="ToolCoilSpringKit" />
 	<property name="DescriptionKey" value="jz_ShotgunToolsDesc" />
 	<property name="ItemWeight" value=".08" />
@@ -45999,6 +46044,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolShotgunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolShotgunBushingWrench" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_ShotgunToolsDesc" />
 	<property name="ItemWeight" value=".5" />
@@ -46134,6 +46180,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMachineGunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMachineGunTorxSet" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_MachineGunToolDesc" />
 	<property name="ItemWeight" value="1" />
@@ -46161,6 +46208,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMachineGunTiN">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMachineGunTiN" />
 	<property name="CustomIcon" value="ToolTiNPaint" />
 	<property name="DescriptionKey" value="jz_MachineGunToolDesc" />
 	<property name="ItemWeight" value="3" />
@@ -46215,6 +46263,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedMachineGunCoilSprings">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedMachineGunCoilSprings" />
 	<property name="CustomIcon" value="ToolCoilSpringKit" />
 	<property name="DescriptionKey" value="jz_MachineGunToolDesc" />
 	<property name="ItemWeight" value=".1" />
@@ -46242,6 +46291,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMachineGunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMachineGunBushingWrench" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_MachineGunToolDesc" />
 	<property name="ItemWeight" value="2" />
@@ -46377,6 +46427,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolRifleTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolRifleTorxSet" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="1.8" />
@@ -46404,6 +46455,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolRifleTiN">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolRifleTiN" />
 	<property name="CustomIcon" value="ToolTiNPaint" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="3" />
@@ -46458,6 +46510,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedRifleCoilSprings">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedRifleCoilSprings" />
 	<property name="CustomIcon" value="ToolCoilSpringKit" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="1" />
@@ -46485,6 +46538,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolRifleBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolRifleBushingWrench" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="2" />
@@ -46539,6 +46593,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolBasicRifleImprovments">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolBasicRifleImprovments" />
 	<property name="CustomIcon" value="jz_BasicGunBook" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="1" />
@@ -46593,6 +46648,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedRifleAssembling">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedRifleAssembling" />
 	<property name="DescriptionKey" value="jz_RifleToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -46672,6 +46728,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolWireStripers">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolWireStripers" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="1.5" />
 	<property class="Action0">
@@ -46698,6 +46755,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMagnifyingGlass">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMagnifyingGlass" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -46750,6 +46808,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedCircuitry">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedCircuitry" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -46776,6 +46835,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolCircuitBoardRepairKit">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolCircuitBoardRepairKit" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="2" />
 	<property class="Action0">
@@ -46828,6 +46888,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedRobotics">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedRobotics" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -46880,6 +46941,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolVoltTester">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolVoltTester" />
 	<property name="DescriptionKey" value="jz_ElectricianToolDesc" />
 	<property name="ItemWeight" value="2.5" />
 	<property class="Action0">
@@ -46932,6 +46994,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolHandDrill">
 	<property name="Extends" value="jz_MasterItem" />
+	<property name="Tags" value="jz_BrokenToolHandDrill" />
 	<property name="CustomIcon" value="jz_ToolHandDrill" />
 	<property name="DescriptionKey" value="jz_BrokenWorkstationToolDesc" />
 	<property name="DisplayType" value="TSItemDisplay"/>
@@ -46943,6 +47006,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolClamps">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolClamps" />
 	<property name="CustomIcon" value="jz_ToolClamps" />
 	<property name="ItemWeight" value="2" />
 	<effect_group tiered="false">
@@ -46952,6 +47016,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolDrawBlade">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolDrawBlade" />
 	<property name="CustomIcon" value="jz_ToolDrawBlade" />
 	<property name="ItemWeight" value="3" />
 	<effect_group tiered="false">
@@ -46961,6 +47026,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMasonaryHandsaw">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMasonaryHandsaw" />
 	<property name="CustomIcon" value="jz_ToolMasonaryHandsaw" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -46970,6 +47036,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolSmallLoom">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolSmallLoom" />
 	<property name="CustomIcon" value="jz_ToolSmallLoom" />
 	<property name="ItemWeight" value=".5" />
 	<effect_group tiered="false">
@@ -46979,6 +47046,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolLeatherPunch">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolLeatherPunch" />
 	<property name="CustomIcon" value="jz_ToolLeatherPunch" />
 	<property name="ItemWeight" value=".5" />
 	<effect_group tiered="false">
@@ -46988,6 +47056,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolSewingMachine">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolSewingMachine" />
 	<property name="CustomIcon" value="jz_ToolSewingMachine" />
 	<property name="ItemWeight" value="4" />
 	<effect_group tiered="false">
@@ -46997,6 +47066,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolTailorMannequin">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolTailorMannequin" />
 	<property name="CustomIcon" value="jz_ToolTailorMannequin" />
 	<property name="ItemWeight" value="10" />
 	<effect_group tiered="false">
@@ -47040,8 +47110,19 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
+<item name="jz_BrokenToolMeasuringTape">
+	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMeasuringTape" />
+	<property name="CustomIcon" value="jz_ToolMeasuringTape" />
+	<property name="ItemWeight" value="1" />
+	<effect_group tiered="false">
+		<display_value name="TSItemWeight" value="1"/>
+	</effect_group>
+</item>
+
 <item name="jz_BrokenToolCircularSaw">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolCircularSaw" />
 	<property name="CustomIcon" value="jz_ToolCircularSaw" />
 	<property name="ItemWeight" value="3.5" />
 	<effect_group tiered="false">
@@ -47051,6 +47132,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolSander">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolSander" />
 	<property name="CustomIcon" value="jz_ToolSander" />
 	<property name="ItemWeight" value="2" />
 	<effect_group tiered="false">
@@ -47060,6 +47142,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolDrill">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolDrill" />
 	<property name="CustomIcon" value="jz_ToolDrill" />
 	<property name="ItemWeight" value="2.5" />
 	<effect_group tiered="false">
@@ -47069,6 +47152,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolLathe">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolLathe" />
 	<property name="CustomIcon" value="jz_ToolLathe" />
 	<property name="ItemWeight" value="30" />
 	<effect_group tiered="false">
@@ -47078,6 +47162,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolHandgunSightTool">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolHandgunSightTool" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47087,6 +47172,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolHandgunStipplingKit">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolHandgunStipplingKit" />
 	<property name="CustomIcon" value="ToolStippling" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47096,6 +47182,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolHandgunBarrelBorer">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolHandgunBarrelBorer" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="ItemWeight" value="10" />
 	<effect_group tiered="false">
@@ -47105,6 +47192,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolHandgunGuideRods">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolHandgunGuideRods" />
 	<property name="CustomIcon" value="jz_ToolAdvancedHandgunGuideRods" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47114,6 +47202,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolRifleSightTool">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolRifleSightTool" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47123,6 +47212,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolRifleStipplingKit">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolRifleStipplingKit" />
 	<property name="CustomIcon" value="ToolStippling" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47132,6 +47222,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolRifleBarrelBorer">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolRifleBarrelBorer" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="ItemWeight" value="11" />
 	<effect_group tiered="false">
@@ -47141,6 +47232,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolRifleGuideRods">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolRifleGuideRods" />
 	<property name="CustomIcon" value="jz_ToolAdvancedHandgunGuideRods" />
 	<property name="ItemWeight" value="1.5" />
 	<effect_group tiered="false">
@@ -47150,6 +47242,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolShotgunSightTool">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolShotgunSightTool" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47159,6 +47252,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolShotgunBarrelBorer">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolShotgunBarrelBorer" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="ItemWeight" value="10" />
 	<effect_group tiered="false">
@@ -47168,6 +47262,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolShotgunStipplingKit">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolShotgunStipplingKit" />
 	<property name="CustomIcon" value="ToolStippling" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47177,6 +47272,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolShotgunGuideRods">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolShotgunGuideRods" />
 	<property name="CustomIcon" value="jz_ToolAdvancedHandgunGuideRods" />
 	<property name="ItemWeight" value="1.5" />
 	<effect_group tiered="false">
@@ -47186,6 +47282,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMachineGunSightTool">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMachineGunSightTool" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47195,6 +47292,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMachineGunBarrelBorer">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMachineGunBarrelBorer" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="ItemWeight" value="12" />
 	<effect_group tiered="false">
@@ -47204,6 +47302,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMachineGunStipplingKit">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMachineGunStipplingKit" />
 	<property name="CustomIcon" value="ToolStippling" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47213,6 +47312,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMachineGunGuideRods">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMachineGunGuideRods" />
 	<property name="CustomIcon" value="jz_ToolAdvancedHandgunGuideRods" />
 	<property name="ItemWeight" value="1.5" />
 	<effect_group tiered="false">
@@ -47222,6 +47322,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolCurcuitBoardHolder">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolCurcuitBoardHolder" />
 	<property name="CustomIcon" value="jz_ToolCircuitBoardRepairKit" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47231,6 +47332,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolSolderingIron">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolSolderingIron" />
 	<property name="CustomIcon" value="jz_ToolSolderingIron" />
 	<property name="ItemWeight" value="1" />
 	<effect_group tiered="false">
@@ -47240,6 +47342,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolMetalBreak">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolMetalBreak" />
 	<property name="CustomIcon" value="jz_ToolMetalBreak" />
 	<property name="ItemWeight" value="30" />
 	<effect_group tiered="false">
@@ -47249,6 +47352,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenTool3DPrinter">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenTool3DPrinter" />
 	<property name="CustomIcon" value="jz_Tool3DPrinter" />
 	<property name="ItemWeight" value="8.5" />
 	<effect_group tiered="false">
@@ -49065,29 +49169,6 @@ perkNightStalkerSilentNight
 	</property>
 </item>
 
-<item name="jz_QIStoveQuestRedo">
-	<property name="Extends" value="treasureQuestMaster"/>
-	<property name="Group" value="Quest"/>
-	<property class="Action0">
-		<property name="QuestGiven" value="jzquest_StoveRepairKitPt1"/>
-	</property>
-</item>
-
-<item name="jz_QIKitchenQuestRedo">
-	<property name="Extends" value="treasureQuestMaster"/>
-	<property name="Group" value="Quest"/>
-	<property class="Action0">
-		<property name="QuestGiven" value="jzquest_KitchenRecipePt1"/>
-	</property>
-</item>
-
-<item name="jz_QIFavorForAFavorRedo">
-	<property name="Extends" value="treasureQuestMaster"/>
-	<property name="Group" value="Quest"/>
-	<property class="Action0">
-		<property name="QuestGiven" value="jzquest_FlashbangPt2Redo"/>
-	</property>
-</item>
 <!-- JZMOD KITCHEN ITEMS -->
 <item name="jz_SpicyTexasPete">
 	<property name="Extends" value="jz_MasterItem" />
@@ -49671,7 +49752,8 @@ perkNightStalkerSilentNight
 <item name="jz_SteelSheetMetal">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_SteelSheetMetalDesc" />
-	<property name="CustomIcon" value="banditWallSiding2x2Grey"/>
+	<property name="CustomIcon" value="banditWallSiding2x2White"/>
+	<property name="CustomIconTint" value="868686"/>
 	<property name="TraderStageTemplate" value="jz_Trader750_999"/>
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="2" />

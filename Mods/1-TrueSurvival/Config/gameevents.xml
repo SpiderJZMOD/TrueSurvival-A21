@@ -9533,7 +9533,25 @@
 		</action>
 	</action_sequence>
 	
-	<action_sequence name="TS_FlashBang_Quest_TurnIn">
+	<action_sequence name="TS_Stove_TurnIn">
+		<action class="RemoveItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt, Backpack, Equipment, Held" />
+			<property name="items_tags" value="jz_QIStoveParts" />
+			<property name="count_type" value="Items" />
+		</action>
+	</action_sequence>
+
+	<action_sequence name="TS_Kitchen_TurnIn">
+		<action class="RemoveItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt, Backpack, Equipment, Held" />
+			<property name="items_tags" value="jz_QIMasteringNutrition" />
+			<property name="count_type" value="Items" />
+		</action>
+	</action_sequence>	
+	
+	<action_sequence name="TS_Flashbang_TurnIn">
 		<action class="RemoveItems">
 			<property name="phase" value="1" />
 			<property name="items_location" value="Toolbelt, Backpack, Equipment, Held" />

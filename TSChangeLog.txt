@@ -49,5 +49,21 @@
 -Fixed reported missing icons
 -Fixed reported localization bugs
 -Fixed bug that allowed contents of workstations output and tools be accessed in other workstations allowing duping
+///////////////////////////////////////////////////////////////
+10/19/2023 A21.1 #1.21
+-Fixed open ovens to drop closed versions when a Hand Truck is used on them
+-Fixed Snake Bite Limp not turning off sometimes
+-Re worked all Workstation Upgrading Quest to function on Servers and Coop
+-Workstation Upgrade Quest now require you to find the needed Tool or Book in breakable labeled store crates loot. What crate depends on the item needed. Tools in Working Stiffs, Pipe Gun Tools in PassNGas, Gun items in Shotgun Messiah and Books in Crack a Book crates.
+-Re worked Oven Quest to work on Servers and Coop
+-Oven Quest now requires you to find item in oven loot
+-Re worked Kitchen Quest to work on Servers and Coop
+-Kitchen Quest now requires you to find book in Crack a Book breakable labeled store crate loot
+-Re worked Flashbanf Quest to work on Servers and Coop
+-Flashbang quest now requires you to gather supplies for trader
+-Re worked Looting Skill to work on Servers and Coop
+-Fixed reported Icon issues
+-Fixed various looting bugs causing some loot to have higher chance than should
+-Added Khaines dll. Fix for workstation tool slot duping issue
 
 

@@ -354,6 +354,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Rosemary" count="1"/>
 </recipe>
 
+<recipe name="jz_QIFBTraderSupplies" count="1" >
+	<ingredient name="jz_AluminumShavings" count="12"/>
+</recipe>
+
 <recipe name="frameShapes:VariantHelper" count="1" tags="learnable, jz_WoodBuildingTag">
 	<ingredient name="resourceWood" count="2"/>
 </recipe>
@@ -1050,6 +1054,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_ToolMeasuringTape" count="1" craft_time="20" craft_exp_gain="30">
+	<ingredient name="jz_BrokenToolMeasuringTape" count="1"/>
+	<ingredient name="resourceSpring" count="1"/>
 	<ingredient name="jz_FiberRope" count="50"/>
 	<ingredient name="jz_InkPen" count="1"/>
 </recipe>
@@ -20146,14 +20152,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_BlankSkillBook" count="1" />
 </recipe>
 
-<recipe name="jz_QIStoveQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-</recipe>
-
-<recipe name="jz_QIKitchenQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-</recipe>
-
-<recipe name="jz_QIFavorForAFavorRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-</recipe>
 <!-- QISatRadio Crafted ******************************************************************************************************************************************************* -->
 <recipe name="jz_QI887Frequency" count="1" craft_area="jz_QISatRadioStation" craft_time="1" craft_exp_gain="0" tags="learnable" >
 	<ingredient name="jz_CBatterie" count="1"/>

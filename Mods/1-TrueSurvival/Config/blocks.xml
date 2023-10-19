@@ -11662,9 +11662,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mmetal"/>
 	<dropextendsoff/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,8"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,8" tag="allHarvest" />
 	<property name="SortOrder1" value="B158"/>
 	<property name="SortOrder2" value="0002"/>
+	<!-- CROWBAR -->
+	<drop event="Destroy" name="cntStoveOldVer1Closed_Player" count="1" prob="1" tool_category="ToolHandTruck"/>    
 </block>
 
 	<!-- *** MODERN_STOVE -->
@@ -11706,6 +11708,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="@:Entities/LootContainers/stoveElectricModern_02Prefab.prefab"/>
 	<property name="SortOrder1" value="B158"/>
 	<property name="SortOrder2" value="0102"/>
+	<!-- CROWBAR -->
+	<drop event="Destroy" name="cntStoveOldVer1Closed_Player" count="0" prob="1" tool_category="ToolHandTruck"/> 
+	<drop event="Destroy" name="cntStoveModernVer1Closed_Player" count="1" prob="1" tool_category="ToolHandTruck"/> 
 </block>
 
 <block name="cntStoveRandomLootHelper">
