@@ -3,6 +3,10 @@ True Survival contains parts of Sphereii Core, NPC MOD, Quartz and the DarksZomb
 Installation:
 For A21.1 Build. Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
+Official True Survival Server
+IP:63.143.56.58
+Port:18220
+Password:spider1
 
 Needed Game Settings For True Survival to operate as intended-
 
