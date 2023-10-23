@@ -2911,9 +2911,9 @@ jzquest_FlashbangPt2Desc,"[E6EA1F]Trader:[-] Hello Stranger. You dont look like 
 jzquest_StoveRepairKit,"Oven Repair Kits"
 jzquest_StoveRepairKitSub,"Learn to repair ovens"
 jzquest_StoveRepairKitDesc,"If you could find a working heating element from a old oven you should be able to figure out how to repair them and get them working so that you can cook better foods. Loot ovens to try and find one"
-jzquest_KitchenRecipe,"The Kitchen"
-jzquest_KitchenRecipeSub,"Learn to run a Kitchen"
-jzquest_KitchenRecipeDesc,"You're getting tired of eating soups and stews and need a real meal. Search out Crack-a-Book crates to try and find a book on cooking better meals and then you can get a Kitchen up and running."
+jzquest_KitchenRecipePt1,"The Kitchen"
+jzquest_KitchenRecipePt1Sub,"Learn to run a Kitchen"
+jzquest_KitchenRecipePt1Desc,"You're getting tired of eating soups and stews and need a real meal. Search out Crack-a-Book crates to try and find a book on cooking better meals and then you can get a Kitchen up and running."
 
 jzquest_Starting,"Getting Started"
 tutorialTipQuest01_title,"True Survival"

@@ -6,7 +6,7 @@ For A21.1 Build. Drop the Mods Folder into your 7 Days To Die main directory and
 Official True Survival Server
 IP:63.143.56.58
 Port:18220
-Password:spider1
+Password:spider5
 
 Needed Game Settings For True Survival to operate as intended-
 

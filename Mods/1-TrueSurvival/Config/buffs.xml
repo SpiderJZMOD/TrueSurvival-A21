@@ -677,14 +677,14 @@
 		<effect_group name="Stove Quest Start">
 			<requirement name="CVarCompare" cvar="$GotStoveQuest" operation="Equals" value="0"/>
 			<requirement name="PlayerLevel" operation="GTE" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_StoveRepairKitPt1" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_StoveRepairKit" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotStoveQuest" operation="set" value="1"/>	
 		</effect_group>
 		
 		<effect_group name="Kitchen Quest Start">
 			<requirement name="CVarCompare" cvar="$GotKitchenQuest" operation="Equals" value="0"/>
 			<requirement name="PlayerLevel" operation="GTE" value="30"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_KitchenRecipePt1" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_KitchenRecipe" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotKitchenQuest" operation="set" value="1"/>	
 		</effect_group> 
 		
