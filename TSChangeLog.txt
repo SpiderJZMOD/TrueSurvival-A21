@@ -68,4 +68,6 @@
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 10/23/2023 A21.1 #1.21.5
 -Fixed bug that effected players at level 10 when getting Oven quest
-
+///////////////////////////////////////////////////////////////
+10/26/2023 A21.1 #1.21.6
+-Fix bug with workbench upgrading quest crafting items not craftable
