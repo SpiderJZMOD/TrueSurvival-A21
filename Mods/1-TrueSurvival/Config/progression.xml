@@ -2520,7 +2520,7 @@
     
     <perk name="SP_IronDoorsSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Iron Doors" desc_key="SP_IronDoorsSchematicDesc" icon="ironDoor1_v1">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="scrapHatch_v1,ironDoor1_v1,cellarDoorDoubleIron,shuttersIronBlockVariantHelper"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ironHatchBlockVariantHelper,ironDoorBlockVariantHelper,cellarDoorDoubleIron,shuttersIronBlockVariantHelper"/>
 			<effect_description level="1" desc_key="SP_IronDoorsSchematicDesc" long_desc_key="SP_IronDoorsSchematicDesc"/>
 		</effect_group>
 	</perk>
@@ -5346,9 +5346,9 @@
             <requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
 			<passive_effect name="TraderStage" operation="base_add" level="0,50" value="1,999999"/>
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="0,12,13,24,25,36,37,50" value="-1,-1,0,0,1,1,2,2"/>
-			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value="0,.20"/>
-			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="0,34,35,50" value="0,0,1,1"/>		
+			<passive_effect name="QuestRewardOptionCount" operation="base_set" level="0,19,20,29,30,39,40,50" value="2,2,3,3,4,4,5,5"/><!-- JZMOD NOTE Number of possible rewards to pick from --> 
+			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value=".1,.20"/><!-- JZMOD NOTE perctent of chash reward extra --> 
+			<passive_effect name="QuestRewardChoiceCount" operation="base_set" level="0,39,40,50" value="1,1,2,2"/><!-- JZMOD NOTE Number of rewards you get to pick --> 		
 		</effect_group>
 	</perk>
     
@@ -5357,9 +5357,9 @@
             <requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
 			<passive_effect name="TraderStage" operation="base_add" level="0,50" value="1,999999"/>
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="0,12,13,24,25,36,37,50" value="-1,-1,0,0,1,1,2,2"/>
-			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value="0,.20"/>
-			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="0,34,35,50" value="0,0,1,1"/>		
+			<passive_effect name="QuestRewardOptionCount" operation="base_set" level="0,19,20,29,30,39,40,50" value="2,2,3,3,4,4,5,5"/>
+			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value=".1,.20"/>
+			<passive_effect name="QuestRewardChoiceCount" operation="base_set" level="0,39,40,50" value="1,1,2,2"/>			
 		</effect_group>
 	</perk>
     
@@ -5368,9 +5368,9 @@
 			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
           <passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
 			<passive_effect name="TraderStage" operation="base_add" level="0,50" value="1,999999"/>
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="0,12,13,24,25,36,37,50" value="-1,-1,0,0,1,1,2,2"/>
-			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value="0,.20"/>
-			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="0,34,35,50" value="0,0,1,1"/>		
+			<passive_effect name="QuestRewardOptionCount" operation="base_set" level="0,19,20,29,30,39,40,50" value="2,2,3,3,4,4,5,5"/>
+			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value=".1,.20"/>
+			<passive_effect name="QuestRewardChoiceCount" operation="base_set" level="0,39,40,50" value="1,1,2,2"/>	
 		</effect_group>
 	</perk>
     
@@ -5379,9 +5379,9 @@
             <requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
 			<passive_effect name="TraderStage" operation="base_add" level="0,50" value="1,999999"/>
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="0,12,13,24,25,36,37,50" value="-1,-1,0,0,1,1,2,2"/>
-			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value="0,.20"/>
-			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="0,34,35,50" value="0,0,1,1"/>		
+			<passive_effect name="QuestRewardOptionCount" operation="base_set" level="0,19,20,29,30,39,40,50" value="2,2,3,3,4,4,5,5"/>
+			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value=".1,.20"/>
+			<passive_effect name="QuestRewardChoiceCount" operation="base_set" level="0,39,40,50" value="1,1,2,2"/>	
 		</effect_group>
 	</perk>
     
@@ -5390,9 +5390,9 @@
             <requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
 			<passive_effect name="TraderStage" operation="base_add" level="0,50" value="1,999999"/>
-			<passive_effect name="QuestRewardOptionCount" operation="base_add" level="0,12,13,24,25,36,37,50" value="-1,-1,0,0,1,1,2,2"/>
-			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value="0,.20"/>
-			<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="0,34,35,50" value="0,0,1,1"/>		
+			<passive_effect name="QuestRewardOptionCount" operation="base_set" level="0,19,20,29,30,39,40,50" value="2,2,3,3,4,4,5,5"/>
+			<passive_effect name="QuestBonusItemReward" operation="perc_add" level="0,50" value=".1,.20"/>
+			<passive_effect name="QuestRewardChoiceCount" operation="base_set" level="0,39,40,50" value="1,1,2,2"/>	
 		</effect_group>
 	</perk>
 	<!--<perk name="jz_AtFire" parent="jz_TarderSkills" hidden="true" min_level="0" max_level="1" base_skill_point_cost="0" >

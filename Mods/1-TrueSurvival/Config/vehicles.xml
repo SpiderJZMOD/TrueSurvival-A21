@@ -57,7 +57,8 @@ Forces:
 		<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
 		<property name="hornSound" value="gyrocopter_horn"/>
-
+		<property name="recipeName" value="vehicleGyrocopterPlaceable" />
+		
 		<property class="engine">
 			<property name="class" value="Engine"/>
 			<property name="slot_type" value="engine"/>
@@ -301,6 +302,7 @@ Forces:
 		<property name="wheelPtlScale" value=".6"/>
 
 		<property name="hornSound" value="bicycle_horn"/>
+		<property name="recipeName" value="vehicleBicyclePlaceable" />
 
 		<property class="chassis">
 			<property name="class" value="Chassis"/>
@@ -394,6 +396,7 @@ Forces:
 		<property name="wheelPtlScale" value=".6"/>
 
 		<property name="hornSound" value="minibike_horn"/>
+		<property name="recipeName" value="vehicleMinibikePlaceable" />
 
 		<property class="chassis">
 			<property name="class" value="Chassis"/>
@@ -518,6 +521,7 @@ Forces:
 		<property name="wheelPtlScale" value="1"/>
 
 		<property name="hornSound" value="motorbike_horn"/>
+		<property name="recipeName" value="vehicleMotorcyclePlaceable" />
 
 		<property class="chassis">
 			<property name="class" value="Chassis"/>
@@ -662,6 +666,7 @@ Forces:
 		<property name="wheelPtlScale" value="1"/>
 
 		<property name="hornSound" value="suv_horn"/>
+		<property name="recipeName" value="vehicle4x4TruckPlaceable" />
 
 		<property class="chassis">
 			<property name="class" value="Chassis"/>

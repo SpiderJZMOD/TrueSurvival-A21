@@ -1306,7 +1306,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- *** Wasteland: Ore Sub Biome: Iron -->
 		<subbiome prob="0.3"> 
 			<layers>
-				<layer depth="1" blockname="terrForestGround"/>	<layer depth="3" blockname="terrDirt"/>
+				<layer depth="2" blockname="terrDestroyedStone"/>	<layer depth="3" blockname="terrDirt"/>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone">
 					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
@@ -1332,7 +1332,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- *** Wasteland: Ore Sub Biome: Coal -->
 		<subbiome prob="0.392">
 			<layers>
-				<layer depth="2" blockname="terrBurntForestGround"/> <layer depth="2" blockname="terrDirt"/>
+				<layer depth="2" blockname="terrDestroyedStone"/> <layer depth="2" blockname="terrDirt"/>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreCoal" prob="0.6500" rwgGenerationType="all"/> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
@@ -1500,7 +1500,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- *** Wasteland: Ore Sub Biome: Lead -->
 		<subbiome prob="0.442">
 			<layers>
-				<layer depth="1" blockname="terrForestGround"/> <layer depth="3" blockname="terrDirt"/>
+				<layer depth="2" blockname="terrDestroyedStone"/> <layer depth="3" blockname="terrDirt"/>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreLead" prob="0.6500" rwgGenerationType="all"/> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
@@ -1583,7 +1583,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- *** Wasteland: Block Layers -->
 		<layers>
 			<layer filluptorg="60" blockname="water"/>
-			<layer depth="1" blockname="terrForestGround"/>	<layer depth="3" blockname="terrDirt"/>
+			<layer depth="2" blockname="terrDestroyedStone"/>	<layer depth="3" blockname="terrDirt"/>
 			<layer depth="*" blockname="terrStone">
 				<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
 				<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>

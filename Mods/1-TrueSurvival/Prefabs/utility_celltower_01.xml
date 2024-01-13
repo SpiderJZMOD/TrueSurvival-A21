@@ -27,7 +27,7 @@
   <property name="POIMarkerStart" value="3, 0, -1#4, 0, -3#4, 0, -2" />
   <property name="POIMarkerGroup" value="driveway,driveway2,driveway3" />
   <property name="POIMarkerTags" value="industrial#rural#countrytown" />
-  <property name="AllowedBiomes" value="forest" />
+  <property name="AllowedBiomes" value="pine_forest" />
   <property name="POIMarkerType" value="PartSpawn,PartSpawn,PartSpawn" />
   <property name="POIMarkerPartToSpawn" value="part_driveway_industrial_01,part_driveway_rural_02,part_driveway_countrytown_13" />
   <property name="POIMarkerPartRotations" value="2,2,2" />

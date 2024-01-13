@@ -665,12 +665,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="jz_ToolLeatherNeedle" count="1" craft_time="30" craft_exp_gain="15" tags="learnable">
-	<ingredient name="resourceBone" count="1" />
-	<ingredient name="resourceMetalPipe" count="1" />
-	<ingredient name="jz_ScrapAdhesive" count="2" />
-</recipe>
-
 <recipe name="jz_TrapWoodenSpikeStarter" count="1" craft_time="5" craft_exp_gain="5" >
 	<ingredient name="jz_Stick" count="20"/>
 </recipe>
@@ -1031,305 +1025,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_ToolCarvingKnife" count="1" craft_time="20" craft_exp_gain="30" >
 	<ingredient name="meleeWpnBladeT1HuntingKnife" count="1"/>
 	<ingredient name="jz_SharpeningStone" count="1"/>
-</recipe>
-
-
-<recipe name="jz_ToolHandDrill" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolHandDrill" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="2"/>
-	<ingredient name="resourceWood" count="1"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="jz_SharpeningStone" count="1"/>	
-</recipe>
-
-<recipe name="jz_ToolClamps" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolClamps" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceSpring" count="10"/>
-	<ingredient name="jz_ScrapAdhesive" count="20"/>
-	<ingredient name="resourceScrapPolymers" count="20"/>
-	<ingredient name="jz_NutAndBolt" count="10"/>
-	<ingredient name="jz_MeltedRubber" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolDrawBlade" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolDrawBlade" count="1"/>
-	<ingredient name="jz_NutAndBolt" count="6"/>	
-	<ingredient name="resourceWood" count="2"/>
-	<ingredient name="resourceForgedIron" count="5"/>	
-	<ingredient name="jz_ScrapAdhesive" count="2"/>	
-	<ingredient name="jz_SharpeningStone" count="4"/>	
-</recipe>
-
-<recipe name="jz_ToolMasonaryHandsaw" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMasonaryHandsaw" count="1"/>
-	<ingredient name="jz_NutAndBolt" count="10"/>	
-	<ingredient name="resourceWood" count="2"/>
-	<ingredient name="resourceForgedIron" count="5"/>	
-	<ingredient name="jz_ScrapAdhesive" count="5"/>	
-	<ingredient name="jz_SharpeningStone" count="5"/>	
-</recipe>
-
-<recipe name="jz_ToolSmallLoom" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolSmallLoom" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="2"/>
-	<ingredient name="resourceWood" count="5"/>
-	<ingredient name="jz_NutAndBolt" count="6"/>
-	<ingredient name="jz_FiberRope" count="40"/>
-	<ingredient name="jz_IronNeedle" count="5"/>	
-	<ingredient name="jz_ScrapAdhesive" count="4"/>	
-</recipe>
-
-<recipe name="jz_ToolLeatherPunch" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolLeatherPunch" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-	<ingredient name="resourceOil" count="1"/>
-	<ingredient name="jz_CuredLeather" count="1"/>
-</recipe>
-
-<recipe name="jz_ToolSewingMachine" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolSewingMachine" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceElectricParts" count="2"/>
-	<ingredient name="jz_NutAndBolt" count="10"/>
-	<ingredient name="resourceSewingKit" count="5"/>
-	<ingredient name="jz_ScrapWire" count="4"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolTailorMannequin" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolTailorMannequin" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="15"/>
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceCropCottonPlant" count="50"/>
-	<ingredient name="resourceWood" count="5"/>
-	<ingredient name="resourceScrapIron" count="10"/>
-	<ingredient name="jz_NutAndBolt" count="25"/>
-</recipe>
-
-<recipe name="jz_ToolVise" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolVise" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-	<ingredient name="resourceMetalPipe" count="1"/>
-	<ingredient name="jz_NutAndBolt" count="6"/>
-</recipe>
-
-<recipe name="jz_ToolRivetGun" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolRivetGun" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="jz_MeltedRubber" count="2"/>
-</recipe>
-
-<recipe name="jz_ToolOxyacetyleneTorch" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolOxyacetyleneTorch" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceElectricParts" count="3"/>
-	<ingredient name="jz_EmptyPropaneTank" count="2"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolAngleGrinder" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolAngleGrinder" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="7"/>
-	<ingredient name="resourceElectricParts" count="4"/>
-	<ingredient name="jz_NutAndBolt" count="8"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>	
-	<ingredient name="resourceCrushedSand" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolCircularSaw" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolCircularSaw" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceElectricParts" count="4"/>
-	<ingredient name="jz_NutAndBolt" count="8"/>
-	<ingredient name="jz_ScrapWire" count="4"/>
-	<ingredient name="jz_SharpeningStone" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolSander" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolSander" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceElectricParts" count="3"/>
-	<ingredient name="jz_NutAndBolt" count="8"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>	
-	<ingredient name="resourceCrushedSand" count="10"/>
-	<ingredient name="resourcePaper" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolDrill" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolDrill" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceElectricParts" count="5"/>
-	<ingredient name="jz_NutAndBolt" count="8"/>
-	<ingredient name="jz_ScrapWire" count="4"/>
-	<ingredient name="resourceScrapPolymers" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolLathe" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolLathe" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="15"/>
-	<ingredient name="resourceElectricParts" count="8"/>
-	<ingredient name="jz_NutAndBolt" count="15"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="resourceMetalPipe" count="5"/>
-	<ingredient name="resourceForgedIron" count="25"/>
-</recipe>
-
-<recipe name="jz_ToolHandgunSightTool" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolHandgunSightTool" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="jz_NutAndBolt" count="5"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolHandgunStipplingKit" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolHandgunStipplingKit" count="1"/>
-	<ingredient name="resourceElectricParts" count="6"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="jz_SteelPipe" count="1"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_MeltedRubber" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolHandgunBarrelBorer" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolHandgunBarrelBorer" count="1"/>
-	<ingredient name="jz_ScrapSteel" count="5"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_SharpeningStone" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolAdvancedHandgunGuideRods" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolHandgunGuideRods" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="jz_ScrapSteel" count="10"/>
-	<ingredient name="jz_SteelPipe" count="5"/>
-	<ingredient name="resourceSpring" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolRifleSightTool" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolRifleSightTool" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="jz_NutAndBolt" count="5"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolRifleStipplingKit" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolRifleStipplingKit" count="1"/>
-	<ingredient name="resourceElectricParts" count="6"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="jz_SteelPipe" count="1"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_MeltedRubber" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolRifleBarrelBorer" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolRifleBarrelBorer" count="1"/>
-	<ingredient name="jz_ScrapSteel" count="5"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_SharpeningStone" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolAdvancedRifleGuideRods" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolRifleGuideRods" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="jz_ScrapSteel" count="10"/>
-	<ingredient name="jz_SteelPipe" count="5"/>
-	<ingredient name="resourceSpring" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolShotgunSightTool" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolShotgunSightTool" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="jz_NutAndBolt" count="5"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolShotgunBarrelBorer" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolShotgunBarrelBorer" count="1"/>
-	<ingredient name="jz_ScrapSteel" count="5"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_SharpeningStone" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolShotgunStipplingKit" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolShotgunStipplingKit" count="1"/>
-	<ingredient name="resourceElectricParts" count="6"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="jz_SteelPipe" count="1"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_MeltedRubber" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolAdvancedShotgunGuideRods" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolShotgunGuideRods" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="jz_ScrapSteel" count="10"/>
-	<ingredient name="jz_SteelPipe" count="5"/>
-	<ingredient name="resourceSpring" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolMachineGunSightTool" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMachineGunSightTool" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="jz_NutAndBolt" count="5"/>
-	<ingredient name="resourceScrapIron" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolMachineGunBarrelBorer" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMachineGunBarrelBorer" count="1"/>
-	<ingredient name="jz_ScrapSteel" count="5"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_SharpeningStone" count="5"/>
-</recipe>
-
-<recipe name="jz_ToolMachineGunStipplingKit" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMachineGunStipplingKit" count="1"/>
-	<ingredient name="resourceElectricParts" count="6"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="jz_SteelPipe" count="1"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_MeltedRubber" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolAdvancedMachineGunGuideRods" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMachineGunGuideRods" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="3"/>
-	<ingredient name="jz_ScrapSteel" count="10"/>
-	<ingredient name="jz_SteelPipe" count="5"/>
-	<ingredient name="resourceSpring" count="10"/>
-</recipe>
-
-<recipe name="jz_ToolCircuitBoardHolder" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolCurcuitBoardHolder" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceForgedIron" count="5"/>
-	<ingredient name="resourceMetalPipe" count="10"/>
-	<ingredient name="jz_NutAndBolt" count="20"/>
-</recipe>
-
-<recipe name="jz_ToolSolderingIron" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolSolderingIron" count="1"/>
-	<ingredient name="resourceElectricParts" count="6"/>
-	<ingredient name="jz_ScrapWire" count="5"/>
-	<ingredient name="jz_SteelPipe" count="1"/>
-	<ingredient name="resourceScrapIron" count="15"/>
-	<ingredient name="jz_MeltedRubber" count="3"/>
-</recipe>
-
-<recipe name="jz_ToolMetalBreak" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_BrokenToolMetalBreak" count="1"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-	<ingredient name="resourceForgedIron" count="20"/>
-	<ingredient name="resourceMetalPipe" count="10"/>
-	<ingredient name="jz_NutAndBolt" count="25"/>
 </recipe>
 
 <recipe name="jz_ToolPipeWrench" count="1" craft_time="20" craft_exp_gain="30" >
@@ -2148,7 +1843,306 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSpring" count="1"/>
 </recipe>
 
-<recipe name="jz_Tool3DPrinter" count="1" craft_area="workbench" tags="learnable">
+
+<recipe name="jz_ToolHandDrill" count="1" craft_area="workbench" craft_time="1">
+	<ingredient name="jz_BrokenToolHandDrill" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="jz_ScrapAdhesive" count="2"/>
+	<ingredient name="jz_SharpeningStone" count="1"/>	
+</recipe>
+
+<recipe name="jz_ToolClamps" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolClamps" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceSpring" count="10"/>
+	<ingredient name="jz_ScrapAdhesive" count="20"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="jz_NutAndBolt" count="10"/>
+	<ingredient name="jz_MeltedRubber" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolDrawBlade" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolDrawBlade" count="1"/>
+	<ingredient name="jz_NutAndBolt" count="6"/>	
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceForgedIron" count="5"/>	
+	<ingredient name="jz_ScrapAdhesive" count="2"/>	
+	<ingredient name="jz_SharpeningStone" count="4"/>	
+</recipe>
+
+<recipe name="jz_ToolMasonaryHandsaw" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMasonaryHandsaw" count="1"/>
+	<ingredient name="jz_NutAndBolt" count="10"/>	
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceForgedIron" count="5"/>	
+	<ingredient name="jz_ScrapAdhesive" count="5"/>	
+	<ingredient name="jz_SharpeningStone" count="5"/>	
+</recipe>
+
+<recipe name="jz_ToolSmallLoom" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolSmallLoom" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceWood" count="5"/>
+	<ingredient name="jz_NutAndBolt" count="6"/>
+	<ingredient name="jz_FiberRope" count="40"/>
+	<ingredient name="jz_IronNeedle" count="5"/>	
+	<ingredient name="jz_ScrapAdhesive" count="4"/>	
+</recipe>
+
+<recipe name="jz_ToolLeatherPunch" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolLeatherPunch" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="jz_CuredLeather" count="1"/>
+</recipe>
+
+<recipe name="jz_ToolSewingMachine" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolSewingMachine" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="jz_NutAndBolt" count="10"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+	<ingredient name="jz_ScrapWire" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolTailorMannequin" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolTailorMannequin" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceCropCottonPlant" count="50"/>
+	<ingredient name="resourceWood" count="5"/>
+	<ingredient name="resourceScrapIron" count="10"/>
+	<ingredient name="jz_NutAndBolt" count="25"/>
+</recipe>
+
+<recipe name="jz_ToolVise" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolVise" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceMetalPipe" count="1"/>
+	<ingredient name="jz_NutAndBolt" count="6"/>
+</recipe>
+
+<recipe name="jz_ToolRivetGun" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolRivetGun" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="jz_MeltedRubber" count="2"/>
+</recipe>
+
+<recipe name="jz_ToolOxyacetyleneTorch" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolOxyacetyleneTorch" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceElectricParts" count="3"/>
+	<ingredient name="jz_EmptyPropaneTank" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolAngleGrinder" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolAngleGrinder" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="7"/>
+	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="jz_NutAndBolt" count="8"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>	
+	<ingredient name="resourceCrushedSand" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolCircularSaw" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolCircularSaw" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceElectricParts" count="4"/>
+	<ingredient name="jz_NutAndBolt" count="8"/>
+	<ingredient name="jz_ScrapWire" count="4"/>
+	<ingredient name="jz_SharpeningStone" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolSander" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolSander" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceElectricParts" count="3"/>
+	<ingredient name="jz_NutAndBolt" count="8"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>	
+	<ingredient name="resourceCrushedSand" count="10"/>
+	<ingredient name="resourcePaper" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolDrill" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolDrill" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="jz_NutAndBolt" count="8"/>
+	<ingredient name="jz_ScrapWire" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolLathe" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolLathe" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="resourceElectricParts" count="8"/>
+	<ingredient name="jz_NutAndBolt" count="15"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="resourceMetalPipe" count="5"/>
+	<ingredient name="resourceForgedIron" count="25"/>
+</recipe>
+
+<recipe name="jz_ToolHandgunSightTool" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolHandgunSightTool" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="jz_NutAndBolt" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolHandgunStipplingKit" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolHandgunStipplingKit" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="jz_SteelPipe" count="1"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_MeltedRubber" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolHandgunBarrelBorer" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolHandgunBarrelBorer" count="1"/>
+	<ingredient name="jz_ScrapSteel" count="5"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_SharpeningStone" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolAdvancedHandgunGuideRods" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolHandgunGuideRods" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="jz_ScrapSteel" count="10"/>
+	<ingredient name="jz_SteelPipe" count="5"/>
+	<ingredient name="resourceSpring" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolRifleSightTool" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolRifleSightTool" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="jz_NutAndBolt" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolRifleStipplingKit" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolRifleStipplingKit" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="jz_SteelPipe" count="1"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_MeltedRubber" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolRifleBarrelBorer" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolRifleBarrelBorer" count="1"/>
+	<ingredient name="jz_ScrapSteel" count="5"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_SharpeningStone" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolAdvancedRifleGuideRods" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolRifleGuideRods" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="jz_ScrapSteel" count="10"/>
+	<ingredient name="jz_SteelPipe" count="5"/>
+	<ingredient name="resourceSpring" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolShotgunSightTool" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolShotgunSightTool" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="jz_NutAndBolt" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolShotgunBarrelBorer" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolShotgunBarrelBorer" count="1"/>
+	<ingredient name="jz_ScrapSteel" count="5"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_SharpeningStone" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolShotgunStipplingKit" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolShotgunStipplingKit" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="jz_SteelPipe" count="1"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_MeltedRubber" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolAdvancedShotgunGuideRods" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolShotgunGuideRods" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="jz_ScrapSteel" count="10"/>
+	<ingredient name="jz_SteelPipe" count="5"/>
+	<ingredient name="resourceSpring" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolMachineGunSightTool" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMachineGunSightTool" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceSpring" count="3"/>
+	<ingredient name="jz_NutAndBolt" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolMachineGunBarrelBorer" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMachineGunBarrelBorer" count="1"/>
+	<ingredient name="jz_ScrapSteel" count="5"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_SharpeningStone" count="5"/>
+</recipe>
+
+<recipe name="jz_ToolMachineGunStipplingKit" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMachineGunStipplingKit" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="jz_SteelPipe" count="1"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_MeltedRubber" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolAdvancedMachineGunGuideRods" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMachineGunGuideRods" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="jz_ScrapSteel" count="10"/>
+	<ingredient name="jz_SteelPipe" count="5"/>
+	<ingredient name="resourceSpring" count="10"/>
+</recipe>
+
+<recipe name="jz_ToolCircuitBoardHolder" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolCurcuitBoardHolder" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceMetalPipe" count="10"/>
+	<ingredient name="jz_NutAndBolt" count="20"/>
+</recipe>
+
+<recipe name="jz_ToolSolderingIron" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolSolderingIron" count="1"/>
+	<ingredient name="resourceElectricParts" count="6"/>
+	<ingredient name="jz_ScrapWire" count="5"/>
+	<ingredient name="jz_SteelPipe" count="1"/>
+	<ingredient name="resourceScrapIron" count="15"/>
+	<ingredient name="jz_MeltedRubber" count="3"/>
+</recipe>
+
+<recipe name="jz_ToolMetalBreak" count="1" craft_area="workbench"  craft_time="1">
+	<ingredient name="jz_BrokenToolMetalBreak" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="resourceMetalPipe" count="10"/>
+	<ingredient name="jz_NutAndBolt" count="25"/>
+</recipe>
+
+<recipe name="jz_Tool3DPrinter" count="1" craft_area="workbench"  craft_time="1">
 	<ingredient name="jz_BrokenTool3DPrinter" count="1"/>
 	<ingredient name="resourceMechanicalParts" count="20"/>
 	<ingredient name="resourceElectricParts" count="20"/>
@@ -3394,12 +3388,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapPolymers" count="2"/>
 	<ingredient name="jz_ScrapAdhesive" count="2"/>
 </recipe>
-<!-- JZMOD REMOVED IN 21
-<recipe name="scrapHatch_v1" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="4" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag" >
+
+<recipe name="ironHatchBlockVariantHelper" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="4" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag" >
 	<ingredient name="resourceScrapIron" count="40"/>
 	<ingredient name="resourceSpring" count="2"/>
 	<ingredient name="resourceMechanicalParts" count="1"/>
-</recipe>-->
+</recipe>
 
 <recipe name="oldWoodDoor" count="1" craft_area="workbench" craft_tool="meleeToolRepairT1ClawHammer" craft_time="4" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag">
 	<ingredient name="resourceWood" count="10" />
@@ -12104,37 +12098,37 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Electronic Workbench Crafted ******************************************************************************************************************************************************* -->
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL2Redo" count="1" craft_area="jz_WorkstationElectronicWorkbench" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL2Redo" count="1" craft_area="jz_WorkstationElectronicWorkbench" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL3Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv2" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL3Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv2" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL4Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv3" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL4Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv3" craft_time="5" craft_exp_gain="0">
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL5Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv4" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL5Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv4" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL6Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv5" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL6Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv5" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL7Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv6" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL7Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv6" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL8Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv7" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL8Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv7" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL9Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv8" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL9Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv8" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL10Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv9" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL10Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv9" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL11Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv10" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL11Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv10" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesElectronicQL12Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv11" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesElectronicQL12Redo" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv11" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
 <recipe name="meleeWpnBatonT2StunBaton" count="1" craft_area="jz_WorkstationElectronicWorkbench" craft_time="15" craft_exp_gain="10" tags="learnable,jz_CraftingQualityOne,jz_ElectricianTag">
@@ -16717,31 +16711,31 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Shotgun Workbench Crafted ******************************************************************************************************************************************************* -->
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL2Redo" count="1" craft_area="jz_WorkstationShotgunWorkbench" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL2Redo" count="1" craft_area="jz_WorkstationShotgunWorkbench" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL3Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv2" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL3Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv2" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL4Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv3" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL4Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv3" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL5Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv4" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL5Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv4" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL6Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv5" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL6Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv5" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL7Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv6" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL7Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv6" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL8Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv7" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL8Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv7" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL9Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv8" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL9Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv8" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesShotgunQL10Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv9" craft_time="5" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_QIWorkbenchUpgradesShotgunQL10Redo" count="1" craft_area="jz_WorkstationShotgunWorkbenchLv9" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
 <recipe name="gunShotgunT1DoubleBarrel" count="1" craft_area="jz_WorkstationShotgunWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,jz_ShotgunCrafting">
@@ -17913,37 +17907,37 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MilitaryGunParts" count="2"/>
 </recipe>
 <!-- Rifle Workbench Crafted ******************************************************************************************************************************************************* -->
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL2Redo" count="1" craft_area="jz_WorkstationRifleWorkbench" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL2Redo" count="1" craft_area="jz_WorkstationRifleWorkbench" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL3Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv2" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL3Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv2" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL4Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv3" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL4Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv3" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL5Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv4" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL5Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv4" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL6Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv5" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL6Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv5" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL7Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv6" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL7Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv6" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL8Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv7" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL8Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv7" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL9Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv8" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL9Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv8" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL10Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv9" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL10Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv9" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL11Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv10" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL11Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv10" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
-<recipe name="jz_QIWorkbenchUpgradesRlifeQL12Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv11" craft_time="5" craft_exp_gain="0" >
+<recipe name="jz_QIWorkbenchUpgradesRifleQL12Redo" count="1" craft_area="jz_WorkstationRifleWorkbenchLv11" craft_time="5" craft_exp_gain="0" >
 </recipe>
 
 <recipe name="gunRifleT1HuntingRifle" count="1" craft_area="jz_WorkstationRifleWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,jz_RifleCrafting">

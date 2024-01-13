@@ -6346,7 +6346,7 @@ If there is no hit the default quality is used.
 	<item name="resourceDuctTape" count="10"/>
 	<item name="resourceMechanicalParts" count="10"/>
 	<item name="resourceRepairKit" count="5"/>
-	<item name="drinkJarBoiledWater" count="10"/>
+	<item name="jz_DrinkCleanOuncesOfWater" count="128"/>
 </lootgroup>
 
 <lootgroup name="groupQuestMods">
@@ -10696,7 +10696,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="twitch_drink" count="1">
 	<item name="drinkJarPureMineralWater" count="1,2"/>
-	<item name="drinkJarBoiledWater" count="1,2"/>
+	<item name="jz_DrinkCleanOuncesOfWater" count="16,50"/>
 	<item name="drinkJarRedTea" count="1,2"/>
 	<item name="drinkJarYuccaJuice" count="1,2"/>
 	<item name="drinkYuccaJuiceSmoothie" count="1,2"/>

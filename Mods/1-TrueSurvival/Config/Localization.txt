@@ -956,7 +956,7 @@ perkSpearHunter3SteelSpearsLongDesc,"Steel Spears: Craft steel spears with high 
 jz_QIPoweredWalkieTalkie,"Walkie Talkie"
 jz_QIPoweredWalkieTalkieDesc,"A commercial Walkie Talkie, doesn't have very much range but at least it's got power.\n\n\n[fff700]Quest item, do not lose![-]"
 jz_IronTweezers,"Tweezers"
-jz_IronTweezers,"Small iron tweezers that be used for medical treatments or scraped in to Scrap Iron"
+jz_IronTweezersDesc,"Small iron tweezers that be used for medical treatments or scraped in to Scrap Iron"
 jz_AluminumShavings,"Aluminum Shavings"
 jz_AluminumShavingsDesc,"Small aluminum slivers that can be used in crafting."
 jz_SchematicBlueberryCheeseCake,"Blueberry Cheesecake Recipe"
@@ -1703,16 +1703,16 @@ jz_QIWorkbenchUpgradesMachineGunQL7Redo,"Machine Gun Upgrade Lv7"
 jz_QIWorkbenchUpgradesMachineGunQL8Redo,"Machine Gun Upgrade Lv8"
 jz_QIWorkbenchUpgradesMachineGunQL9Redo,"Machine Gun Upgrade Lv9"
 jz_QIWorkbenchUpgradesMachineGunQL10Redo,"Machine Gun Upgrade Lv10"
-jz_QIWorkbenchUpgradesRlifeQL3Redo,"Rifle Upgrade Lv3"
-jz_QIWorkbenchUpgradesRlifeQL4Redo,"Rifle Upgrade Lv4"
-jz_QIWorkbenchUpgradesRlifeQL5Redo,"Rifle Upgrade Lv5"
-jz_QIWorkbenchUpgradesRlifeQL6Redo,"Rifle Upgrade Lv6"
-jz_QIWorkbenchUpgradesRlifeQL7Redo,"Rifle Upgrade Lv7"
-jz_QIWorkbenchUpgradesRlifeQL8Redo,"Rifle Upgrade Lv8"
-jz_QIWorkbenchUpgradesRlifeQL9Redo,"Rifle Upgrade Lv9"
-jz_QIWorkbenchUpgradesRlifeQL10Redo,"Rifle Upgrade Lv10"
-jz_QIWorkbenchUpgradesRlifeQL11Redo,"Rifle Upgrade Lv11"
-jz_QIWorkbenchUpgradesRlifeQL12Redo,"Rifle Upgrade Lv12"
+jz_QIWorkbenchUpgradesRifleQL3Redo,"Rifle Upgrade Lv3"
+jz_QIWorkbenchUpgradesRifleQL4Redo,"Rifle Upgrade Lv4"
+jz_QIWorkbenchUpgradesRifleQL5Redo,"Rifle Upgrade Lv5"
+jz_QIWorkbenchUpgradesRifleQL6Redo,"Rifle Upgrade Lv6"
+jz_QIWorkbenchUpgradesRifleQL7Redo,"Rifle Upgrade Lv7"
+jz_QIWorkbenchUpgradesRifleQL8Redo,"Rifle Upgrade Lv8"
+jz_QIWorkbenchUpgradesRifleQL9Redo,"Rifle Upgrade Lv9"
+jz_QIWorkbenchUpgradesRifleQL10Redo,"Rifle Upgrade Lv10"
+jz_QIWorkbenchUpgradesRifleQL11Redo,"Rifle Upgrade Lv11"
+jz_QIWorkbenchUpgradesRifleQL12Redo,"Rifle Upgrade Lv12"
 jz_meleeWpnSpearT0StoneSpearDesc,"Spears have more range than other weapons and can also be thrown.\nScrap to Small Stone."
 jz_Rosemary,"Rosemary"
 jz_RosemaryDesc,"A fragrant plant used for cooking, perfumes, and for its potential health benefits. Can be scraped for Plant Fibers."
@@ -2035,6 +2035,7 @@ jz_SchematicSolarbank,"Solar Bank Crafting Guide"
 jz_SchematicSmallEngine,"Small Engine Crafting Guide"
 jz_meleeToolPickT2SteelPickaxeDesc,"The Steel Pickaxe is the best at breaking any hard surface including steel.\n\nRepair with a Forged Steel."
 jz_meleeToolAxeT1IronFireaxeDesc,"The Iron Fireaxe is good for harvesting wood and breaking wooden objects.\n\nRepair with a Sharpening Stone"
+jz_meleeToolPickT1IronPickaxe,"The Iron Pickaxe is good for harvesting and breaking iron and stone objects.\n\nRepair with Forged Iron"
 jz_SchematicIronSpikes,"Iron Spikes Crafting Guide"
 jz_SchematicBearStew,"Bear Stew Crafting Guide"
 jz_SchematicWheatSeed,"Wheat Seed Crafting Guide"
@@ -2205,20 +2206,6 @@ jz_DrinkCleanOuncesOfWater,Ounces of Clean Water
 jz_DrinkCleanOuncesOfWaterDesc,"This water is clean and safe to drink and cook with. Craft a Clean Drink of Water for better hydration.\n\nCraft and use a Old Milk Jug to collect water from the environment."
 jz_DrinkCleanDrinkOfWater,Clean Drink of Water
 jz_DrinkCleanDrinkOfWaterDesc,"Clean drink of water.\n\nCraft and use a Old Milk Jug to collect water from the environment."
-qc_ProfessionGroupDesc,Contains your Profession starting weapon
-qc_Carpenter,Carpenter Starting Tool
-qc_Cop,Cop Starting Weapon
-qc_Soldier,Soldier Starting Weapon
-qc_Bouncer,Bouncer Starting Weapon
-qc_Chef,Chef Starting Weapon
-qc_FitnessInstructor,Fitness Instructor Starting Weapon
-qc_IronWorker,Metal Worker Starting Tool
-qc_Electrician,Electrician Starting Tool
-qc_Thief,Thief Starting Weapon
-qc_ParkRanger,Park Ranger Starting Weapon
-qc_Mechanic,Mechanic Starting Tool
-qc_Fireman,Fireman Starting Weapon
-qc_Mason,Mason Starting Tool
 BasicGunPartsDesc,Simple parts that can be used to craft basic Firearms
 jz_BasicGunParts,Basic Gun Parts
 MilitaryGunPartsDesc,High grade parts that can be used to craft Advanced Firearms
@@ -2752,17 +2739,17 @@ jz_MachineGunSkillDesc,"Gain experience by shooting enemies and receive bonus xp
 jz_JunkBotsSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using Junk Bots to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_JunkBotsXP:000)}                Next Level-{cvar($jz_JunkBotsSkillNextLvTotal:000)}[-]"
 jz_ExposivesSkillDesc,"Gain experience by damaging enemies using Explosives to improve their damage and chance for dismemberment\n            [00eb3c] Current XP-{cvar($jz_ExposivesXP:000)}             Next Level-{cvar($jz_ExposivesSkillNextLvTotal:000)}[-]"
 jz_FireFighterDesc,"As a volunteer Firefighter you learned how to fight fires and to use an axe like a pro."
-jz_FireFighterLongDesc,"Starts With: Old Axe\n+50 level, Axe Skill starting bonus\nFull Set of Firemans Almanacs Books\nRecipes- Plant Salve, Molotov Cocktail"
+jz_FireFighterLongDesc,"Starts With: Old Axe\n+50 level Axe Skill starting bonus\nFull Set of Firemans Almanacs Books\nRecipes- Plant Salve, Molotov Cocktail"
 jz_PoliceOfficerDesc,"As a Police Officer you got plenty of time on the range and became an specialist with a Handgun"
-jz_PoliceOfficerLongDesc,"Starts With: Old Pistol & 9mm(20)\n+50 level, Handgun Skill starting bonus\nUnique Recipes - Gun Oil\nRecipes- Pistol, Stun Baton, Turret Repair Kit"
+jz_PoliceOfficerLongDesc,"Starts With: Old Pistol & 9mm(20)\n+50 level Handgun Skill starting bonus\nUnique Recipes - Gun Oil\nRecipes- Pistol, Stun Baton, Turret Repair Kit"
 jz_ParkRangerDesc,"As a Park Ranger you became an specialist with a spear and learned how useful many of the plants and trees could be."
-jz_ParkRangerLongDesc,"Starts With: Old Rifle & 762mm(20)\n+50 level, Spear Skill starting bonus\n50% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, All Spears"
+jz_ParkRangerLongDesc,"Starts With: Old Rifle & 762mm(20)\n+50 level Spear Skill starting bonus\n50% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, All Spears"
 jz_BouncerDesc,"As a Bouncer you became an specialist with your hands and pretty good at making beer."
-jz_BouncerLongDesc,"Starts With: Brass Knuckles\n+50 level, Brawling Skill starting bonus\nFull Set of Bar Brawling Books\nRecipes- All Knuckles Weapons, Beer, Mead"
+jz_BouncerLongDesc,"Starts With: Brass Knuckles\n+50 level Brawling Skill starting bonus\nFull Set of Bar Brawling Books\nRecipes- All Knuckles Weapons, Beer, Mead"
 jz_ChefDesc,"Your time as a Chef has taught you every cooking recipe there is."
 jz_ChefLongDesc,"Starts With: Old Cleaver\n50% Faster Cooking\nRecipes- All Food Recipes"
 jz_BurglarDesc,"As a Burglar you have learned to pick any lock and sneak quickly and quietly. Crossbow Specialist."
-jz_BurglarLongDesc,"Starts With: Old Knife & Lockpicks(20)\n+50 level, Crossbow Skill starting bonus\nPinpoint Treasure location\n30% Faster Looting\nFull set of Great Heist"
+jz_BurglarLongDesc,"Starts With: Old Knife & Lockpicks(20)\n+50 level Crossbow Skill starting bonus\nPinpoint Treasure location\n30% Faster Looting\nFull set of Great Heist"
 jz_CarpenterDesc,"Your time as a Carpenter has allowed you to master Wood Building."
 jz_CarpenterLongDesc,"Starts With: Claw Hammer & Nails(50)\nThe ability to use the Claw Hammer as a weapon\n50% Faster Wood Building Crafting\nMastered Wood Building Skill\nRecipes- All Wooden Doors"
 jz_MasonDesc,"Your time as a Mason has allowed you to master Cobblestone Building."
@@ -2770,23 +2757,23 @@ jz_MasonLongDesc,"Starts With: Mason Hammer\nThe ability to use the Mason Hammer
 jz_ConcreteMasonDesc,"Your time as a Concrete Mason has allowed you to master Concrete Building."
 jz_ConcreteMasonLongDesc,"Starts With: Concrete Sledge\nThe ability to use the Concrete Sledge as a weapon\n+30 Max Carry Weight\n50% Faster Concrete Building Crafting\nMastered Concrete Building Skill"
 jz_SoldierDesc,"As a Soldier you went through hell so this all just seems like another day. Machine Gun Specialist."
-jz_SoldierLongDesc,"Starts With: Old Rifle & 762mm(20)\n+50 level, Machine Gun Skill starting bonus\n100% Resistance to Food Poisoning from Grubs\nUnique Recipes - Grubs\nRecipes - Turret Repair Kit, Pipe Machine Gun, AK47, Pipe Bomb, Cooking Pot Mine"
+jz_SoldierLongDesc,"Starts With: Old Rifle & 762mm(20)\n+50 level Machine Gun Skill starting bonus\n100% Resistance to Food Poisoning from Grubs\nUnique Recipes - Grubs\nRecipes - Turret Repair Kit, Pipe Machine Gun, AK47, Pipe Bomb, Cooking Pot Mine"
 jz_FitnessInstructorDesc,"As a Fitness Instructor you always had time for cardio. Sledge Specialist."
-jz_FitnessInstructorLongDesc,"Starts With: Baseball Bat\n+50 level, Sledge Skill starting bonus\n10% Faster Running & Walking\n5% Less Stamina used while running\nUnique Recipes - Cleansing Juice\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Vitamins"
+jz_FitnessInstructorLongDesc,"Starts With: +50 level Sledge Skill starting bonus\n10% Faster Running & Walking\n5% Less Stamina used while running\nUnique Recipes - Cleansing Juice\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Vitamins"
 jz_ElectricianDesc,"Your time as a Electrician has allowed you to master working with electronics"
 jz_ElectricianLongDesc,"Starts With: Screwdriver, Tech Junkie Vol6\n50% Faster Electrical Crafting\nUnique Recipes - Electrical Parts, Solar Cell, Circuit Board Parts\nRecipes- Stove Repair Kit, Generator Bank, Pressure Plate, Battery Bank, Player Powered Lights, Timer Relay, Wire Relay, Motion Sensor, Speaker, Switch, Electric Fencepost, Spotlight, Stun Baton"
 jz_MetalWorkerDesc,"Your time as a Metal Worker has allowed you to master Iron Building."
 jz_MetalWorkerLongDesc,"Starts With: Wrench, Nuts and Bolts(50)\nThe ability to use the Wrench as a weapon\n50% Faster Iron Building Crafting\nMastered Iron Building Skill\nRecipes- All Iron Doors"
 jz_MechanicDesc,"Your time as a Mechanic has taught you how to craft every vehicle there is. Turret Specialist."
-jz_MechanicLongDesc,"Starts With: Impact Driver\n+50 level, Turret Skill starting bonus\n50% Faster Vehicle and parts Crafting\nUnique Recipes - Mechanical Parts\nRecipes- Small Engine, Large Engine, Auger, Chainsaw, All Vehicles"
+jz_MechanicLongDesc,"Starts With: Impact Driver\n+50 level Turret Skill starting bonus\n50% Faster Vehicle and parts Crafting\nUnique Recipes - Mechanical Parts\nRecipes- Small Engine, Large Engine, Auger, Chainsaw, All Vehicles"
 jz_DoctorDesc,"Your time as a Surgeon has taught you how to craft many medical items. Blade Specialist."
-jz_DoctorLongDesc,"Starts With: First Aid Kit(3), Stimulant(3), Steroids(3), Antibiotics(3), Tweezers(1)\n+50 level, Blade Skill starting bonus\n50% Faster Medical Crafting\nWounds you treat heal 50% faster\nUnique Recipes - Medical Wrap, Painkillers, Steroids, Stimulants\nRecipes- Plant Salve, Antibiotics, Cast"
+jz_DoctorLongDesc,"Starts With: First Aid Kit(3), Stimulant(3), Steroids(3), Antibiotics(3), Tweezers(1)\n+50 level Blade Skill starting bonus\n50% Faster Medical Crafting\nWounds you treat heal 50% faster\nUnique Recipes - Medical Wrap, Painkillers, Steroids, Stimulants\nRecipes- Plant Salve, Antibiotics, Cast"
 jz_FarmerDesc,"Your time as a Farmer has taught you every farming recipe there is. Shotgun Specialist."
-jz_FarmerLongDesc,"Starts With: +50 level, Shotgun Skill starting bonus\nHarvest 2X produce from all crops, 50% Faster Seed Crafting\nUnique Recipes -Insecticide\nRecipes- All farm crop seeds, Fertilizer, Watering Can, Farm Plots"
+jz_FarmerLongDesc,"Starts With: +50 level Shotgun Skill starting bonus\nHarvest 2X produce from all crops, 50% Faster Seed Crafting\nUnique Recipes -Insecticide\nRecipes- All farm crop seeds, Fertilizer, Watering Can, Farm Plots"
 jz_ChemistDesc,"Your time as a Chemist has taught you how to craft many chemistry items."
 jz_ChemistLongDesc,"Starts With: Painkillers(6), Stimulant(6), Beaker(1)\n50% Faster Chemistry Crafting\nUnique Recipes - Acid Bomb, Stimulant, Gas Bundle, Gun Powder Bundle, Nitroglycerin\nRecipes- Mega Crush, Black Strap Coffee, Purification Tablets, Glue, Oil, Gas, GunPowder"
 jz_HobbiesHunterDesc,"There's no place youd rather be than sitting in a tree stand waiting for a buck. All those years of hunting have made you a specialist with a Rifle and able to smell your pray"
-jz_HobbiesHunterLongDesc,"Effects :\n+50 level, Rifle Skill starting bonus\nMastered Small and Large Game Hunting Skills"
+jz_HobbiesHunterLongDesc,"Effects :\n+50 level Rifle Skill starting bonus\nMastered Small and Large Game Hunting Skills"
 jz_HobbiesCookingDesc,"When you first touched a Spatula you knew you had found your art form. All that time in the kitchen has taught you a fgew things"
 jz_HobbiesCookingLongDesc,"Effects :\n25% Faster Cooking Crafting\nRecipes- Kabob, Meat Pies, Glazed Meat, Corn Bread, Bread, Meat Stew, Vegetable Stew, Fruit Soup"
 jz_HobbiesBuildingDesc,"When you first played with Legos you were hooked and you have loved building ever since. Years of building have taught you how to build with nearly anything"
@@ -2802,13 +2789,13 @@ jz_HobbieElectronicsLongDesc,"Recipes :\nBattery Bank, Speaker, Electric Fencepo
 jz_HobbieMedicalDesc,"Weather its a stranger or a squirrel when someone's hurt you feel the need to help. All that helping others has made you pretty good at tending wounds"
 jz_HobbieMedicalLongDesc,"Effects :\nWounds you treat heal 25% faster\n25% Faster Medical Crafting\nUnique Recipes - Medical Wrap"
 jz_HobbieSportsDesc,"From Tee Ball to the Travel Team you have lived and breathed sports your entire life. All that work has made you a specialist with a bat and fast as hell"
-jz_HobbieSportsLongDesc,"Effects :\n+50 level, Blunt Skill starting bonus\nSprint Ability (+20% run speed for 5 sec with a 25 sec cool down)"
+jz_HobbieSportsLongDesc,"Effects :\n+50 level Blunt Skill starting bonus\nSprint Ability (+20% run speed for 5 sec with a 25 sec cool down)"
 jz_HobbieVehiclesDesc,"You have been a Grease Monkey since you built your first Bicycle at 5"
 jz_HobbieVehiclesLongDesc,"Effects :\n50% Faster Vehicle and parts Crafting\nUnique Recipes- Racing Bicycle\nRecipes- Bicycle, Small Engine, Minibike, Motorcycle\nEffects"
 jz_HobbiesGardeningDesc,"You always feel better with your hands in the ground. Always keeping a garden has made your thumb at least a little green"
 jz_HobbiesGardeningLongDesc,"Effects :\nHarvest an additional produce from all crops\nUnique Recipes- Insecticide\nRecipes- Potato Seed, Corn Seed, Goldenrod Seed, Chrysanthemum Seed, Pumpkin Seed, Carrot Seed"
 jz_HobbieArcheryDesc,"When you were a child playing Cowboys and Indians you always picked the indian. A love or archery and a life time of practice have made you a specialist with bow."
-jz_HobbieArcheryLongDesc,"Effects :\n+50 level, Blunt Skill starting bonus\nIn The Eye Ability (Every 5th damaging hit made with a Bow without taking damage does x3 damage)"
+jz_HobbieArcheryLongDesc,"Effects :\n+50 level Archery Skill starting bonus\nIn The Eye Ability (Every 5th damaging hit made with a Bow without taking damage does x3 damage)"
 jz_HobbiesGymnastDesc,"Not even your parents could keep you from jumping off buildings and over fences. You just love the feeling of flying through the air."
 jz_HobbiesGymnastLongDesc,"Effects :\nAble to Jump 2 Blocks High\n ½ Fall Damage"
 jz_TraitStrongDesc,"Your large physique grants you these effects"
@@ -2911,9 +2898,9 @@ jzquest_FlashbangPt2Desc,"[E6EA1F]Trader:[-] Hello Stranger. You dont look like 
 jzquest_StoveRepairKit,"Oven Repair Kits"
 jzquest_StoveRepairKitSub,"Learn to repair ovens"
 jzquest_StoveRepairKitDesc,"If you could find a working heating element from a old oven you should be able to figure out how to repair them and get them working so that you can cook better foods. Loot ovens to try and find one"
-jzquest_KitchenRecipePt1,"The Kitchen"
-jzquest_KitchenRecipePt1Sub,"Learn to run a Kitchen"
-jzquest_KitchenRecipePt1Desc,"You're getting tired of eating soups and stews and need a real meal. Search out Crack-a-Book crates to try and find a book on cooking better meals and then you can get a Kitchen up and running."
+jzquest_KitchenRecipe,"The Kitchen"
+jzquest_KitchenRecipeSub,"Learn to run a Kitchen"
+jzquest_KitchenRecipeDesc,"You're getting tired of eating soups and stews and need a real meal. Search out Crack-a-Book crates to try and find a book on cooking better meals and then you can get a Kitchen up and running."
 
 jzquest_Starting,"Getting Started"
 tutorialTipQuest01_title,"True Survival"
@@ -2988,24 +2975,25 @@ jzquest_CampaignPt2Desc,"I should search through my Bug Out Bag and see if it ha
 
 jzquest_CampaignPt3,"Campaign Part 3"
 jzquest_CampaignPt3Sub,"Finding some Batteries"
-jzquest_CampaignPt3Desc,"Well I found a WalkieTalkie but it's dead. I will have to find some C Batteries to power it if I’m to have a chance of finding any of the survivors from my camp."
+jzquest_CampaignPt3Desc,"Well I found a Walkie Talkie but it's dead. I will have to find some C Batteries to power it if I’m to have a chance of finding any of the survivors from my camp."
 
-jzquest_CampaignPt8,"Campaign Part 8"
-jzquest_CampaignPt8Sub,"A Miracle"
-jzquest_CampaignPt8Desc,"I snap in the batteries and it crackles to life. As I flip through the channels I start to hear a conversation broken up by static. I hold the button and speak into the Walkie Talkie and a familiar female voice answers back. I can't believe it, it's the Doctor from camp! I tell her I got away safely and ask how she is doing. She explains that she was hiding out when she saw a Military Convoy driving by that was headed to the CDC Headquarters and they offered her safety. As I listen I begin to notice the connection is getting weak and relies that the convoy must be moving out of range of the Walkie Talkie. I tell her that I’m losing her signal and a man gets on the line and tells me to look for a Radio Tower in the forrest and it will have a Satellite Transmitter at the top of the tower. If I use a Screwdriver or Wrench on it I can get the equipment to hook my Walkie Talkie into the Satellite network. He then tells me that 88.7 is the frequency I can reach them at the CDC." 
+jzquest_CampaignPt4,"Campaign Part 4"
+jzquest_CampaignPt4Sub,"A Miracle"
+jzquest_CampaignPt4Desc,"I snap in the batteries and it crackles to life. As I flip through the channels I start to hear a conversation broken up by static. I hold the button and speak into the Walkie Talkie and a familiar female voice answers back. I can't believe it, it's the Doctor from camp! I tell her I got away safely and ask how she is doing. She explains that she was hiding out when she saw a Military Convoy driving by that was headed to the CDC Headquarters and they offered her safety. As I listen I begin to notice the connection is getting weak and relies that the convoy must be moving out of range of the Walkie Talkie. I tell her that I’m losing her signal and a man gets on the line and tells me to look for a Radio or Cell Tower in the forrest and it will have a Satellite Transmitter at the top of the tower. If I use a Screwdriver or Wrench on it I can get the equipment to hook my Walkie Talkie into the Satellite network. He then tells me that 88.7 is the frequency I can reach them at the CDC." 
 
-jzquest_CampaignPt9,"Campaign Part 9"
-jzquest_CampaignPt9Sub,"Crafting a Satellite Radio"
-jzquest_CampaignPt9Desc,"Now that I have the Satellite Radio Parts I should travel back to my base to craft and place the Satellite Radio." 
+jzquest_CampaignPt5,"Campaign Part 5"
+jzquest_CampaignPt5Sub,"Crafting a Satellite Radio"
+jzquest_CampaignPt5Desc,"Now that I have the Satellite Radio Parts I should travel back to my base to craft and place the Satellite Radio." 
 
-jzquest_CampaignPt10,"Campaign Part 10"
-jzquest_CampaignPt10Sub,"Collecting the Tissue Extractor"
-jzquest_CampaignPt10Desc,"I dial in the frequency the man gave me and ask to speak to the Doctor. She lets me know that they arrived safely at the CDC but as they were traveling they saw a large Horde that's about to pass the CDC and heading my way. She tells me that she saw something strange in the Horde but she wasn't sure what it was. The Doctor says the CDC has sublevels and that everyone is going underground till after the Horde passes. She ask me to get some tissue samples from the strange creatures she saw moving with the Horde. To do so I will need to get a Tissue Extractor from the ER. She tells me to contact her after I have the samples"   
+jzquest_CampaignPt6,"Campaign Part 6"
+jzquest_CampaignPt6Sub,"Collecting the Tissue Extractor"
+jzquest_CampaignPt6Desc,"I dial in the frequency the man gave me and ask to speak to the Doctor. She lets me know that they arrived safely at the CDC but as they were traveling they saw a large Horde that's about to pass the CDC and heading my way. She tells me that she saw some strange things in the Horde but she wasn't sure what they was. The Doctor says the CDC has sublevels and that everyone is going underground till after the Horde passes. She ask me to get some tissue samples from the strange creatures she saw moving with the Horde. To do so I will need to get a Tissue Extractor from the her old office at Midway Clinic. She tells me to contact her after I have the samples"   
+
+jzquest_CampaignPt7,"Campaign Part 7"
+jzquest_CampaignPt7Sub,"Collecting Samples"
+jzquest_CampaignPt7Desc,"Now that I have the Tissue Extractor I should try and attach it to a spear so I don't have to get so close to the Mutants. Then during the next Bloodmoon Horde Night I can use it to gather Tissue Samples from the stange Mutants for the Doctor" 
 
 
-jzquest_CampaignPt11,"Campaign Part 11"
-jzquest_CampaignPt11Sub,"Collecting and Testing Samples"
-jzquest_CampaignPt11Desc,"Now that I have the Tissue Extractor I should try and attach it to a spear so I don't have to get so close to the Mutants. Then during the next Bloodmoon Horde Night I can use it to gather Tissue Samples from the Mutants for the Doctor" 
 
 jzquest_CampaignPt12,"Campaign Part 12"
 jzquest_CampaignPt12Sub,"Report the Results"
@@ -3014,7 +3002,6 @@ jzquest_CampaignPt12Desc,"I should use frequency 93.4 to report my success to th
 jzquest_CampaignPt13,"Campaign Part 13"
 jzquest_CampaignPt13Sub,"Run a simple test she said"
 jzquest_CampaignPt13Desc,"I tell the Doctor I have the samples and she explains to me how to test them.\n\n[E6EA1F]<Doctor>[-] Great job getting the samples but I’m afraid your work isn't done. You're going to have to go back to that hospital where you found the Extractor. You’ll also need to bring some gas to fuel the emergency generators. Once there go to the basement and fuel up and turn on the generators. Then go to the X floor to the X and place the Tissue Samples into the Analyzer and start the report. I'm afraid that machine makes a ton of noise when it is running so you should be prepared for a lot of visitors. You will have to hold them off until the report finishes then you can get the hell out of there. Be careful and good luck." 
-
 
 
 jzquest_StoryLinePt10,"1 Storyline Quest Pt10: Reporting In"

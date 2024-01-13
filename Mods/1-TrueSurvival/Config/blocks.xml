@@ -1769,6 +1769,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Industrial/landClaimBlockPrefab"/>
 	<property name="PlacementDistance" value="25"/>
+	<property name="AllowedRotations" value="No45"/>
 	<property name="Weight" value="0"/>
 	<property name="EconomicValue" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -22462,7 +22463,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="birdNest"/>
 	<property name="IndexName" value="quest_feather"/>
-	<property name="Material" value="Mwood_weak"/>
+	<property name="Material" value="MclothStable"/>
+	<property name="MaxDamage" value="50"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="@:Entities/LootContainers/birdnestPrefab.prefab"/>
 	<property name="ModelOffset" value="0,0,0"/>
@@ -23134,6 +23136,24 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Debris/pileEmberBurntLogs4NoEmissivePrefab"/>
 	<property name="SortOrder1" value="B277"/>
 	<property name="SortOrder2" value="0007"/>
+</block>
+
+<block name="emberPileTwitch01">
+	<property name="Extends" value="emberPileDeco1"/>
+	<property name="CustomIconTint" value="6441A5"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningHazardPlayer"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+
+<block name="emberPileTwitch02">
+	<property name="Extends" value="emberPileDeco2"/>
+	<property name="CustomIconTint" value="6441A5"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningHazardPlayer"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="CreativeMode" value="None"/>
 </block>
 
 <block name="emberPileLightPOI1">
@@ -26491,9 +26511,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="collector_open"/>
 	<property name="CloseSound" value="collector_close"/>
 	<property name="ConvertSound" value="collector_complete_item"/>
-	<property name="MinConvertTime" value="21600" /> <!-- 21600 Game Seconds = 6 Game Hours -->
-	<property name="MaxConvertTime" value="36000" /> <!-- 36000 Game Seconds = 10 Game Hours -->
-	<property name="ConvertToItem" value="drinkJarBoiledWater" />
+	<property name="MinConvertTime" value="1350" /> <!-- 21600 Game Seconds = 6 Game Hours -->
+	<property name="MaxConvertTime" value="2250" /> <!-- 36000 Game Seconds = 10 Game Hours -->
+	<property name="ConvertToItem" value="jz_DrinkCleanOuncesOfWater" />
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -41346,9 +41366,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="20"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceCloth" count="2,4"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,10"/>
-	<drop event="Destroy" name="resourceMilitaryFiber" count="1" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceCloth" count="2,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="1,10" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMilitaryFiber" count="1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Destroy" name="resourceMilitaryFiber" count="1,2" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Fall" count="0"/>
 	<property name="SortOrder1" value="B414"/>
@@ -68483,6 +68503,33 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
+<block name="treeCactusTwitch01">
+	<property name="Extends" value="treeCactus01"/>
+	<property name="Damage" value="15"/>
+	<property name="CustomIconTint" value="6441A5"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+
+<block name="treeCactusTwitch02">
+	<property name="Extends" value="treeCactus03"/>
+	<property name="Damage" value="15"/>
+	<property name="CustomIconTint" value="6441A5"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+
+<block name="treeCactusTwitch03">
+	<property name="Extends" value="treeCactus05"/>
+	<property name="Damage" value="15"/>
+	<property name="CustomIconTint" value="6441A5"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+
 	<!-- *** GRASS -->
 <!-- snow biome -->
 <block name="treeSnowyGrassDiagonal">
@@ -82148,13 +82195,15 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!--JZMOD CARROT-->
 <block name="jz_PlantedCarrot1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCarrotLv1Random"/>
-	 <property name="ModelOffset" value="0,0,0" />
+	<!--<property name="ModelOffset" value="0,0,0" />-->
 	<property name="Group" value="Food/Cooking"/>
     <property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/> 
+	<property name="PlaceAsRandomRotation" value="true"/>
     <property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedCarrotFertilized1"/>
 		<property name="Item" value="resourceFertilizer"/>
@@ -83189,13 +83238,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mtrash"/>
     <property name="DisplayInfo" value="Description"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
+	<property name="Model" value="@:Entities/LootContainers/medic_loot_pile_BPrefab.prefab"/>
     <property name="CreativeMode" value="Dev"/>
 	<property name="StabilitySupport" value="false"/> 
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FilterTags" value="floot"/>
     <property name="MaxDamage" value="20"/>
 	<property name="GndAlign" value="1"/>
+	<property name="DowngradeBlock" value="jz_QIDoctorsTissueExtractor"/>
 	<!--JZMOD ANY-->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="jz_QIDoctorsTissueExtractor" count="1" prob="1" stick_chance="1"/>
@@ -83599,6 +83649,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="CanPickup" value="true" param1="jz_SimpleWoodShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodShapes:cube"/>
 		<property name="Item" value="resourceWood"/>
@@ -83624,6 +83677,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="CanPickup" value="true" param1="jz_SimpleWoodShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodShapes:ramp"/>
 		<property name="Item" value="resourceWood"/>
@@ -83678,6 +83734,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="CanPickup" value="true" param1="jz_SimpleCobblestoneShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="resourceCobblestones" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:ramp"/>
 		<property name="Item" value="resourceCobblestones"/>
@@ -83704,6 +83763,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="concreteShapes:cube"/>
 		<property name="Item" value="resourceConcreteMix"/>
@@ -83729,6 +83791,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPickup" value="true" param1="jz_SimpleConcreteShapesBlock"/>
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="concreteShapes:ramp"/>
 		<property name="Item" value="resourceConcreteMix"/>
@@ -83754,6 +83819,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPickup" value="true" param1="jz_SimpleIronShapesBlock"/>
 	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="jz_IronSheetMetal" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="corrugatedMetalShapes:cube"/>
 		<property name="Item" value="jz_IronSheetMetal"/>
@@ -83783,6 +83851,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPickup" value="true" param1="jz_SimpleIronShapesBlock"/>
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="jz_IronSheetMetal" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="corrugatedMetalShapes:ramp"/>
 		<property name="Item" value="jz_IronSheetMetal"/>

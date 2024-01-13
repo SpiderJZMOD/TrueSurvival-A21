@@ -38,33 +38,56 @@
 
 	</action_sequence>
 
-	<action_sequence name="game_on_death_client">
+	<action_sequence name="game_on_death_none">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveDeathBuffs" />	
+		
+	</action_sequence>
+	
+	<action_sequence name="game_on_death_default">
 		<property name="allow_user_trigger" value="false" />
 		<property name="action_type" value="Game" />
 		
 		<action class="AddXPDeficit" />
 		
-		<!-- <decision class="If"> -->
-				
-			<!-- <requirement class="GameStatBool"> -->
-				<!-- <property name="gamestat" value="AirDropMarker"/> -->
-			<!-- </requirement> -->
-			
-			<!-- <action class="ResetPlayerData"> -->
-				<!-- <property name="reset_skills" value="true" /> -->
-				<!-- <property name="reset_books" value="true" /> -->
-				<!-- <property name="reset_crafting" value="true" /> -->
-				<!-- <property name="reset_levels" value="true" /> -->
-				<!-- <property name="remove_landclaims" value="true" /> -->
-				<!-- <property name="remove_bedroll" value="true" /> -->
-			<!-- </action> -->
+		<action class="RemoveDeathBuffs" />	
+	</action_sequence>
+	
+	<action_sequence name="game_on_death_injured">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="AddXPDeficit" />
+		
+		<action class="RemoveDeathBuffs">
+															   
+			<property name="exclude_tags" value="deathpenalty_injured" />
+		</action>	
+	</action_sequence>
 
-			<!-- <action class="BeltTooltip"> -->
-				<!-- <property name="text" value="Player Death Complete" /> -->
-				<!-- <property name="phase" value="1" /> -->
-			<!-- </action> -->
-		<!-- </decision> -->
-
+	<action_sequence name="game_on_death_permanent">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="ResetMap">
+			<property name="remove_discovery" value="true" />
+			<property name="remove_waypoints" value="true" />
+		</action>
+		
+		<action class="RemoveDeathBuffs" />
+		
+		<action class="ResetPlayerData">
+			<property name="reset_skills" value="true" />
+			<property name="reset_books" value="true" />
+			<property name="reset_crafting" value="true" />
+			<property name="reset_levels" value="true" />
+			<property name="remove_landclaims" value="true" />
+			<property name="remove_bedroll" value="true" />
+			<property name="remove_quests" value="true" />
+			<property name="remove_backpack" value="true" />
+		</action>
 	</action_sequence>
 	
 	<action_sequence name="game_player_reset">
@@ -76,6 +99,8 @@
 			<property name="reset_levels" value="true" />
 			<property name="remove_landclaims" value="true" />
 			<property name="remove_bedroll" value="true" />
+			<property name="remove_quests" value="true" />
+			<property name="remove_backpack" value="true" />		
 		</action>
 		
 		<action class="BeltTooltip">
@@ -88,22 +113,114 @@
 		<property name="allow_user_trigger" value="false" />
 		<property name="action_type" value="Game" />
 
-		<!-- <action class="SetEventFlag"> -->
-			<!-- <property name="event_flag" value="BigHead" /> -->
-			<!-- <property name="enable" value="true" /> -->
-		<!-- </action> -->
+		</action_sequence>
+	
+	<action_sequence name="game_on_respawn_none">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveDeathBuffs" />
 
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Food" />
+			<property name="operation" value="SetMax" />
+		</action>
+	
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Water" />
+			<property name="operation" value="SetMax" />
+		</action>
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Health" />
+			<property name="operation" value="SetMax" />
+		</action>
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Stamina" />
+			<property name="operation" value="SetMax" />
+		</action>
+	
 	</action_sequence>
-
-	<action_sequence name="game_on_respawn">
+	
+	<action_sequence name="game_on_respawn_default">
 		<property name="allow_user_trigger" value="false" />
 		<property name="action_type" value="Game" />
 
-		<!-- <action class="BeltTooltip"> -->
-			<!-- <property name="text" value="Player Respawn Complete" /> -->
-			<!-- <property name="phase" value="1" /> -->
-		<!-- </action> -->
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Food" />
+			<property name="operation" value="SetMax" />
+		</action>
+	
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Water" />
+			<property name="operation" value="SetMax" />
+		</action>
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Health" />
+			<property name="operation" value="SetMax" />
+		</action>
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Stamina" />
+			<property name="operation" value="SetMax" />
+		</action>
 
+	</action_sequence>
+	
+	<action_sequence name="game_on_respawn_injured">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Food" />
+			<property name="value" value=".5" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+	
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Water" />
+			<property name="value" value=".5" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="buff_name" value="buffInfectionCatch" />
+			
+			<requirement class="CVar">
+				<property name="cvar" value="infectionCounterRespawn"/>
+				<property name="operation" value="GT" />
+				<property name="value" value="0" />
+			</requirement>
+		</action>
+	
+	</action_sequence>
+
+	<action_sequence name="game_on_respawn_permanent">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveDeathBuffs" />
+
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Food" />
+			<property name="operation" value="SetMax" />
+		</action>
+	
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Water" />
+			<property name="operation" value="SetMax" />
+		</action>
+		
+		<action class="AddStartingItems" />
+		
+		<action class="AddQuest">
+			<property name="quest" value="quest_BasicSurvival1" />
+		</action>
+		
 	</action_sequence>
 	
 	<action_sequence name="game_remove_entity">
@@ -1817,30 +1934,34 @@
 	</action_sequence>
 
 	<action_sequence name="buff_blur" template="buff_vision_template">
-		<variable name="hasbuff" value="twitch_buffDistort,twitch_buffMonochrome,twitch_buffPainting" />
+		<variable name="hasbuff" value="twitch_buffDistort,twitch_buffMonochrome,twitch_buffPainting,twitch_buffBlind" />
 		<variable name="buffname" value="twitch_buffblur" />
 	</action_sequence>
-
+	
 	<action_sequence name="buff_trippy" template="buff_vision_template">
-		<variable name="hasbuff" value="twitch_buffDistort,twitch_buffMonochrome,twitch_buffPainting" />
+		<variable name="hasbuff" value="twitch_buffDistort,twitch_buffMonochrome,twitch_buffPainting,twitch_buffBlind" />
 		<variable name="buffname" value="twitch_bufftrippy" />
 	</action_sequence>
 
 	<action_sequence name="buff_distort" template="buff_vision_template">
-		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffMonochrome,twitch_buffPainting" />
+		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffMonochrome,twitch_buffPainting,twitch_buffBlind" />
 		<variable name="buffname" value="twitch_buffDistort" />
 	</action_sequence>
 
 	<action_sequence name="buff_greyscale" template="buff_vision_template">
-		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffDistort,twitch_buffPainting" />
+		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffDistort,twitch_buffPainting,twitch_buffBlind" />
 		<variable name="buffname" value="twitch_buffMonochrome" />
 	</action_sequence>
 
 	<action_sequence name="buff_painting" template="buff_vision_template">
-		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffDistort,twitch_buffMonochrome" />
+		<variable name="hasbuff" value="twitch_buffBlur,twitch_buffDistort,twitch_buffMonochrome,twitch_buffBlind" />
 		<variable name="buffname" value="twitch_buffPainting" />
 	</action_sequence>
 
+	<action_sequence name="buff_blind" template="buff_vision_template">
+		<variable name="hasbuff" value="twitch_buffDistort,twitch_buffMonochrome,twitch_buffPainting,twitch_buffblur" />
+		<variable name="buffname" value="twitch_buffBlind" />
+	</action_sequence>
 	<action_sequence name="buff_fast" template="buff_template">
 		<variable name="buffsound" value="twitch_fast_buff" />
 		<variable name="twitchsound" value="" />
@@ -3058,7 +3179,63 @@
 		</action>
 
 	</action_sequence>
+	<action_sequence name="action_mixup">
+		<property name="category" value="twitch_actions" />
+		
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+		</action>
 
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_jumbled_backpack" />
+			<property name="inside_head" value="true" />
+			<property name="target_group" value="party" />
+		</action>
+
+		<action class="ShuffleItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="target_group" value="party" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="action_testremove">
+		<property name="category" value="twitch_actions" />
+		
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="twitch_spoil" />
+			<property name="inside_head" value="true" />
+			<property name="target_group" value="party" />
+		</action>
+
+		<action class="RemoveItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="food" />
+			<property name="count" value="10" />
+			<property name="target_group" value="party" />
+		</action>
+
+	</action_sequence>	   
 	<action_sequence name="action_removeturrets">
 		<property name="category" value="twitch_actions" />
 		<requirement class="NearbyEntities">
@@ -3358,9 +3535,28 @@
 			<property name="include_outputs" value="true" />
 			<property name="replaced_by_item" value="foodRottingFlesh" />
 			<property name="items_tags" value="food" />
-			<property name="rename_all" value="false" />
+			</action>
+
+	</action_sequence>
+	
+	<action_sequence name="action_rename_signs">
+		<property name="category" value="twitch_actions" />
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_action" />
+			<property name="phase" value="1" />
 		</action>
 
+		<action class="PlaySound">
+			<property name="sound" value="twitch_shuffle_boxes" />
+		</action>
+		
+		<action class="RenameSigns">
+			<property name="phase" value="2" />
+			<property name="targeting_type" value="SafeZone" />
+			<property name="new_name" value="Renamed by {viewer}" />
+		</action>
+		
 	</action_sequence>
 	
 	<action_sequence name="action_destroy_base">
@@ -7948,7 +8144,107 @@
 			<property name="min_distance" value="400" />
 			<property name="max_distance" value="800" />
 		</action>
+		</action_sequence>
+	
+	<action_sequence name="action_teleport_up">		
+		<property name="category" value="twitch_actions" />
 
+		<requirement class="InSafeZone">
+			<property name="invert" value="true" />
+		</requirement>
+
+		<requirement class="InQuestZone">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_pull" />
+		</action>
+		
+		<action class="Teleport">
+			<property name="target_position" value="0, 100, 0" />
+			<property name="offset_type" value="Relative" />
+			<property name="teleport_delay" value="0.1" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="1" />
+			<property name="buff_name" value="buffTwitchDontBreakLeg" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="1" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="0.05" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="1" param1="delay_time"/>
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="SetScreenEffect">
+			<property name="phase" value="3" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="0" />
+			<property name="fade_time" value="0.1" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="action_teleport_short">
+		<property name="category" value="twitch_actions" />
+
+		<requirement class="InSafeZone">
+			<property name="invert" value="true" />
+		</requirement>
+
+		<requirement class="InQuestZone">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_pull" />
+		</action>
+		
+		<action class="RandomTeleport">
+			<property name="phase" value="0" />
+			<property name="min_distance" value="50" param1="min_distance" />
+			<property name="max_distance" value="100" param1="max_distance" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="1" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="0.05" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="1" param1="delay_time"/>
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="SetScreenEffect">
+			<property name="phase" value="3" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="0" />
+			<property name="fade_time" value="0.1" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="action_teleport_medium" template="action_teleport_short">
+		<variable name="min_distance" value="500" />
+		<variable name="max_distance" value="1000" />
+		<variable name="delay_time" value="2" />
+	</action_sequence>
+	
+	<action_sequence name="action_teleport_long" template="action_teleport_short">
+		<variable name="min_distance" value="1000" />
+		<variable name="max_distance" value="2000" />
+		<variable name="delay_time" value="2" />
 	</action_sequence>
 
 	<action_sequence name="action_dropweapon">
@@ -7980,6 +8276,43 @@
 
 	</action_sequence>
 	
+	<action_sequence name="action_destroytoolbelt">
+		<property name="category" value="twitch_actions" />
+		
+		<action class="CloseWindow" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="itembreak" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="action_unload_ammo">
+		<property name="category" value="twitch_actions" />
+		
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+			<property name="twitch_negative" value="true" />
+		</action>
+		
+		<action class="UnloadItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="ranged" />
+			<property name="target_group" value="party" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="1" />
+			<property name="sound" value="itembreak" />
+		</action>
+
+	</action_sequence>
 	<action_sequence name="action_break_claim">
 		<property name="category" value="twitch_actions" />
 		
@@ -8019,7 +8352,7 @@
 		
 	</action_sequence>
 	
-	<action_sequence name="action_removevehicle">
+	<action_sequence name="action_dismantle_vehicle">
 		<property name="category" value="twitch_actions" />
 		
 		<requirement class="NearbyEntities">
@@ -8028,6 +8361,11 @@
 			<property name="target_is_owner" value="true" />
 		</requirement>
 
+		<action class="AddBuff">
+			<property name="phase" value="1" />
+			<property name="buff_name" value="buffTwitchDontBreakLeg" />
+		</action>
+		
 		<action class="AddClosestEntityToGroup">
 			<property name="phase" value="0" />
 			<property name="group_name" value="vehicle" />
@@ -8040,7 +8378,8 @@
 			<property name="phase" value="1" />
 			<property name="target_group" value="vehicle" />
 			<property name="return_items" value="true" />
-			<property name="include_vehicle" value="false" />
+			<property name="return_fuel" value="true" />
+			<property name="return_vehicle_type" value="Parts" />
 		</action>
 
 		<action class="PlaySound">
@@ -8428,7 +8767,7 @@
 	<action_sequence name="action_block_hole">
 
 		<action class="BlockReplace">
-			<property name="min_offset" value="-2,0,-2" />
+			<property name="min_offset" value="-5,0,-5" />
 			<property name="max_offset" value="5,3,5" />
 			<property name="block_to" value="air" />
 		</action>
@@ -8543,9 +8882,60 @@
 		</action>
 
 	</action_sequence>
+	<action_sequence name="action_cacti">
 
+		<requirement class="InVehicle">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_event_blocks_add" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="BlockReplaceAttack">
+			<property name="phase" value="2" />
+			<property name="inner_offset" value="1" />
+			<property name="min_offset" value="-5,-3,-5" />
+			<property name="max_offset" value="5,5,5" />
+			<property name="spacing" value="0" />
+			<property name="safe_allowed" value="false" />
+			<property name="random_chance" value=".5" />
+			<property name="block_to" value="treeCactusTwitch01,treeCactusTwitch02,treeCactusTwitch03" />
+			<property name="block_tags" value="air,twitchReplace" />
+			<property name="time_alive" value="120" />
+			<property name="remove_sound" value="twitch_event_blocks_remove" />
+		</action>
+
+	</action_sequence>
 	
-	
+	<action_sequence name="action_ember_piles">
+
+		<requirement class="InVehicle">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_event_blocks_add" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="BlockReplaceAttack">
+			<property name="phase" value="2" />
+			<property name="inner_offset" value="1" />
+			<property name="min_offset" value="-5,-3,-5" />
+			<property name="max_offset" value="5,5,5" />
+			<property name="spacing" value="0" />
+			<property name="safe_allowed" value="false" />
+			<property name="random_chance" value=".5" />
+			<property name="block_to" value="emberPileTwitch01,emberPileTwitch02" />
+			<property name="block_tags" value="air,twitchReplace" />
+			<property name="time_alive" value="120" />
+			<property name="remove_sound" value="twitch_event_blocks_remove" />
+		</action>
+
+	</action_sequence>
+  
 	<action_sequence name="action_block_door_open">
 
 		<action class="BlockDoorState">
@@ -8568,19 +8958,6 @@
 
 	</action_sequence>
 	
-	<action_sequence name="action_teleport_up">
-
-		<requirement class="InVehicle">
-			<property name="invert" value="true" />
-		</requirement>
-		
-		<action class="Teleport">
-			<property name="target_position" value="0, 0, 5" />
-			<property name="offset_type" value="Relative" />
-		</action>
-
-	</action_sequence>
-
 	<action_sequence name="action_weather_clear">
 		
 		<action class="SetWeather">
@@ -9069,6 +9446,56 @@
 
 	</action_sequence>
 	
+	<action_sequence name="action_lost">
+		<property name="category" value="twitch_actions" />
+
+		<requirement class="InQuestZone">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_pull" />
+		</action>
+		
+		<action class="CloseWindow" />
+		
+		<action class="RandomTeleport">
+			<property name="phase" value="1" />
+			<property name="min_distance" value="200" />
+			<property name="max_distance" value="500" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="2" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="0.05" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="3" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="4" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="0" />
+			<property name="fade_time" value="0.1" />
+		</action>
+
+		<action class="ResetMap">
+			<property name="phase" value="4" />
+			<property name="remove_discovery" value="true" />
+			<property name="remove_waypoints" value="true" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="5" />
+			<property name="sound" value="twitch_bad_action" />
+		</action>
+
+	</action_sequence>
 <!--
 	<action_sequence name="test_nearbyteleport">
 		
@@ -9837,6 +10264,7 @@
 		AddSkillPoints - Adds x amount of skill points to the target or target_group.
 			skill_points - The amount of skill points to add.
 	
+		AddStartingItems - Adds the starting items back to the target or target_group. NOTE: This does overwrite the toolbelt slots.																														
 		AddXP - Adds x amount of XP to the target or target_group.
 			xp_amount - The amount of XP to add.
 
@@ -9928,7 +10356,8 @@
 		ModifyEntityStat - Modifies the an entity stat of the target or target_group.
 			stat - The stat to modify (Health, Stamina, Food, Water)
 			value - The value to set the CVar to.
-			operation - what operation should happen (Set, Add, Subtract, Multiply)
+			is_percent - If the value to set the CVar to is a percent.
+			operation - what operation should happen (Set, SetMax, Add, Subtract, Multiply)
 		
 		PauseBuff - Pauses a buff which stops the updates and hides the icon.
 			buff_tags - The buff tags of which buffs to pause.
@@ -9976,6 +10405,11 @@
 
 		RemoveBuff - Removes the specified buff.
 			buff_name - The name of the buff that should be removed.
+		RemoveBuffsByTag - Removes all buffs by tags
+			buff_tag - The buff tag to remove.
+
+		RemoveDeathBuffs - Removes the death buffs.
+			exclude_tags - The tags to exclude when removing the death buffs.															
 
 		RemoveEntities - Removes the target_group entities. This will probably throw a huge error if you try it on the Target.
 
@@ -9989,9 +10423,15 @@
 			target_only - Remove only for the target.
 
 		RemoveVehicles - Removes a vehicles/turrets from the world.
+			return_fuel - places the fuel from the vehicle in the bag.
 			return_items - places all items from the vehicle on the ground in a bag.
-			include_vehicle - includes the vehicle itself in the bag on the ground.
+			return_vehicle_type - whether to include the vehicle, parts, or none (Vehicle, Parts, None)
 
+		RenameSigns - Renames the text of all nearby signs or signs in the land claim.
+			targeting_type - SafeZone or Distance
+			new_name - The name to show on sign boxes. You can use {viewer} for the viewer who triggered it.
+			max_distance - maximum distance of the containers.
+								 
 		ReplaceBuff - Replaces a single buff with another buff.
 			replace_buff - The buff to be replaced.
 			replace_with_buff - The buff to replace the replaced buff with.
@@ -10014,7 +10454,10 @@
 			include_outputs - Includes the output areas for workstations. (Will clear recipe queue)
 			replaced_by_item - The item that you replace the tagged items with.
 			items_tags - The item tag for the items that should be replaced.
-						
+		ResetMap - Resets the map discovery and/or waypoints.
+			remove_discovery - Removes all discovery of the map.
+			remove_waypoints - Removes all waypoints from the map.
+				
 		ResetPlayerData - Resets the player back to level one and optionally removes all landclaims / bedrolls.
 			reset_skills - Resets your skills back to 1.
 			reset_levels - Resets the level back to 1 (automatically resets skills if selected).
@@ -10022,6 +10465,8 @@
 			reset_books - Resets all book perks back to 0.
 			remove_landclaims - Removes all land claims.
 			remove_bedroll - Removes the bedroll for the player.
+			remove_quests - Removes all quests for the player.
+			remove_backpack - Removes all location data for their dropped backpacks.
 
 		RespawnEntities - Respawns all dead entities from the supplied target_group.
 			target_group - The group of entities to respawn.

@@ -1,12 +1,7 @@
 True Survival contains parts of Sphereii Core, NPC MOD, Quartz and the DarksZombies Pack. All rules associated with those mods still apply 
 
 Installation:
-For A21.1 Build. Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
-
-Official True Survival Server
-IP:63.143.56.58
-Port:18220
-Password:spider5
+For A21.2 Build. Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
 Needed Game Settings For True Survival to operate as intended-
 
@@ -23,6 +18,7 @@ Loot - 100%
 Drop all on death
 Spawning(Alive & Bloodmoon) - 64
 Bedroll - 30 blocks 
+Death Penalty - XP Only
 
 
 

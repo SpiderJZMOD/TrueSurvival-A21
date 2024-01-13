@@ -617,7 +617,7 @@
 			<display_entry name="dEntityDamage" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dHealthAmount" title_key="statHealthChangeOT" display_leading_plus="true"/>
-			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
+			<!--<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>-->
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
@@ -748,7 +748,7 @@
 		<item_display_info display_type="medicalPainkillers" display_group="groupConsumables">
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$jz_WellnessLv" title_key="Wellness" negative_preferred="true"/><!-- JZMOD -->
-			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
+			<!--<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>-->
 			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" />
 			<display_entry name="dStopsConcussion" title_key="statStopsConcussion" display_type="Percent"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>

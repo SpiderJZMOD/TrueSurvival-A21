@@ -494,7 +494,7 @@
 				<label width="120" pos="305,0" text_key="xuiCreateWorldSize" justify="right" />
 
 				<rect pos="430,0">
-					<combobox name="cmbSize" type="ComboBoxList`1[System.Int32]" value_wrap="false" values="-1,1024,2048,4096,8192" pos="0,0" width="150" height="32" />
+					<combobox name="cmbSize" type="ComboBoxList`1[System.Int32]" value_wrap="false" values="-1,1024,2048,3072,4096,5120,6144,7168,8192,9216,10240" pos="0,0" width="150" height="32" />
 					<panel createuipanel="true" disableautobackground="true" depth="10" visible="{iscustomsize}">
 						<sprite depth="3" name="background" pos="34,0" width="82" height="32" color="[black]" type="sliced" pivot="topleft" globalopacity="false" />
 						<textfield name="txtSize" depth="5" pos="34,0" width="82" height="32" pivot="topLeft" validation="integer" on_scroll="true" on_hover="true" active_text_color="{customsizecolor}" tooltip_key="{customsizewarning}" />
@@ -697,6 +697,9 @@
 						<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1, 2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" />
 						<rect/>
 						<gameoption name="GameDifficulty" title="goDifficulty" value_wrap="false" value_type="int" values="" display_names="goDifficulty1,goDifficulty2,goDifficulty3,goDifficulty4,goDifficulty5,goDifficulty6" value_localization_prefix="" />
+						<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+						<gameoption name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goXPMultiplierValue" />
+						<rect/>
 						<gameoption name="DayNightLength" title="goDayLength" value_wrap="false" value_type="int" values="10, 20, 30, 40, 50, 60, 90, 120" display_names="" value_localization_prefix="goMinute" />
 						<gameoption name="DayLightLength" title="goDayLightLength" value_wrap="false" value_type="int" values="12, 14, 16, 18" display_names="" value_localization_prefix="goDayLightLengthValue" />
 					</grid>
@@ -718,26 +721,26 @@
 						<gameoption name="MaxSpawnedZombies" title="goMaxSpawnedZombies" value_wrap="false" value_type="int" values="0, 10, 30, 60" display_names="" value_localization_prefix="" />
 						<gameoption name="MaxSpawnedAnimals" title="goMaxSpawnedAnimals" value_wrap="false" value_type="int" values="0, 10, 30, 50" display_names="" value_localization_prefix="" />
 						-->
-						<gameoption name="PersistentPlayerProfiles" title="goPersistentCharacters" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-						<gameoption name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goXPMultiplierValue" />
+						<gameoption name="AirDropFrequency" title="goAirDropFrequency" value_wrap="false" value_type="int" values="0, 24, 72, 168" display_names="goDisabled" value_localization_prefix="goAirDropValue" />
+						<gameoption name="AirDropMarker" title="goMarkAirDrops" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
 					</grid>
 				</rect>
 
 				<rect tab_key="xuiGameSettingsAdvanced">
 					<grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
 						<!--<gameoption name="BlockDurabilityModifier" title="goBlockDurability" value_wrap="false" value_type="int" values="25, 50, 100, 200" display_names="" value_localization_prefix="goBlockDurabilityValue" />-->
-						<gameoption name="BlockDamagePlayer" title="goBlockDamagePlayer" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-						<gameoption name="BlockDamageAI" title="goBlockDamageAI" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-						<gameoption name="BlockDamageAIBM" title="goBlockDamageAIBM" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" />
-						<gameoption name="LootAbundance" title="goLootAbundance" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 150, 200" display_names="" value_localization_prefix="goLootAbundanceValue" />
-						<gameoption name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1, 5, 7, 10, 15, 20, 30, 40, 50" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
-						<gameoption name="MaxChunkAge" title="goMaxChunkAge" value_wrap="false" value_type="int" values="-1, 10, 20, 30, 40, 50, 75, 100" display_names="goDisabled" value_localization_prefix="goDay" />
-						<gameoption name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" />
-						<gameoption name="DropOnQuit" title="goDropOnQuit" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" />
-						<gameoption name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-						<gameoption name="AirDropFrequency" title="goAirDropFrequency" value_wrap="false" value_type="int" values="0, 24, 72, 168" display_names="goDisabled" value_localization_prefix="goAirDropValue" />
-						<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
-						<gameoption name="AirDropMarker" title="goMarkAirDrops" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+						<gameoption name="BlockDamagePlayer" title="goBlockDamagePlayer" value_wrap="false" value_type="int" values="25, 50, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" multiplayer_required="false" />
+						<gameoption name="BlockDamageAI" title="goBlockDamageAI" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" multiplayer_required="false" />
+						<gameoption name="BlockDamageAIBM" title="goBlockDamageAIBM" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 125, 150, 175, 200, 300" display_names="" value_localization_prefix="goBlockDamageValue" multiplayer_required="false" />
+						<gameoption name="LootAbundance" title="goLootAbundance" value_wrap="false" value_type="int" values="25, 33, 50, 67, 75, 100, 150, 200" display_names="" value_localization_prefix="goLootAbundanceValue" multiplayer_required="false" />
+						<gameoption name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1, 5, 7, 10, 15, 20, 30, 40, 50" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" multiplayer_required="false" />
+						<gameoption name="MaxChunkAge" title="goMaxChunkAge" value_wrap="false" value_type="int" values="-1, 10, 20, 30, 40, 50, 75, 100" display_names="goDisabled" value_localization_prefix="goDay" multiplayer_required="false" />
+						<gameoption name="DeathPenalty" title="goDeathPenalty" value_wrap="false" value_type="int" values="" display_names="goNone,goXPOnly,goInjured,goPermaDeath" value_localization_prefix="" multiplayer_required="false" />
+						<gameoption name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" multiplayer_required="false" />
+						<gameoption name="DropOnQuit" title="goDropOnQuit" value_wrap="false" value_type="int" values="" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" multiplayer_required="false" />
+																																																		 
+						<gameoption name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" multiplayer_required="false" />
+						<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" multiplayer_required="false" />
 					</grid>
 				</rect>
 				
@@ -934,6 +937,7 @@
 								<browsergameoptioninfo name="LootAbundance" title="goLootAbundance" value_localization_prefix="goLootAbundanceValue" />
 								<browsergameoptioninfo name="LootRespawnDays" title="goLootRespawnDays" display_names="-1=goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
 								<browsergameoptioninfo name="MaxChunkAge" title="goMaxChunkAge" display_names="-1=goDisabled" value_localization_prefix="goDay" />
+								<browsergameoptioninfo name="DeathPenalty" title="goDeathPenalty" display_names="goNone,goInjured,goPermaDeath" value_localization_prefix="" />
 								<browsergameoptioninfo name="DropOnDeath" title="goDropOnDeath" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" />
 								<browsergameoptioninfo name="DropOnQuit" title="goDropOnQuit" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" />
 								<browsergameoptioninfo name="EnemySpawnMode" title="goEnemySpawn" value_localization_prefix="" />
@@ -1057,6 +1061,7 @@
 							<browsergameoptioncombined name="LootAbundance" title="goLootAbundance" value_wrap="false" values="25, 33, 50, 67, 75, 100, 150, 200" display_names="" value_localization_prefix="goLootAbundanceValue" />
 							<browsergameoptioncombined name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" values="-1, 5, 7, 10, 15, 20, 30, 40, 50" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
 							<browsergameoptioncombined name="MaxChunkAge" title="goMaxChunkAge" value_wrap="false" values="-1, 10, 20, 30, 40, 50, 75, 100" display_names="goDisabled" value_localization_prefix="goDay" />
+							<browsergameoptioncombined name="DeathPenalty" title="goDeathPenalty" value_wrap="false" values="" display_names="goNone,goInjured,goPermaDeath" value_localization_prefix="" allow_custom="false" />
 							<browsergameoptioncombined name="DropOnDeath" title="goDropOnDeath" value_wrap="false" values="" display_names="goNone,goAll,goToolbelt,goBackpack,goDeleteAll" value_localization_prefix="" allow_custom="false" />
 							<browsergameoptioncombined name="DropOnQuit" title="goDropOnQuit" value_wrap="false" values="" display_names="goNone,goAll,goToolbelt,goBackpack" value_localization_prefix="" allow_custom="false" />
 							<browsergameoptioncombined name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" values="" display_names="" value_localization_prefix="" allow_custom="false" />
@@ -1537,6 +1542,13 @@
 						<rect width="560" height="32">
 							<label depth="4" pos="0,0" width="250" height="30" style="hover" tooltip_key="xuiOptionsTwitchBitPricesTooltip" text_key="xuiOptionsTwitchBitPrices" font_size="28" color="[white]" justify="right" pivot="topleft" visible="${visible|true}" /> <!--text_key="xuiOptionsTwitch${name}"-->
 							<combobox name="BitPrices" type="ComboBoxList`1[System.String]" value_min=".25" value_max="1" value_increment=".25" value_wrap="false" pos="255,0" width="300" height="32" format_string="0%" reverse_list="true" usesmarkers="false" />
+						</rect>
+						
+						<rect />
+						
+						<rect width="560" height="32">
+							<label depth="4" pos="0,0" width="250" height="30" style="hover" tooltip_key="xuiOptionsTwitchBitPotPercentTooltip" text_key="xuiOptionsTwitchBitPotPercent" font_size="28" color="[white]" justify="right" pivot="topleft" visible="${visible|true}" /> <!--text_key="xuiOptionsTwitch${name}"-->
+							<combobox name="BitPotPercent" type="ComboBoxList`1[System.String]" value_min=".15" value_max="1" value_increment=".05" value_wrap="false" pos="255,0" width="300" height="32" format_string="0%" reverse_list="true" usesmarkers="false" />
 						</rect>
 						
 						<rect />

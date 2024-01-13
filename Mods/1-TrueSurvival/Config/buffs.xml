@@ -677,14 +677,14 @@
 		<effect_group name="Stove Quest Start">
 			<requirement name="CVarCompare" cvar="$GotStoveQuest" operation="Equals" value="0"/>
 			<requirement name="PlayerLevel" operation="GTE" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_StoveRepairKit" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_StoveRepairKitPt1" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotStoveQuest" operation="set" value="1"/>	
 		</effect_group>
 		
 		<effect_group name="Kitchen Quest Start">
 			<requirement name="CVarCompare" cvar="$GotKitchenQuest" operation="Equals" value="0"/>
 			<requirement name="PlayerLevel" operation="GTE" value="30"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_KitchenRecipe" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_KitchenRecipePt1" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotKitchenQuest" operation="set" value="1"/>	
 		</effect_group> 
 		
@@ -1783,15 +1783,23 @@
 		<!-- Taking care of food/water not being set as required -->
 		<!-- <requirement name="PlayerLevel" operation="Equals" value="1"/>-->
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="set" value="25000"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Food" operation="set" value="25000"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Water" operation="set" value="25000"/>
+			
+			<!-- Food and Water now handled by game event on respawn -->
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Food" operation="set" value="25000"/> -->
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Water" operation="set" value="25000"/> -->
+			
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="100" tags="coredamageresist"/>
+		</effect_group>
 
-			<triggered_effect trigger="onSelfPrimaryActionStart" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
-			<triggered_effect trigger="onSelfSecondaryActionStart" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
-			<triggered_effect trigger="onSelfWalk" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
-			<triggered_effect trigger="onSelfRun" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
-			<triggered_effect trigger="onSelfCrouch" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+		<!-- If the respawn is done, remove buffDeathFoodDrinkAdjust -->
+		<effect_group>
+			<requirement name="CVarCompare" cvar=".respawnDone" operation="GTE" value="4"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+				<triggered_effect trigger="onSelfWalk" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+				<triggered_effect trigger="onSelfRun" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+				<triggered_effect trigger="onSelfCrouch" action="RemoveBuff" buff="buffDeathFoodDrinkAdjust"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".respawnDone" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 
@@ -3020,8 +3028,10 @@
 		<duration value=".1"/>
 
 		<effect_group>
-			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffAbrasionCatch"/>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck"/>			
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true"
+		buff="jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger"
+			weights=".25,.25,.25,.25"/>
 		</effect_group>
 	</buff>
 
@@ -6709,7 +6719,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".dysenteryDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<!-- No cure or cure wore off. Blink the display and remove the cure -->
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffDysentery01Untreated"/>
@@ -6726,7 +6737,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".dysenteryDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDysentery01Untreated"/>
 		</effect_group>
@@ -6875,7 +6887,8 @@
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<update_rate value="1"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<!-- Infection is fully %-based. infectionCounter is a float % value. Infection kills the player when it reaches 100%, cures when it reaches 0%. -->
 		<effect_group>
 			<!-- $infectionMaxDuration defined in buffStatusCheck01 (7 hours) -->
@@ -6923,6 +6936,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$infectionCureCounter" operation="set" value="0">
 				<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="LT" value="0"/>
 			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounterRespawn" operation="set" value="@infectionCounter" />
 		</effect_group>
 
 		<effect_group name="shut down">
@@ -7078,7 +7092,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<!-- Blinks the display -->
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInfection01Untreated"/>
@@ -7099,6 +7114,7 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
+		<tags value="deathpenalty_injured" />
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection01Untreated"/>
@@ -7119,7 +7135,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<!-- Blinks the display -->
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInfection02Untreated"/>
@@ -7144,7 +7161,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection01Untreated"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection01GetBetter"/>
@@ -7168,7 +7186,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<!-- Blinks the display -->
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInfection03Untreated"/>
@@ -7196,7 +7215,8 @@
 		<duration value="0"/>
 		<display_value_key value="{0:0.0}%"/>
 		<display_value value=".infectionDisplayPerc"/>
-
+		<tags value="deathpenalty_injured" />
+		
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection01Untreated"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection01GetBetter"/>
@@ -7224,6 +7244,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="0"/>    
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+			<!-- Clear out counters -->
+			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounter" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounterRespawn" operation="set" value="0" />
 		</effect_group>
 	</buff>
 
@@ -7899,8 +7922,8 @@
 		</effect_group>
 
 		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.218"/>
+			<!-- <passive_effect name="GeneralDamageResist" operation="base_add" value="0.1"/> -->
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.2"/> <!-- 40/180 -->
 			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01CHTrigger,buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
 		</effect_group>
 	</buff>
@@ -8419,7 +8442,7 @@
 			<passive_effect name="EntityDamage" operation="perc_add" value="4">
 				<requirement name="HoldingItemHasTags" tags="melee"/>
 			</passive_effect>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.5"/>
+			<!-- <passive_effect name="GeneralDamageResist" operation="base_add" value="0.5"/> -->
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.6"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
 			<passive_effect name="HealthChangeOT" operation="base_add" value="20"/>
@@ -8609,7 +8632,7 @@
 
 		<effect_group>
 			<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".04"/> <!-- 30/720 -->
 		</effect_group>
 	</buff>
 
@@ -8639,7 +8662,7 @@
 
 		<effect_group>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkArchery,admin"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/> <!-- 30/360 -->
 		</effect_group>
 	</buff>
 
@@ -8667,8 +8690,8 @@
 		</effect_group>
 
 		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.5"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".25"/>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.4"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/> <!-- 20/360 -->
 		</effect_group>
 	</buff>
 
@@ -9611,6 +9634,27 @@
 		</effect_group>
 	</buff>
 
+	<!-- *** twitch_buffBlind -->
+	<!-- Temporarily gives the blind vision screen effect -->
+	<buff name="twitch_buffBlind" name_key="TwitchBuff_Blind" description_key="TwitchBuff_BlindDesc" icon="ui_game_symbol_twitch_vision_effects" icon_color="255,175,175">
+		<stack_type value="replace"/>
+		<duration value="10"/>
+		<display_value value="duration"/>
+
+		<effect_group>
+			<!-- Blinks the display -->
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="twitch_buffBlind"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="twitch_buffBlind"/>
+
+			<triggered_effect trigger="onSelfBuffFinish" action="PlaySound" sound="twitch_bad_buff_ended" play_in_head="true" />
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="FadeToBlack"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="FadeToBlack"/>
+		</effect_group>
+	</buff>
+	
 	<!-- *** twitch_regen -->
 	<!-- Instantly gives SOME health and removes any negative buffs -->
 	<buff name="twitch_regen" name_key="TwitchBuff_Regen" description_key="TwitchBuff_RegenDesc" icon="ui_game_symbol_twitch_regen" icon_color="175,175,255">
@@ -10937,7 +10981,7 @@
 		</effect_group>
 
 		<effect_group>
-			<passive_effect name="WaterChangeOT" operation="base_set" value="2"/>
+			<passive_effect name="WaterChangeOT" operation="base_set" value="2"/> <!-- twitch_voteNourish -->
 			<passive_effect name="FoodChangeOT" operation="base_set" value="2"/>
 		</effect_group>
 	</buff>
@@ -14740,6 +14784,16 @@
         </effect_group>  
 	</buff>
     
+	<buff name="jz_BuffUsedTissueExtractor" hidden="true" remove_on_death="true" >
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+        <update_rate value="1"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="subtract" value="500"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="health" operation="subtract" value="500"/>
+		</effect_group>
+	</buff>
+	
     <buff name="jz_BuffSLPt13Activate" hidden="true" remove_on_death="false">
         <stack_type value="ignore"/>
 		<duration value="0"/>
@@ -14758,7 +14812,7 @@
 		<duration value=".1"/>
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomach"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationTrigger"/>
 		</effect_group>
 	</buff>
 	
@@ -14766,36 +14820,14 @@
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
 		<effect_group>
-			<!--<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LacerationTiggerList" operation="set" value="randomint(1,3)"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LacerationTiggerList" operation="set" value="randomint(1,3)"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck" weights="40,40,40,40,40,40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LacerationTiggerList" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftLeg,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationRightArm,jz_BuffLacerationLeftArm" weights="40,40,40,40,40,40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LacerationTiggerList" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffLacerationLeftArm,jz_BuffLacerationNeck,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationStomach" weights="40,40,40,40,40,40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LacerationTiggerList" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LacerationTiggerList" operation="set" value="0"/>-->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LacerationBuffPicker" operation="set" value="randomint(1,10)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFoot">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightFoot">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftLeg">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightLeg">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftArm">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightArm">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="6"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftHand">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="7"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightHand">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="8"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomach">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="9"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationNeck">
-				<requirement name="CVarCompare" cvar=".LacerationBuffPicker" operation="Equals" value="10"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LacerationBuffPicker" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LacerationTiggerList" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	
@@ -19210,7 +19242,7 @@
 		<duration value=".1"/>
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRightLegTrigger"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLowerBodySprainedTrigger"/>
 		</effect_group>
 	</buff>
 	
@@ -19218,27 +19250,14 @@
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
 		<effect_group>
-			<!--<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LowerBodySprainTiggerList" operation="set" value="randomint(1,3)"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LowerBodySprainTiggerList" operation="set" value="randomint(1,3)"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRibsTrigger,,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LowerBodySprainTiggerList" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftAnkleTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LowerBodySprainTiggerList" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedRibsTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".LowerBodySprainTiggerList" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LowerBodySprainTiggerList" operation="set" value="0"/>-->
-			
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LowerBodySprainPicker" operation="set" value="randomint(1,4)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedLeftAnkleTrigger">
-				<requirement name="CVarCompare" cvar=".LowerBodySprainPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRibsTrigger">
-				<requirement name="CVarCompare" cvar=".LowerBodySprainPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedLeftLegTrigger">
-				<requirement name="CVarCompare" cvar=".LowerBodySprainPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRightLegTrigger">
-				<requirement name="CVarCompare" cvar=".LowerBodySprainPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRightAnkleTrigger">
-				<requirement name="CVarCompare" cvar=".LowerBodySprainPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LowerBodySprainPicker" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".LowerBodySprainTiggerList" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	<!-- JZMOD FALL BREAK -->
@@ -19385,7 +19404,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftAnkleWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LeftAnkleWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedLeftAnkle">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedLeftAnkle">
 				<requirement name="CVarCompare" cvar="$LeftAnkleWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -19777,7 +19796,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RightAnkleWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RightAnkleWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedRightAnkle">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedRightAnkle">
 				<requirement name="CVarCompare" cvar="$RightAnkleWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -20170,7 +20189,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftLegWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LeftLegWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedLeftLeg">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedLeftLeg">
 				<requirement name="CVarCompare" cvar="$LeftLegWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -20563,7 +20582,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RightLegWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RightLegWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedRightLeg">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedRightLeg">
 				<requirement name="CVarCompare" cvar="$RightLegWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -20956,7 +20975,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RibsWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RibsWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedRibs">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedRibs">
 				<requirement name="CVarCompare" cvar="$RibsWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -21337,27 +21356,14 @@
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
 		<effect_group>
-			<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".UpperBodySprainTriggerList" operation="set" value="randomint(1,3)"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".UpperBodySprainTriggerList" operation="set" value="randomint(1,3)"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedNeckTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArmTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".UpperBodySprainTriggerList" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedRightArmTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedNeckTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".UpperBodySprainTriggerList" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRightArmTrigger,jz_BuffSprainedNeckTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedLeftWristTrigger" weights="40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".UpperBodySprainTriggerList" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".UpperBodySprainTriggerList" operation="set" value="0"/>-->
-			
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".UpperBodySprainPicker" operation="set" value="randomint(1,5)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedLeftWristTrigger">
-				<requirement name="CVarCompare" cvar=".UpperBodySprainPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRightWristTrigger">
-				<requirement name="CVarCompare" cvar=".UpperBodySprainPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedRightArmTrigger">
-				<requirement name="CVarCompare" cvar=".UpperBodySprainPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedLeftArmTrigger">
-				<requirement name="CVarCompare" cvar=".UpperBodySprainPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSprainedNeckTrigger">
-				<requirement name="CVarCompare" cvar=".UpperBodySprainPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".UpperBodySprainPicker" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".UpperBodySprainTriggerList" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT WRIST SPRAIN TRIGGER-->
@@ -21403,7 +21409,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftWristWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LeftWristWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedLeftWrist">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedLeftWrist">
 				<requirement name="CVarCompare" cvar="$LeftWristWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -21786,7 +21792,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RightWristWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RightWristWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedRightWrist">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedRightWrist">
 				<requirement name="CVarCompare" cvar="$RightWristWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -22170,7 +22176,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftArmWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LeftArmWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedLeftArm">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedLeftArm">
 				<requirement name="CVarCompare" cvar="$LeftArmWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -22554,7 +22560,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RightArmWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$RightArmWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedRightArm">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedRightArm">
 				<requirement name="CVarCompare" cvar="$RightArmWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -22938,7 +22944,7 @@
 			<!-- Clean up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".NeckWrappedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$NeckWrappedCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BufWrappedNeck">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWrappedNeck">
 				<requirement name="CVarCompare" cvar="$NeckWrappedCounter" operation="LTE" value="0"/></triggered_effect>
 		</effect_group>
 	</buff>
@@ -23569,13 +23575,13 @@
 		</effect_group>				
 	</buff>
 
-	<!-- JZMOD GASH TRIGGER randomint(1,3)-->
+	<!-- JZMOD GASH TRIGGER -->
 	<buff name="jz_BuffTriggerGash" name_key="trigger" icon="ui_game_symbol_quest">
 		<duration value=".1"/>
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashNeck"/>
-			<!--<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashTrigger"/>-->
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm" weights=".11,.07,.07,.05,.29,.36,.11"/><!--,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashNeck-->
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashTrigger"/>
+			<!--<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm" weights=".11,.07,.07,.05,.29,.36,.11"/>,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashNeck-->
 		</effect_group>
 	</buff>
 	
@@ -23583,37 +23589,14 @@
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
 		<effect_group>
-		<!--	<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".GashTriggerList" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".GashTriggerList" operation="set" value="randomint(1,3)"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashNeck" weights=".1,.1,.1,.1,.1,.1,.1,.1,.1,.1">
 				<requirement name="CVarCompare" cvar=".GashTriggerList" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffGashLeftHand,jz_BuffGashNeck,jz_BuffGashRightHand,jz_BuffGashRightArm,jz_BuffGashLeftArm,jz_BuffGashStomach,jz_BuffGashRightLeg,jz_BuffGashLeftLegFoot,jz_BuffGashRightFoot,jz_BuffGashLeftFoot" weights=".1,.1,.1,.1,.1,.1,.1,.1,.1,.1">
 				<requirement name="CVarCompare" cvar=".GashTriggerList" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffGashStomach,jz_BuffGashRightHand,jz_BuffGashRightFoot,jz_BuffGashNeck,jz_BuffGashLeftHand,jz_BuffGashLeftLegFoot,jz_BuffGashLeftFoot,jz_BuffGashLeftArm,jz_BuffGashRightLeg,jz_BuffGashRightArm," weights=".1,.1,.1,.1,.1,.1,.1,.1,.1,.1">
 				<requirement name="CVarCompare" cvar=".GashTriggerList" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".GashTriggerList" operation="set" value="0"/>-->
-			
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".GashBuffPicker" operation="set" value="randomint(1,10)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftFoot">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightFoot">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftLegFoot">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightLeg">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashStomach">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftArm">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="6"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightArm">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="7"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftHand">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="8"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightHand">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="9"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashNeck">
-				<requirement name="CVarCompare" cvar=".GashBuffPicker" operation="Equals" value="10"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".GashBuffPicker" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".GashTriggerList" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT FOOT GASH -->
@@ -28906,7 +28889,7 @@
 		</effect_group>
 		<effect_group name="Sprain Neck">
 			<requirement name="CVarCompare" cvar=".WrapTriage" operation="LT" value="1"/>
-			<requirement name="HasBuff" buff="jz_BuffLacerationNeckBleed"/>
+			<requirement name="HasBuff" buff="jz_BuffSprainedNeck"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffWrappedNeck"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedNeck"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".WrapTriage" operation="set" value="1"/>
@@ -30181,7 +30164,7 @@
 		<duration value=".1"/>
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnLeftFoot"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnTrigger"/>
 		</effect_group>
 	</buff>
 	
@@ -30189,7 +30172,6 @@
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
 		<effect_group>
-		<!--
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".BurnTriggerList" operation="set" value="randomint(1,3)"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck" weights="40,40,40,40,40,40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".BurnTriggerList" operation="Equals" value="1"/></triggered_effect>
@@ -30197,30 +30179,7 @@
 				<requirement name="CVarCompare" cvar=".BurnTriggerList" operation="Equals" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftHand,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightHand,jz_BuffFireBurnRightFoot,jz_BuffFireBurnStomach,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnNeck" weights="40,40,40,40,40,40,40,40,40,40">
 				<requirement name="CVarCompare" cvar=".BurnTriggerList" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".BurnTriggerList" operation="set" value="0"/>-->
-			
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".BurnBuffPicker" operation="set" value="randomint(1,10)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnLeftFoot">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnRightFoot">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnLeftLeg">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnRightLeg">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnLeftArm">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnRightArm">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="6"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnLeftHand">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="7"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnRightHand">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="8"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnStomach">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="9"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnNeck">
-				<requirement name="CVarCompare" cvar=".BurnBuffPicker" operation="Equals" value="10"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".BurnBuffPicker" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".BurnTriggerList" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 	<!-- BURN LEFT FOOT -->
@@ -36941,18 +36900,8 @@
 			<requirement name="EntityTagCompare" tags="player"/>
 				<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffBrokenRightLeg,jz_BuffBrokenLeftLeg,jz_BuffBrokenRightAnkle,jz_BuffBrokenLeftAnkle"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffShrapnel"/>
-				<!--<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBrokenRightLeg,jz_BuffBrokenLeftLeg,jz_BuffBrokenRightAnkle,jz_BuffBrokenLeftAnkle" weights="25,25,25,25"/>-->
-				
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AirFilterMineBuffPicker" operation="set" value="randomint(1,4)"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBrokenRightLeg">
-				<requirement name="CVarCompare" cvar=".AirFilterMineBuffPicker" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBrokenLeftLeg">
-				<requirement name="CVarCompare" cvar=".AirFilterMineBuffPicker" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBrokenRightAnkle">
-				<requirement name="CVarCompare" cvar=".AirFilterMineBuffPicker" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBrokenLeftAnkle">
-				<requirement name="CVarCompare" cvar=".AirFilterMineBuffPicker" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".AirFilterMineBuffPicker" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffBrokenRightLeg,jz_BuffBrokenLeftLeg,jz_BuffBrokenRightAnkle,jz_BuffBrokenLeftAnkle" weights="25,25,25,25"/>
+			
 		</effect_group>		
 		<effect_group>
 			<requirement name="!EntityTagCompare" tags="player"/>
@@ -40455,6 +40404,7 @@
 		</effect_group>
 	</buff>
 	
+    
 	
 </set>     
 </configs>

@@ -373,7 +373,7 @@
 		<passive_effect name="LootProb" operation="base_set" value="@$ShotgunGuideRodsLootPerc" tags="jz_BrokenToolShotgunGuideRods"/>
 		<!-- Machine Gun -->
 		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunTorxSetLootPerc" tags="jz_ToolMachineGunTorxSet"/>
-		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunTiNLootPerc" tags="jz_ToolMachineGunTin"/>
+		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunTiNLootPerc" tags="jz_ToolMachineGunTiN"/>
 		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunSightToolLootPerc" tags="jz_BrokenToolMachineGunSightTool"/>
 		<passive_effect name="LootProb" operation="base_set" value="@$AdvancedMachineGunCoilSpringsLootPerc" tags="jz_ToolAdvancedMachineGunCoilSprings"/>
 		<passive_effect name="LootProb" operation="base_set" value="@$MachineGunBushingWrenchLootPerc" tags="jz_ToolMachineGunBushingWrench"/>
@@ -1845,7 +1845,7 @@
 		<!-- *** ZOMBIE_BURNT_FERAL -->
 <entity_class name="zombieBurntFeral" extends="zombieBurnt">
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,feral"/>
+	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBurntFeral.prefab"/>
 	<property name="SoundSpawn" value="Ambient_Loops/a_fire_embersmoke_sm_lp"/>
 
@@ -3910,7 +3910,7 @@
 	<property name="MoveSpeedAggro" value="0.6, 1.45"/> <!-- fit, feral -->
 	<property name="JumpMaxDistance" value="4.6, 5"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
-	<property name="ExperienceGain" value="750"/><!-- XP grunt feral -->
+	<property name="ExperienceGain" value="1200"/><!-- XP grunt feral -->
 	<property name="LootListOnDeath" value="feralZombie"/>
 
 	<effect_group name="Base Effects">
@@ -3930,7 +3930,7 @@
 	<!-- Gameplay zombieSoldierRadiated -->
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
-	<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+	<property name="ExperienceGain" value="1500"/><!-- XP grunt radiated -->
 	<property name="Buffs" value="jz_BuffZombieRadiatedBuffs"/><!-- JZMOD -->
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="325,700"/><!-- JZMOD -->

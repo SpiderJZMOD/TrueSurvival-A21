@@ -1,0 +1,245 @@
+﻿<!DOCTYPE xml>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AssemblyName>BiomePrefabExclusion</AssemblyName>
+		<Version>1.2</Version>
+		<LangVersion>latest</LangVersion>
+		<NoWarn>MSB3277;MSB3245</NoWarn>
+		<AssemblySearchPaths>..\..\7DaysToDie_Data\Managed</AssemblySearchPaths>
+		<OutDir>.</OutDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="mscorlib">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony.dll">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="LogLibrary">
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AIModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ARModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AccessibilityModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AnimationModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AssetBundleModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.AudioModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ClothModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ClusterInputModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.CoreModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.CrashReportingModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.DSPGraphModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.DirectorModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.GIModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.GameCenterModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.GridModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.HotReloadModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.IMGUIModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ImageConversionModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.InputLegacyModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.InputModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.LocalizationModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.Physics2DModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.PhysicsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ProfilerModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.StreamingModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.SubstanceModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.SubsystemsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.TLSModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.TerrainModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.TextRenderingModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.TilemapModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UIElementsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule" >
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UI" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UIModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UNETModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UmbraModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityConnectModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityCurlModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.VFXModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.VRModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.VehiclesModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.VideoModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.WindModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="UnityEngine.XRModule" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="Mono.Cecil" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="Mono.Cecil.Rocks" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="Mono.Cecil.Mdb" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="Mono.Cecil.Pdb" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="MonoMod.RuntimeDeotur" >
+			<Private>False</Private>
+		</Reference>
+    <Reference Include="MonoMod.Utils" >
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="InControl.dll">
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>

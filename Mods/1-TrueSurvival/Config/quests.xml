@@ -366,9 +366,9 @@
 	</quest>
 
 	<quest id="jzquest_CampaignPt4">
-		<property name="name_key" value="jzquest_CampaignPt8" />
-		<property name="subtitle_key" value="jzquest_CampaignPt8Sub" />
-		<property name="description_key" value="jzquest_CampaignPt8Desc" />
+		<property name="name_key" value="jzquest_CampaignPt4" />
+		<property name="subtitle_key" value="jzquest_CampaignPt4Sub" />
+		<property name="description_key" value="jzquest_CampaignPt4Desc" />
 		<property name="icon" value="ui_game_symbol_map_bed" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
@@ -383,9 +383,9 @@
 	</quest>
 	
     <quest id="jzquest_CampaignPt5">
-		<property name="name_key" value="jzquest_CampaignPt9" />
-		<property name="subtitle_key" value="jzquest_CampaignPt9Sub" />
-		<property name="description_key" value="jzquest_CampaignPt9Desc" />
+		<property name="name_key" value="jzquest_CampaignPt5" />
+		<property name="subtitle_key" value="jzquest_CampaignPt5Sub" />
+		<property name="description_key" value="jzquest_CampaignPt5Desc" />
 		<property name="icon" value="ui_game_symbol_map_bed" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
@@ -400,13 +400,13 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
-       <!-- <reward type="Quest" id="jzquest_CampaignPt10" />-->
+       <reward type="Quest" id="jzquest_CampaignPt6" />
 	</quest>
-	<!--
-    <quest id="jzquest_CampaignPt10">
-		<property name="name_key" value="jzquest_CampaignPt10" />
-		<property name="subtitle_key" value="jzquest_CampaignPt10Sub" />
-		<property name="description_key" value="jzquest_CampaignPt10Desc" />
+	
+    <quest id="jzquest_CampaignPt6">
+		<property name="name_key" value="jzquest_CampaignPt6" />
+		<property name="subtitle_key" value="jzquest_CampaignPt6Sub" />
+		<property name="description_key" value="jzquest_CampaignPt6Desc" />
 		<property name="icon" value="ui_game_symbol_map_bed" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
@@ -415,7 +415,7 @@
         <objective type="GotoPOISDX, SCore" value="10-10000" phase="1">
 			<property name="completion_distance" value="50" />
 			<property name="phase" value="1" />
-			<property name="PrefabName" value="JZ_Hospital_midget" />
+			<property name="PrefabName" value="countrytown_business_11" />
 			<property name="nav_object" value="quest" />
 		</objective>
 				
@@ -426,22 +426,20 @@
 	
         <objective type="FetchKeep" id="jz_QITissueExtractor" value="1" phase="3"/>
        
-		<action type="SpawnEnemy" id="zombieNurseFeral" value="1" phase="4"/>
-        <action type="SpawnEnemy" id="zombieNurse" value="1" phase="4"/>
-        <action type="SpawnEnemy" id="zombieLabFeral" value="1" phase="4"/>
+		<action type="SpawnEnemy" id="zombieNurse" value="3" phase="4"/>
         <action type="SpawnEnemy" id="zombieLab" value="1" phase="4"/>
         <action type="SpawnEnemy" id="zombieMaleHazmat" value="1" phase="4"/>
 		<objective type="EntityKill" id="zombieNurse" value="1" phase="4"/>
 
 		<reward type="Exp" value="250"/>
         <reward type="Recipe" id="jz_TissueExtractorSpear" />          
-        <reward type="Quest" id="jzquest_CampaignPt11" />
+        <reward type="Quest" id="jzquest_CampaignPt7" />
 	</quest>
 	
-    <quest id="jzquest_CampaignPt11">
-		<property name="name_key" value="jzquest_CampaignPt11" />
-		<property name="subtitle_key" value="jzquest_CampaignPt11Sub" />
-		<property name="description_key" value="jzquest_CampaignPt11Desc" />
+    <quest id="jzquest_CampaignPt7">
+		<property name="name_key" value="jzquest_CampaignPt7" />
+		<property name="subtitle_key" value="jzquest_CampaignPt7Sub" />
+		<property name="description_key" value="jzquest_CampaignPt7Desc" />
 		<property name="icon" value="ui_game_symbol_map_bed" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
@@ -457,10 +455,10 @@
 
 		<reward type="Exp" value="250"/>
         <reward type="Recipe" id="jz_QI934Frequency" />       
-        <reward type="Quest" id="jzquest_CampaignPt12" />
+        <!--<reward type="Quest" id="jzquest_CampaignPt8" />-->
 	</quest>
-	
-    <quest id="jzquest_CampaignPt12">
+	<!--	
+    <quest id="jzquest_CampaignPt8">
 		<property name="name_key" value="jzquest_CampaignPt12" />
 		<property name="subtitle_key" value="jzquest_CampaignPt12Sub" />
 		<property name="description_key" value="jzquest_CampaignPt12Desc" />
@@ -479,7 +477,7 @@
         <reward type="Recipe" id="jz_QIMutatedTissueReport" />       
         <reward type="Quest" id="jzquest_CampaignPt13" />
 	</quest>
-	
+
     <quest id="jzquest_CampaignPt13">
 		<property name="name_key" value="jzquest_CampaignPt13" />
 		<property name="subtitle_key" value="jzquest_CampaignPt13Sub" />
@@ -2398,7 +2396,7 @@
 		<property name="shareable" value="false"/>
 			
 		<action type="GiveCVarBuffSDX, SCore" id="$MachineGunTiNLootPerc" value="1" phase="1"/>		
-		<objective type="FetchKeep" id="jz_ToolMachineGunTin" value="1" phase="1"/>	
+		<objective type="FetchKeep" id="jz_ToolMachineGunTiN" value="1" phase="1"/>	
 		<action type="GiveBuffSDX, SCore" value="jz_BuffMachineGunFourRemove" phase="2" /> 
 		<objective type="BlockUpgrade" id="jz_WorkstationMachineGunWorkbenchLv3" value="1" phase="2"/>
 		
@@ -2884,16 +2882,15 @@
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" /> <!-- JZMOD -->
+		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /> <!-- JZMOD -->
-				
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="330"/>
-		
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
@@ -2901,19 +2898,69 @@
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods" ischosen="true" value="1"/>
 	</quest>
 	
-	<quest id="tier2_fetch" template="tier1_fetch">
-		<variable name="name" value="quest_tier2_fetch" />
-		<variable name="offer" value="quest_tier2_fetch_offer" />
-		<variable name="difficulty" value="2" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
+	<quest id="tier2_fetch" >
+		<property name="name_key" value="quest_tier2_fetch" />
+		<property name="subtitle_key" value="quest_fetch_subtitle"/>
+		<property name="description_key" value="quest_fetch_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="2" />
+		<property name="offer_key" value="quest_tier2_fetch_offer" />
+		<property name="statement_key" value="quest_fetch_statement"/>
+		<property name="response_key" value="quest_fetch_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="3750"/>
 		<reward type="Item" id="casinoCoin" value="560"/>
-
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>																				 
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
@@ -2923,19 +2970,69 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier3_fetch" template="tier1_fetch">
-		<variable name="name" value="quest_tier3_fetch" />
-		<variable name="offer" value="quest_tier3_fetch_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
+	<quest id="tier3_fetch" >
+		<property name="name_key" value="quest_tier3_fetch" />
+		<property name="subtitle_key" value="quest_fetch_subtitle"/>
+		<property name="description_key" value="quest_fetch_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="3" />
+		<property name="offer_key" value="quest_tier3_fetch_offer" />
+		<property name="statement_key" value="quest_fetch_statement"/>
+		<property name="response_key" value="quest_fetch_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="5000"/>
 		<reward type="Item" id="casinoCoin" value="800"/>
-
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="3"/>																	 
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
@@ -2945,19 +3042,69 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier4_fetch" template="tier1_fetch">
-		<variable name="name" value="quest_tier4_fetch" />
-		<variable name="offer" value="quest_tier4_fetch_offer" />
-		<variable name="difficulty" value="4" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
+	<quest id="tier4_fetch" >
+		<property name="name_key" value="quest_tier4_fetch" />
+		<property name="subtitle_key" value="quest_fetch_subtitle"/>
+		<property name="description_key" value="quest_fetch_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="4" />
+		<property name="offer_key" value="quest_tier4_fetch_offer" />
+		<property name="statement_key" value="quest_fetch_statement"/>
+		<property name="response_key" value="quest_fetch_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="6250"/>
 		<reward type="Item" id="casinoCoin" value="1020"/>
-
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="4"/>																			 
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
@@ -2967,19 +3114,69 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier5_fetch" template="tier1_fetch">
-		<variable name="name" value="quest_tier5_fetch" />
-		<variable name="offer" value="quest_tier5_fetch_offer" />
-		<variable name="difficulty" value="5" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
+	<quest id="tier5_fetch" >
+		<property name="name_key" value="quest_tier5_fetch" />
+		<property name="subtitle_key" value="quest_fetch_subtitle"/>
+		<property name="description_key" value="quest_fetch_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="5" />
+		<property name="offer_key" value="quest_tier5_fetch_offer" />
+		<property name="statement_key" value="quest_fetch_statement"/>
+		<property name="response_key" value="quest_fetch_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+		
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="12500"/>
 		<reward type="Item" id="casinoCoin" value="2040"/>
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>																			 
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
@@ -2989,19 +3186,69 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier6_fetch" template="tier1_fetch">
-		<variable name="name" value="quest_tier6_fetch" />
-		<variable name="offer" value="quest_tier6_fetch_offer" />
-		<variable name="difficulty" value="6" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
+	<quest id="tier6_fetch" >
+		<property name="name_key" value="quest_tier6_fetch" />
+		<property name="subtitle_key" value="quest_fetch_subtitle"/>
+		<property name="description_key" value="quest_fetch_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="6" />
+		<property name="offer_key" value="quest_tier6_fetch_offer" />
+		<property name="statement_key" value="quest_fetch_statement"/>
+		<property name="response_key" value="quest_fetch_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="20000"/>
 		<reward type="Item" id="casinoCoin" value="6000"/>
-
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>																				 
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
@@ -3063,14 +3310,14 @@
 			<property name="phase" value="4"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" /> <!-- JZMOD -->
+		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /><!-- JZMOD -->
-
 		<reward type="Exp" value="3000"/>
 		<reward type="Item" id="casinoCoin" value="800"/>
 
@@ -3081,144 +3328,32 @@
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
 	</quest>
 	
-	<quest id="tier2_clear" template="tier1_clear">
-		<variable name="name" value="quest_tier2_clear" />
-		<variable name="offer" value="quest_tier2_clear_offer" />
-		<variable name="difficulty" value="2" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
-		<reward type="Exp" value="4500"/>
-		<reward type="Item" id="casinoCoin" value="1350"/>
-
-		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-	</quest>
-	
-	<quest id="tier3_clear" template="tier1_clear">
-		<variable name="name" value="quest_tier3_clear" />
-		<variable name="offer" value="quest_tier3_clear_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
-		<reward type="Exp" value="6000"/>
-		<reward type="Item" id="casinoCoin" value="1800"/>
-
-		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-	</quest>
-	
-	<quest id="tier4_clear" template="tier1_clear">
-		<variable name="name" value="quest_tier4_clear" />
-		<variable name="offer" value="quest_tier4_clear_offer" />
-		<variable name="difficulty" value="4" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
-		<reward type="Exp" value="7500"/>
-		<reward type="Item" id="casinoCoin" value="2040"/>
-
-		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-	</quest>
-	
-	<quest id="tier5_clear" template="tier1_clear">
-		<variable name="name" value="quest_tier5_clear" />
-		<variable name="offer" value="quest_tier5_clear_offer" />
-		<variable name="difficulty" value="5" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
-		<reward type="Exp" value="15000"/>
-		<reward type="Item" id="casinoCoin" value="4080"/>
-
-		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-	</quest>
-	
-	<quest id="tier6_clear" template="tier1_clear">
-		<variable name="name" value="quest_tier6_clear" />
-		<variable name="offer" value="quest_tier6_clear_offer" />
-		<variable name="difficulty" value="6" />
-		<variable name="extra_tags" value="" />
-		<variable name="biome_filter_type" value="AnyBiome" />
-		<variable name="biome_filter" value="" />
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="4" /><!-- JZMOD -->
-		
-		<reward type="Exp" value="24000"/>
-		<reward type="Item" id="casinoCoin" value="7200"/>
-
-		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-	</quest>
-
-<!-- *** INFESTED_QUESTS -->
-	<quest id="tier2_clear_infested">
-		<property name="name_key" value="quest_tier2_infested_clear" param1="name"/>
-		<property name="subtitle_key" value="quest_infestation_subtitle"/>
-		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+	<quest id="tier2_clear" >
+		<property name="name_key" value="quest_tier2_clear" />
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
 		<property name="icon" value="ui_game_symbol_quest"/>
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="quest"/>
-		<property name="offer_key" value="quest_tier2_infested_clear_offer" param1="offer"/>
+		<property name="offer_key" value="quest_tier2_clear_offer" />
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="2" param1="difficulty"/>
-		<property name="statement_key" value="quest_infestation_statement"/>
-		<property name="response_key" value="quest_infestation_response"/>
+		<property name="difficulty_tier" value="2" />
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
 		<property name="login_rally_reset" value="true"/>
 		<property name="reward_choices_count" value="5" />
-		<property name="extra_tags" value="infested" param1="extra_tags" />
+		<property name="extra_tags" value="" param1="extra_tags" />
 		<property name="shareable" value="true"/>
-		<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
-		<property name="gamestage_mod" value=".6" param1="gamestage_mod" />
-		<property name="gamestage_bonus" value="30" param1="gamestage_bonus" />
-
+				
 		<property name="completiontype" value="TurnIn"/>
 		<property name="completion_key" value="quest_clear_completion"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome" />
+			<property name="biome_filter" value="" />
 			<property name="nav_object" value="quest" />
-			<property name="poi_tier" value="1" param1="poi_tier" />
+			<property name="poi_tier" value="-1" param1="poi_tier" />
 		</objective>
 
 		<objective type="RallyPoint">
@@ -3244,17 +3379,368 @@
 			<property name="phase" value="4"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
+		
 		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<reward type="Exp" value="4500"/>
+		<reward type="Item" id="casinoCoin" value="1350"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+	</quest>
+	
+	<quest id="tier3_clear" >
+		<property name="name_key" value="quest_tier3_clear" />
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier3_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="3" />
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+				
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome"  />
+			<property name="biome_filter" value=""  />
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="-1" param1="poi_tier" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
 			<property name="phase" value="4"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<reward type="Exp" value="6000"/>
+		<reward type="Item" id="casinoCoin" value="1800"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+	</quest>
+	
+	<quest id="tier4_clear" >
+		<property name="name_key" value="quest_tier4_clear" />
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier4_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="4" />
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+				
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
 
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome"  />
+			<property name="biome_filter" value=""  />
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="-1" param1="poi_tier" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+				
+		<reward type="Exp" value="7500"/>
+		<reward type="Item" id="casinoCoin" value="2040"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+	</quest>
+	
+	<quest id="tier5_clear" >
+		<property name="name_key" value="quest_tier5_clear" />
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier5_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="5" />
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+				
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome"  />
+			<property name="biome_filter" value=""  />
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="-1" param1="poi_tier" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<reward type="Exp" value="15000"/>
+		<reward type="Item" id="casinoCoin" value="4080"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+	</quest>
+	
+	<quest id="tier6_clear" >
+		<property name="name_key" value="quest_tier6_clear" />
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier6_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="6" />
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="shareable" value="true"/>
+				
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="AnyBiome"  />
+			<property name="biome_filter" value=""  />
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="-1" param1="poi_tier" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="5" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<reward type="Exp" value="24000"/>
+		<reward type="Item" id="casinoCoin" value="7200"/>
+		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+	</quest>
+
+<!-- *** INFESTED_QUESTS -->
+	<quest id="tier2_clear_infested">
+		<property name="name_key" value="quest_tier2_infested_clear" />
+		<property name="subtitle_key" value="quest_infestation_subtitle"/>
+		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier2_infested_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="2" />
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="infested" />
+		<property name="shareable" value="true"/>
+		<property name="spawn_multiplier" value="2"  />
+		<property name="gamestage_mod" value=".6"  />
+		<property name="gamestage_bonus" value="30" />
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="1" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" /><!-- JZMOD -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
 		<reward type="Exp" value="3000"/>
 		<reward type="Item" id="casinoCoin" value="800"/>
-
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
@@ -3263,21 +3749,68 @@
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="2"/>
 	</quest>
 	
-	<quest id="tier3_clear_infested" template="tier2_clear_infested">
-		<variable name="name" value="quest_tier3_infested_clear" />
-		<variable name="offer" value="quest_tier3_infested_clear_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="extra_tags" value="infested" />
-		<variable name="poi_tier" value="2" />
-		<variable name="spawn_multiplier" value="2" />
-		<variable name="gamestage_mod" value=".6"/>
-		<variable name="gamestage_bonus" value="30"/>
+	<quest id="tier3_clear_infested" >
+		<property name="name_key" value="quest_tier3_infested_clear" />
+		<property name="subtitle_key" value="quest_infestation_subtitle"/>
+		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier3_infested_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="3" />
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="infested" />
+		<property name="shareable" value="true"/>
+		<property name="spawn_multiplier" value="2"  />
+		<property name="gamestage_mod" value=".6"  />
+		<property name="gamestage_bonus" value="30" />
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="2" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" /><!-- JZMOD -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1350"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="3"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
@@ -3287,21 +3820,68 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier4_clear_infested" template="tier2_clear_infested">
-		<variable name="name" value="quest_tier4_infested_clear" />
-		<variable name="offer" value="quest_tier4_infested_clear_offer" />
-		<variable name="difficulty" value="4" />
-		<variable name="extra_tags" value="infested" />
-		<variable name="poi_tier" value="3" />
-		<variable name="spawn_multiplier" value="1.5" />
-		<variable name="gamestage_mod" value=".6"/>
-		<variable name="gamestage_bonus" value="30"/>
+	<quest id="tier4_clear_infested" >
+		<property name="name_key" value="quest_tier4_infested_clear" />
+		<property name="subtitle_key" value="quest_infestation_subtitle"/>
+		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier4_infested_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="4" />
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="infested" />
+		<property name="shareable" value="true"/>
+		<property name="spawn_multiplier" value="1.5"  />
+		<property name="gamestage_mod" value=".6"  />
+		<property name="gamestage_bonus" value="30" />
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="3" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" /><!-- JZMOD -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1350"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
@@ -3311,21 +3891,68 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier5_clear_infested" template="tier2_clear_infested">
-		<variable name="name" value="quest_tier5_infested_clear" />
-		<variable name="offer" value="quest_tier5_infested_clear_offer" />
-		<variable name="difficulty" value="5" />
-		<variable name="extra_tags" value="infested" />
-		<variable name="poi_tier" value="4" />
-		<variable name="spawn_multiplier" value="1.5" />
-		<variable name="gamestage_mod" value=".6"/>
-		<variable name="gamestage_bonus" value="30"/>
+	<quest id="tier5_clear_infested" >
+		<property name="name_key" value="quest_tier5_infested_clear" />
+		<property name="subtitle_key" value="quest_infestation_subtitle"/>
+		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier5_infested_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="5" />
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="infested" />
+		<property name="shareable" value="true"/>
+		<property name="spawn_multiplier" value="1.5"  />
+		<property name="gamestage_mod" value=".6"  />
+		<property name="gamestage_bonus" value="30" />
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="4" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" /><!-- JZMOD -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1350"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="5"/>
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="5"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
@@ -3335,21 +3962,68 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier6_clear_infested" template="tier2_clear_infested">
-		<variable name="name" value="quest_tier6_infested_clear" />
-		<variable name="offer" value="quest_tier5_infested_clear_offer" />
-		<variable name="difficulty" value="6" />
-		<variable name="extra_tags" value="infested" />
-		<variable name="poi_tier" value="5" />
-		<variable name="spawn_multiplier" value="1.5" />
-		<variable name="gamestage_mod" value=".6"/>
-		<variable name="gamestage_bonus" value="30"/>
+	<quest id="tier6_clear_infested" >
+		<property name="name_key" value="quest_tier6_infested_clear" />
+		<property name="subtitle_key" value="quest_infestation_subtitle"/>
+		<property name="description_key" value="quest_tier2_infested_clear_offer"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier5_infested_clear_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="6" />
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="infested" />
+		<property name="shareable" value="true"/>
+		<property name="spawn_multiplier" value="1.5"  />
+		<property name="gamestage_mod" value=".6"  />
+		<property name="gamestage_bonus" value="30" />
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="5" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestCompleteTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="5" /><!-- JZMOD -->
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1350"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="6"/>
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
@@ -3361,19 +4035,19 @@
 
 <!-- *** RESTORE_POWER_QUESTS -->
 	<quest id="tier2_restore_power">
-		<property name="name_key" value="quest_tier2_restore_power" param1="name" />
+		<property name="name_key" value="quest_tier2_restore_power" />
 		<property name="subtitle_key" value="quest_restore_power_subtitle"/>
 		<property name="description_key" value="quest_restore_power_description"/>
 		<property name="icon" value="ui_game_symbol_quest" />
 		<property name="repeatable" value="true" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="medium" />
-		<property name="difficulty_tier" value="2" param1="difficulty" />
-		<property name="offer_key" value="quest_tier2_restore_power_offer" param1="offer" />
+		<property name="difficulty_tier" value="2"  />
+		<property name="offer_key" value="quest_tier2_restore_power_offer"  />
 		<property name="statement_key" value="quest_restore_power_statement" />
 		<property name="response_key" value="quest_restore_power_response" />
 		<property name="reward_choices_count" value="5" />
-		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="extra_tags" value=""  />
 		<property name="shareable" value="true"/>
 
 		<property name="login_rally_reset" value="true"/>
@@ -3421,14 +4095,14 @@
 			<property name="phase" value="4" />
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" /><!-- JZMOD -->
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="5" />
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" /><!-- JZMOD -->
-
+				
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1400"/>
 
@@ -3441,17 +4115,77 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier3_restore_power" template="tier2_restore_power">
-		<variable name="name" value="quest_tier3_restore_power" />
-		<variable name="offer" value="quest_tier3_restore_power_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier3_restore_power" >
+		<property name="name_key" value="quest_tier3_restore_power" />
+		<property name="subtitle_key" value="quest_restore_power_subtitle"/>
+		<property name="description_key" value="quest_restore_power_description"/>
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="3"  />
+		<property name="offer_key" value="quest_tier3_restore_power_offer"  />
+		<property name="statement_key" value="quest_restore_power_statement" />
+		<property name="response_key" value="quest_restore_power_response" />
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value=""  />
+		<property name="shareable" value="true"/>
+
+		<property name="login_rally_reset" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_restore_power_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="rally" />
+			<property name="allowed_start_hour" value="22" />
+			<property name="allowed_end_hour" value="1" />
+
+			<property name="complete_event" value="quest_poi_lights_off" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3" />
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIBlockActivate" >
+			<property name="phase" value="3" />
+			<property name="block_index" value="QuestRestorePower" />
+			<property name="nav_object" value="restore_power" />
+
+			<property name="complete_event" value="quest_poi_lights_on" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3" />
+			<property name="radius" value="25" />
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="6750"/>
 		<reward type="Item" id="casinoCoin" value="2000"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="3"/>
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
@@ -3462,17 +4196,77 @@
 	</quest>
 
 
-	<quest id="tier4_restore_power" template="tier2_restore_power">
-		<variable name="name" value="quest_tier4_restore_power" />
-		<variable name="offer" value="quest_tier4_restore_power_offer" />
-		<variable name="difficulty" value="4" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier4_restore_power" >
+		<property name="name_key" value="quest_tier4_restore_power" />
+		<property name="subtitle_key" value="quest_restore_power_subtitle"/>
+		<property name="description_key" value="quest_restore_power_description"/>
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="4"  />
+		<property name="offer_key" value="quest_tier4_restore_power_offer"  />
+		<property name="statement_key" value="quest_restore_power_statement" />
+		<property name="response_key" value="quest_restore_power_response" />
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value=""  />
+		<property name="shareable" value="true"/>
+
+		<property name="login_rally_reset" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_restore_power_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="rally" />
+			<property name="allowed_start_hour" value="22" />
+			<property name="allowed_end_hour" value="1" />
+
+			<property name="complete_event" value="quest_poi_lights_off" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3" />
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="POIBlockActivate" >
+			<property name="phase" value="3" />
+			<property name="block_index" value="QuestRestorePower" />
+			<property name="nav_object" value="restore_power" />
+
+			<property name="complete_event" value="quest_poi_lights_on" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3" />
+			<property name="radius" value="25" />
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" /> <!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="8400"/>
 		<reward type="Item" id="casinoCoin" value="2300"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="4"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
@@ -3484,20 +4278,20 @@
 
 <!-- *** FETCH_AND_CLEAR_QUESTS -->
 	<quest id="tier2_fetch_clear">
-		<property name="name_key" value="quest_tier2_fetch_clear" param1="name"/>
+		<property name="name_key" value="quest_tier2_fetch_clear" />
 		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/>
 		<property name="description_key" value="quest_fetch_clear_description"/>
 		<property name="icon" value="ui_game_symbol_quest"/>
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="2" param1="difficulty"/>
-		<property name="offer_key" value="quest_tier2_fetch_clear_offer" param1="offer"/>
+		<property name="difficulty_tier" value="2" />
+		<property name="offer_key" value="quest_tier2_fetch_clear_offer" />
 		<property name="statement_key" value="quest_fetch_clear_statement"/>
 		<property name="response_key" value="quest_fetch_clear_response"/>
 		<property name="login_rally_reset" value="true"/>
 		<property name="reward_choices_count" value="5" />
-		<property name="extra_tags" value="" param1="extra_tags" />
+		<property name="extra_tags" value="" />
 		<property name="shareable" value="true"/>
 
 		<property name="completiontype" value="TurnIn"/>
@@ -3539,14 +4333,14 @@
 			<property name="phase" value="4"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-
+		
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" /> <!-- JZMOD -->
+		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /><!-- JZMOD -->
-
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1400"/>
 
@@ -3559,17 +4353,72 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier3_fetch_clear" template="tier2_fetch_clear">
-		<variable name="name" value="quest_tier3_fetch_clear" />
-		<variable name="offer" value="quest_tier3_fetch_clear_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier3_fetch_clear" >
+		<property name="name_key" value="quest_tier3_fetch_clear" />
+		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/>
+		<property name="description_key" value="quest_fetch_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="3" />
+		<property name="offer_key" value="quest_tier3_fetch_clear_offer" />
+		<property name="statement_key" value="quest_fetch_clear_statement"/>
+		<property name="response_key" value="quest_fetch_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="6750"/>
 		<reward type="Item" id="casinoCoin" value="2000"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
@@ -3579,17 +4428,72 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier4_fetch_clear" template="tier2_fetch_clear">
-		<variable name="name" value="quest_tier4_fetch_clear" />
-		<variable name="offer" value="quest_tier4_fetch_clear_offer" />
-		<variable name="difficulty" value="4" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier4_fetch_clear" >
+		<property name="name_key" value="quest_tier4_fetch_clear" />
+		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/>
+		<property name="description_key" value="quest_fetch_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="4" />
+		<property name="offer_key" value="quest_tier4_fetch_clear_offer" />
+		<property name="statement_key" value="quest_fetch_clear_statement"/>
+		<property name="response_key" value="quest_fetch_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="8400"/>
 		<reward type="Item" id="casinoCoin" value="2300"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="4"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
@@ -3599,17 +4503,72 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 	
-	<quest id="tier5_fetch_clear" template="tier2_fetch_clear">
-		<variable name="name" value="quest_tier5_fetch_clear" />
-		<variable name="offer" value="quest_tier5_fetch_clear_offer" />
-		<variable name="difficulty" value="5" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier5_fetch_clear" >
+		<property name="name_key" value="quest_tier5_fetch_clear" />
+		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/>
+		<property name="description_key" value="quest_fetch_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="5" />
+		<property name="offer_key" value="quest_tier5_fetch_clear_offer" />
+		<property name="statement_key" value="quest_fetch_clear_statement"/>
+		<property name="response_key" value="quest_fetch_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" /><!-- JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="16900"/>
 		<reward type="Item" id="casinoCoin" value="4600"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="5"/>																									   															 
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
@@ -3619,17 +4578,72 @@
 		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
 	</quest>
 
-	<quest id="tier6_fetch_clear" template="tier2_fetch_clear">
-		<variable name="name" value="quest_tier6_fetch_clear" />
-		<variable name="offer" value="quest_tier6_fetch_clear_offer" />
-		<variable name="difficulty" value="6" />
-		<variable name="extra_tags" value="" />
+	<quest id="tier6_fetch_clear" >
+		<property name="name_key" value="quest_tier6_fetch_clear" />
+		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/>
+		<property name="description_key" value="quest_fetch_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="challenge"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="6" />
+		<property name="offer_key" value="quest_tier6_fetch_clear_offer" />
+		<property name="statement_key" value="quest_fetch_clear_statement"/>
+		<property name="response_key" value="quest_fetch_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<property name="reward_choices_count" value="5" />
+		<property name="extra_tags" value="" />
+		<property name="shareable" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_fetch_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value="cntFetchQuestSatchel"/>
+			<property name="nav_object" value="fetch_container" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
-		<!--<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="4" /> JZMOD -->
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierSixTraderQuestComplete" phase="5" /> 
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="27000"/>
 		<reward type="Item" id="casinoCoin" value="8000"/>
-
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="6"/>																 
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="6"/>
@@ -3641,15 +4655,106 @@
 
 <!-- *** BURIED_SUPPLIES_QUESTS -->
 	<quest id="tier1_buried_supplies">
-		<property name="name_key" value="quest_tier1_buried_supplies" param1="name"/>
+		<property name="name_key" value="quest_tier1_buried_supplies" />
 		<property name="subtitle_key" value="quest_buried_supplies_subtitle"/>
 		<property name="description_key" value="quest_buried_supplies_description"/>
 		<property name="icon" value="ui_game_symbol_treasure"/>
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="quest"/>
-		<property name="offer_key" value="quest_tier1_buried_supplies_offer" param1="offer"/>
+		<property name="offer_key" value="quest_tier1_buried_supplies_offer"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="1" param1="difficulty"/>
+		<property name="difficulty_tier" value="1" />
+		<property name="statement_key" value="quest_buried_supplies_statement"/>
+		<property name="response_key" value="quest_buried_supplies_response"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_buried_supplies_completion"/>
+		<property name="shareable" value="true"/>
+		<property name="reward_choices_count" value="5" />
+
+		<objective type="RandomGotoNPC" phase="1">
+			<property name="completion_distance" value="20"/>
+			<property name="distance" value="350-600"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="StayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<objective type="TreasureChest">
+			<property name="phase" value="3" />
+			<property name="block" value="cntBuriedFoodStashChest" />
+			<property name="default_radius" value="5" />
+			<property name="container_type" value="Supplies"/>
+			<property name="nav_object" value="treasure" />
+			<property name="direct_nav_object" value="treasure_direct" />
+			<property name="blocks_per_reduction" value="10" />
+			<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			<property name="use_nearby" value="true" />
+			<property name="explosion_event" value="quest_treasure_explosion_horde" />
+		</objective>
+
+		<event type="TreasureRadiusReduction">
+			<property name="chance" value="0.25"  />
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList" />
+				<property name="count" value="1-3"  />
+			</action>
+		</event>
+
+		<objective type="FetchFromTreasure">
+			<property name="phase" value="3" />
+			<property name="block" value="cntBuriedFoodStashChest"  />
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+		</objective>
+
+		<action type="SpawnGSEnemy">
+			<property name="gamestage_list" value="SleeperGSList" />
+			<property name="count" value="3-5"  />
+			<property name="phase" value="4" />
+		</action>	
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		
+		<reward type="Exp" value="2500"/>
+		<reward type="Item" id="casinoCoin" value="560"/>
+
+		<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestResources" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmo,groupQuestMedical,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+	</quest>
+	
+	<quest id="tier2_buried_supplies" >
+		<property name="name_key" value="quest_tier2_buried_supplies" />
+		<property name="subtitle_key" value="quest_buried_supplies_subtitle"/>
+		<property name="description_key" value="quest_buried_supplies_description"/>
+		<property name="icon" value="ui_game_symbol_treasure"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier1_buried_supplies_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="2" />
 		<property name="statement_key" value="quest_buried_supplies_statement"/>
 		<property name="response_key" value="quest_buried_supplies_response"/>
 		<property name="completiontype" value="TurnIn"/>
@@ -3677,7 +4782,7 @@
 		<objective type="TreasureChest">
 			<property name="phase" value="3" />
 			<property name="block" value="cntBuriedFoodStashChest" param1="container"/>
-			<property name="default_radius" value="5" param1="radius"/>
+			<property name="default_radius" value="7" />
 			<property name="container_type" value="Supplies"/>
 			<property name="nav_object" value="treasure" />
 			<property name="direct_nav_object" value="treasure_direct" />
@@ -3688,23 +4793,23 @@
 		</objective>
 
 		<event type="TreasureRadiusReduction">
-			<property name="chance" value="0.25" param1="spawn_chance" />
+			<property name="chance" value="0.5" />
 			<action type="SpawnGSEnemy">
 				<property name="gamestage_list" value="SleeperGSList" />
-				<property name="count" value="1-3" param1="spawn_count" />
+				<property name="count" value="2-4" />
 			</action>
 		</event>
 
 		<objective type="FetchFromTreasure">
 			<property name="phase" value="3" />
-			<property name="block" value="cntBuriedFoodStashChest" param1="container" />
+			<property name="block" value="cntBuriedWeaponChest" />
 			<property name="quest_item_ID" value="1"/>
 			<property name="item_count" value="1"/>
 		</objective>
 
 		<action type="SpawnGSEnemy">
 			<property name="gamestage_list" value="SleeperGSList" />
-			<property name="count" value="3-5" param1="finish_spawn_count" />
+			<property name="count" value="5-7" />
 			<property name="phase" value="4" />
 		</action>	
 
@@ -3713,39 +4818,15 @@
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
+		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 		
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" />
-		
-		<reward type="Exp" value="2500"/>
-		<reward type="Item" id="casinoCoin" value="560"/>
-
-		<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestResources" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestAmmo,groupQuestMedical,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
-	</quest>
-	
-	<quest id="tier2_buried_supplies" template="tier1_buried_supplies">
-		<variable name="name" value="quest_tier2_buried_supplies" />
-		<variable name="offer" value="quest_tier1_buried_supplies_offer" />
-		<variable name="difficulty" value="2" />
-		<variable name="radius" value="7" />
-		<variable name="spawn_chance" value="0.5" />
-		<variable name="spawn_count" value="2-4" />
-		<variable name="finish_spawn_count" value="5-7" />
-		<variable name="container" value="cntBuriedWeaponChest" />
-		
-		<!--<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /> JZMOD -->
-		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="940"/>
-
 		<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestWeapons,groupQuestArmor" ischosen="true" isfixed="true" value="3"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
@@ -3754,21 +4835,88 @@
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
 	</quest>
 	
-	<quest id="tier3_buried_supplies" template="tier1_buried_supplies">
-		<variable name="name" value="quest_tier3_buried_supplies" />
-		<variable name="offer" value="quest_tier1_buried_supplies_offer" />
-		<variable name="difficulty" value="3" />
-		<variable name="radius" value="9" />
-		<variable name="spawn_chance" value="0.75" />
-		<variable name="spawn_count" value="3-5" />
-		<variable name="finish_spawn_count" value="5-7" />
-		<variable name="container" value="cntBuriedWeaponChest" />
+	<quest id="tier3_buried_supplies" >
+		<property name="name_key" value="quest_tier3_buried_supplies" />
+		<property name="subtitle_key" value="quest_buried_supplies_subtitle"/>
+		<property name="description_key" value="quest_buried_supplies_description"/>
+		<property name="icon" value="ui_game_symbol_treasure"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier1_buried_supplies_offer" />
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="3" />
+		<property name="statement_key" value="quest_buried_supplies_statement"/>
+		<property name="response_key" value="quest_buried_supplies_response"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_buried_supplies_completion"/>
+		<property name="shareable" value="true"/>
+		<property name="reward_choices_count" value="5" />
+
+		<objective type="RandomGotoNPC" phase="1">
+			<property name="completion_distance" value="20"/>
+			<property name="distance" value="350-600"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<objective type="StayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<objective type="TreasureChest">
+			<property name="phase" value="3" />
+			<property name="block" value="cntBuriedFoodStashChest" param1="container"/>
+			<property name="default_radius" value="9" />
+			<property name="container_type" value="Supplies"/>
+			<property name="nav_object" value="treasure" />
+			<property name="direct_nav_object" value="treasure_direct" />
+			<property name="blocks_per_reduction" value="10" />
+			<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			<property name="use_nearby" value="true" />
+			<property name="explosion_event" value="quest_treasure_explosion_horde" />
+		</objective>
+
+		<event type="TreasureRadiusReduction">
+			<property name="chance" value="0.75" />
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList" />
+				<property name="count" value="3-5" />
+			</action>
+		</event>
+
+		<objective type="FetchFromTreasure">
+			<property name="phase" value="3" />
+			<property name="block" value="cntBuriedWeaponChest" />
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+		</objective>
+
+		<action type="SpawnGSEnemy">
+			<property name="gamestage_list" value="SleeperGSList" />
+			<property name="count" value="5-7" />
+			<property name="phase" value="4" />
+		</action>	
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 		
-		<!--<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" /> JZMOD -->
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
 		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="1320"/>
-
 		<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestWeapons,groupQuestArmor" ischosen="true" isfixed="true" value="3"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
