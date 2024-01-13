@@ -71,3 +71,26 @@
 ///////////////////////////////////////////////////////////////
 10/26/2023 A21.1 #1.21.6
 -Fix bug with workbench upgrading quest crafting items not craftable
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+1/13/2024 A21.2 #1.22
+-Mod updated to 21.2
+-Updated Score
+-Updated Qartz
+-Updated BiomePrefabExclusion Mod
+-Changed Dew Collector to produce water by the ounce
+-Fixed some plants not visible when planted
+-Changed Simple Frames to be able to be repaired
+-Removed my “Fire One Buff Hack”, the vanilla bug is fixed in 21.2(YA!)
+-Fixed Wrap not working on all sprains
+-Fixed Machine Gun TiN
+-Fixed Steel Axes repair item
+-Fixed Picks repair descriptions
+-Added some missing icons
+-Fixed receiving Workstation upgrade quest on all workbenches
+-Removed Jar water from quest rewards
+-Fixed plastics not smelting
+-Fixed Trader Rep not leveling
+-Fixed Rep stats not all working
+-Added 3 more Campaign quest and 1 POI
+-Removed Leather Needle recipe, its found in loot 
+//////////////////////////////////////////////////////////////
