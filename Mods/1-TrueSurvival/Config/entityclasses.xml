@@ -283,9 +283,10 @@
 		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger,jz_BuffConsequences"/>
     </effect_group> --> 
     <effect_group name="Normal Dead is Dead Deing">
-		<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
+		<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="game_on_death_permanent" />
+		<!--<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
         <triggered_effect trigger="onSelfDied" action="RemoveLandClaims, TrueSurvival" target="self"/>
-        <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>
+        <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
 		<triggered_effect trigger="onSelfDied" action="AddBuff" target="self" buff="buffResetPlayerOnRespawn"/>           		
 		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02"/>           		
     </effect_group>
@@ -8730,9 +8731,32 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="DeadBodyHitPoints" value="500"/> 
 	<!-- JZMOD Harvest For Beginner -->
-	<drop event="Destroy" name="foodRawMeat" count="5" />
-	<!-- JZMOD Butcher -->
-	<!-- JZMOD Hunter -->
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Destroy" name="foodRawMeat" count="20" />
+	<drop event="Destroy" name="resourceAnimalFat" count="1" />
+    <drop event="Destroy" name="jz_AnimalHide" count="3" />
+    <drop event="Destroy" name="jz_BrainMatter" count="3" />
+    <drop event="Destroy" name="resourceBone"  count="5" />
+	
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <!--JZMOD Butcher-->
+    <drop event="Harvest" name="foodRawMeat" tag="LargePredHunter" count="25" />
+	<drop event="Harvest" name="jz_AnimalHide" tag="LargePredHunter" count="3" />
+	<drop event="Harvest" name="resourceAnimalFat" tag="LargePredHunter" count="2" />
+	<drop event="Harvest" name="jz_Sinew" tag="LargePredHunter" count="2" />
+	<drop event="Harvest" name="jz_BrainMatter" tag="LargePredHunter" count="2" />
+	<drop event="Harvest" name="jz_FoodCrocMeat" tag="LargePredHunter" count="2"/>
+    <drop event="Harvest" name="resourceBone" tag="LargePredHunter" count="10"  />
+    <!--JZMOD Hunter-->
+    <drop event="Harvest" name="foodRawMeat" tag="LargePredHunter" count="25"/>
+    <drop event="Harvest" name="resourceAnimalFat" tag="LargePredHunter" count="1"/>
+    <drop event="Harvest" name="jz_AnimalHide" tag="LargePredHunter" count="4"/>
+    <drop event="Harvest" name="jz_BrainMatter" tag="LargePredHunter" count="1"/>
+	<drop event="Harvest" name="jz_Sinew" tag="LargePredHunter" count="2" />
+    <drop event="Harvest" name="resourceBone" tag="LargePredHunter" count="10" />
+    <drop event="Harvest" name="jz_FoodCrocMeat" tag="LargePredHunter" count="3" />	
 </entity_class>
 
 <entity_class name="JZAnimalScorpion" extends="JZMutantDog">

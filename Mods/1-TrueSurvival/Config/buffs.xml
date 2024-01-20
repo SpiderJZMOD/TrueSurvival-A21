@@ -1740,19 +1740,6 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffAtATrader">
 				<requirement name="CVarCompare" cvar="$AtTheTraders" operation="LT" value="1"/></triggered_effect>
 		</effect_group>
-		<effect_group name="JZMOD CAMPAIGN PT5">
-			<requirements compare_type="or">
-				<requirement name="ProgressionLevel" progression_name="jz_TraderJoeRep" operation="GTE" value="10"/>
-				<requirement name="ProgressionLevel" progression_name="jz_TraderJenRep" operation="GTE" value="10"/>
-				<requirement name="ProgressionLevel" progression_name="jz_TraderBobRep" operation="GTE" value="10"/>
-				<requirement name="ProgressionLevel" progression_name="jz_TraderHughRep" operation="GTE" value="10"/>
-				<requirement name="ProgressionLevel" progression_name="jz_TraderRektRep" operation="GTE" value="10"/>
-			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffTraderRepAchieved">
-					<requirement name="CVarCompare" cvar="$FinishedCampaignPt5" operation="LT" value="1"/></triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$FinishedCampaignPt5" operation="set" value="1">
-					<requirement name="CVarCompare" cvar="$FinishedCampaignPt5" operation="LT" value="1"/></triggered_effect>
-		</effect_group>
 		<effect_group name="JZMOD WHAT DO YOU OPEN CANS WITH">
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffHasNothing"/>
 			<!-- JZMOD Clean up for Stamina display hack -->
@@ -3277,7 +3264,9 @@
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryBleeding">
 				<!-- They can still extend/refresh the buff. -->
 				<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0"/>
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/>
 			</triggered_effect>
+			
 		</effect_group>
 
 		<effect_group>
@@ -7519,7 +7508,7 @@
 	<!-- *** buffStatusArmorLow -->
 	<!-- TRIGGERED_BY: Buffs = buffStatusCheck01 -->
 	<!-- Weakened Armor: Displays a YELLOW armor icon when ANY armor item is below 25% durability -->
-	<buff name="buffStatusArmorLow" name_key="buffStatusArmorLowName" description_key="buffStatusArmorLowDesc" tooltip_key="buffStatusArmorLowTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,0">
+	<buff name="buffStatusArmorLow" name_key="buffStatusArmorLowName" description_key="buffStatusArmorLowDesc" tooltip_key="buffStatusArmorLowTooltip" icon="LowDArmor" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value_key value="buffStatusArmorLowNameShort"/>
 		<display_value value="xxx"/>
@@ -7538,7 +7527,7 @@
 	<!-- *** buffStatusArmorHigh -->
 	<!-- TRIGGERED_BY: Buffs = buffStatusCheck01 -->
 	<!-- Critical Armor: Displays an ORANGE armor icon when ANY armor item is below 10% durability -->
-	<buff name="buffStatusArmorHigh" name_key="buffStatusArmorHighName" description_key="buffStatusArmorHighDesc" tooltip_key="buffStatusArmorHighTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,128,0">
+	<buff name="buffStatusArmorHigh" name_key="buffStatusArmorHighName" description_key="buffStatusArmorHighDesc" tooltip_key="buffStatusArmorHighTooltip" icon="LowDArmor" icon_color="255,128,0">
 		<stack_type value="ignore"/>
 		<display_value_key value="buffStatusArmorHighNameShort"/>
 		<display_value value="xxx"/>
@@ -7557,7 +7546,7 @@
 	<!-- *** buffStatusArmorBroken -->
 	<!-- TRIGGERED_BY: Buffs = buffStatusCheck01 -->
 	<!-- Broken Armor: Displays a RED armor icon when ANY armor item is at 0% durability -->
-	<buff name="buffStatusArmorBroken" name_key="buffStatusArmorBrokenName" description_key="buffStatusArmorBrokenDesc" tooltip_key="buffStatusArmorBrokenTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffStatusArmorBroken" name_key="buffStatusArmorBrokenName" description_key="buffStatusArmorBrokenDesc" tooltip_key="buffStatusArmorBrokenTooltip" icon="LowDArmor" icon_color="255,0,0" icon_blink="true">
 		<stack_type value="ignore"/>
 		<display_value_key value="buffStatusArmorBrokenNameShort"/>
 		<display_value value="xxx"/>
@@ -14051,25 +14040,16 @@
 		<duration value="5"/>
 		<update_rate value="10"/>
 		<effect_group>
-			<!--<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ResetSpawnPoints, TrueSurvival" target="self"/>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveLandClaims, TrueSurvival" target="self"/>
-				<triggered_effect trigger="onSelfBuffStart" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
-				<triggered_effect trigger="onSelfBuffStart" action="ResetProgression" reset_books="true"/>            
+			<!--<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="0"/> -->           
+				
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffDeadIsDeadResetTag"  /> 
-               	<!--<triggered_effect trigger="onSelfBuffStart" action="ResetPlayerQuests, TrueSurvival" target="self"  />              -->
-				<triggered_effect trigger="onSelfBuffStart" action="ClearMapSDX, TrueSurvival" />			
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LastPlayerLevel" operation="set" value="1"/>
+               	<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LastPlayerLevel" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="set" value="1"/> 
-               
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="500"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GotStoveQuest" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GotKitchenQuest" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueTicker" operation="set" value="0"/>
-                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$FinishedCampaignPt5" operation="set" value="0"/>
-				<!--<triggered_effect trigger="onSelfBuffStart" action="CreateItemSDX, SCore" item="jz_CharacterChoiceComputer" count="1"/>   -->                
-				<triggered_effect trigger="onSelfBuffStart" action="GiveQuestSDX, SCore" target="self" quest="quest_PlayerRespawn" />
-				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Wipe_Quest" />	
+                <triggered_effect trigger="onSelfBuffStart" action="GiveQuestSDX, SCore" target="self" quest="quest_PlayerRespawn" />
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffNewbieCoat"  />	
         </effect_group>
 		<!--<effect_group>
@@ -14191,14 +14171,7 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PumpQuestSDX, SCore" target="self" />
 		</effect_group>		
 	</buff>
-	
-	<buff name="jz_BuffTraderRepAchieved" name_key="jz_BuffTraderRepAchievedName" hidden="true" remove_on_death="true">
-		<duration value="30"/>
-		<effect_group >
-			<triggered_effect trigger="onSelfBuffStart" action="PumpQuestSDX, SCore" target="self" />
-		</effect_group>	
-	</buff>
-	
+		
 	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="true" remove_on_death="true" name_key="TierOneTraderQuestComplete" icon="ui_game_symbol_stimulant" >
 		<stack_type value="ignore"/>
 		<duration value="1"/>
@@ -14937,9 +14910,12 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFootBleed"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFootWellnessStageOne"/>				
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftFootBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
+			
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTendedB"/>
@@ -15355,9 +15331,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightFootBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightFootWellnessStageOne"/>	
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightFootBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootTendedB"/>
@@ -15772,9 +15750,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftLegBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftLegWellnessStageOne"/>		
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftLegBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTendedB"/>
@@ -16189,9 +16169,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightLegBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightLegWellnessStageOne"/>		
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightLegBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegTendedB"/>
@@ -16606,9 +16588,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftHandBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftHandWellnessStageOne"/>	
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftHandBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandTendedB"/>
@@ -17023,9 +17007,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightHandBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightHandWellnessStageOne"/>					
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightHandBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandTendedB"/>
@@ -17440,9 +17426,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftArmBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftArmBleed">		
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftArmWellnessStageOne"/>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftArmBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationLeftArmBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTendedB"/>
@@ -17857,9 +17845,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightArmBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightArmBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationRightArmWellnessStageOne"/>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightArmBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationRightArmBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmTendedB"/>
@@ -18253,9 +18243,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomachBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomachBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomachWellnessStageOne"/>	
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationStomachBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationStomachBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachTendedB"/>
@@ -18670,9 +18662,11 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationNeckBleed"/>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationNeckBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationNeckWellnessStageOne"/>	
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationNeckBleed"/>
+			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="jz_BuffLacerationNeckBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckTendedB"/>
@@ -23709,7 +23703,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftFootBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftFootBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFootDrying"/>
@@ -24126,7 +24121,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightFootBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightFootBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightFootBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFootDrying"/>
@@ -24543,7 +24539,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftLegBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftLegBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLegDrying"/>
@@ -24960,7 +24957,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightLegBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightLegBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightLegBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLegDrying"/>
@@ -25377,7 +25375,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftHandBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftHandBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHandDrying"/>
@@ -25794,7 +25793,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightHandBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightHandBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightHandBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHandDrying"/>
@@ -26211,7 +26211,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftArmBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashLeftArmBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftArmBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArmDrying"/>
@@ -26627,7 +26628,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightArmBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashRightArmBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightArmBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmDrying"/>
@@ -27043,7 +27045,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashStomachBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashStomachBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashStomachBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomachDrying"/>
@@ -27459,7 +27462,8 @@
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashNeckBleed"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashNeckBleed">
+				<requirement name="!HasBuff" buff="jz_BuffPlayerDowned"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashNeckBleeding" operation="set" value="1"/>	
 			<!-- Restart -->
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeckDrying"/>
@@ -38845,6 +38849,7 @@
 	<buff name="jz_BuffEpinephrinInjection" name_key="Epi Injection" description_key="jz_BuffEpinephrinInjectionDesc" icon="EpinephrinInjectionIcon" icon_color="255,0,0" icon_blink="true">
 		<stack_type value="ignore"/>
 		<duration value="20"/>
+		<display_value value=".EpinephrinInjectionDisplay"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueTicker" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="add" value="20"/>
@@ -38873,6 +38878,10 @@
 			<triggered_effect trigger="onSelfBuffFinish" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
 			<passive_effect name="Mobility" operation="base_add" value="25"/>
 		</effect_group>
+		<effect_group name="Epinephrin Injection Display">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".EpinephrinInjectionDisplay" operation="set" value="20"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".EpinephrinInjectionDisplay" operation="add" value="-1"/>
+		</effect_group>	
 	</buff>
 	
 	<buff name="jz_BuffEpinephrinInjectionWareOff" name_key="Epi Injection Waring Off" description_key="jz_BuffEpinephrinInjectionWareOffDesc" icon="EpinephrinInjectionIcon" >
@@ -40404,8 +40413,62 @@
 		</effect_group>
 	</buff>
 	
-    
+	<buff name="jz_BuffPlayerArmorTearTrigger" hidden="true" name_key="Gear Slightly Torn" icon="ui_game_symbol_stomach">
+		<stack_type value="ignore"/>
+		<duration value=".5" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TearTriggerPicker" operation="set" value="randomint(1,1000)"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="$TearTriggerPicker" operation="set" value="0"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffPlayerArmorTearOne" >
+				<requirement name="CVarCompare" cvar="$TearTriggerPicker" operation="LTE" value="500"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffPlayerArmorTearTwo" >
+				<requirement name="CVarCompare" cvar="$TearTriggerPicker" operation="GT" value="500"/>
+				<requirement name="CVarCompare" cvar="$TearTriggerPicker" operation="LTE" value="800"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffPlayerArmorTearThree" >
+				<requirement name="CVarCompare" cvar="$TearTriggerPicker" operation="GT" value="800"/></triggered_effect>		
+		</effect_group>
+	</buff>
+		
+	<buff name="jz_BuffPlayerArmorTearOne" name_key="Gear Slightly Torn" description_key="jz_BuffPlayerArmorTearOneDesc" icon="TornArmor" icon_color="255,255,0">
+		<stack_type value="ignore"/>
+		<duration value="20" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Armor_Tear_1" />
+		</effect_group>
+	</buff>
 	
+	<buff name="jz_BuffPlayerArmorTearTwo" name_key="Gear Torn" description_key="jz_BuffPlayerArmorTearTwoDesc" icon="TornArmor" icon_color="255,128,0">
+		<stack_type value="ignore"/>
+		<duration value="20" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Armor_Tear_2" />
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPlayerArmorTearThree" name_key="Gear Badly Torn" description_key="jz_BuffPlayerArmorTearThreeDesc" icon="TornArmor" icon_color="255,0,0" >
+		<stack_type value="ignore"/>
+		<duration value="20" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Armor_Tear_3" />
+		</effect_group>
+	</buff>
+		
+	<buff name="jz_BuffPlayerDowned" name_key="Near Death" description_key="jz_BuffTestDowned" icon="FlashBangDelay" >
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".5"/>
+		<effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="cold,heat,electrical"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="200"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="200" tags="coredamageresist"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="heat,electrical"/>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="30"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="Ragdoll" duration="30"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="set" value="5"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="health" operation="set" value="5"/>
+		</effect_group>
+	</buff>
 </set>     
 </configs>
 

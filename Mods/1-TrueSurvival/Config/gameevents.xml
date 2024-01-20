@@ -68,7 +68,7 @@
 	</action_sequence>
 
 	<action_sequence name="game_on_death_permanent">
-		<property name="allow_user_trigger" value="false" />
+		<property name="allow_user_trigger" value="true" />
 		<property name="action_type" value="Game" />
 		
 		<action class="ResetMap">
@@ -83,6 +83,7 @@
 			<property name="reset_books" value="true" />
 			<property name="reset_crafting" value="true" />
 			<property name="reset_levels" value="true" />
+		
 			<property name="remove_landclaims" value="true" />
 			<property name="remove_bedroll" value="true" />
 			<property name="remove_quests" value="true" />
@@ -9786,30 +9787,7 @@
 
 	</action_sequence>
 	
-	<action_sequence name="TS_Player_Reset">
-		<property name="allow_user_trigger" value="false" />
-		<property name="action_type" value="Game" />
-		
-		<action class="AddXPDeficit" />
-		
-		<action class="RemoveItems">
-			<property name="phase" value="1" />
-			<property name="items_location" value="Both" />
-			<property name="remove_item_tag" value="food" />
-			<property name="target_group" value="party" />
-		</action>
-		
-		<action class="ResetPlayerData"> 
-			 <property name="reset_levels" value="true" /> 
-			 <property name="remove_landclaims" value="true" /> 
-			 <property name="remove_bedroll" value="true" /> 
-		 </action> 
-
-		<action class="BeltTooltip"> 
-			<property name="text" value="Player Death Complete" /> 
-			<property name="phase" value="1" /> 
-		</action> 
-	</action_sequence>
+	
 	
 	<action_sequence name="TS_Car_Crash">
 		<action class="AddPartyToGroup">
@@ -9912,33 +9890,115 @@
 	</action_sequence>
 	
 	<action_sequence name="TS_AcidRain_Event">
-            <property name="category" value="twitch_actions" />
-            <action class="AddPartyToGroup">
-                <property name="phase" value="0" />
-                <property name="group_name" value="party" />
-            </action>
-            <action class="PlaySound">
-                <property name="phase" value="1" />
-                <property name="sound" value="fx_acid" />
-                <property name="inside_head" value="true" />
-                <property name="target_group" value="party" />
-            </action>
-            <action class="AddItemDurability">
-                <property name="phase" value="2" />
-                <property name="items_location" value="Equipment" />
-                <property name="amount" value="-1" />
-                <property name="is_percent" value="true" />
-                <property name="target_group" value="party" />
-            </action>
-            <action class="AddItemDurability">
-                <property name="phase" value="2" />
-                <property name="items_location" value="Toolbelt" />
-                <property name="amount" value="-1" />
-                <property name="is_percent" value="true" />
-                <property name="target_group" value="party" />
-            </action>
-        </action_sequence>
+        <property name="category" value="twitch_actions" />
+        
+		<action class="AddPartyToGroup">
+            <property name="phase" value="0" />
+            <property name="group_name" value="party" />
+        </action>
+       
+	   <action class="PlaySound">
+            <property name="phase" value="1" />
+            <property name="sound" value="fx_acid" />
+            <property name="inside_head" value="true" />
+            <property name="target_group" value="party" />
+        </action>
+       
+	   <action class="AddItemDurability">
+		    <property name="phase" value="2" />
+            <property name="items_location" value="Equipment" />
+            <property name="amount" value="-1" />
+            <property name="is_percent" value="true" />
+            <property name="target_group" value="party" />
+        </action>
+        
+		<action class="AddItemDurability">
+            <property name="phase" value="2" />
+            <property name="items_location" value="Toolbelt" />
+            <property name="amount" value="-1" />
+            <property name="is_percent" value="true" />
+            <property name="target_group" value="party" />
+        </action>
+    </action_sequence>
 		
+	<action_sequence name="TS_Armor_Tear_1">
+		<property name="category" value="twitch_actions" />
+
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="sound" value="playerArmorTear" />
+			<property name="phase" value="1" />
+			<property name="inside_head" value="true" />
+            <property name="target_group" value="party" />
+		</action>
+
+		<action class="AddItemDurability">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Equipment" />
+			<property name="amount" value="-0.15" />
+			<property name="is_percent" value="true" />
+			<property name="target_group" value="party" />
+			<property name="count_type" value="Items" />
+			<property name="count" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TS_Armor_Tear_2">
+		<property name="category" value="twitch_actions" />
+
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="sound" value="playerArmorTear" />
+			<property name="phase" value="1" />
+			<property name="inside_head" value="true" />
+            <property name="target_group" value="party" />
+		</action>
+
+		<action class="AddItemDurability">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Equipment" />
+			<property name="amount" value="-0.18" />
+			<property name="is_percent" value="true" />
+			<property name="target_group" value="party" />
+			<property name="count_type" value="Items" />
+			<property name="count" value="2" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TS_Armor_Tear_3">
+		<property name="category" value="twitch_actions" />
+
+		<action class="AddPartyToGroup">
+			<property name="phase" value="0" />
+			<property name="group_name" value="party" />
+		</action>
+
+		<action class="PlaySound">
+			<property name="sound" value="playerArmorTear" />
+			<property name="phase" value="1" />
+			<property name="inside_head" value="true" />
+            <property name="target_group" value="party" />
+		</action>
+
+		<action class="AddItemDurability">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Equipment" />
+			<property name="amount" value="-0.2" />
+			<property name="is_percent" value="true" />
+			<property name="target_group" value="party" />
+			<property name="count_type" value="Items" />
+			<property name="count" value="3" />
+		</action>
+	</action_sequence>
+	
 	<action_sequence name="TS_Defibrillator_Used">
 		<action class="RemoveItems">
 			<property name="phase" value="1" />
@@ -9987,114 +10047,6 @@
 		</action>
 	</action_sequence>	
 
-	<action_sequence name="TS_Wipe_Quest_TestA">
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-	</action_sequence>	
-	
-	<action_sequence name="TS_Wipe_Quest_TestB">
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_TutorialPt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-	</action_sequence>	
-	
-	<action_sequence name="TS_Wipe_Quest">
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_flashbangpt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt2" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt13" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt4" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt5" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt6" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt7" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt8" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt9" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_tutorialpt10" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_campaignpt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_campaignpt2" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_campaignpt3" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_campaignpt4" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_flashbangpt1" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_flashbangpt2" />
-			<property name="remove_quest" value="true" />
-		</action>
-		<action class="FailQuest">
-			<property name="phase" value="1" />
-			<property name="quest" value="jzquest_flashbangpt3" />
-			<property name="remove_quest" value="true" />
-		</action>
-	</action_sequence>	
 
 </set>
 
@@ -10238,7 +10190,7 @@
 			text - The text to show.
 			text_key - the localized key of the text to show.
 
-	AddItemDurability - Adds durability to items on your player.
+		AddItemDurability - Adds durability to items on your player.
 			items_location - The location that is affected by this. Can be comma delimited. (Toolbelt, Backpack, Equipment, Held).
 			items_tags - The tag of the items you want affected by this.
 			amount - the amount of durability to add.

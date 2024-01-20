@@ -11255,7 +11255,7 @@
 	<maxVoicesPerEntity value="1"/>
 	<LowestPitch name="0.7"/>
 	<HighestPitch name="0.9"/>
-	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="1"/> <MaxRepeatRate value="0.9"/> 
 </SoundDataNode>
 
 <SoundDataNode name="deerMRandom"><AudioSource name="Sounds/AudioSource_Explosion"/>
@@ -11266,7 +11266,7 @@
 	<maxVoicesPerEntity value="1"/>
 	<LowestPitch name="0.7"/>
 	<HighestPitch name=".9"/>
-	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="1"/> <MaxRepeatRate value="0.9"/>
 </SoundDataNode>
 <!-- JZMutantBiter -->
 <SoundDataNode name="biterRandom"> <AudioSource name="Sounds/AudioSource_Pain"/>
@@ -11444,11 +11444,16 @@
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> 
 </SoundDataNode>
 
-	
-
-
-
-
+<SoundDataNode name="playerArmorTear"> <!--<AudioSource name="Sounds/AudioSource_Player"/>--><AudioSource name="Sounds/AudioSource_UseAction"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/JZSoundsPlayerArmorTear.unity3d?PlayerArmorTear"/>
+	<AudioClip ClipName="#@modfolder:Resources/JZSoundsPlayerArmorTear.unity3d?PlayerArmorTear2"/>
+	<AudioClip ClipName="#@modfolder:Resources/JZSoundsPlayerArmorTear.unity3d?PlayerArmorTear3"/>
+	<!--<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>-->
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> 
+</SoundDataNode>
 
 
 </set>

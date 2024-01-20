@@ -16041,6 +16041,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<property name="Tags" value="jz_HandTruckTag"/>
+	<drop event="Destroy" name="burningBarrelPlayer" count="1" prob="1" tool_category="ToolHandTruck"/>  
 </block>
 
 <block name="burningBarrel">
@@ -22411,11 +22413,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Destroy" name="resourceBone" count="5,10" tag="butcherHarvest"/>
+	<drop event="Harvest" name="goreBlockHumanBones" count="0" tool_category="Butcher"/><!-- JZMOD -->
+	<drop event="Destroy" name="resourceBone" count="2,6" tag="butcherHarvest"/><!-- JZMOD -->
 	<property name="SortOrder1" value="B265"/>
 	<property name="SortOrder2" value="0006"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
-	<property name="BuffsWhenWalkedOn" value="jz_BuffSlowedByGore" />   <!-- JZMOD -->
+	<property name="BuffsWhenWalkedOn" value="jz_BuffSlowedByGore" /><!-- JZMOD -->
 </block>
 
 <block name="goreHumanSkull">
@@ -68738,8 +68741,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- Player_Stage_2 -->
 <block name="plantedMushroom2">
 	<property name="Extends" value="cropsGrowingMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="PlantGrowing.Next" value="plantedMushroom3HarvestPlayer"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="PlantGrowing.Next" value="jz_PlantedMushroomLv2Random"/>
 	<property name="CustomIcon" value="plantedMushroom1"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/OutdoorDecor/mushroomGrowthPrefab"/>
@@ -68749,6 +68755,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mmushrooms"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="FilterTags" value="MC_outdoor,SC_crops,fCropsDestroy"/><!-- JZMOD -->
+	<property name="MultiBlockDim" value="1,1,1"/>
 </block>
 
 <!-- POI_Stage_3 -->
@@ -68763,6 +68770,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/OutdoorDecor/mushroomHarvestPrefab"/>
 	<property name="WaterFlow" value="permitted"/>
 	<property name="Collide" value="melee"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="VehicleHitScale" value=".1"/>
 	<property name="HarvestOverdamage" value="false"/>
@@ -68778,7 +68786,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="plantedMushroom3HarvestPlayer">
 	<property name="Extends" value="plantedMushroom3Harvest"/>
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedMushroom3Harvest"/>
 	<property name="DescriptionKey" value="plantedMushroom3HarvestDesc"/>
 	<drop event="Harvest" name="foodCropMushrooms" count="2" tag="cropHarvest"/>
@@ -81110,6 +81118,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="Door"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="MultiBlockDim" value="1,3,1"/>
+	<property name="ModelOffset" value="0,0,0"/>
 	<property name="Texture" value="529"/>
 	<property name="Group" value="Food/Cooking"/>
 	<property name="FilterTags" value="MC_outdoor,SC_crops,fCropsDestroy"/> 
@@ -81538,7 +81547,16 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!--JZMOD MUSHROOM -->
 <block name="jz_PlantedMushroomLv1Random" >
 	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="CreativeMode" value="Dev"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="HandleFace" value="Bottom"/>
+	<!--<property name="OnlySimpleRotations" value="false"/>-->
+	<property name="Material" value="Mmushrooms"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
 </block>
 
 <block name="jz_PlantedMushroom1Infested">
@@ -81549,6 +81567,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="LightOpacity" value="0"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="Collide" value="melee"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedMushroom1Dry"/>
 		<property name="Item" value="jz_Insecticide"/>
@@ -81565,6 +81587,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="LightOpacity" value="0"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="Collide" value="melee"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plantedMushroom2"/>
 		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
@@ -81575,6 +81601,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_PlantedMushroomLv2Random">
 	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 	<property name="CreativeMode" value="Dev"/>
 </block>
 
@@ -81586,6 +81616,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="LightOpacity" value="0"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="Collide" value="melee"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedMushroom2Dry"/>
 		<property name="Item" value="jz_Insecticide"/>
@@ -81603,6 +81637,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="LightOpacity" value="0"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="Collide" value="melee"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plantedMushroom3HarvestPlayer"/>
 		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
@@ -81634,6 +81672,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedMushroomFertilizedLv1Random" >
 	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
 	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 </block>
 
 <block name="jz_PlantedMushroomFertilized1Infested">
@@ -81659,6 +81701,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedMushroomFertilizedLv2Random">
 	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
 	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="Material" value="Mmushrooms"/>
 </block>
 
 <block name="jz_PlantedMushroomFertilized2Infested">
@@ -82543,7 +82589,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="jz_Wheat" count="3" tag="jz_FarmerHarvest"/>
     <property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/> 
 </block>
-<!--JZMOD EGG PLANT-->
+<!--JZMOD EGG PLANT  NOT USDED-->
 <block name="jz_PlantedEggPlant1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
@@ -82956,7 +83002,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="jz_FoodChillis" count="3" tag="jz_FarmerHarvest"/>
     <property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/> 
 </block>
-<!--JZMOD CUCUMBER-->
+<!--JZMOD CUCUMBER   NOT USED-->
 <block name="jz_PlantedCucumber1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
     <property name="CustomIcon" value="plantedCorn1"/>
@@ -83014,7 +83060,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/>
 	<drop event="Harvest" name="jz_FoodCucumber" count="1" tag="wildCropsHarvest"/>
 </block>
-<!--JZMOD LEEK-->
+<!--JZMOD LEEK  NOT USED-->
 <block name="jz_PlantedLeek1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
     <property name="CustomIcon" value="plantedCorn1"/>
@@ -83307,8 +83353,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="plantedTreeGroupDesc"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+	<property name="Texture" value="447"/>
+	<!--<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>-->
 	<property name="MultiBlockDim" value="3,4,3"/>
 	<property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/> 
   	<property name="PlantGrowing.Next" value="jz_PlantedOrange1Dry"/>

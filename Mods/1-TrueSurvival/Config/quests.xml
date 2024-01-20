@@ -940,11 +940,7 @@
         <reward type="SkillPoints" value="2"/>            
 	</quest>
 	
-	JZMOD PLAYER DEAD IS DEAD RESPAWN QUEST
-	<quest id="quest_PlayerRespawn" name_key="Dead is Dead Reset" subtitle_key="One More Time" description_key="Player Restart" icon="ui_game_symbol_Cop" repeatable="true" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="jz_CharacterChoiceComputer" value="1" />
-        <reward type="Quest" id="quest_BasicSurvival1" />
-	</quest>-->
+	-->
 	<!-- ************************************************************ JZMOD FLASHBANG ****************************************************** -->
 	<quest id="jzquest_FlashbangPt1">
 		<property name="name_key" value="jzquest_FlashbangPt1"/>

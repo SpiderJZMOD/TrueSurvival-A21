@@ -117,7 +117,6 @@
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$PlayerRadiaton" operation="set" value="0.00"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$NutritionGainAmount" operation="set" value="0.01"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CurrentMaxEncumbrance" operation="set" value="100"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$FinishedCampaignPt5" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$CurrentHaulingSkillLevel" operation="set" value="0"/>	    
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_TraderSortLvStoper" operation="set" value="1"/>	            
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_SkillLvMult" operation="set" value="1.018"/>
@@ -2847,7 +2846,7 @@
 		</effect_group>
 	</perk>
       
-	<perk name="SP_MolotovCocktailSchematic" parent="jz_ExplosiveSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Pipe Bomb" desc_key="thrownAmmoMolotovCocktailDesc" icon="thrownAmmoMolotovCocktail">
+	<perk name="SP_MolotovCocktailSchematic" parent="jz_ExplosiveSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Molotov Cocktail" desc_key="thrownAmmoMolotovCocktailDesc" icon="thrownAmmoMolotovCocktail">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownAmmoMolotovCocktail"/>
 			<effect_description level="1" desc_key="thrownAmmoMolotovCocktailDesc" long_desc_key="thrownAmmoMolotovCocktailDesc"/>

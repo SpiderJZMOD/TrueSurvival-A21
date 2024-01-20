@@ -60,7 +60,7 @@
 			<property class="BlockUpgradeRepair" >
 				<!-- disables repair/upgrade when enemies nearby -->
 				<property name="BlockOnNearbyEnemies" value="true"/>
-				<property name="DistanceEnemy" value="20" />
+				<property name="DistanceEnemy" value="40" />
 				<!-- remote repair/upgrade -->
 				<property name="ReadFromContainers" value="true"/>
 				<property name="Distance" value="40" />

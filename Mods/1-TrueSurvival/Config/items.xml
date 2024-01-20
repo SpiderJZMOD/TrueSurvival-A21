@@ -6648,7 +6648,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6696,7 +6698,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>			
 	</effect_group>
 </item>
 
@@ -6717,7 +6721,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6739,7 +6745,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6758,7 +6766,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6777,7 +6787,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6803,7 +6815,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6826,7 +6840,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="27"/></triggered_effect>
 	</effect_group>
 </item>
 		
@@ -6852,7 +6868,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>			
 	</effect_group>
 </item>
 		
@@ -6896,7 +6914,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -6954,7 +6974,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7003,7 +7025,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7076,7 +7100,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7122,7 +7148,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7168,7 +7196,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="27"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7225,7 +7255,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7246,7 +7278,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7267,7 +7301,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7288,7 +7324,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7310,6 +7348,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7331,7 +7371,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7349,7 +7391,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7371,7 +7415,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7392,7 +7438,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7414,7 +7462,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7434,7 +7484,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7455,7 +7507,9 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7495,6 +7549,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7513,6 +7569,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="buffFatiguedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.29,.36,.11"/> 
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7549,6 +7607,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="buffFatiguedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.05,.29,.36,.11"/><!-- JZMOD -->
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7621,6 +7681,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7639,6 +7701,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -7659,6 +7723,8 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -28991,6 +29057,7 @@ perkNightStalkerSilentNight
     <property name="UnlockedBy" value="jz_SchematicFarmingWateringCan,jz_Farmer"/>
 	<property name="ItemWeight" value="5" />
 	<property name="TraderStageTemplate" value="jz_Trader1_999"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property class="Action0">
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value=".5"/>
@@ -29021,9 +29088,9 @@ perkNightStalkerSilentNight
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="ModSlots" operation="base_set" value="0" />
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="jz_BuffBlockWorkZToCloseTrigger"/>
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="jz_BuffBlockWorkZToCloseTrigger"/><!-- JZMOD -->
 		<display_value name="TSItemWeight" value="5"/>
 	</effect_group>
-	<property name="Group" value="Tools/Traps"/>
 </item>
 
 <item name="jz_CampfireKit">
@@ -36570,7 +36637,6 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="bearMeatDesc" />
 	<property name="Material" value="Mprotein"/>
-	<property name="Weight" value="5"/>
     <property name="EconomicValue" value="800"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Weight" value="6" />
@@ -36614,6 +36680,53 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
+<item name="jz_FoodCrocMeat">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DescriptionKey" value="jz_FoodCrocMeatDesc" />
+	<property name="Material" value="Mprotein"/>
+	<property name="Weight" value="4"/>
+    <property name="EconomicValue" value="600"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Weight" value="6" />
+	<property name="DisplayType" value="TSFood"/>
+	<property name="ItemWeight" value="3.5" />
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="2" />
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/> 
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-4"/><display_value name="foodHealthAmount" value="-4"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="1">	
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$WellnessSubtract" operation="add" value="1">
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value=".5">	
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value=".5"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$WellnessSubtract" operation="add" value=".5">
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value=".5"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="2">	
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value="2"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$WellnessSubtract" operation="add" value="2">
+			<requirement name="CVarCompare" cvar="WellnessMultiplier" operation="Equals" value="2"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="40"/><display_value name="dDysenteryRisk" value=".4"/> 
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+		</triggered_effect>
+		<display_value name="TSItemWeight" value="3.5"/>
+	</effect_group>
+</item>
 
 <item name="jz_FoodRawRabbit">
 	<property name="Extends" value="jz_MasterFood" />
@@ -40291,7 +40404,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="3"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Unlocks" value="jz_FoodKabob"/>
+	<property name="Unlocks" value="jz_FoodKabobHot"/>
 	<property name="DescriptionKey" value="jz_FoodSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader75_999"/>
 	<property class="Action0">
@@ -40308,7 +40421,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="3"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Unlocks" value="jz_FoodMeatPie"/>
+	<property name="Unlocks" value="jz_FoodMeatPieHot"/>
     <property name="DescriptionKey" value="jz_FoodSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader75_999"/>
 	<property class="Action0">
@@ -40325,7 +40438,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="3"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Unlocks" value="jz_FoodGlazedMeat"/>
+	<property name="Unlocks" value="jz_FoodGlazedMeatHot"/>
 	<property name="DescriptionKey" value="jz_FoodSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader75_999"/>
 	<property class="Action0">
@@ -40379,7 +40492,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="3"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_FoodCarrotCake"/>
-	<property name="Unlocks" value="jz_FoodCarrotCake"/>
+	<property name="Unlocks" value="jz_FoodCarrotCakeHot"/>
 	<property name="DescriptionKey" value="jz_FoodSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader525_999"/>
 	<property class="Action0">
@@ -40397,7 +40510,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="6"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_FoodBrainShnitzel"/>
-	<property name="Unlocks" value="jz_FoodBrainShnitzel"/>
+	<property name="Unlocks" value="jz_FoodBrainShnitzelHot"/>
     <property name="DescriptionKey" value="jz_FoodSchematicDesc"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
@@ -47164,7 +47277,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47221,7 +47336,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47261,7 +47378,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47323,7 +47442,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47378,7 +47499,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47418,7 +47541,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffZVirusTrigger">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47592,6 +47717,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,buffInjuryBleedingTwo,buffInjuryStunned01CHTrigger"
 			weights=".10,.09,.09,.29,.20,.36"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="27"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47616,6 +47743,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="jz_BuffLacerationTrigger,buffInjuryBleedingTwo,buffInjuryStunned01CHTrigger"
 			weights=".29,.39,.20"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="17"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -47640,7 +47769,10 @@ perkNightStalkerSilentNight
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>									
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearThree">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="22"/></triggered_effect>
 	</effect_group>
+	
 </item>
 <!-- JZMOD QUEST REDO ITEMS -->
 <!--
@@ -55757,6 +55889,8 @@ perkNightStalkerSilentNight
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -55777,6 +55911,8 @@ perkNightStalkerSilentNight
 			weights=".11,.07,.07,.05,.29,.36,.11"/>
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffDropKick">
 			<requirement name="EntityHasMovementTag" target="self" tags="idle"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -55793,6 +55929,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" 
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 		weights=".11,.07,.07,.05,.29,.36,.11"/>	
+	<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -55810,6 +55948,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true" 
 		buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
 		weights=".11,.07,.07,.05,.29,.36,.11"/>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffPlayerArmorTearTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="12"/></triggered_effect>
 	</effect_group>
 </item>
 

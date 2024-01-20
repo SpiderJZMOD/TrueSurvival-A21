@@ -4157,7 +4157,7 @@
 		<placeholder name="jz_PlantedCarrotFertilizedLv2Random">
 		<block name="jz_PlantedCarrotFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedCarrotFertilized2Dry" prob=".70"/>
-		<block name="jz_PlantedCarrotFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedCarrot3FertilizedHarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedChrysanthemumFertilizedLv1Random">
 		<block name="jz_PlantedChrysanthemumFertilized1Infested" prob=".10"/>
@@ -4172,112 +4172,112 @@
    <placeholder name="jz_PlantedAloeFertilizedLv1Random">
 		<block name="jz_PlantedAloeFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedAloeFertilized1Dry" prob=".70"/>
-		<block name="plantedAloeFertilized2" prob=".20"/>
+		<block name="jz_PlantedAloeFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedAloeFertilizedLv2Random">
 		<block name="jz_PlantedAloeFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedAloeFertilized2Dry" prob=".70"/>
-		<block name="plantedAloeFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedAloeFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedCoffeeFertilizedLv1Random">
 		<block name="jz_PlantedCoffeeFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedCoffeeFertilized1Dry" prob=".70"/>
-		<block name="plantedCoffeeFertilized2" prob=".20"/>
+		<block name="jz_PlantedCoffeeFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedCoffeeFertilizedLv2Random">
 		<block name="jz_PlantedCoffeeFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedCoffeeFertilized2Dry" prob=".70"/>
-		<block name="plantedCoffeeFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedCoffeeFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedCornFertilizedLv1Random">
 		<block name="jz_PlantedCornFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedCornFertilized1Dry" prob=".70"/>
-		<block name="plantedCornFertilized2" prob=".20"/>
+		<block name="jz_PlantedCornFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedCornFertilizedLv2Random">
 		<block name="jz_PlantedCornFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedCornFertilized2Dry" prob=".70"/>
-		<block name="plantedCornFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedCornFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedCottonFertilizedLv1Random">
 		<block name="jz_PlantedCottonFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedCottonFertilized1Dry" prob=".70"/>
-		<block name="plantedCottonFertilized2" prob=".20"/>
+		<block name="jz_PlantedCottonFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedCottonFertilizedLv2Random">
 		<block name="jz_PlantedCottonFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedCottonFertilized2Dry" prob=".70"/>
-		<block name="plantedCottonFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedCottonFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedGoldenrodFertilizedLv1Random">
 		<block name="jz_PlantedGoldenrodFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedGoldenrodFertilized1Dry" prob=".70"/>
-		<block name="plantedGoldenrodFertilized2" prob=".20"/>
+		<block name="jz_PlantedGoldenrodFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedGoldenrodFertilizedLv2Random">
 		<block name="jz_PlantedGoldenrodFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedGoldenrodFertilized2Dry" prob=".70"/>
-		<block name="plantedGoldenrodFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedGoldenrodFertilized3HarvestPlayerDesc" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedHopFertilizedLv1Random">
 		<block name="jz_PlantedHopFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedHopFertilized1Dry" prob=".70"/>
-		<block name="plantedHopFertilized2" prob=".20"/>
+		<block name="jz_PlantedHopFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedHopFertilizedLv2Random">
 		<block name="jz_PlantedHopFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedHopFertilized2Dry" prob=".70"/>
-		<block name="plantedHopFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedHopFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedMushroomFertilizedLv1Random">
 		<block name="jz_PlantedMushroomFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedMushroomFertilized1Dry" prob=".70"/>
-		<block name="plantedMushroomFertilized2" prob=".20"/>
+		<block name="jz_PlantedMushroomFertilized2" prob=".20"/>
 	</placeholder>
 	<placeholder name="jz_PlantedMushroomFertilizedLv2Random">
 		<block name="jz_PlantedMushroomFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedMushroomFertilized2Dry" prob=".70"/>
-		<block name="plantedMushroomFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedMushroomFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedPotatoFertilizedLv1Random">
 		<block name="jz_PlantedPotatoFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedPotatoFertilized1Dry" prob=".70"/>
-		<block name="plantedPotatoFertilized2" prob=".20"/>
+		<block name="jz_PlantedPotatoFertilized2" prob=".20"/>
 	</placeholder>
 		<placeholder name="jz_PlantedPotatoFertilizedLv2Random">
 		<block name="jz_PlantedPotatoFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedPotatoFertilized2Dry" prob=".70"/>
-		<block name="plantedPotatoFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedPotatoFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedYuccaFertilizedLv1Random">
 		<block name="jz_PlantedYuccaFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedYuccaFertilized1Dry" prob=".70"/>
-		<block name="plantedYuccaFertilized2" prob=".20"/>
+		<block name="jz_PlantedYuccaFertilized2" prob=".20"/>
 	</placeholder>
 		<placeholder name="jz_PlantedYuccaFertilizedLv2Random">
 		<block name="jz_PlantedYuccaFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedYuccaFertilized2Dry" prob=".70"/>
-		<block name="plantedYuccaFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedYuccaFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedPumpkinFertilizedLv1Random">
 		<block name="jz_PlantedPumpkinFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedPumpkinFertilized1Dry" prob=".70"/>
-		<block name="plantedPumpkinFertilized2" prob=".20"/>
+		<block name="jz_PlantedPumpkinFertilized2" prob=".20"/>
 	</placeholder>
 		<placeholder name="jz_PlantedPumpkinFertilizedLv2Random">
 		<block name="jz_PlantedPumpkinFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedPumpkinFertilized2Dry" prob=".70"/>
-		<block name="plantedPumpkinFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedPumpkinFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>
     <placeholder name="jz_PlantedBlueberryFertilizedLv1Random">
 		<block name="jz_PlantedBlueberryFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedBlueberryFertilized1Dry" prob=".70"/>
-		<block name="plantedBlueberryFertilized2" prob=".20"/>
+		<block name="jz_PlantedBlueberryFertilized2" prob=".20"/>
 	</placeholder>
 		<placeholder name="jz_PlantedBlueberryFertilizedLv2Random">
 		<block name="jz_PlantedBlueberryFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedBlueberryFertilized2Dry" prob=".70"/>
-		<block name="plantedBlueberryFertilized3HarvestPlayer" prob=".20"/>
+		<block name="jz_PlantedBlueberryFertilized3HarvestPlayer" prob=".20"/>
 	</placeholder>  
     <placeholder name="jz_PlantedWheatLv1Random">
 		<block name="jz_PlantedWheat1Infested" prob=".10"/>
@@ -4308,7 +4308,7 @@
 		<block name="jz_PlantedEggPlantFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedEggPlantFertilized2Dry" prob=".70"/>
 		<block name="jz_PlantedEggPlant3FertilizedHarvestPlayer" prob=".20"/>
-	</placeholder>
+	</placeholder><!-- JZMOD NOT IN -->
     <placeholder name="jz_PlantedBeansLv1Random">
 		<block name="jz_PlantedBeans1Infested" prob=".10"/>
 		<block name="jz_PlantedBeans1Dry" prob=".70"/>
