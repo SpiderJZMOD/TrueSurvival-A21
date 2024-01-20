@@ -94,3 +94,20 @@
 -Added 3 more Campaign quest and 1 POI
 -Removed Leather Needle recipe, its found in loot 
 //////////////////////////////////////////////////////////////
+1/20/2024 A21.2 #1.23
+-Fixed issue with crops disappearing
+-Fixed Mushrooms growing, Can grow on walls with or without light
+-Changed Burning Barrel to be pick up able with a Hand Truck
+-Fixed vanilla gore to break in one hit like custom gore
+-Changed Armor Durability buff notification icons
+-Updated TS permadeath mechanic to use the new permadeath feature, fixing many player wipe issues
+-Changed EpiPen buff to show countdown timer on hud
+-Added new enemy action “Armor Torn” All enemies have the ability to tear armor. There are 3 different effects : 1 item damaged 15%; 2 items damaged 18% and 3 items damaged 20%
+-Added an old TS friend, The Croc, found in the water. Croc meat used in Gumbo recipe
+-Fixed some cooking recipes showing unknown when known
+-Sorted Loading Screen tips to all be accurate with TS
+-Fixed Workstation quest starters localization
+-Fixed Adventurous and Cautious Trait localization  
+-Increased drop rate of Cooking Grill slightly
+-Fixed some missing icons
+-Fixed issue where the No Repairing W/Zombies nearby was only half the distance it should be (20 blocks)
