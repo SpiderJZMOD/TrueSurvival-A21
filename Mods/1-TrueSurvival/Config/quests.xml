@@ -4777,7 +4777,7 @@
 
 		<objective type="TreasureChest">
 			<property name="phase" value="3" />
-			<property name="block" value="cntBuriedFoodStashChest" param1="container"/>
+			<property name="block" value="cntBuriedWeaponChest" />
 			<property name="default_radius" value="7" />
 			<property name="container_type" value="Supplies"/>
 			<property name="nav_object" value="treasure" />
@@ -4867,7 +4867,7 @@
 
 		<objective type="TreasureChest">
 			<property name="phase" value="3" />
-			<property name="block" value="cntBuriedFoodStashChest" param1="container"/>
+			<property name="block" value="cntBuriedWeaponChest" />
 			<property name="default_radius" value="9" />
 			<property name="container_type" value="Supplies"/>
 			<property name="nav_object" value="treasure" />

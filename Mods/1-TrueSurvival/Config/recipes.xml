@@ -1610,7 +1610,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_condiments" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodOneCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodOneCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="4"/>
 	<ingredient name="unit_fruit" count="4"/>
 	<ingredient name="unit_grain" count="4"/>
@@ -1620,7 +1620,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_sauces" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodOneCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodOneCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="4"/>
 	<ingredient name="unit_fruit" count="4"/>
 	<ingredient name="unit_grain" count="4"/>
@@ -1630,7 +1630,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_spicy" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodOneCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodOneCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="125" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="4"/>
 	<ingredient name="unit_fruit" count="4"/>
 	<ingredient name="unit_grain" count="4"/>
@@ -1649,7 +1649,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_condiments" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodTwoCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodTwoCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="6"/>
 	<ingredient name="unit_fruit" count="6"/>
 	<ingredient name="unit_grain" count="6"/>
@@ -1659,7 +1659,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_sauces" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodTwoCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodTwoCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="6"/>
 	<ingredient name="unit_fruit" count="6"/>
 	<ingredient name="unit_grain" count="6"/>
@@ -1669,7 +1669,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_spicy" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodTwoCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodTwoCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="150" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="6"/>
 	<ingredient name="unit_fruit" count="6"/>
 	<ingredient name="unit_grain" count="6"/>
@@ -1688,7 +1688,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_condiments" count="2"/>
 </recipe>
 
-<recipe name="jz_FoodThreeCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodThreeCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="8"/>
 	<ingredient name="unit_fruit" count="8"/>
 	<ingredient name="unit_grain" count="8"/>
@@ -1698,7 +1698,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_sauces" count="2"/>
 </recipe>
 
-<recipe name="jz_FoodThreeCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodThreeCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="8"/>
 	<ingredient name="unit_fruit" count="8"/>
 	<ingredient name="unit_grain" count="8"/>
@@ -1708,7 +1708,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_spicy" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodThreeCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodThreeCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="175" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="8"/>
 	<ingredient name="unit_fruit" count="8"/>
 	<ingredient name="unit_grain" count="8"/>
@@ -1727,7 +1727,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_condiments" count="2"/>
 </recipe>
 
-<recipe name="jz_FoodFourCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodFourCourseMealNutritiousHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="10"/>
 	<ingredient name="unit_fruit" count="10"/>
 	<ingredient name="unit_grain" count="10"/>
@@ -1737,7 +1737,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_sauces" count="2"/>
 </recipe>
 
-<recipe name="jz_FoodFourCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodFourCourseMealSpicyHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="10"/>
 	<ingredient name="unit_fruit" count="10"/>
 	<ingredient name="unit_grain" count="10"/>
@@ -1747,7 +1747,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_spicy" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodFourCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+<recipe name="jz_FoodFourCourseMealLacedHot" count="1" material_based="true" craft_area="jz_KitchenWorkbench" is_trackable="false" craft_time="200" craft_exp_gain="0" tags="learnable,jz_ChefTag">
 	<ingredient name="unit_veggie" count="10"/>
 	<ingredient name="unit_fruit" count="10"/>
 	<ingredient name="unit_grain" count="10"/>
@@ -1831,6 +1831,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedIron" count="6"/>
 </recipe>
 -->
+<recipe name="jz_HydroponicRack" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" tags="learnable">
+	<ingredient name="resourceElectricParts" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="glassBlockVariantHelper" count="10"/>
+	<ingredient name="jz_ScrapAdhesive" count="20"/>
+	<ingredient name="jz_ScrapWire" count="30"/>	
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="100"/>
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceMetalPipe" count="20"/>
+	<ingredient name="jz_NutAndBolt" count="100"/>
+</recipe>
+
 <recipe name="jz_Flashbang" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" tags="learnable">
 	<ingredient name="drinkCanEmpty" count="1"/>
 	<ingredient name="jz_AluminumShavings" count="1"/>
@@ -5730,6 +5743,15 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_QICarrot" count="50"/>
 </recipe>
 -->
+<recipe name="drinkJarPureMineralWater" count="1" craft_area="chemistryStation" craft_tool="resourceWaterFilter" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag" >
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="16"/>
+	<ingredient name="resourceCoal" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="1"/>
+	<ingredient name="resourceCloth" count="1"/>
+    <ingredient name="jz_Salt" count="1"/>
+    <ingredient name="resourceCrushedSand" count="1"/>
+</recipe>
+
 <recipe name="jz_Insecticide" count="10" craft_area="chemistryStation" craft_tool="toolBeaker" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag,jz_FarmerTag" >
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
     <ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>

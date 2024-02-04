@@ -24549,8 +24549,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="foodSkillMagazine"/>
-		<property name="Create_item_count" value="3"/>
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="jz_FoodKabobCold,jz_FoodMeatPieCold,jz_FoodGlazedMeatCold,jz_FoodDriedFruit,jz_FoodDriedMeat,jz_FoodVeggieSandwichFresh,jz_FoodMeatSandwichFresh"/>
 		<property name="Random_item_count" value="5,5,5,5,5,5,5"/>
 		<property name="Random_count" value="1"/>
@@ -24566,8 +24566,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="foodSkillMagazine"/>
-		<property name="Create_item_count" value="3"/>
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="jz_FoodFruitSoupFresh,jz_FoodVegetableStewCold,jz_FoodMeatStewCold,jz_FoodCarrotCakeCold,jz_FoodFruitCakeCold,jz_FoodOrangeMeringuePieCold,jz_FoodPumpkinPieCold"/>
 		<property name="Random_item_count" value="5,5,5,5,5,5"/>
 		<property name="Random_count" value="1"/>
@@ -24583,8 +24583,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="foodSkillMagazine"/>
-		<property name="Create_item_count" value="3"/>
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="jz_FoodGumboStewCold,jz_FoodBearStewCold,jz_FoodBlueberryCheeseCakeCold,jz_FoodCoconutCheesecakeCold,jz_FoodShepardsPieCold,jz_FoodSpaghettiCold"/>
 		<property name="Random_item_count" value="5,5,5,5,5,5"/>
 		<property name="Random_count" value="1"/>
@@ -24617,6 +24617,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
 	<property class="Action0">
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="jz_BikeWheels,vehicleMinibikeChassis,vehicleMinibikeHandlebars"/>
 		<property name="Random_item_count" value="2,1,1"/>
 		<property name="Random_count" value="1"/>
@@ -24632,6 +24634,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
 	<property class="Action0">
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="vehicleWheels,vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
 		<property name="Random_item_count" value="2,1,1"/>
 		<property name="Random_count" value="1"/>
@@ -24647,6 +24651,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
 	<property class="Action0">
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="vehicleWheels,vehicle4x4TruckChassis,vehicle4x4TruckAccessories"/>
 		<property name="Random_item_count" value="4,1,1"/>
 		<property name="Random_count" value="1"/>
@@ -24662,6 +24668,8 @@ perkNightStalkerSilentNight
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
 	<property class="Action0">
+		<property name="Create_item" value="resourcePaper"/>
+		<property name="Create_item_count" value="0"/>
 		<property name="Random_item" value="vehicleWheels,vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
 		<property name="Random_item_count" value="3,1,1"/>
 		<property name="Random_count" value="1"/>
@@ -30073,6 +30081,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="MhazmatFiber"/>
 	<property name="Weight" value="1"/>
 	<property name="ItemWeight" value=".05" />
+	<property name="EconomicValue" value="200"/>
 	<property name="TraderStageTemplate" value="jz_Trader600_999"/>
 	<property name="RepairAmount" value="50"/>
 	<effect_group tiered="false">
@@ -39619,9 +39628,9 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicNutritiousMeals">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="jz_FoodOneCourseMealNutritious"/>
+	<property name="CustomIcon" value="jz_FoodOneCourseMealNutritiousHot"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
-    <property name="Unlocks" value="jz_FoodOneCourseMealNutritious"/>
+    <property name="Unlocks" value="jz_FoodOneCourseMealNutritiousHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader750_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_NutritiousMealsSchematic" operation="LT" value="1"/>
@@ -49659,14 +49668,57 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
-<item name="jz_MedicalDefibrillator">
-	<property name="Extends" value="jz_MasterItem" />
+<item name="jz_MedicalDefibrillatorCharged">
+	<property name="Extends" value="jz_MasterFood" />
 	<property name="Tags" value="Defibrillator" />
 	<property name="DescriptionKey" value="jz_MedicalDefibrillatorDesc" />
 	<property name="ItemWeight" value="3" />
-	<effect_group tiered="false">
+	<property name="Stacknumber" value="1" />
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Sound_start" value="player_firstAidKit"/>
+		<property name="Create_item" value="jz_MedicalDefibrillatorDead"/>
+		<requirement name="HasBuff" target="other" buff="jz_BuffZombieRadiatedPing"/><!-- jz_BuffPlayerDowned -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Sound_start" value="player_firstAidKit"/>
+		<property name="Create_item" value="jz_MedicalDefibrillatorDead"/>
+		<requirement name="HasBuff" target="other" buff="jz_BuffZombieRadiatedPing"/><!-- jz_BuffPlayerDowned -->
+	</property>
+	<effect_group tiered="false" name="JZMOD DEFIBRILLATOR">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffBurningElement"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10"/>
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="jz_BuffPlayerRevive"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="jz_BuffPlayerRevive"/>
+       	-->
 		<display_value name="TSItemWeight" value="3"/>
 	</effect_group>
+</item>
+
+<item name="jz_MedicalDefibrillatorDead">
+	<property name="Extends" value="jz_MasterItem" />
+	<property name="DescriptionKey" value="jz_MedicalDefibrillatorDeadDesc" />
+	<property name="ItemWeight" value="3" />
+	<property name="Stacknumber" value="1" />
+	<effect_group tiered="false" name="JZMOD DEFIBRILLATOR">
+		<display_value name="TSItemWeight" value="3"/>
+	</effect_group>
+</item>
+
+<item name="jz_MedicalAutomaticExternalDefibrillator">
+	<property name="Extends" value="jz_MasterItem" />
+	<property name="Tags" value="AED" />
+	<property name="DescriptionKey" value="jz_AEDDesc" />
+	<property name="ItemWeight" value="5" />
+	<property name="Stacknumber" value="1" />
+	<property name="CreativeMode" value="Player" />
+	<effect_group tiered="false">
+		<display_value name="TSItemWeight" value="5"/>
+	</effect_group>
+	
 </item>
 
 <item name="jz_HeartSensor">
@@ -53020,6 +53072,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value=".1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="378" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
 		
 		<display_value name="TSDegradation" value="75"/>
 		<display_value name="dStaminaRegen" value=".2"/> 
@@ -53044,6 +53097,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value=".1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="503" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
 		
 		<display_value name="TSDegradation" value="100"/>
 		<display_value name="dStaminaRegen" value=".2"/> 
@@ -53069,6 +53123,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value=".1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="628" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
 		
 		<display_value name="TSDegradation" value="125"/>
 		<display_value name="dStaminaRegen" value=".2"/> 
@@ -53095,6 +53150,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value=".1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="753" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
 		
 		<display_value name="TSDegradation" value="150"/>
 		<display_value name="dStaminaRegen" value=".2"/> 
@@ -53117,6 +53173,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value=".5" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="878" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
 		
 		<display_value name="TSDegradation" value="175"/>
 		<display_value name="dStaminaRegen" value=".2"/> 

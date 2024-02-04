@@ -4380,7 +4380,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_VehicleSuperChargerSchematic" parent="jz_VehicleModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Vehicle Off Road Headlights" desc_key="SP_VehicleSuperChargerSchematicDesc" icon="modVehicleSuperCharger">
+	<perk name="SP_VehicleSuperChargerSchematic" parent="jz_VehicleModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Vehicle Super Charger" desc_key="SP_VehicleSuperChargerSchematicDesc" icon="modVehicleSuperCharger">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modVehicleSuperCharger"/>
 			<effect_description level="1" desc_key="SP_VehicleSuperChargerSchematicDesc" long_desc_key="SP_VehicleSuperChargerSchematicDesc"/>

@@ -278,17 +278,14 @@
                 <requirement name="HitLocation" body_parts="Head"/></triggered_effect>
     </effect_group>
 	<!--<effect_group name="2nd Life Dieing">
-			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Defibrillator_Used" >
-				<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="1"/>   </triggered_effect>
-		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger,jz_BuffConsequences"/>
-    </effect_group> --> 
+		<requirement name="CVarCompare" cvar="$AEDUsed" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" buff="buffStatusCheck01,buffStatusCheck02,jz_BuffConsequences"/>
+    </effect_group>  -->
     <effect_group name="Normal Dead is Dead Deing">
-		<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="game_on_death_permanent" />
-		<!--<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
-        <triggered_effect trigger="onSelfDied" action="RemoveLandClaims, TrueSurvival" target="self"/>
-        <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
-		<triggered_effect trigger="onSelfDied" action="AddBuff" target="self" buff="buffResetPlayerOnRespawn"/>           		
-		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02"/>           		
+		<!--<requirement name="CVarCompare" cvar="$AEDUsed" operation="LT" value="1"/>-->
+			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="game_on_death_permanent" />
+			<triggered_effect trigger="onSelfDied" action="AddBuff" buff="buffResetPlayerOnRespawn"/>           		
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" buff="buffStatusCheck01,buffStatusCheck02"/>           		
     </effect_group>
 	   
     <effect_group name="Head Shots Only and Increased Gore">
@@ -3670,7 +3667,7 @@
 	<property name="JumpMaxDistance" value="1.8, 2.5"/>
 	<property name="HandItem" value="meleeHandZombieCopFeral"/>
 	<property name="ExperienceGain" value="1200"/><!-- XP strong feral -->
-	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+	<property name="LootDropProb" value="0.0"/> <!-- Feral -->
 	<property name="LootListOnDeath" value="feralZombie"/>
 
 	<effect_group name="Base Effects">
@@ -4580,19 +4577,19 @@
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="ParticleOnDeath" value="blood_death"/>
 
-  <!-- Must match gore dismemberment tags -->
-  <!-- Override parts in the derrived class -->
-  <!-- The first prefab in each list is the default -->
-  <!-- The default data can be empty or take a scale and rot -->
-  <!-- <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore;Prefabs/RedSphereTest;Prefabs/BlueSphereTest" data =";scale=1,1,1+type=blunt;scale=1,1,1+rot=1,1,1+type=blade"/> -->
-  <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" data ="rot=90,0,0"/>
-  <property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
-  <property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/UpperLegGore"/>
-  <property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
-  <property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/UpperLegGore"/>
-  <property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
-  <property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/UpperArmGore"/>
-  <property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
+	<!-- Must match gore dismemberment tags -->
+	<!-- Override parts in the derrived class -->
+	<!-- The first prefab in each list is the default -->
+	<!-- The default data can be empty or take a scale and rot -->
+	<!-- <property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore;Prefabs/RedSphereTest;Prefabs/BlueSphereTest" data =";scale=1,1,1+type=blunt;scale=1,1,1+rot=1,1,1+type=blade"/> -->
+	<property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" data ="rot=90,0,0"/>
+	<property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
+	<property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/UpperLegGore"/>
+	<property name="DismemberTag_L_RightUpperLegGore" value="Prefabs/UpperLegGore"/>
+	<property name="DismemberTag_L_RightLowerLegGore" value="Prefabs/UpperLegGore"/>
+	<property name="DismemberTag_L_LeftUpperArmGore" value="Prefabs/UpperArmGore"/>
+	<property name="DismemberTag_L_LeftLowerArmGore" value="Prefabs/UpperArmGore"/>
+	<property name="DismemberTag_L_RightUpperArmGore" value="Prefabs/UpperArmGore"/>
 	<property name="DismemberTag_L_RightLowerArmGore" value="Prefabs/UpperArmGore"/>
 	<!-- Stealth settings -->
 	<property name="MaxViewAngle" value="180"/>
@@ -7835,7 +7832,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="JumpMaxDistance" value="4.6, 5"/>
 			<property name="ExperienceGain" value="1200"/>
-			<property name="LootDropProb" value=".03"/>
+			<property name="LootDropProb" value="0.0"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -8064,7 +8061,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value=".1"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>					
-			<property name="LootDropProb" value=".1"/> 
+			<property name="LootDropProb" value="0.0"/> 
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>	
 			<!--<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="KITT,HK-47,ED-209,Clank,Johnny5,Roboto,Marvin,Robbie,Rosie,HAL9000,GLaDOS,Bender" />		
@@ -8531,8 +8528,15 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<!-- Loot -->
 	<property name="TimeStayAfterDeath" value="5"/>
 	<property name="DeadBodyHitPoints" value="1000"/> 
-	<property name="LootListOnDeath" value="genericZombie"/>  
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/> 
+		
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<!--<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>  animalZombieDog -->
+	<drop event="Harvest" name="jz_AnimalHide" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<!--<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>?-->
+	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 </entity_class>
 
 <entity_class name="JZMutantFleaLarge" extends="JZMutantDog">
@@ -8654,7 +8658,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	</effect_group>
 	<!-- Loot -->
 	<property name="LootListOnDeath" value="genericZombie"/>  
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/> 
+	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/> 	
 </entity_class>
 
 <entity_class name="JZAnimalRat" extends="JZMutantDog">
@@ -8688,7 +8692,6 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="5,25"/>
 	</effect_group>
 	<!-- Loot -->
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="0"/> 
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="DeadBodyHitPoints" value="50"/> 
 	<!-- JZMOD Harvest For Beginner -->
@@ -8700,7 +8703,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="JZCrocodile" extends="JZMutantDog">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Mesh" value="#@modfolder:Resources/JZAnimalCrocodile.unity3d?CrocodileAnimalPrefab"/>
-	<property name="Tags" value="entity,animal,hostile,croc"/>
+	<property name="Tags" value="entity,animal,hostile,croc,perkAT04"/>
 	<property name="SizeScale" value="1"/>
 	<property name="Mass" value="90"/>
 	<!-- Sound -->
@@ -8727,7 +8730,6 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="100,400"/>
 	</effect_group>
 	<!-- Loot -->
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="0"/> 
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="DeadBodyHitPoints" value="500"/> 
 	<!-- JZMOD Harvest For Beginner -->
@@ -8785,7 +8787,6 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="5,20"/>
 	</effect_group>
 	<!-- Loot -->
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="0"/> 
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="DeadBodyHitPoints" value="25"/> 
 	<!-- JZMOD Harvest For Beginner -->

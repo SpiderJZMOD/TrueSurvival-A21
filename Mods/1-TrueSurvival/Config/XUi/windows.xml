@@ -249,7 +249,7 @@
 		<gamepad_icon depth="1" name="LB_Icon" size="35,35" pos="-8,-20" pivot="Right" sprite="Button_LB" />
 		<gamepad_icon depth="1" name="RB_Icon" size="35,35" pos="608,-20" pivot="Left" sprite="Button_RB" />
 		<!--*#$-IGS END.-$#-->
-		<texture name="JZMODLogo"  depth="4" pos="-510,-30" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival123.png"/>
+		<texture name="JZMODLogo"  depth="4" pos="-510,-30" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival124.png"/>
 	</window>
 
 	<window name="windowNonPagingHeader" controller="WindowNonPagingHeader" style="nonpaging.window">
@@ -920,7 +920,7 @@
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="178,-21" aspect_ratio="1.0" sprite="ui_game_symbol_WeightIcon" />
 			<label depth="3" name="windowName" pos="10,-9" width="250" height="32" controller="Quartz.CVarTimer, Quartz" timer="0.5" text="INVENTORY" text_key="{cvar($jz_UICurrentWieght:000.00)}/{cvar(MaxEncumbrance:000.00)}" font_size="30" />
-			<rect pos="303,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true">
+			<rect pos="303,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true" is_backpack="true">
 				<button depth="3" name="btnClearInventory" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="200, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}" />
 				<button depth="3" name="btnSort"           sprite="ui_game_symbol_sort"  tooltip_key="lblSortContainer"  pos="0, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 					<rect pos="0, 0" visible="{lootingorvehiclestorage}">

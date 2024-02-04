@@ -12610,7 +12610,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- zombie cop-->
-<lootcontainer name="zombieCop" count="1,2" size="4,3" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="QLTemplateT1">
+<lootcontainer name="zombieCop" count="1,2" size="4,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="QLTemplateT1">
 	<item group="junkPersonal" prob="20" />
 	<item group="booksAllScaled" prob="1" />
 	<item group="groupAmmoSmall" prob="20"/>
@@ -12768,6 +12768,11 @@ If there is no hit the default quality is used.
 <!-- jz_QBFBTraderSupplies -->
 <lootcontainer name="FBTraderSupplies" count="1" size="6,2" sound_open="SupplyDrops/open_supply_crate" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPrimitiveItemsTemplate" destroy_on_close="empty"  >
 	<item name="jz_QIFBTraderSupplies"/>
+</lootcontainer>
+
+<!-- jz_BeerCoolerPlayer -->
+<lootcontainer name="beerCoolerNOPOP" count="0" size="6,6" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb"/>
 </lootcontainer>
 </set>
 </configs> 

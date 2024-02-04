@@ -12715,20 +12715,24 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceMetalPipe" value="3"/>
 		<property name="resourceForgedIron" value="1"/>
 	</property>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,6"/><!-- JZMOD -->
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="SortOrder1" value="B162"/>
 	<property name="SortOrder2" value="0004"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 	<!-- JZMOD -->
-	<property name="Tags" value="ToolScrewdriver"/>
+	<property name="Tags" value="ToolScrewdriver,ToolWrench,jz_HandTruckTag"/>
+	<!-- JZMOD ANY -->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,6" tag="allToolsHarvest"/><!-- JZMOD -->
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<!--JZMOD SCREWDRIVER-->
 	<drop event="Harvest" name="resourceElectricParts" count="1,6" tag="ToolScrewdriver" />    
 	<drop event="Harvest" name="jz_ScrapWire" count="1,3" tag="ToolScrewdriver" />
-	<drop event="Harvest" name="resourceScrapIron" count="1,6" tag="ToolScrewdriver"/>	
+	<drop event="Harvest" name="resourceScrapIron" count="1,6" tag="ToolScrewdriver"/>
+	<!-- JZMOD WRENCH -->
+	<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="jz_BeerCoolerPlayer" count="1" prob="1" tool_category="ToolHandTruck"/>  	
 </block>
 
 	<!-- *** COOKING_POT -->
@@ -85286,6 +85290,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 </block>
 
+<block name="jz_BeerCoolerPlayer">
+	<property name="Extends" value="cntBeerCooler" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="beerCoolerNOPOP"/>
+	<property name="CustomIcon" value="cntBeerCooler"/>
+	<property name="DescriptionKey" value="jz_BeerCoolerPlayerDesc"/>
+	<property name="PreserveBonus" value="7" />
+	<property name="ItemWeight" value="75" />
+	<drop event="Destroy" name="jz_BeerCoolerPlayer" count="1"/>
+</block>
 <!-- ********************************************* SCORE ADDED ********************************* -->
 
 </set>

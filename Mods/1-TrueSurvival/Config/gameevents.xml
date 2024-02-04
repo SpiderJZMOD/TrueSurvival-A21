@@ -9784,9 +9784,7 @@
 			<property name="direction" value="Backward" />
 			<property name="distance" value="5" />
 		</action>
-
 	</action_sequence>
-	
 	
 	
 	<action_sequence name="TS_Car_Crash">
@@ -10003,11 +10001,11 @@
 		<action class="RemoveItems">
 			<property name="phase" value="1" />
 			<property name="items_location" value="Toolbelt, Backpack, Equipment, Held" />
-			<property name="items_tags" value="Defibrillator" />
+			<property name="items_tags" value="AED" />
 			<property name="count_type" value="Items" />
 		</action>
 	</action_sequence>
-	
+	<!-- JZMOD NOTE: SPAWNS A BLOCK -->
 	<action_sequence name="TS_FlashBang_Quest_Supplies">
 		<action class="BlockReplace">
 			<property name="min_offset" value="-25,-5,-25" />

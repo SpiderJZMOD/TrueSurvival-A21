@@ -836,18 +836,24 @@
 				<requirement name="CVarCompare" cvar="$jzCvarNutrition" operation="Equals" value="6"/></triggered_effect>
 		</effect_group>
 		
+		<!--
+		<effect_group name="Downed Activation">
+			<requirement name="StatCompareCurrent" stat="Health" operation="LTE" value="5"/>
+			<requirement name="!HasBuff" buff="jz_BuffPlayerAEDCheck"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffPlayerDowned"/>	
+		</effect_group>
+		-->
+		
 		<effect_group name="Limp Activation">
 			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value="0.05"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLimp"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLimpNotice"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffDefibrillatorCheck"/>
 		</effect_group>
 		<effect_group name="Limp Deactivation">
 			<requirement name="StatComparePercCurrentToMax" stat="health" operation="GT" value="0.05"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimp"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimpB"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimpNotice"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffDefibrillatorCheck"/>
 		</effect_group>
 		
         <effect_group name="Echausted Activation">
@@ -13677,31 +13683,6 @@
 		</effect_group>
 	</buff>
 	
-	<!--JZMOD DEATH PENALTY NEEDS REDONE TO BE DEFIBULATOR RESULT-->
-    <buff name="jz_BuffConsequences" hidden="true" >
-		<stack_type value="ignore"/>
-		<duration value=".5"/>
-		<effect_group>
-          	<!-- Health / Wellness -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="set" value="@$jz_WellnessLv"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="divide" value="2"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="@$ConsequencesMath"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="divide" value="4"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="set" value="@$ConsequencesMath"/>
-			<!-- Fatigue -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueTicker" operation="set" value="50">
-                <requirement name="CVarCompare" cvar="$fatigueTicker" operation="LT" value="50"/></triggered_effect>
-			<!-- Thirst -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="water" operation="set" value="50">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value=".5"/></triggered_effect>
-			<!-- Hunger -->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Food" operation="set" value="20">
-				<requirement name="StatComparePercCurrentToMax" stat="Food" operation="LT" value=".1"/></triggered_effect>
-			<!-- Wound -->	
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSecondLifeWound"  />
-		</effect_group>
-	</buff>
-
 	<buff name="jz_BuffNotNew" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -15029,8 +15010,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationLeftFootBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -15449,8 +15428,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationRightFootBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -15868,8 +15845,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationLeftLegBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -16287,8 +16262,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationRightLegBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -16706,8 +16679,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationLeftHandBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -17125,8 +17096,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationRightHandBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -17544,8 +17513,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationLeftArmBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -17942,8 +17909,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationRightArmBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -18361,8 +18326,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationStomachBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -18780,8 +18743,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffLacerationNeckBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -23812,9 +23773,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftFootBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftFootBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftFootNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashLeftFootBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -24230,9 +24188,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightFootBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightFootBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightFootNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashRightFootBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -24648,9 +24603,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftLegBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftLegBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftLegNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashLeftLegBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -25066,9 +25018,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightLegBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightLegBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightLegNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashRightLegBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -25484,9 +25433,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftHandBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftHandBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftHandNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashLeftHandBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -25902,9 +25848,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightHandBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightHandBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightHandNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashRightHandBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -26320,9 +26263,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftArmBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftArmBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashLeftArmNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashLeftArmBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -26737,9 +26677,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightArmBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightArmBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashRightArmNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashRightArmBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -27154,9 +27091,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashStomachBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashStomachBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashStomachNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashStomachBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -27571,9 +27505,6 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashNeckBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashNeckBleeding" operation="set" value="0"/>	
-			<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="$GashNeckNeedsCleansing" operation="set" value="1"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffGashNeckBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -29720,8 +29651,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-					
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffZombieBiteBleed"/>
 		</effect_group>
 	</buff>
 	
@@ -36698,8 +36627,6 @@
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
-
-			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="jz_BuffShrapnelBleed"/>
 		</effect_group>
 	</buff>
 		
@@ -40395,16 +40322,6 @@
 	</buff>
 	<!-- ******************************************************** JZMOD TESTING ******************************************** -->
 	
-	<buff name="jz_BuffDefibrillatorCheck" name_key="DefibrillatorCheck" hidden="true" remove_on_death="false" >
-		<stack_type value="ignore"/>
-		<duration value="0"/>
-		<update_rate value="20"/>
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$HasDefibrillator" operation="set" value="1">
-				<requirement name="PlayerItemCount" item_name="jz_MedicalDefibrillator" operation="GTE" value="1"/></triggered_effect>
-		</effect_group>
-	</buff>
-	
 	<buff name="jz_BuffTestStat" name_key="jz_BuffTestStat" description_key="jz_BuffTestStat" icon="jz_BuffTraderStage" >
 		<stack_type value="ignore"/>
 		<duration value="30"/>
@@ -40453,10 +40370,22 @@
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffPlayerDowned" name_key="Near Death" description_key="jz_BuffTestDowned" icon="FlashBangDelay" >
+	<buff name="jz_BuffPlayerTackingHP" hidden="true" >
+		<stack_type value="ignore"/>
+		<update_rate value=".1"/>
+		<duration value="0" />
+		<effect_group name="Downed Activation">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffPlayerDowned">
+				<requirement name="StatComparePercCurrentToMax" stat="Health" operation="LTE" value="0.01"/>
+				<requirement name="!HasBuff" buff="jz_BuffPlayerAEDCheck"/>
+				<requirement name="!HasBuff" buff="buffInternalBleeding"/></triggered_effect>		
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPlayerDowned" name_key="Near Death" description_key="jz_BuffPlayerDownedDesc" icon="PlayerDowned" >
 		<stack_type value="ignore"/>
 		<duration value="30"/>
-		<update_rate value=".5"/>
+		<update_rate value=".1"/>
 		<effect_group>
 			<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="cold,heat,electrical"/>
@@ -40467,6 +40396,66 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="Ragdoll" duration="30"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="set" value="5"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="health" operation="set" value="5"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffPlayerAEDCheck" />
+		</effect_group>
+	</buff>
+		
+	<buff name="jz_BuffPlayerRevive" name_key="Saved" description_key="jz_BuffPlayerReviveDesc" icon="PlayerRevive" >
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPlayerDowned" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="set" value="50"/>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="health" operation="add" value="1"/>	
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffPlayerAEDCheck" name_key="Saved" description_key="jz_BuffPlayerReviveDesc" icon="PlayerRevive" >
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<requirement name="PlayerItemCount" item_name="jz_MedicalAutomaticExternalDefibrillator" operation="GTE" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_Defibrillator_Used" />
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AEDUsed" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="add" value="-100"/>	
+		</effect_group>
+		<effect_group>
+			<requirement name="PlayerItemCount" item_name="jz_MedicalAutomaticExternalDefibrillator" operation="LT" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="add" value="-100"/>	
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffConsequences" hidden="true" >
+		<stack_type value="ignore"/>
+		<duration value=".5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$AEDUsed" operation="set" value="0"/>
+          	<!-- Health / Wellness -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="set" value="@$jz_WellnessLv"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="divide" value="2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="@$ConsequencesMath"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="divide" value="4"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="health" operation="set" value="@$ConsequencesMath"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ConsequencesMath" operation="set" value="0"/>
+			<!-- Fatigue -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueTicker" operation="set" value="50">
+                <requirement name="CVarCompare" cvar="$fatigueTicker" operation="LT" value="50"/></triggered_effect>
+			<!-- Thirst -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="water" operation="set" value="50">
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value=".5"/></triggered_effect>
+			<!-- Hunger -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Food" operation="set" value="20">
+				<requirement name="StatComparePercCurrentToMax" stat="Food" operation="LT" value=".1"/></triggered_effect>
+			<!-- Wound -->	
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSecondLifeWound"  />
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffConsequences" hidden="true" >
+		<stack_type value="ignore"/>
+		<effect_group>
+		
 		</effect_group>
 	</buff>
 </set>     
