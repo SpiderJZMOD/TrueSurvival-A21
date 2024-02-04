@@ -111,3 +111,19 @@
 -Increased drop rate of Cooking Grill slightly
 -Fixed some missing icons
 -Fixed issue where the No Repairing W/Zombies nearby was only half the distance it should be (20 blocks)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2/4/2024 A21.2 #1.24
+-Changed Beer Cooler to be able to be picked up with HandTruck and act as refrigerator for spoilable items.
+-Fixed bug that would make a Gash blink between  two stages after dying and re acquiring a Gash
+-Fixed bug that would cause player to get stuck in zombie loot containers
+-Fixed some animals dropping zombie gore not being harvestable
+-Fixed Crocs Hunting Skill leveling
+-Removed vanilla Food Magazines from quest loot
+-Upped Hazmat Fabrics Trader cost
+-Fixed Nutritious, Spicy and Laced Meals to be locked recipes and unlock with book
+-Fixed Pro running Shoes so all quality levels give stamina bonus
+-Fixed some reported Localization issues
+-Fixed bug with Buried Treasure Quest causing no quest item to be in lockbox 
+-Added missing Hydroponics workstation recipe
+-Added missing Pure Mineral Water recipe
+-Fixed Slot Locking for Backpack
