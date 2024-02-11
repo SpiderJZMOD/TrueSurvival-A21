@@ -27,6 +27,10 @@ Suggested Compatible POI Modlets-
 https://www.nexusmods.com/7daystodie/mods/3464
 https://www.nexusmods.com/7daystodie/mods/1434
 
+Oficial True Survival Server
+IP=104.243.46.3
+Port=15675
+PW=spider13
 
 If you have questions, suggestions or need to report a bug you can find Spider here - https://discord.gg/nEVTcMMf5x
 If you wish to contribute to Spider the mods author - https://www.paypal.com/paypalme/JohnZidar
