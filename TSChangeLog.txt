@@ -127,3 +127,26 @@
 -Added missing Hydroponics workstation recipe
 -Added missing Pure Mineral Water recipe
 -Fixed Slot Locking for Backpack
+///////////////////////////////////////////////////////////////////
+2/11/2024 A21.2 #1.25
+-Removed NPC Core mod, it was not being used
+-Fixed all plant harvesting to give proper amount based on plant type, fertilization and professions
+-Harvest Math- Wild=1 / Crop=2 / Fertilized=3 / Farmer Profession=x2 / Gardener Hobby=+1 
+-Fixed Orange and Coconut trees growth stages, display names and added ability for them to get Infested  and need Insecticide.
+-Changed all forms of zombie vomit to only do one damage to plain glass blocks and a new player crafted plastic block.
+-Plain glass now has 5 hp (co it can take 4 hits from vomit before breaking)
+-Added new style of Plastic block with 50 hp that comes in all shapes
+-Updated the Gash and Laceration to an active stat display that shows all effects of the injuries
+-Fixed Radiation Poisoning to be removed when healed
+-Fixed Radiation Barrels that were not adding to players radiation effect
+-Fixed reported recipes listed in  wrong crafting categories
+-Added the ability for NailGun to upgrade using sticks
+-Fixed Stealth Military Boots not listing noise reduction in display stats
+-Fixed Rad Pills and Iodine Tablets stat display to be correct
+-Fixed Canned Soda names and descriptions
+-Fixed reported recipe books not showing unlocked when learned
+-Fixed workstation upgrade items being found when not on that quest
+-Fixed workstation upgrade items not being found when on that quest
+-Fixed some versions of improvised campfires not having all crafting categories in their menus
+-Updated ReadMe File with some new required mod settings and suggested compatible POI modlets
+-Updated ReadMe File with connection info for Oficial True Survival Server now open 

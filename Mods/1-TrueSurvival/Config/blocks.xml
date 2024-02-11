@@ -85639,7 +85639,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="New"/>
 	<property name="Texture" value="267"/>
 	<property name="UiBackgroundTexture" value="267"/>
-	<property name="FuelValue" value="500"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property class="RepairItems">

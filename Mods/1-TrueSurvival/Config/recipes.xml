@@ -6320,6 +6320,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="unit_clay" count="10"/>
 </recipe>
 
+<recipe name="jz_PlasticShapes" count="1" material_based="true" craft_area="jz_SteelForge" craft_tool="toolForgeCrucible" craft_time="4" craft_exp_gain="25" >
+	<ingredient name="unit_glass" count="10"/>
+	<ingredient name="unit_plastic" count="100"/>
+	<ingredient name="unit_steel" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
 <recipe name="glassBulletproofBlockVariantHelper" count="1" material_based="true" craft_area="jz_SteelForge" craft_tool="toolForgeCrucible" craft_time="4" craft_exp_gain="25" tags="learnable">
 	<ingredient name="unit_glass" count="110"/>
 	<ingredient name="unit_plastic" count="10"/>
