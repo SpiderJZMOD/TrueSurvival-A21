@@ -1148,6 +1148,16 @@
 		<item_display_info display_type="TSItemDisplay" display_group="groupConsumables">
 			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
 		</item_display_info>
+		
+		<item_display_info display_type="cureRadiationPoisoning" display_group="groupConsumables">
+			<display_entry name="TSCureRadiationPoisoning" title_key="jz_statCureRadiationPoisoning" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+		
+		<item_display_info display_type="reduceRadiationPoisoning" display_group="groupConsumables">
+			<display_entry name="TSReduceRadiationPoisoning" title_key="jz_statReduceRadiationPoisoning" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
 	</item_display>
 
 <!-- *** CHARACTER_STATS -->
@@ -1314,12 +1324,14 @@
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ComercialToiletCampfire">
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ResearchDesk">

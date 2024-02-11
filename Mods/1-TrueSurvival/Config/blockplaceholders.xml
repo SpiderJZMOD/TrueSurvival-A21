@@ -4329,6 +4329,91 @@
 		<block name="jz_PlantedBeansFertilized2Dry" prob=".70"/>
 		<block name="jz_PlantedBeans3FertilizedHarvestPlayer" prob=".20"/>
 	</placeholder>  
+	
+	<placeholder name="jz_PlantedCoconutLv1Random">
+		<block name="jz_PlantedCoconut1Infested" prob=".20"/>
+		<block name="jz_PlantedCoconut1Dry" prob=".70"/>
+		<block name="jz_PlantedCoconut2" prob=".10"/>
+	</placeholder>  
+	
+	<placeholder name="jz_PlantedCoconutLv2Random">
+		<block name="jz_PlantedCoconut2Infested" prob=".20"/>
+		<block name="jz_PlantedCoconut2Dry" prob=".70"/>
+		<block name="jz_PlantedCoconut3" prob=".10"/>
+	</placeholder> 
+
+	<placeholder name="jz_PlantedCoconutLv3Random">
+		<block name="jz_PlantedCoconut3Infested" prob=".20"/>
+		<block name="jz_PlantedCoconut3Dry" prob=".70"/>
+		<block name="jz_PlantedCoconut4" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedCoconutLv3BRandom">
+		<block name="jz_PlantedCoconut3BInfested" prob=".20"/>
+		<block name="jz_PlantedCoconut3BDry" prob=".70"/>
+		<block name="jz_PlantedCoconut4B" prob=".10"/>
+	</placeholder> 
+
+	<placeholder name="jz_PlantedFertilizedCoconut1Random">
+		<block name="jz_PlantedFertilizedCoconut1Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedCoconut1Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedCoconut2" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedCoconut2Random">
+		<block name="jz_PlantedFertilizedCoconut2Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedCoconut2Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedCoconut3" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedCoconut3Random">
+		<block name="jz_PlantedFertilizedCoconut3Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedCoconut3Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedCoconut4" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedCoconut3BRandom">
+		<block name="jz_PlantedFertilizedCoconut3BInfested" prob=".20"/>
+		<block name="jz_PlantedFertilizedCoconut3BDry" prob=".70"/>
+		<block name="jz_PlantedFertilizedCoconut4B" prob=".10"/>
+	</placeholder> 
+	
+	<placeholder name="jz_PlantedOrangeLv1Random">
+		<block name="jz_PlantedOrange1Infested" prob=".20"/>
+		<block name="jz_PlantedOrange1Dry" prob=".70"/>
+		<block name="jz_PlantedOrange2" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedOrangeLv2Random">
+		<block name="jz_PlantedOrange2Infested" prob=".20"/>
+		<block name="jz_PlantedOrange2Dry" prob=".70"/>
+		<block name="jz_PlantedOrange3" prob=".10"/>
+	</placeholder> 
+
+	<placeholder name="jz_PlantedOrangeLv3Random">
+		<block name="jz_PlantedOrange3Infested" prob=".20"/>
+		<block name="jz_PlantedOrange3Dry" prob=".70"/>
+		<block name="jz_PlantedOrange4" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedOrange1Random">
+		<block name="jz_PlantedFertilizedOrange1Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedOrange1Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedOrange2" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedOrange2Random">
+		<block name="jz_PlantedFertilizedOrange2Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedOrange2Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedOrange3" prob=".10"/>
+	</placeholder> 	
+	
+	<placeholder name="jz_PlantedFertilizedOrange3Random">
+		<block name="jz_PlantedFertilizedOrange3Infested" prob=".20"/>
+		<block name="jz_PlantedFertilizedOrange3Dry" prob=".70"/>
+		<block name="jz_PlantedFertilizedOrange4" prob=".10"/>
+	</placeholder> 	
+		
 	<placeholder name="jz_RoadTrashHelper">
 		<block name="palletEmpty" prob="2.94" />
 		<block name="cntShoppingCartEmpty" prob="2.94" />

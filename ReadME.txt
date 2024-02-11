@@ -6,8 +6,9 @@ For A21.2 Build. Drop the Mods Folder into your 7 Days To Die main directory and
 Needed Game Settings For True Survival to operate as intended-
 
 Difficulty Setting- Adventurer
-days- 60-90min
-day length - 18
+Map - RWG 8K (or larger)
+Days- 60-90min
+Day length - 18
 Day Speed - Walk
 Night Speed - Jog
 Feral Speed - Run
@@ -16,11 +17,15 @@ xp multiplier - 100%
 Block Damages - 100%
 Loot - 100%
 Drop all on death
-Spawning(Alive & Bloodmoon) - 64
+Spawning(Alive & Bloodmoon) - 64 (or high as you can go)
 Bedroll - 30 blocks 
 Death Penalty - XP Only
+Air Drops - Every 3 Days (or more not less)
 
 
+Suggested Compatible POI Modlets-
+https://www.nexusmods.com/7daystodie/mods/3464
+https://www.nexusmods.com/7daystodie/mods/1434
 
 
 If you have questions, suggestions or need to report a bug you can find Spider here - https://discord.gg/nEVTcMMf5x

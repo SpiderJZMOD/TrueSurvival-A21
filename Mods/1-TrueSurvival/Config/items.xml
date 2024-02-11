@@ -141,7 +141,7 @@
 	<property name="TraderStageTemplate" value="jz_Trader1_999"/><!-- JZMOD -->
 	<property name="UnlockedBy" value="jz_SchematicClawHammer"/><!-- JZMOD -->
 	<property name="ShowQuality" value="true"/>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Tools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
 	<property name="SoundHolster" value="weapon_holster"/>
@@ -246,7 +246,7 @@
 		<property name="Upgrade_hit_offset" value="-5"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01,vaultDoor01Double,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01,vaultDoor01Double,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,jz_Stick"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
 	<effect_group name="meleeToolRepairT3Nailgun"> <!-- meleeToolRepairT3Nailgun -->
@@ -11094,7 +11094,6 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedNeckTrigger,jz_BuffGashNeck"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck,jz_BuffAcidBurnNeck"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite,jz_BuffSnakeBite"/>
-		<display_value name="dNoiseMultiplier" value=".1"/>
 		<display_value name="TSResistFatigue" value=".06"/>
 		<display_value name="TSResistStun" value=".06"/>
 		<display_value name="TSResistBreak" value=".25"/>
@@ -14372,6 +14371,8 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_eating"/>
 		<property name="Create_item" value="drinkCanEmpty"/>
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+		<!--<property name="PromptTitle" value="jz_HowItsOpenedTitle" />
+		<property name="PromptDescription" value="jz_HowItsOpenedDesc" />-->
 	</property>
 	<effect_group tiered="false" name="JZMOD CanFood Has Nothing">
 		<requirement name="HasBuff" buff="jz_BuffHasNothing"/>
@@ -29744,7 +29745,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> 
-	<property name="DisplayType" value="cureZVirusInfection"/>
+	<property name="DisplayType" value="cureRadiationPoisoning"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="DescriptionKey" value="jz_MedicalRadiationPillDesc" />
 	<property name="SellableToTrader" value="false"/>
@@ -29758,8 +29759,9 @@ perkNightStalkerSilentNight
 		<requirement name="HasBuff" buff="jz_BuffRadiationPoisoning"/>
 	</property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RadPillHealingTime" operation="add" value="1200"/>	
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RadPillHealingTime" operation="add" value="1200"/><!-- 20min 5%-->	
 		<display_value name="TSItemWeight" value=".01"/>
+		<display_value name="TSCureRadiationPoisoning" value=".05"/>
 	</effect_group>
 </item>
 
@@ -29770,7 +29772,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> 
-	<property name="DisplayType" value="cureZVirusInfection"/>
+	<property name="DisplayType" value="reduceRadiationPoisoning"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="DescriptionKey" value="jz_MedicalPotassiumIodideDesc" />
 	<property name="SellableToTrader" value="false"/>
@@ -29785,6 +29787,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffPotassiumIodidePill"/>
+		<display_value name="TSReduceRadiationPoisoning" value=".5"/>
 		<display_value name="TSItemWeight" value=".01"/>
 	</effect_group>
 </item>
@@ -30539,7 +30542,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
-	<property name="DescriptionKey" value="veggieJuiceDesc" />
+	<property name="DescriptionKey" value="jz_SodaDrinkDesc" />
     <property name="HoldType" value="3" />
     <property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="15" />
@@ -30583,7 +30586,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
-	<property name="DescriptionKey" value="veggieJuiceDesc" />
+	<property name="DescriptionKey" value="jz_SodaDrinkDesc" />
     <property name="HoldType" value="3" />
     <property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="15" />
@@ -30627,7 +30630,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
-	<property name="DescriptionKey" value="veggieJuiceDesc" />
+	<property name="DescriptionKey" value="jz_SodaDrinkDesc" />
     <property name="HoldType" value="3" />
     <property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="15" />
@@ -31556,6 +31559,7 @@ perkNightStalkerSilentNight
 	<property name="ItemWeight" value="1.3" />
     <property name="SpoiledItem" value="jz_FoodGlazedMeatCold" />
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
+	<property name="Group" value="StoveTop,CFFood/Cooking"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -34244,6 +34248,7 @@ perkNightStalkerSilentNight
 	<property name="ItemWeight" value="1.3" />
     <property name="SpoiledItem" value="jz_FoodChickenDinnerCold" />
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
+	<property name="Group" value="CFFood/Cooking,Oven" />
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -34355,6 +34360,7 @@ perkNightStalkerSilentNight
 	<property name="CustomIcon" value="jz_FoodRoastedRabbit"/>
 	<property name="ItemWeight" value="1.1" />
     <property name="SpoiledItem" value="jz_FoodRoastedRabbitCold" />
+	<property name="Group" value="CFFood/Cooking,Oven" />
     <property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
@@ -42765,7 +42771,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="200"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodBaconAndEggs"/>
-	<property name="Unlocks" value="foodBaconAndEggs"/>
+	<property name="Unlocks" value="jz_FoodBaconAndEggsHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_BaconAndEggsSchematic" operation="LT" value="1"/>
@@ -42781,7 +42787,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodPumpkinPie"/>
-	<property name="Unlocks" value="foodPumpkinPie"/>
+	<property name="Unlocks" value="jz_FoodPumpkinPieHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader450_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_PumpkinPieSchematic" operation="LT" value="1"/>
@@ -42813,7 +42819,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodGumboStew"/>
-	<property name="Unlocks" value="foodGumboStew"/>
+	<property name="Unlocks" value="jz_FoodGumboStewHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_GumboStewSchematic" operation="LT" value="1"/>
@@ -42829,7 +42835,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodShepardsPie"/>
-	<property name="Unlocks" value="foodShepardsPie"/>
+	<property name="Unlocks" value="jz_FoodShepardsPieHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_ShepardsPieSchematic" operation="LT" value="1"/>
@@ -42845,7 +42851,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodSpaghetti"/>
-	<property name="Unlocks" value="foodSpaghetti"/>
+	<property name="Unlocks" value="jz_FoodSpaghettiHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_SpaghettiSchematic" operation="LT" value="1"/>
@@ -42861,7 +42867,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodTunaFishGravyToast"/>
-	<property name="Unlocks" value="foodTunaFishGravyToast"/>
+	<property name="Unlocks" value="jz_FoodTunaFishGravyToastHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_TunaFishGravyToastSchematic" operation="LT" value="1"/>
@@ -42877,7 +42883,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodChiliDog"/>
-	<property name="Unlocks" value="foodChiliDog"/>
+	<property name="Unlocks" value="jz_FoodChiliDogHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_ChiliDogSchematic" operation="LT" value="1"/>
@@ -42911,7 +42917,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="600"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodFishTacos"/>
-	<property name="Unlocks" value="foodFishTacos"/>
+	<property name="Unlocks" value="jz_FoodFishTacosHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_FishTacosSchematic" operation="LT" value="1"/>
@@ -42928,7 +42934,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="600"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodHoboStew"/>
-	<property name="Unlocks" value="foodHoboStew"/>
+	<property name="Unlocks" value="jz_FoodHoboStewHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_HoboStewSchematic" operation="LT" value="1"/>
@@ -42945,7 +42951,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="400"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodMeatStew"/>
-	<property name="Unlocks" value="foodMeatStew"/>
+	<property name="Unlocks" value="jz_FoodMeatStewHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_MeatStewSchematic" operation="LT" value="1"/>
@@ -42962,7 +42968,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="600"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodShamChowder"/>
-	<property name="Unlocks" value="foodShamChowder"/>
+	<property name="Unlocks" value="jz_FoodShamChowderHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_ShamChowderSchematic" operation="LT" value="1"/>
@@ -42979,7 +42985,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="400"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodSteakAndPotato"/>
-	<property name="Unlocks" value="foodSteakAndPotato"/>
+	<property name="Unlocks" value="jz_FoodSteakAndPotatoHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader300_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_VenisonAndPotatoSchematic" operation="LT" value="1"/>
@@ -42996,7 +43002,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="400"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="foodVegetableStew"/>
-	<property name="Unlocks" value="foodVegetableStew"/>
+	<property name="Unlocks" value="jz_FoodVegetableStewHot"/>
 	<property name="TraderStageTemplate" value="jz_Trader150_999"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_VegetableStewSchematic" operation="LT" value="1"/>
@@ -44643,6 +44649,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolPliers">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolPliers" />
 	<property name="DescriptionKey" value="jz_HeavyArmorDesc" />
 	<property name="ItemWeight" value=".8" />
 	<property class="Action0">
@@ -44669,6 +44676,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMetalSnips">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMetalSnips" />
 	<property name="DescriptionKey" value="jz_HeavyArmorDesc" />
 	<property name="ItemWeight" value="1.2" />
 	<property class="Action0">
@@ -44721,6 +44729,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolAdvancedArmorSmithing">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolAdvancedArmorSmithing" />
 	<property name="DescriptionKey" value="jz_HeavyArmorDesc" />
 	<property name="ItemWeight" value="1" />
 	<property class="Action0">
@@ -44747,6 +44756,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ToolMetalDrill">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
+	<property name="Tags" value="jz_ToolMetalDrill" />
 	<property name="DescriptionKey" value="jz_HeavyArmorDesc" />
 	<property name="ItemWeight" value="3.5" />
 	<property class="Action0">
@@ -46561,6 +46571,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolVise">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolVise" />
 	<property name="CustomIcon" value="jz_ToolVise" />
 	<property name="ItemWeight" value="20" />
 	<effect_group tiered="false">
@@ -46570,6 +46581,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolRivetGun">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolRivetGun" />
 	<property name="CustomIcon" value="jz_ToolRivetGun" />
 	<property name="ItemWeight" value="2" />
 	<effect_group tiered="false">
@@ -46579,6 +46591,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolOxyacetyleneTorch">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolOxyacetyleneTorch" />
 	<property name="CustomIcon" value="jz_ToolOxyacetyleneTorch" />
 	<property name="ItemWeight" value="25" />
 	<effect_group tiered="false">
@@ -46588,6 +46601,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_BrokenToolAngleGrinder">
 	<property name="Extends" value="jz_BrokenToolHandDrill" />
+	<property name="Tags" value="jz_BrokenToolAngleGrinder" />
 	<property name="CustomIcon" value="jz_ToolAngleGrinder" />
 	<property name="ItemWeight" value="3" />
 	<effect_group tiered="false">
@@ -47303,7 +47317,8 @@ perkNightStalkerSilentNight
 		<property name="Explosion.RadiusBlocks" value="1"/><!--2-->
 		<property name="Explosion.RadiusEntities" value="2"/><!--1-->
 		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
-		<property name="Explosion.DamageBonus.wood" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzPlastic" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzGlass" value="0"/><!--0-->
 		<property name="Velocity" value="15"/><!--18-->
 		<property name="FlyTime" value="1"/><!--2-->
 		<property name="LifeTime" value="4"/><!--4-->
@@ -47311,7 +47326,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffSticky"/>
 	</property>
 	<effect_group name="VomitSticky" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".99" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
@@ -47358,8 +47375,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffStickyFeral"/>
 	</property>
 	<effect_group name="VomitSticky" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
 		
@@ -47400,8 +47418,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffStickyRadiated"/>
 	</property>
 	<effect_group name="VomitSticky" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
 		
@@ -47459,28 +47478,32 @@ perkNightStalkerSilentNight
 
 <item name="jz_VomitAcid">
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Player"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="5"/><!--10-->
-		<property name="DamageBlock" value="500"/><!--2000-->
+		<property name="DamageEntity" value="5"/><!--5-->
+		<property name="DamageBlock" value="500"/><!--500-->
 		<property name="Explosion.ParticleIndex" value="7"/>
-		<property name="Explosion.RadiusBlocks" value="4"/><!--2-->
+		<property name="Explosion.RadiusBlocks" value="4"/><!--4-->
 		<property name="Explosion.RadiusEntities" value="1"/><!--1-->
 		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
-		<property name="Velocity" value="15"/><!--18-->
+		<property name="Explosion.DamageBonus.earth" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzPlastic" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzGlass" value="0"/><!--0-->
+		<property name="Velocity" value="15"/><!--15-->
 		<property name="FlyTime" value="2"/><!--2-->
 		<property name="LifeTime" value="4"/><!--4-->
 		<property name="CollisionRadius" value=".5"/><!--.5-->
 		<property name="Buff" value="jz_BuffAcid"/>
 	</property>
 	<effect_group name="VomitAcid" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="jzSteel"/>
 		
-		<passive_effect name="BlockDamage" operation="base_set" value="500"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="500"/><!--500-->
 		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
 	</effect_group>
 </item>
@@ -47521,12 +47544,13 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffAcidFeral"/>
 	</property>
 	<effect_group name="VomitAcid" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="jzSteel"/>
 		
-		<passive_effect name="BlockDamage" operation="base_set" value="650"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="650"/><!--650-->
 		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
 	</effect_group>
 </item>
@@ -47563,6 +47587,16 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffAcidRadiated"/>
 	</property>
 	<effect_group name="VomitAcid" tiered="false">
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="800"/><!--800-->
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+	<effect_group name="VomitAcid" tiered="false">
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
@@ -47584,6 +47618,8 @@ perkNightStalkerSilentNight
 		<property name="Explosion.RadiusBlocks" value="3"/><!--2-->
 		<property name="Explosion.RadiusEntities" value="1"/><!--1-->
 		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzPlastic" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.jzGlass" value="0"/><!--0-->
 		<property name="Velocity" value="18"/><!--18-->
 		<property name="FlyTime" value="2"/><!--2-->
 		<property name="LifeTime" value="4"/><!--4-->
@@ -47591,8 +47627,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffAcidBomb"/>
 	</property>
 	<effect_group name="VomitAcidBomb" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
 		
@@ -47609,8 +47646,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffAcidBombFeral"/>
 	</property>
 	<effect_group name="VomitAcidBomb" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
 		
@@ -47626,8 +47664,9 @@ perkNightStalkerSilentNight
 		<property name="Buff" value="jz_BuffAcidBombRadiated"/>
 	</property>
 	<effect_group name="VomitAcidBomb" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzPlastic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="1" tags="jzGlass"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
 		
@@ -49235,6 +49274,7 @@ perkNightStalkerSilentNight
 <item name="jz_CuredLeather">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="curedLeatherDesc" />
+	<property name="Group" value="CFOther,Other" />
 	<property name="ItemWeight" value="1.5" />
 	<effect_group tiered="false">
 		<display_value name="TSItemWeight" value="1.5"/>

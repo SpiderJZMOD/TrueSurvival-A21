@@ -2098,7 +2098,33 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="4"/>
 </material>
 
+<material id="MplasticShapes">
+	<property name="damage_category" value="jzPlastic"/>
+	<property name="surface_category" value="cloth"/>
+	<property name="forge_category" value="plastic"/>
+	<property name="Hardness" type="float" value="1"/>
+	<!--<property name="explosionresistance" value="0.01"/>-->
+	<property name="stepsound" value="cloth"/>
+	<property name="lightopacity" value="4"/>
+	<property name="stability_glue" value="40"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="Experience" value="1"/>
+</material>
 
+<material id="MresistGlass">
+	<property name="damage_category" value="jzGlass"/>
+	<property name="surface_category" value="glass"/>
+	<property name="forge_category" value="glass"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="lightopacity" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="20"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="MaxDamage" value="5"/>
+	<property name="Experience" value="2"/>
+</material>
 
 </set>
 </configs> 
