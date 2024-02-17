@@ -4972,10 +4972,10 @@
 				<requirement name="NotHasBuff" buff="buffPerkCharismaticNature"/>
 			</triggered_effect>
 			
-			<effect_description level="1" desc_key="perkCharismaticNatureRank1Desc" long_desc_key="perkCharismaticNatureRank1LongDesc"/>
-			<effect_description level="2" desc_key="perkCharismaticNatureRank2Desc" long_desc_key="perkCharismaticNatureRank2LongDesc"/>
-			<effect_description level="3" desc_key="perkCharismaticNatureRank3Desc" long_desc_key="perkCharismaticNatureRank3LongDesc"/>
-			<effect_description level="4" desc_key="perkCharismaticNatureRank4Desc" long_desc_key="perkCharismaticNatureRank4LongDesc"/>
+			<effect_description level="1" desc_key="perkCharismaticNatureRank1Desc" long_desc_key="jz_perkCharismaticNatureRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkCharismaticNatureRank2Desc" long_desc_key="jz_perkCharismaticNatureRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkCharismaticNatureRank3Desc" long_desc_key="jz_perkCharismaticNatureRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkCharismaticNatureRank4Desc" long_desc_key="jz_perkCharismaticNatureRank4LongDesc"/>
 		</effect_group>
 	</perk>
 

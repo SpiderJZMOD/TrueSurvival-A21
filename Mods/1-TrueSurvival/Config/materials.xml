@@ -2126,5 +2126,19 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="2"/>
 </material>
 
+<material id="Mgore">
+	<property name="damage_category" value="organic"/>
+	<property name="surface_category" value="organic"/>
+	<property name="particle_category" value="organic"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="organic"/>
+	<property name="fertile_level" value="1"/>
+	<property name="stability_glue" value="20"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="movement_factor" value="0.5"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="Experience" value="2"/>
+</material>
 </set>
 </configs> 

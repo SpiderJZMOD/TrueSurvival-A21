@@ -346,8 +346,8 @@
 				<property name="FireSound" value="SCoreMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
 				<property name="BuffOnFire" value="buffBurningMolotov" /> <!-- The buff that is applied to the entity alive when they step into the flames -->
 				<property name="MaterialID" value="Mplants, Mcorn, Mhay, MFuelBarrelMetal, Mmetal_vehicle_burns, Msteel_vehicle_burns" /> 	<!-- Checks the material's id to see if it should ignite  -->
-				<property name="MaterialDamage" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's damage category to see if it should ignite  -->
-				<property name="MaterialSurface" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's surface category to see if it should ignite -->
+				<property name="MaterialDamage" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack" /> <!-- Checks the material's damage category to see if it should ignite  -->
+				<property name="MaterialSurface" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack" /> <!-- Checks the material's surface category to see if it should ignite -->
 				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />		<!-- Fire particle to use -->
 				<property name="FireParticle" value="#@modfolder:Resources/gupFireParticles.unity3d?gupBeavis05-Heavy" /> <!-- Fire particle to use -->
 				<property name="FireSpread" value="true" /> <!-- When enabled, fire can spread to neighborblocks.-->

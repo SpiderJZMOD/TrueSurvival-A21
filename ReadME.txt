@@ -13,7 +13,7 @@ Day Speed - Walk
 Night Speed - Jog
 Feral Speed - Run
 Bloodmoon Speed - Sprint
-xp multiplier - 100%
+xp multiplier - 50%
 Block Damages - 100%
 Loot - 100%
 Drop all on death
@@ -30,7 +30,7 @@ https://www.nexusmods.com/7daystodie/mods/1434
 Oficial True Survival Server
 IP=104.243.46.3
 Port=15675
-PW=spider13
+PW=spider1
 
 If you have questions, suggestions or need to report a bug you can find Spider here - https://discord.gg/nEVTcMMf5x
 If you wish to contribute to Spider the mods author - https://www.paypal.com/paypalme/JohnZidar

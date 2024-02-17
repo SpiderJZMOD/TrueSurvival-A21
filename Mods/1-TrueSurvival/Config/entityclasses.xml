@@ -570,10 +570,10 @@
 	<property name="LegCrippleScale" value="2"/> <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
 	<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+	<property name="KnockdownProneStunDuration" value="0.5,8"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
 	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+	<property name="KnockdownKneelStunDuration" value="0.5,8"/>
 	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
@@ -4070,10 +4070,10 @@
 	<property name="LegCrawlerThreshold" value="0"/>
 	<property name="LegCrippleThreshold" value="0.01"/>
 	<property name="KnockdownProneDamageThreshold" value="0.45"/>
-	<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+	<property name="KnockdownProneStunDuration" value="0.5,8"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
 	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
-	<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+	<property name="KnockdownKneelStunDuration" value="0.5,8"/>
 	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
 	<property name="LegsExplosionDamageMultiplier" value=".85"/>
 	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
@@ -4532,7 +4532,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="50"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 	</effect_group>
 </entity_class>
 
@@ -4628,7 +4628,8 @@
 			<requirement name="NotHasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
 			<requirement name="HasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
-		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>		
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
+
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal"/>
 	</effect_group>
 </entity_class>
@@ -4655,7 +4656,7 @@
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="NavObject" value="animaltracking_stag" />
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="120.0"/>
+	<property name="SoundRandomTime" value="200"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerMRandom"/>
@@ -4738,7 +4739,7 @@
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="NavObject" value="animaltracking_doe" />
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="120.0"/>
+	<property name="SoundRandomTime" value="200"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerFRandom"/>
@@ -6215,7 +6216,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="DeadBodyHitPoints" value="251"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="150"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffShocked,buffRadiationPool"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 	</effect_group>
 </entity_class>
 
@@ -6359,7 +6360,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="100"/>
 		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 		<passive_effect name="WaterMax" operation="base_set" value="100"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffShocked,buffPerkCharismaticNature,buffRadiationPool"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 	</effect_group>
   
 </entity_class>
@@ -6426,7 +6427,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="100000"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffShocked,buffRadiationPool"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 	</effect_group>
 </entity_class>
 
@@ -7058,7 +7059,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="2000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="200" tags= "buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryConcussion,buffArmBroken,buffInjuryUnconscious,buffStayDownKO,buffRadiationCatch,buffRadiation03,buffRadiationNew,buffRadiationNew2,buffRadiationWeak,buffRadiationStrong,buffBurningEnvironment,buffBurningEnvironmentHack,buffInjuryBleeding,buffInjuryBleedingZombie,buffPlayerFallingDamage,buffLegBroken,buffArmSprained"/> 
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 				<!--	<passive_effect name="BuffResistance" operation="base_set" value="200" tags= "buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO,buffRadiationCatch,buffRadiation03,buffRadiationNew,buffRadiationNew2,buffRadiationWeak,buffRadiationStrong,buffBurningEnvironment,buffBurningElement,buffBurningEnvironmentHack,buffInjuryBleeding,buffInjuryBleedingZombie,buffPlayerFallingDamage,buffLegSprained,buffLegBroken,buffArmSprained"/> -->	
 				
 				
@@ -7433,7 +7434,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
 			</effect_group>	
@@ -7702,10 +7703,10 @@ Kinda sorta works but is buggy and we don't have time for that.
 			<property name="LegCrippleScale" value="2"/> <!-- Scales chance to cripple (percent of health that a hit does is the chance) -->
 			<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 			<property name="KnockdownProneDamageThreshold" value="0.5"/>
-			<property name="KnockdownProneStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownProneStunDuration" value="0.5,8"/>
 			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
 			<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-			<property name="KnockdownKneelStunDuration" value="0.5,1.8"/>
+			<property name="KnockdownKneelStunDuration" value="0.5,8"/>
 			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
 			<property name="LegsExplosionDamageMultiplier" value="1"/>
 			<property name="ArmsExplosionDamageMultiplier" value="1"/>
@@ -7755,7 +7756,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="0">
 					<requirement name="NotHasBuff" buff="buffBrawlerNoTeeth"/></triggered_effect>
 				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="noTeethNoInfection" operation="set" value="1">
@@ -8053,7 +8054,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="200"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashHead,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck,buffRadiationPool"/><!-- JZMOD -->
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
 			</effect_group>	
@@ -8328,7 +8329,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="JZZombieCrawler1" extends="zombieRegularTemplate">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
-	<property name="RandomWalkTypes" value="4" />
+	<property name="RandomWalkTypes" value="21" />
 	<property name="Faction" value="undead"/>				
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="Mesh" value="#@modfolder:Resources/JZZombieCrawler1.unity3d?Crawler1Prefab"/> 
@@ -8981,7 +8982,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="NavObject" value="animaltracking_stag" />
 	<property name="LookAtAngle" value="0"/>
 	<!-- Sound -->
-	<property name="SoundRandomTime" value="120.0"/>
+	<property name="SoundRandomTime" value="200"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerMRandom"/>
@@ -9065,7 +9066,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<!-- JZMOD Sound -->
-	<property name="SoundRandomTime" value="120.0"/>
+	<property name="SoundRandomTime" value="200"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="SoundRandom" value="deerFRandom"/>

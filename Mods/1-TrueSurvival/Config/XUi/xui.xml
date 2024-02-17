@@ -91,10 +91,10 @@
 		<window_group name="dragAndDrop" actionSet="false">
 			<window name="dragAndDropItemStack" />
 		</window_group>
-		
+		<!-- JZMOD REMOVE POP UP POI NAME ONE ENTERING POI -->
 		<window_group name="compass" actionSet="false">
 			<window name="windowCompass" />
-			<window name="windowEntering" anchor="CenterTop" />
+			<!--<window name="windowEntering" anchor="CenterTop" /> JZMOD -->
 			<window name="windowTargetBar" anchor="CenterTop" />
 			<window name="onScreenIcons" />
 		</window_group>
@@ -133,12 +133,12 @@
 		<window_group name="throwpower" actionSet="false">
 			<window name="windowThrow"/>
 		</window_group>
-		
+		<!-- JZMOD REMOVE DIFFICULTY AND POI TRACKER -->
 		<window_group name="toolbelt" actionSet="false">
 			<window name="windowToolbelt" anchor="CenterBottom" />
 			<window name="HUDLeftStatBars" anchor="LeftBottom" />
 			<window name="HUDRightStatBars" anchor="RightBottom" />
-			<window name="windowLocation" anchor="RightTop" />
+			<!--<window name="windowLocation" anchor="RightTop" /> JZMOD -->
 			<window name="windowQuestTracker" anchor="RightTop" />
 			<window name="windowRecipeTracker" anchor="RightTop" />
 			<window name="windowGroupBars" anchor="LeftTop" />

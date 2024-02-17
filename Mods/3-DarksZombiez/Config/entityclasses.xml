@@ -72,7 +72,7 @@
 			<property name="HasRagdoll" value="true"/>
 			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
 			<property name="HasDeathAnim" value="true"/>			
-			<property name="WalkType" value="7"/>
+			<property name="RandomWalkTypes" value="1,2,3,5,6,7,22" /><!-- JZMOD-->
 			<property name="Mass" value="150"/>
             <effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="100,500"/>

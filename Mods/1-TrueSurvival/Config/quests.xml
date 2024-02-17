@@ -1011,8 +1011,8 @@
 	</quest>
 	<!--JZMOD IMPROVISED PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="ImprovisedIcon" />
@@ -1029,10 +1029,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv2"/>
+		<property name="description_key" value="jzquest_ImprovisedLv2Desc"/>
+		<property name="offer_key" value="jzquest_ImprovisedLv2Desc"/>
 		<property name="icon" value="ImprovisedIcon"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1047,10 +1047,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv3"/>
+		<property name="description_key" value="jzquest_ImprovisedLv3Desc"/>
+		<property name="offer_key" value="jzquest_ImprovisedLv3Desc"/>
 		<property name="icon" value="ImprovisedIcon"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1065,10 +1065,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv4" />
+		<property name="description_key" value="jzquest_ImprovisedLv4Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv4Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1084,10 +1084,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv5" />
+		<property name="description_key" value="jzquest_ImprovisedLv5Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv5Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1102,10 +1102,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv6" />
+		<property name="description_key" value="jzquest_ImprovisedLv6Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv6Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1120,10 +1120,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv7" />
+		<property name="description_key" value="jzquest_ImprovisedLv7Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv7Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1139,10 +1139,10 @@
 	</quest>
 
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv8" />
+		<property name="description_key" value="jzquest_ImprovisedLv8Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv8Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1158,10 +1158,10 @@
 	</quest>
 
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovisedLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovisedLv9" />
+		<property name="description_key" value="jzquest_ImprovisedLv9Desc" />
+		<property name="offer_key" value="jzquest_ImprovisedLv9Desc"/>
 		<property name="icon" value="ImprovisedIcon" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1178,8 +1178,8 @@
 	
 <!--JZMOD PIPE GUN PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesPipeGunQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGunLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGunLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="PipeGun" />
@@ -1195,10 +1195,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesPipeGunQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="description_key" value="jzquest_Lv3Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGunLv2" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGunLv2" />
+		<property name="description_key" value="jzquest_PipeGunLv2Desc" />
+		<property name="offer_key" value="jzquest_PipeGunLv2Desc"/>
 		<property name="icon" value="PipeGun" />
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
@@ -1214,10 +1214,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesPipeGunQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="description_key" value="jzquest_Lv4Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGunLv3" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGunLv3" />
+		<property name="description_key" value="jzquest_PipeGunLv3Desc" />
+		<property name="offer_key" value="jzquest_PipeGunLv3Desc"/>
 		<property name="icon" value="PipeGun" />
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
@@ -1233,10 +1233,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesPipeGunQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGunLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGunLv4" />
+		<property name="description_key" value="jzquest_PipeGunLv4Desc" />
+		<property name="offer_key" value="jzquest_PipeGunLv4Desc"/>
 		<property name="icon" value="PipeGun" />
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
@@ -1252,10 +1252,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesPipeGunQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesPipeGunLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGunLv5" />
+		<property name="description_key" value="jzquest_PipeGunLv5Desc" />
+		<property name="offer_key" value="jzquest_PipeGunLv5Desc"/>
 		<property name="icon" value="PipeGun" />
 		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
@@ -1272,10 +1272,10 @@
 	
 	<!--JZMOD ADVANCED TOOLS PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesToolQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv2Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv1" />
+		<property name="description_key" value="jzquest_ToolLv1Desc" />
+		<property name="offer_key" value="jzquest_ToolLv1Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
@@ -1291,10 +1291,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv2"/>
+		<property name="description_key" value="jzquest_ToolLv2Desc"/>
+		<property name="offer_key" value="jzquest_ToolLv2Desc"/>
 		<property name="icon" value="Advanced"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1309,10 +1309,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesToolQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv3"/>
+		<property name="description_key" value="jzquest_ToolLv3Desc"/>
+		<property name="offer_key" value="jzquest_ToolLv3Desc"/>
 		<property name="icon" value="Advanced"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1327,10 +1327,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv4" />
+		<property name="description_key" value="jzquest_ToolLv4Desc" />
+		<property name="offer_key" value="jzquest_ToolLv4Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1346,10 +1346,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv5" />
+		<property name="description_key" value="jzquest_ToolLv5Desc" />
+		<property name="offer_key" value="jzquest_ToolLv5Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1364,10 +1364,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv6" />
+		<property name="description_key" value="jzquest_ToolLv6Desc" />
+		<property name="offer_key" value="jzquest_ToolLv6Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1382,10 +1382,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv7" />
+		<property name="description_key" value="jzquest_ToolLv7Desc" />
+		<property name="offer_key" value="jzquest_ToolLv7Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1401,10 +1401,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesToolQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv8" />
+		<property name="description_key" value="jzquest_ToolLv8Desc" />
+		<property name="offer_key" value="jzquest_ToolLv8Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1420,10 +1420,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesToolQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesToolLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesToolLv9" />
+		<property name="description_key" value="jzquest_ToolLv9Desc" />
+		<property name="offer_key" value="jzquest_ToolLv9Desc"/>
 		<property name="icon" value="Advanced" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1439,8 +1439,8 @@
 	</quest>
 	<!--JZMOD ELECTRONIC PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="Electronic" />
@@ -1456,10 +1456,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv2"/>
+		<property name="description_key" value="jzquest_ElectronicLv2Desc"/>
+		<property name="offer_key" value="jzquest_ElectronicLv2Desc"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1474,10 +1474,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv3"/>
+		<property name="description_key" value="jzquest_ElectronicLv3Desc"/>
+		<property name="offer_key" value="jzquest_ElectronicLv3Desc"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1492,10 +1492,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv4" />
+		<property name="description_key" value="jzquest_ElectronicLv4Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv4Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1511,10 +1511,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv5" />
+		<property name="description_key" value="jzquest_ElectronicLv5Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv5Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1529,10 +1529,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv6" />
+		<property name="description_key" value="jzquest_ElectronicLv6Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv6Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1547,10 +1547,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv7" />
+		<property name="description_key" value="jzquest_ElectronicLv7Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv7Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1566,10 +1566,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesElectronicQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv8" />
+		<property name="description_key" value="jzquest_ElectronicLv8Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv8Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1584,10 +1584,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv9" />
+		<property name="description_key" value="jzquest_ElectronicLv9Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv9Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1603,10 +1603,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL11">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv11Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv11Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv10" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv10" />
+		<property name="description_key" value="jzquest_ElectronicLv10Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv10Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1621,10 +1621,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL12">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv12Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv12Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronicLv11" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronicLv11" />
+		<property name="description_key" value="jzquest_ElectronicLv11Desc" />
+		<property name="offer_key" value="jzquest_ElectronicLv11Desc"/>
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1640,8 +1640,8 @@
 	</quest>	
 	<!--JZMOD LIGHT ARMOR PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="LightArmor" />
@@ -1656,10 +1656,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv2"/>
+		<property name="description_key" value="jzquest_LightArmorLv2Desc"/>
+		<property name="offer_key" value="jzquest_LightArmorLv2Desc"/>
 		<property name="icon" value="LightArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1674,10 +1674,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv3"/>
+		<property name="description_key" value="jzquest_LightArmorLv3Desc"/>
+		<property name="offer_key" value="jzquest_LightArmorLv3Desc"/>
 		<property name="icon" value="LightArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1692,10 +1692,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv4" />
+		<property name="description_key" value="jzquest_LightArmorLv4Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv4Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1711,10 +1711,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv5" />
+		<property name="description_key" value="jzquest_LightArmorLv5Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv5Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1729,10 +1729,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv6" />
+		<property name="description_key" value="jzquest_LightArmorLv6Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv6Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1747,10 +1747,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv7" />
+		<property name="description_key" value="jzquest_LightArmorLv7Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv7Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1766,10 +1766,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesLightArmorQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv8" />
+		<property name="description_key" value="jzquest_LightArmorLv8Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv8Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1785,10 +1785,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmorLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmorLv9" />
+		<property name="description_key" value="jzquest_LightArmorLv9Desc" />
+		<property name="offer_key" value="jzquest_LightArmorLv9Desc"/>
 		<property name="icon" value="LightArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1804,8 +1804,8 @@
 	</quest>
 <!--JZMOD HEAVY ARMOR PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="HeavyArmor" />
@@ -1821,10 +1821,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv2"/>
+		<property name="description_key" value="jzquest_HeavyArmorLv2Desc"/>
+		<property name="offer_key" value="jzquest_HeavyArmorLv2Desc"/>
 		<property name="icon" value="HeavyArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1839,10 +1839,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv3"/>
+		<property name="description_key" value="jzquest_HeavyArmorLv3Desc"/>
+		<property name="offer_key" value="jzquest_HeavyArmorLv3Desc"/>
 		<property name="icon" value="HeavyArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -1857,10 +1857,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv4" />
+		<property name="description_key" value="jzquest_HeavyArmorLv4Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv4Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1876,10 +1876,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv5" />
+		<property name="description_key" value="jzquest_HeavyArmorLv5Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv5Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1894,10 +1894,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv6" />
+		<property name="description_key" value="jzquest_HeavyArmorLv6Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv6Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1912,10 +1912,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv7" />
+		<property name="description_key" value="jzquest_HeavyArmorLv7Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv7Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -1931,10 +1931,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesHeavyArmorQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv8" />
+		<property name="description_key" value="jzquest_HeavyArmorLv8Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv8Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1950,10 +1950,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmorLv9" />
+		<property name="description_key" value="jzquest_HeavyArmorLv9Desc" />
+		<property name="offer_key" value="jzquest_HeavyArmorLv9Desc"/>
 		<property name="icon" value="HeavyArmor" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -1969,8 +1969,8 @@
 	</quest>
 	<!--JZMOD HANDGUN PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="Handgun" />
@@ -1990,10 +1990,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv2"/>
+		<property name="description_key" value="jzquest_HandgunLv2Desc"/>
+		<property name="offer_key" value="jzquest_HandgunLv2Desc"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2008,10 +2008,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv3"/>
+		<property name="description_key" value="jzquest_HandgunLv3Desc"/>
+		<property name="offer_key" value="jzquest_HandgunLv3Desc"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2026,10 +2026,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv4" />
+		<property name="description_key" value="jzquest_HandgunLv4Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv4Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2045,10 +2045,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv5" />
+		<property name="description_key" value="jzquest_HandgunLv5Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv5Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2063,10 +2063,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv6" />
+		<property name="description_key" value="jzquest_HandgunLv6Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv6Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2081,10 +2081,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv7" />
+		<property name="description_key" value="jzquest_HandgunLv7Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv7Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2100,10 +2100,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesHandgunQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv8" />
+		<property name="description_key" value="jzquest_HandgunLv8Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv8Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2118,10 +2118,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv9" />
+		<property name="description_key" value="jzquest_HandgunLv9Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv9Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2137,10 +2137,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL11">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv11Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv11Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv10" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv10" />
+		<property name="description_key" value="jzquest_HandgunLv10Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv10Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2155,10 +2155,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL12">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv12Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv12Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgunLv11" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgunLv11" />
+		<property name="description_key" value="jzquest_HandgunLv11Desc" />
+		<property name="offer_key" value="jzquest_HandgunLv11Desc"/>
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2174,8 +2174,8 @@
 	</quest>
 	<!--JZMOD SHOTGUN PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="Shotgun" />
@@ -2195,10 +2195,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv2"/>
+		<property name="description_key" value="jzquest_ShotgunLv2Desc"/>
+		<property name="offer_key" value="jzquest_ShotgunLv2Desc"/>
 		<property name="icon" value="Shotgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2213,10 +2213,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv3"/>
+		<property name="description_key" value="jzquest_ShotgunLv3Desc"/>
+		<property name="offer_key" value="jzquest_ShotgunLv3Desc"/>
 		<property name="icon" value="Shotgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2231,10 +2231,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv4" />
+		<property name="description_key" value="jzquest_ShotgunLv4Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv4Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2250,10 +2250,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv5" />
+		<property name="description_key" value="jzquest_ShotgunLv5Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv5Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2268,10 +2268,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv6" />
+		<property name="description_key" value="jzquest_ShotgunLv6Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv6Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2286,10 +2286,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv7" />
+		<property name="description_key" value="jzquest_ShotgunLv7Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv7Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2305,10 +2305,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesShotgunQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv8" />
+		<property name="description_key" value="jzquest_ShotgunLv8Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv8Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2324,10 +2324,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgunLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgunLv9" />
+		<property name="description_key" value="jzquest_ShotgunLv9Desc" />
+		<property name="offer_key" value="jzquest_ShotgunLv9Desc"/>
 		<property name="icon" value="Shotgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2343,8 +2343,8 @@
 	</quest>
 	<!--JZMOD MACHINE GUN PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="MachineGun" />
@@ -2364,10 +2364,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv2"/>
+		<property name="description_key" value="jzquest_MachineGunLv2Desc"/>
+		<property name="offer_key" value="jzquest_MachineGunLv2Desc"/>
 		<property name="icon" value="MachineGun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2382,10 +2382,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv3"/>
+		<property name="description_key" value="jzquest_MachineGunLv3Desc"/>
+		<property name="offer_key" value="jzquest_MachineGunLv3Desc"/>
 		<property name="icon" value="MachineGun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2400,10 +2400,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv4" />
+		<property name="description_key" value="jzquest_MachineGunLv4Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv4Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2419,10 +2419,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv5" />
+		<property name="description_key" value="jzquest_MachineGunLv5Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv5Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2437,10 +2437,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv6" />
+		<property name="description_key" value="jzquest_MachineGunLv6Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv6Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2455,10 +2455,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv7" />
+		<property name="description_key" value="jzquest_MachineGunLv7Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv7Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2474,10 +2474,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesMachineGunQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv8" />
+		<property name="description_key" value="jzquest_MachineGunLv8Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv8Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2493,10 +2493,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGunLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGunLv9" />
+		<property name="description_key" value="jzquest_MachineGunLv9Desc" />
+		<property name="offer_key" value="jzquest_MachineGunLv9Desc"/>
 		<property name="icon" value="MachineGun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2512,8 +2512,8 @@
 	</quest>
 	<!--JZMOD RIFLE PROGRESSION -->
 	<quest id="jzquest_WorkbenchUpgradesRifleQL2">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv1" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv1" />
 		<property name="description_key" value="jzquest_Lv2Crafting_description" />
 		<property name="offer_key" value="jzquest_Lv2Crafting_description"/>
 		<property name="icon" value="Rifle" />
@@ -2533,10 +2533,10 @@
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL3">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv3Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv3Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv2"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv2"/>
+		<property name="description_key" value="jzquest_RifleLv2Desc"/>
+		<property name="offer_key" value="jzquest_RifleLv2Desc"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2551,10 +2551,10 @@
 	</quest>
 		
 	<quest id="jzquest_WorkbenchUpgradesRifleQL4">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv4Crafting_description"/>
-		<property name="offer_key" value="jzquest_Lv4Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv3"/>
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv3"/>
+		<property name="description_key" value="jzquest_RifleLv3Desc"/>
+		<property name="offer_key" value="jzquest_RifleLv3Desc"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2569,10 +2569,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL5">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv5Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv5Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv4" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv4" />
+		<property name="description_key" value="jzquest_RifleLv4Desc" />
+		<property name="offer_key" value="jzquest_RifleLv4Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2588,10 +2588,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL6">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv6Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv5" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv5" />
+		<property name="description_key" value="jzquest_RifleLv5Desc" />
+		<property name="offer_key" value="jzquest_RifleLv5Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2606,10 +2606,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL7">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv7Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv7Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv6" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv6" />
+		<property name="description_key" value="jzquest_RifleLv6Desc" />
+		<property name="offer_key" value="jzquest_RifleLv6Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2624,10 +2624,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL8">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv8Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv8Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv7" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv7" />
+		<property name="description_key" value="jzquest_RifleLv7Desc" />
+		<property name="offer_key" value="jzquest_RifleLv7Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="medium"/>
@@ -2643,10 +2643,10 @@
 	</quest>
 
 <quest id="jzquest_WorkbenchUpgradesRifleQL9">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv8" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv8" />
+		<property name="description_key" value="jzquest_RifleLv8Desc" />
+		<property name="offer_key" value="jzquest_RifleLv8Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2661,10 +2661,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL10">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv9" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv9" />
+		<property name="description_key" value="jzquest_RifleLv9Desc" />
+		<property name="offer_key" value="jzquest_RifleLv9Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2680,10 +2680,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL11">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv11Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv11Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv10" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv10" />
+		<property name="description_key" value="jzquest_RifleLv10Desc" />
+		<property name="offer_key" value="jzquest_RifleLv10Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2698,10 +2698,10 @@
 	</quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesRifleQL12">
-		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv12Crafting_description" />
-		<property name="offer_key" value="jzquest_Lv12Crafting_description"/>
+		<property name="name_key" value="jzquest_WorkbenchUpgradesRifleLv11" />
+		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifleLv11" />
+		<property name="description_key" value="jzquest_RifleLv11Desc" />
+		<property name="offer_key" value="jzquest_RifleLv11Desc"/>
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>

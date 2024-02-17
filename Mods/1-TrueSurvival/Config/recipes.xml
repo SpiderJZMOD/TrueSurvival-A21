@@ -1221,13 +1221,27 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Stick" count="1" />
 </recipe>
 
-<recipe name="jz_FoodEggHardBoiledHot" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="15" craft_exp_gain="20" tags="jz_ChefTag">
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="4"/>
+<recipe name="jz_FoodGrilledMeatHot" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="10" craft_exp_gain="20" tags="jz_ChefTag">
+	<ingredient name="foodRawMeat" count="2"/>
+</recipe>
+
+<recipe name="jz_FoodBoiledMeatHot" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="15" craft_exp_gain="60" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingProtein" count="2"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="jz_FoodCharredMeatHot" count="1" craft_area="campfire" craft_time="10" craft_exp_gain="50" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingProtein" count="2"/>
+	<ingredient name="jz_Stick" count="1" />
 </recipe>
 
 <recipe name="jz_FoodGrilledMeatHot" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="10" craft_exp_gain="20" tags="jz_ChefTag">
-	<ingredient name="foodRawMeat" count="2"/>
+	<ingredient name="jz_FoodServingProtein" count="2"/>
+</recipe>
+
+<recipe name="jz_FoodEggHardBoiledHot" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="15" craft_exp_gain="20" tags="jz_ChefTag">
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="4"/>
 </recipe>
 
 <recipe name="jz_FoodGlazedMeatHot" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="10" craft_exp_gain="20" tags="learnable,jz_ChefTag">
