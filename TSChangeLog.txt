@@ -150,3 +150,26 @@
 -Fixed some versions of improvised campfires not having all crafting categories in their menus
 -Updated ReadMe File with some new required mod settings and suggested compatible POI modlets
 -Updated ReadMe File with connection info for Oficial True Survival Server now open 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+2/17/2024 A21.2 #1.26
+-Trying out the old terrain style zombie gore system, No more lost loot
+-Updated Burn injuries with active stat displays
+-Updated Shrapnel Wound with a active stat display
+-Fixed bug in Burn injury where HP bleed was not happening
+-Added Guppcurs Flashbang visual effect to Flashbangs
+-Doubled xp gains from looting for Looting Skill
+-Added the ability to reset Trader quest
+-Added more randomness to the delay for a zombie to get up after getting knocked down
+-Doubled the delay between deer sounds
+-Fixed Steel Clubs repair item
+-Fixed 1 zombies spit not respecting material rules
+-Fixed some issues with the Parasit enemies 
+-Fixed Charismatic perk level descriptions
+-Updated all workstation quest to show level of quest in the quest list and to say what crate you find the item in
+-Added recipe for Charred, Grilled and Boiled Meat using Protein Servings
+-Removed center POI name popo up when entering a POI
+-Removed POI and difficulty tracking on right side
+-Changed Fat Parasite to not spawn as a crawler
+-Fixed AK47 Parts item name
+-Fixed Orange tree infested versions visual names
+
